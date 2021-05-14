@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibloteka.BusinessObjects",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibloteka.Klienti", "Bibloteka.Klienti\Bibloteka.Klienti.csproj", "{752B7783-4AA4-4320-AFBF-7D432F802127}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibloteka.BusinessLogicLayer", "Bibloteka.BusinessLogicLayer\Bibloteka.BusinessLogicLayer.csproj", "{F6C7B6B4-80EA-42B6-9900-3788FC14DD66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{752B7783-4AA4-4320-AFBF-7D432F802127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{752B7783-4AA4-4320-AFBF-7D432F802127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{752B7783-4AA4-4320-AFBF-7D432F802127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C7B6B4-80EA-42B6-9900-3788FC14DD66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C7B6B4-80EA-42B6-9900-3788FC14DD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C7B6B4-80EA-42B6-9900-3788FC14DD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C7B6B4-80EA-42B6-9900-3788FC14DD66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
