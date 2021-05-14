@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E2905EFC-EE8A-44C6-8776-8D7ACD2D4F73}</ProjectGuid>
+    <ProjectGuid>{752B7783-4AA4-4320-AFBF-7D432F802127}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Bibloteka.Klienti</RootNamespace>
     <AssemblyName>Bibloteka.Klienti</AssemblyName>
