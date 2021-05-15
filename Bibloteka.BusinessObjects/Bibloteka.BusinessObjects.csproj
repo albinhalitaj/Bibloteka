@@ -48,12 +48,16 @@
     <Compile Include="Huazimi.cs" />
     <Compile Include="Kategoria.cs" />
     <Compile Include="Klienti.cs" />
+    <Compile Include="Kualifikimi.cs" />
     <Compile Include="Libri.cs" />
     <Compile Include="LibriAutori.cs" />
     <Compile Include="LibriDetalet.cs" />
+    <Compile Include="Perdoruesi.cs" />
+    <Compile Include="PerdoruesiRoli.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roli.cs" />
     <Compile Include="Stafi.cs" />
+    <Compile Include="StafiKualifikimi.cs" />
     <Compile Include="Tipi.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

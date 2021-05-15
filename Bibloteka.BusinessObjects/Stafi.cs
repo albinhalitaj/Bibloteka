@@ -8,8 +8,8 @@ namespace Bibloteka.BusinessObjects
 {
     public class Stafi
     {
+        public int StafiId { get; set; }
 
-        public int StafiID { get; set; }
         public string Emri { get; set; }
 
         public string Mbiemri { get; set; }
