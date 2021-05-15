@@ -15,5 +15,8 @@ namespace Bibloteka.BusinessObjects
         public int? Lub { get; set; }
         public int? Lun { get; set; }
         public DateTime? Lud { get; set; }
+
+        public Stafi Stafi { get; set; }
+        public Roli Roli { get; set; }
     }
 }

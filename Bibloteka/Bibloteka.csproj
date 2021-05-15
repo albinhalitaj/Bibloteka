@@ -70,5 +70,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bibloteka.BusinessLogicLayer\Bibloteka.BusinessLogicLayer.csproj">
+      <Project>{f6c7b6b4-80ea-42b6-9900-3788fc14dd66}</Project>
+      <Name>Bibloteka.BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bibloteka.BusinessObjects\Bibloteka.BusinessObjects.csproj">
+      <Project>{241b44f2-dd2c-4387-b6a5-165c6aff0918}</Project>
+      <Name>Bibloteka.BusinessObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

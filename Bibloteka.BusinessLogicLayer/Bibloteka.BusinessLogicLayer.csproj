@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SignInManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bibloteka.BusinessObjects\Bibloteka.BusinessObjects.csproj">
+      <Project>{241b44f2-dd2c-4387-b6a5-165c6aff0918}</Project>
+      <Name>Bibloteka.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bibloteka.DataAccessLayer\Bibloteka.DataAccessLayer.csproj">
+      <Project>{4748d502-c15c-4c2b-bb67-9b748c935ba4}</Project>
+      <Name>Bibloteka.DataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
