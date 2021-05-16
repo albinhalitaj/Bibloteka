@@ -10,7 +10,7 @@ namespace Bibloteka.BusinessObjects
 
         public string Pershkrimi { get; set; }
 
-        public string InsertBy { get; set; }
+        public int InsertBy { get; set; }
 
         public DateTime? InsertDate { get; set; }
 

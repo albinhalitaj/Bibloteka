@@ -49,7 +49,7 @@ namespace Bibloteka
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
 
-        private void btnKategorite_Click(object sender, EventArgs e) => OpenForm(new frm_Kategorite());
+        private void btnKategorite_Click(object sender, EventArgs e) => OpenForm(new frm_Kategorite(_perdoruesi.Stafi));
 
         private void btnKlientet_Click(object sender, EventArgs e) => OpenForm(new frm_Klientet());
 

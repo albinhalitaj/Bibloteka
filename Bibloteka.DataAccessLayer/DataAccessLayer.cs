@@ -6,6 +6,12 @@ namespace Bibloteka.DataAccessLayer
 {
     public static class DataAccessLayer
     {
-        public static string AppConnection() => ConfigurationManager.ConnectionStrings["albikCon"].ConnectionString;
+        public static SqlConnection AppConnection()
+        {
+            var conString = ConfigurationManager.ConnectionStrings["albikCon"].ConnectionString;
+            var con = new SqlConnection(conString);
+            if (con.State != ConnectionState.Open) con.Open();
+            return con;
+        }
     }
 }

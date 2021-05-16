@@ -14,7 +14,7 @@ namespace Bibloteka.DataAccessLayer
     {
         public Perdoruesi Login(Perdoruesi user)
         {
-            using (var con = new SqlConnection(DataAccessLayer.AppConnection()))
+            using (var con = DataAccessLayer.AppConnection())
             {
                 var cmd = new SqlCommand("usp_Login", con) {CommandType = CommandType.StoredProcedure};
                 cmd.Parameters.AddWithValue("@username", user.Username);
@@ -33,7 +33,7 @@ namespace Bibloteka.DataAccessLayer
                                 useri.Stafi = stafi;
                                 useri.Roli = roli;
                                 return useri;
-                            }, param, splitOn: "Emri,Emertimi")
+                            }, param, splitOn: "StafiID,Emertimi")
                         .FirstOrDefault();
                 }
                 return perdoruesi;
