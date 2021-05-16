@@ -462,11 +462,11 @@ namespace Bibloteka
             // 
             this.txtKerko.BackColor = System.Drawing.Color.Transparent;
             this.txtKerko.BaseColor = System.Drawing.Color.White;
-            this.txtKerko.BorderColor = System.Drawing.Color.Gray;
+            this.txtKerko.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.txtKerko.BorderSize = 1;
             this.txtKerko.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtKerko.Font = new System.Drawing.Font("Poppins", 9F);
             this.txtKerko.ForeColor = System.Drawing.SystemColors.GrayText;
@@ -481,6 +481,7 @@ namespace Bibloteka
             // 
             // Wrapper
             // 
+            this.Wrapper.BackColor = System.Drawing.Color.White;
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(259, 76);
             this.Wrapper.Name = "Wrapper";
