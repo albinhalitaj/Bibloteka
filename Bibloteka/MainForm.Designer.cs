@@ -47,16 +47,19 @@ namespace Bibloteka
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
             this.Wrapper = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.lblPunetori);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnLibrat);
@@ -78,11 +81,11 @@ namespace Bibloteka
             // 
             this.lblPunetori.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblPunetori.AutoSize = true;
-            this.lblPunetori.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPunetori.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPunetori.ForeColor = System.Drawing.Color.White;
-            this.lblPunetori.Location = new System.Drawing.Point(56, 747);
+            this.lblPunetori.Location = new System.Drawing.Point(60, 749);
             this.lblPunetori.Name = "lblPunetori";
-            this.lblPunetori.Size = new System.Drawing.Size(66, 34);
+            this.lblPunetori.Size = new System.Drawing.Size(54, 28);
             this.lblPunetori.TabIndex = 17;
             this.lblPunetori.Text = "User: ";
             // 
@@ -93,7 +96,7 @@ namespace Bibloteka
             this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox2.Location = new System.Drawing.Point(10, 740);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(47, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
@@ -135,6 +138,7 @@ namespace Bibloteka
             this.btnLibrat.TabIndex = 12;
             this.btnLibrat.Text = "Librat";
             this.btnLibrat.TextOffsetX = 10;
+            this.btnLibrat.Click += new System.EventHandler(this.btnLibrat_Click);
             // 
             // btnKthimet
             // 
@@ -173,6 +177,7 @@ namespace Bibloteka
             this.btnKthimet.TabIndex = 14;
             this.btnKthimet.Text = "Kthimet";
             this.btnKthimet.TextOffsetX = 10;
+            this.btnKthimet.Click += new System.EventHandler(this.btnKthimet_Click);
             // 
             // btnRaportet
             // 
@@ -249,6 +254,7 @@ namespace Bibloteka
             this.btnHuazimet.TabIndex = 13;
             this.btnHuazimet.Text = "Huazimet";
             this.btnHuazimet.TextOffsetX = 10;
+            this.btnHuazimet.Click += new System.EventHandler(this.btnHuazimet_Click);
             // 
             // btnStafi
             // 
@@ -287,6 +293,7 @@ namespace Bibloteka
             this.btnStafi.TabIndex = 11;
             this.btnStafi.Text = "Stafi";
             this.btnStafi.TextOffsetX = 10;
+            this.btnStafi.Click += new System.EventHandler(this.btnStafi_Click);
             // 
             // btnKlientet
             // 
@@ -325,6 +332,7 @@ namespace Bibloteka
             this.btnKlientet.TabIndex = 10;
             this.btnKlientet.Text = "Klientët";
             this.btnKlientet.TextOffsetX = 10;
+            this.btnKlientet.Click += new System.EventHandler(this.btnKlientet_Click);
             // 
             // btnKategorite
             // 
@@ -363,6 +371,7 @@ namespace Bibloteka
             this.btnKategorite.TabIndex = 9;
             this.btnKategorite.Text = "Kategoritë";
             this.btnKategorite.TextOffsetX = 10;
+            this.btnKategorite.Click += new System.EventHandler(this.btnKategorite_Click);
             // 
             // btnBallina
             // 
@@ -478,6 +487,19 @@ namespace Bibloteka
             this.Wrapper.Size = new System.Drawing.Size(1069, 726);
             this.Wrapper.TabIndex = 3;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.Location = new System.Drawing.Point(207, 747);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(30, 27);
+            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnLogout.TabIndex = 18;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,6 +508,7 @@ namespace Bibloteka
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(1344, 841);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
@@ -499,6 +522,7 @@ namespace Bibloteka
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -522,5 +546,6 @@ namespace Bibloteka
         private Guna.UI.WinForms.GunaTextBox txtKerko;
         private System.Windows.Forms.Label lblPunetori;
         private System.Windows.Forms.Panel Wrapper;
+        private System.Windows.Forms.PictureBox btnLogout;
     }
 }

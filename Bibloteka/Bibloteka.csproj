@@ -57,6 +57,42 @@
     <Compile Include="Forms\frm_Ballina.Designer.cs">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frm_Huazimet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Huazimet.Designer.cs">
+      <DependentUpon>frm_Huazimet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Kategorite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Kategorite.Designer.cs">
+      <DependentUpon>frm_Kategorite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Klientet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Klientet.Designer.cs">
+      <DependentUpon>frm_Klientet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Kthimet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Kthimet.Designer.cs">
+      <DependentUpon>frm_Kthimet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Librat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Librat.Designer.cs">
+      <DependentUpon>frm_Librat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Stafi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Stafi.Designer.cs">
+      <DependentUpon>frm_Stafi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +109,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frm_Ballina.resx">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Huazimet.resx">
+      <DependentUpon>frm_Huazimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Kategorite.resx">
+      <DependentUpon>frm_Kategorite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Klientet.resx">
+      <DependentUpon>frm_Klientet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Kthimet.resx">
+      <DependentUpon>frm_Kthimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Librat.resx">
+      <DependentUpon>frm_Librat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Stafi.resx">
+      <DependentUpon>frm_Stafi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

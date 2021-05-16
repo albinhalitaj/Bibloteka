@@ -48,5 +48,22 @@ namespace Bibloteka
         private void btnBallina_Click(object sender, EventArgs e) => OpenForm(new frm_Ballina(_perdoruesi.Stafi));
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
+
+        private void btnKategorite_Click(object sender, EventArgs e) => OpenForm(new frm_Kategorite());
+
+        private void btnKlientet_Click(object sender, EventArgs e) => OpenForm(new frm_Klientet());
+
+        private void btnKthimet_Click(object sender, EventArgs e) => OpenForm(new frm_Kthimet());
+
+        private void btnHuazimet_Click(object sender, EventArgs e) => OpenForm(new frm_Huazimet());
+
+        private void btnLibrat_Click(object sender, EventArgs e) => OpenForm(new frm_Librat());
+
+        private void btnStafi_Click(object sender, EventArgs e) => OpenForm(new frm_Stafi());
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }
