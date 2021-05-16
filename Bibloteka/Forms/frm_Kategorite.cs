@@ -60,7 +60,10 @@ namespace Bibloteka.Forms
             }
         }
 
-        private void frm_Kategorite_Load(object sender, EventArgs e) => LoadCategories();
+        private void frm_Kategorite_Load(object sender, EventArgs e)
+        {
+            LoadCategories();
+        }
 
         private void ClearForm()
         {
@@ -68,6 +71,60 @@ namespace Bibloteka.Forms
             txtPershkrimi.Clear();
             txtEmertimi.Focus();
             epKategorite.Clear();
+        }
+
+        private void dgv_Kategorite_DoubleClick(object sender, EventArgs e)
+        {
+            if (dgv_Kategorite.Rows.Count <= 0) return;
+            if (dgv_Kategorite.SelectedRows.Count != 1) return;
+            txtEmertimi.Text = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[1].Value);
+            txtPershkrimi.Text = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[2].Value);
+        }
+
+        private void btnNdrysho_Click(object sender, EventArgs e)
+        {
+            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
+            if (txtEmertimi.Text.Trim().Length == 0)
+                epKategorite.SetError(txtEmertimi, "Ju lutem shkruani emertimin e kategorisë!");
+            else
+            {
+                var kategoria = new Kategoria
+                {
+                    Emertimi = txtEmertimi.Text,
+                    Pershkrimi = txtPershkrimi.Text,
+                    Lun = LastUpdatedNumber(id),
+                    Lud = DateTime.Now,
+                    Lub = _stafi.StafiId
+                };
+                _kategoriaManager.Update(id,kategoria);
+                MessageBox.Show(@"Kategoria u përditësua me sukses!", @"Information", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                LoadCategories();
+                ClearForm();
+            }
+        }
+
+        public int LastUpdatedNumber(int id)
+        {
+            var lun = string.Empty;
+            var cat = _kategoriaManager.GetById(id);
+            if (cat.Rows.Count > 0)
+                foreach (DataRow row in cat.Rows)
+                    lun = Convert.ToString(row[6]);
+            var n = string.IsNullOrEmpty(lun) ? 1 : Convert.ToInt32(Convert.ToInt32(lun) + 1);
+            return n;
+        }
+
+        private void btnFshi_Click(object sender, EventArgs e)
+        {
+            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
+            if (dgv_Kategorite.SelectedRows.Count != 1) return;
+            if (MessageBox.Show(@"A jeni i sigurt që doni ta fshihni këtë kategori?", @"Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
+            _kategoriaManager.Remove(id);
+            MessageBox.Show(@"Kategoria u fshi me sukses!", @"Information", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            LoadCategories();
         }
     }
 }
