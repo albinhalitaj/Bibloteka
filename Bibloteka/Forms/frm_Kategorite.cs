@@ -37,10 +37,11 @@ namespace Bibloteka.Forms
                     InsertDate = DateTime.Now
                 };
                 _kategoriaManager.Add(kategoria);
-                MessageBox.Show("Kategoria u ruajt me sukses", "Information", MessageBoxButtons.OK,
+                MessageBox.Show(@"Kategoria u ruajt me sukses", @"Information", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 LoadCategories();
                 ClearForm();
+                lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
             }
         }
 
@@ -63,6 +64,7 @@ namespace Bibloteka.Forms
         private void frm_Kategorite_Load(object sender, EventArgs e)
         {
             LoadCategories();
+            lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
         }
 
         private void ClearForm()
@@ -125,6 +127,7 @@ namespace Bibloteka.Forms
             MessageBox.Show(@"Kategoria u fshi me sukses!", @"Information", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             LoadCategories();
+            lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
         }
 
         private void txtKerko_TextChanged(object sender, EventArgs e)

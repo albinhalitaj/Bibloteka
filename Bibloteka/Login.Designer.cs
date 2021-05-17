@@ -32,16 +32,16 @@ namespace Bibloteka
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSqXK = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnEnUS = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPerdoruesi = new Guna.UI.WinForms.GunaTextBox();
             this.txtFjalekalimi = new Guna.UI.WinForms.GunaTextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnKyqu = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnSqXK = new System.Windows.Forms.PictureBox();
-            this.btnEnUS = new System.Windows.Forms.PictureBox();
             this.chkMeMbajMend = new Guna.UI.WinForms.GunaCheckBox();
             this.epLogin = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
@@ -61,6 +61,45 @@ namespace Bibloteka
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 492);
             this.panel1.TabIndex = 0;
+            // 
+            // btnSqXK
+            // 
+            this.btnSqXK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSqXK.Image = ((System.Drawing.Image)(resources.GetObject("btnSqXK.Image")));
+            this.btnSqXK.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSqXK.Location = new System.Drawing.Point(47, 459);
+            this.btnSqXK.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSqXK.Name = "btnSqXK";
+            this.btnSqXK.Size = new System.Drawing.Size(34, 22);
+            this.btnSqXK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSqXK.TabIndex = 8;
+            this.btnSqXK.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Poppins", 25.8F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(50, 206);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(208, 62);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Biblioteka";
+            // 
+            // btnEnUS
+            // 
+            this.btnEnUS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEnUS.Image = ((System.Drawing.Image)(resources.GetObject("btnEnUS.Image")));
+            this.btnEnUS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnEnUS.Location = new System.Drawing.Point(9, 459);
+            this.btnEnUS.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEnUS.Name = "btnEnUS";
+            this.btnEnUS.Size = new System.Drawing.Size(34, 22);
+            this.btnEnUS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnEnUS.TabIndex = 7;
+            this.btnEnUS.TabStop = false;
             // 
             // label4
             // 
@@ -149,19 +188,6 @@ namespace Bibloteka
             this.txtFjalekalimi.Size = new System.Drawing.Size(250, 34);
             this.txtFjalekalimi.TabIndex = 12;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 25.8F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(50, 206);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 62);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Bibloteka";
-            // 
             // btnKyqu
             // 
             this.btnKyqu.AnimationHoverSpeed = 0.07F;
@@ -183,7 +209,7 @@ namespace Bibloteka
             this.btnKyqu.ImageSize = new System.Drawing.Size(20, 20);
             this.btnKyqu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnKyqu.Location = new System.Drawing.Point(365, 356);
-            this.btnKyqu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKyqu.Margin = new System.Windows.Forms.Padding(2);
             this.btnKyqu.Name = "btnKyqu";
             this.btnKyqu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.btnKyqu.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -197,32 +223,6 @@ namespace Bibloteka
             this.btnKyqu.Text = "Kyqu";
             this.btnKyqu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnKyqu.Click += new System.EventHandler(this.btnKyqu_Click);
-            // 
-            // btnSqXK
-            // 
-            this.btnSqXK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSqXK.Image = ((System.Drawing.Image)(resources.GetObject("btnSqXK.Image")));
-            this.btnSqXK.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSqXK.Location = new System.Drawing.Point(47, 459);
-            this.btnSqXK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSqXK.Name = "btnSqXK";
-            this.btnSqXK.Size = new System.Drawing.Size(34, 22);
-            this.btnSqXK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnSqXK.TabIndex = 8;
-            this.btnSqXK.TabStop = false;
-            // 
-            // btnEnUS
-            // 
-            this.btnEnUS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEnUS.Image = ((System.Drawing.Image)(resources.GetObject("btnEnUS.Image")));
-            this.btnEnUS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnEnUS.Location = new System.Drawing.Point(9, 459);
-            this.btnEnUS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnEnUS.Name = "btnEnUS";
-            this.btnEnUS.Size = new System.Drawing.Size(34, 22);
-            this.btnEnUS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnEnUS.TabIndex = 7;
-            this.btnEnUS.TabStop = false;
             // 
             // chkMeMbajMend
             // 

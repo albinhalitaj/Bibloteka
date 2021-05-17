@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Bibloteka.BusinessObjects;
+using Dapper;
 
 namespace Bibloteka.DataAccessLayer
 {
@@ -138,6 +139,14 @@ namespace Bibloteka.DataAccessLayer
                 Console.WriteLine(e);
                 throw;
             }
+        }
+
+        public int Total()
+        {
+            int tot;
+            using (var con = DataAccessLayer.AppConnection())
+                tot = con.Query<int>("SELECT COUNT(*) FROM Kategoria").FirstOrDefault();
+            return tot;
         }
     }
 }
