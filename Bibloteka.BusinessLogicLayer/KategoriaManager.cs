@@ -23,5 +23,7 @@ namespace Bibloteka.BusinessLogicLayer
         public DataTable GetById(int id) => _context.GetCategoryById(id);
 
         public DataTable Load() => _context.GetAllCategories();
+
+        public DataTable Search(string query) => _context.SearchCategories(query);
     }
 }

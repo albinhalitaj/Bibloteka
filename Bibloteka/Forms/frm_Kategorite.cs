@@ -126,5 +126,36 @@ namespace Bibloteka.Forms
                 MessageBoxIcon.Information);
             LoadCategories();
         }
+
+        private void txtKerko_TextChanged(object sender, EventArgs e)
+        {
+            if (txtKerko.Text.Trim().Length != 0)
+            {
+                dgv_Kategorite.Rows.Clear();
+                try
+                {
+                    var dt = _kategoriaManager.Search(txtKerko.Text);
+                    if (dt.Rows.Count > 0)
+                    {
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            var categoryRow = new DataGridViewRow();
+                            categoryRow.CreateCells(dgv_Kategorite);
+                            categoryRow.Cells[0].Value = Convert.ToInt32(row[0]);
+                            categoryRow.Cells[1].Value = Convert.ToString(row[1]);
+                            categoryRow.Cells[2].Value = Convert.ToString(row[2]);
+                            dgv_Kategorite.Rows.Add(categoryRow);
+                        }
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(@"Ndodhi nje gabim. Ju lutem provoni perseri", @"Error", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+            else
+                LoadCategories();
+        }
     }
 }

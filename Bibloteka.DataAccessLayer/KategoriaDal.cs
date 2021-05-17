@@ -118,5 +118,26 @@ namespace Bibloteka.DataAccessLayer
                 throw;
             }
         }
+
+        public DataTable SearchCategories(string query)
+        {
+            try
+            {
+                using (var con = DataAccessLayer.AppConnection())
+                {
+                    var dt = new DataTable();
+                    var cmd = new SqlCommand("usp_SearchCategories", con) { CommandType = CommandType.StoredProcedure };
+                    cmd.Parameters.AddWithValue("@emertimi", query);
+                    var sda = new SqlDataAdapter(cmd);
+                    sda.Fill(dt);
+                    return dt;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
     }
 }
