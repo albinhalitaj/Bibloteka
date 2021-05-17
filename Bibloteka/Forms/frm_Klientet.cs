@@ -16,10 +16,5 @@ namespace Bibloteka.Forms
         {
             InitializeComponent();
         }
-
-        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
