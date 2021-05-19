@@ -178,7 +178,7 @@ namespace Bibloteka.Forms
             // 
             this.epKategorite.ContainerControl = this;
             // 
-            // frm_ShtoModifiko
+            // frm_Shto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,7 +191,9 @@ namespace Bibloteka.Forms
             this.Controls.Add(this.txtEmertimi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Name = "frm_ShtoModifiko";
+            this.MaximumSize = new System.Drawing.Size(415, 409);
+            this.MinimumSize = new System.Drawing.Size(415, 409);
+            this.Name = "frm_Shto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shto Kategori";
             ((System.ComponentModel.ISupportInitialize)(this.epKategorite)).EndInit();

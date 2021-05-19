@@ -69,6 +69,8 @@ namespace Bibloteka.Forms
 
         private void btnNdrysho_Click(object sender, EventArgs e)
         {
+            if (dgv_Kategorite.Rows.Count <= 0) return;
+            if (dgv_Kategorite.SelectedRows.Count != 1) return;
             var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
             var kategoria = new Kategoria()
             {

@@ -182,6 +182,7 @@ namespace Bibloteka.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(399, 370);
             this.Controls.Add(this.btnAnulo);
@@ -190,6 +191,8 @@ namespace Bibloteka.Forms
             this.Controls.Add(this.txtEmertimi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.MaximumSize = new System.Drawing.Size(415, 409);
+            this.MinimumSize = new System.Drawing.Size(415, 409);
             this.Name = "frm_Edito";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edito Kategori";
