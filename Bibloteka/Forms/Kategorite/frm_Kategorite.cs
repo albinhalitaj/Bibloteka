@@ -25,27 +25,11 @@ namespace Bibloteka.Forms
 
         private void btnShto_Click(object sender, EventArgs e)
         {
-            if (txtEmertimi.Text.Trim().Length == 0)
-                epKategorite.SetError(txtEmertimi, "Ju lutem shkruani emertimin e kategorisë!");
-            else
-            {
-                var kategoria = new Kategoria
-                {
-                    Emertimi = txtEmertimi.Text,
-                    Pershkrimi = txtPershkrimi.Text,
-                    InsertBy = _stafi.StafiId,
-                    InsertDate = DateTime.Now
-                };
-                _kategoriaManager.Add(kategoria);
-                MessageBox.Show(@"Kategoria u ruajt me sukses", @"Information", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-                LoadCategories();
-                ClearForm();
-                lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
-            }
+            var shto = new frm_Shto(this,_stafi);
+            shto.ShowDialog();
         }
 
-        private void LoadCategories()
+        public void LoadCategories()
         {
             dgv_Kategorite.Rows.Clear();
             var dt = _kategoriaManager.Load();
@@ -59,6 +43,7 @@ namespace Bibloteka.Forms
                 categoryRow.Cells[2].Value = Convert.ToString(kategori[2]);
                 dgv_Kategorite.Rows.Add(categoryRow);
             }
+            lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
         }
 
         private void frm_Kategorite_Load(object sender, EventArgs e)
@@ -67,43 +52,31 @@ namespace Bibloteka.Forms
             lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
         }
 
-        private void ClearForm()
-        {
-            txtEmertimi.Clear();
-            txtPershkrimi.Clear();
-            txtEmertimi.Focus();
-            epKategorite.Clear();
-        }
 
         private void dgv_Kategorite_DoubleClick(object sender, EventArgs e)
         {
             if (dgv_Kategorite.Rows.Count <= 0) return;
             if (dgv_Kategorite.SelectedRows.Count != 1) return;
-            txtEmertimi.Text = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[1].Value);
-            txtPershkrimi.Text = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[2].Value);
+            var kategoria = new Kategoria()
+            {
+                Emertimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[1].Value),
+                Pershkrimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[2].Value)
+            };
+            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
+            var shto = new frm_Edito(_stafi, this, id, kategoria);
+            shto.ShowDialog();
         }
 
         private void btnNdrysho_Click(object sender, EventArgs e)
         {
             var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
-            if (txtEmertimi.Text.Trim().Length == 0)
-                epKategorite.SetError(txtEmertimi, "Ju lutem shkruani emertimin e kategorisë!");
-            else
+            var kategoria = new Kategoria()
             {
-                var kategoria = new Kategoria
-                {
-                    Emertimi = txtEmertimi.Text,
-                    Pershkrimi = txtPershkrimi.Text,
-                    Lun = LastUpdatedNumber(id),
-                    Lud = DateTime.Now,
-                    Lub = _stafi.StafiId
-                };
-                _kategoriaManager.Update(id,kategoria);
-                MessageBox.Show(@"Kategoria u përditësua me sukses!", @"Information", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-                LoadCategories();
-                ClearForm();
-            }
+                Emertimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[1].Value),
+                Pershkrimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[2].Value)
+            };
+            var shto = new frm_Edito(_stafi, this,id,kategoria);
+            shto.ShowDialog();
         }
 
         public int LastUpdatedNumber(int id)

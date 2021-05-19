@@ -29,15 +29,10 @@ namespace Bibloteka.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblKategorite = new System.Windows.Forms.Label();
-            this.txtPershkrimi = new Guna.UI.WinForms.GunaTextBox();
-            this.txtEmertimi = new Guna.UI.WinForms.GunaTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnNdrysho = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -48,10 +43,8 @@ namespace Bibloteka.Forms
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.epKategorite = new System.Windows.Forms.ErrorProvider(this.components);
             this.lblTotalCategories = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Kategorite)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.epKategorite)).BeginInit();
             this.SuspendLayout();
             // 
             // lblKategorite
@@ -63,68 +56,6 @@ namespace Bibloteka.Forms
             this.lblKategorite.Size = new System.Drawing.Size(142, 42);
             this.lblKategorite.TabIndex = 1;
             this.lblKategorite.Text = "Kategoritë";
-            // 
-            // txtPershkrimi
-            // 
-            this.txtPershkrimi.BackColor = System.Drawing.Color.Transparent;
-            this.txtPershkrimi.BaseColor = System.Drawing.Color.White;
-            this.txtPershkrimi.BorderColor = System.Drawing.Color.Gray;
-            this.txtPershkrimi.BorderSize = 1;
-            this.txtPershkrimi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPershkrimi.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtPershkrimi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtPershkrimi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtPershkrimi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPershkrimi.Location = new System.Drawing.Point(46, 255);
-            this.txtPershkrimi.Name = "txtPershkrimi";
-            this.txtPershkrimi.PasswordChar = '\0';
-            this.txtPershkrimi.Radius = 3;
-            this.txtPershkrimi.SelectedText = "";
-            this.txtPershkrimi.Size = new System.Drawing.Size(250, 34);
-            this.txtPershkrimi.TabIndex = 16;
-            // 
-            // txtEmertimi
-            // 
-            this.txtEmertimi.BackColor = System.Drawing.Color.Transparent;
-            this.txtEmertimi.BaseColor = System.Drawing.Color.White;
-            this.txtEmertimi.BorderColor = System.Drawing.Color.Gray;
-            this.txtEmertimi.BorderSize = 1;
-            this.txtEmertimi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmertimi.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtEmertimi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtEmertimi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtEmertimi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmertimi.Location = new System.Drawing.Point(46, 150);
-            this.txtEmertimi.Name = "txtEmertimi";
-            this.txtEmertimi.PasswordChar = '\0';
-            this.txtEmertimi.Radius = 3;
-            this.txtEmertimi.SelectedText = "";
-            this.txtEmertimi.Size = new System.Drawing.Size(250, 34);
-            this.txtEmertimi.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(41, 227);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 25);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Përshkrimi";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(41, 121);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "*Emërtimi";
             // 
             // panel1
             // 
@@ -154,7 +85,7 @@ namespace Bibloteka.Forms
             this.btnShto.Image = null;
             this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
             this.btnShto.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnShto.Location = new System.Drawing.Point(349, 255);
+            this.btnShto.Location = new System.Drawing.Point(46, 112);
             this.btnShto.Margin = new System.Windows.Forms.Padding(2);
             this.btnShto.Name = "btnShto";
             this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -190,7 +121,7 @@ namespace Bibloteka.Forms
             this.btnNdrysho.Image = null;
             this.btnNdrysho.ImageSize = new System.Drawing.Size(20, 20);
             this.btnNdrysho.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnNdrysho.Location = new System.Drawing.Point(456, 255);
+            this.btnNdrysho.Location = new System.Drawing.Point(150, 112);
             this.btnNdrysho.Margin = new System.Windows.Forms.Padding(2);
             this.btnNdrysho.Name = "btnNdrysho";
             this.btnNdrysho.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -226,7 +157,7 @@ namespace Bibloteka.Forms
             this.btnFshi.Image = null;
             this.btnFshi.ImageSize = new System.Drawing.Size(20, 20);
             this.btnFshi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnFshi.Location = new System.Drawing.Point(565, 255);
+            this.btnFshi.Location = new System.Drawing.Point(263, 112);
             this.btnFshi.Margin = new System.Windows.Forms.Padding(2);
             this.btnFshi.Name = "btnFshi";
             this.btnFshi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -248,7 +179,7 @@ namespace Bibloteka.Forms
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 10.2F);
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(586, 355);
+            this.label5.Location = new System.Drawing.Point(586, 116);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 25);
@@ -267,7 +198,7 @@ namespace Bibloteka.Forms
             this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtKerko.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKerko.Location = new System.Drawing.Point(656, 351);
+            this.txtKerko.Location = new System.Drawing.Point(656, 112);
             this.txtKerko.Name = "txtKerko";
             this.txtKerko.PasswordChar = '\0';
             this.txtKerko.Radius = 3;
@@ -315,12 +246,12 @@ namespace Bibloteka.Forms
             this.dgv_Kategorite.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Kategorite.EnableHeadersVisualStyles = false;
             this.dgv_Kategorite.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Kategorite.Location = new System.Drawing.Point(46, 413);
+            this.dgv_Kategorite.Location = new System.Drawing.Point(46, 176);
             this.dgv_Kategorite.Name = "dgv_Kategorite";
             this.dgv_Kategorite.ReadOnly = true;
             this.dgv_Kategorite.RowHeadersVisible = false;
             this.dgv_Kategorite.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Kategorite.Size = new System.Drawing.Size(860, 239);
+            this.dgv_Kategorite.Size = new System.Drawing.Size(860, 507);
             this.dgv_Kategorite.TabIndex = 24;
             this.dgv_Kategorite.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgv_Kategorite.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -364,10 +295,6 @@ namespace Bibloteka.Forms
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
-            // epKategorite
-            // 
-            this.epKategorite.ContainerControl = this;
-            // 
             // lblTotalCategories
             // 
             this.lblTotalCategories.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -395,17 +322,12 @@ namespace Bibloteka.Forms
             this.Controls.Add(this.btnNdrysho);
             this.Controls.Add(this.btnShto);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtPershkrimi);
-            this.Controls.Add(this.txtEmertimi);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblKategorite);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Kategorite";
             this.Text = "frm_Kategorite";
             this.Load += new System.EventHandler(this.frm_Kategorite_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Kategorite)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.epKategorite)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,10 +336,6 @@ namespace Bibloteka.Forms
         #endregion
 
         private System.Windows.Forms.Label lblKategorite;
-        private Guna.UI.WinForms.GunaTextBox txtPershkrimi;
-        private Guna.UI.WinForms.GunaTextBox txtEmertimi;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI.WinForms.GunaAdvenceButton btnShto;
         private Guna.UI.WinForms.GunaAdvenceButton btnNdrysho;
@@ -428,7 +346,6 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.ErrorProvider epKategorite;
         private System.Windows.Forms.Label lblTotalCategories;
     }
 }

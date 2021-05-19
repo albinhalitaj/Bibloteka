@@ -57,16 +57,22 @@
     <Compile Include="Forms\frm_Ballina.Designer.cs">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Kategorite\frm_Edito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Kategorite\frm_Edito.Designer.cs">
+      <DependentUpon>frm_Edito.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frm_Huazimet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_Huazimet.Designer.cs">
       <DependentUpon>frm_Huazimet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frm_Kategorite.cs">
+    <Compile Include="Forms\Kategorite\frm_Kategorite.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_Kategorite.Designer.cs">
+    <Compile Include="Forms\Kategorite\frm_Kategorite.Designer.cs">
       <DependentUpon>frm_Kategorite.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_Klientet.cs">
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="Forms\frm_Librat.Designer.cs">
       <DependentUpon>frm_Librat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Kategorite\frm_Shto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Kategorite\frm_Shto.Designer.cs">
+      <DependentUpon>frm_Shto.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_Stafi.cs">
       <SubType>Form</SubType>
@@ -110,10 +122,13 @@
     <EmbeddedResource Include="Forms\frm_Ballina.resx">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kategorite\frm_Edito.resx">
+      <DependentUpon>frm_Edito.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_Huazimet.resx">
       <DependentUpon>frm_Huazimet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_Kategorite.resx">
+    <EmbeddedResource Include="Forms\Kategorite\frm_Kategorite.resx">
       <DependentUpon>frm_Kategorite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_Klientet.resx">
@@ -124,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_Librat.resx">
       <DependentUpon>frm_Librat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kategorite\frm_Shto.resx">
+      <DependentUpon>frm_Shto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_Stafi.resx">
       <DependentUpon>frm_Stafi.cs</DependentUpon>
