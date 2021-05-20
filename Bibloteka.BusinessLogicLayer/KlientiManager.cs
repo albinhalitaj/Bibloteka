@@ -15,5 +15,7 @@ namespace Bibloteka.BusinessLogicLayer
         public KlientiManager() => _klientiDal = new KlientiDal();
         public void Add(Klienti klienti) => _klientiDal.ShtoKlient(klienti);
         public DataTable Load() => _klientiDal.GetAllKlients();
+        public void Remove(string id) => _klientiDal.FshiKlient(id);
+        public int Count() => _klientiDal.TotalKlients();
     }
 }

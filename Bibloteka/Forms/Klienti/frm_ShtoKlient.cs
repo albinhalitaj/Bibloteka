@@ -98,5 +98,7 @@ namespace Bibloteka.Forms
             comboShteti.SelectedIndex = 0;
             comboQyteti.SelectedIndex = 0;
         }
+
+        private void btnAnulo_Click(object sender, EventArgs e) => Close();
     }
 }

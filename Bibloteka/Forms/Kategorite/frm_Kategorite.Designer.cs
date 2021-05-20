@@ -301,7 +301,7 @@ namespace Bibloteka.Forms
             this.lblTotalCategories.AutoSize = true;
             this.lblTotalCategories.Font = new System.Drawing.Font("Poppins", 10.2F);
             this.lblTotalCategories.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblTotalCategories.Location = new System.Drawing.Point(41, 655);
+            this.lblTotalCategories.Location = new System.Drawing.Point(56, 646);
             this.lblTotalCategories.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalCategories.Name = "lblTotalCategories";
             this.lblTotalCategories.Size = new System.Drawing.Size(110, 25);

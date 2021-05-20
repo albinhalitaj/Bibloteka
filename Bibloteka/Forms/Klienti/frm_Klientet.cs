@@ -56,6 +56,22 @@ namespace Bibloteka.Forms
             }
         }
 
-        private void frm_Klientet_Load(object sender, EventArgs e) => LoadKlients();
+        private void frm_Klientet_Load(object sender, EventArgs e)
+        {
+            lblTotalKlients.Text = @"Total Klientë: " + _klientiManager.Count();
+            LoadKlients();
+        }
+
+        private void btnFshi_Click(object sender, EventArgs e)
+        {
+            var id = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[0].Value);
+            if (dgv_Klientet.SelectedRows.Count != 1) return;
+            if (MessageBox.Show(@"A jeni i sigurt që doni ta fshihni këtë klient?", @"Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
+            _klientiManager.Remove(id);
+            MessageBox.Show(@"Klienti u fshi me sukses!", @"Information", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            LoadKlients();
+        }
     }
 }

@@ -48,12 +48,14 @@ namespace Bibloteka
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
             this.Wrapper = new System.Windows.Forms.Panel();
+            this.panelSeperator = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.Wrapper.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,7 +76,7 @@ namespace Bibloteka
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(259, 802);
+            this.panel1.Size = new System.Drawing.Size(259, 834);
             this.panel1.TabIndex = 1;
             // 
             // btnLogout
@@ -82,7 +84,7 @@ namespace Bibloteka
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(207, 747);
+            this.btnLogout.Location = new System.Drawing.Point(207, 779);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(30, 27);
             this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -96,7 +98,7 @@ namespace Bibloteka
             this.lblPunetori.AutoSize = true;
             this.lblPunetori.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPunetori.ForeColor = System.Drawing.Color.White;
-            this.lblPunetori.Location = new System.Drawing.Point(60, 749);
+            this.lblPunetori.Location = new System.Drawing.Point(60, 781);
             this.lblPunetori.Name = "lblPunetori";
             this.lblPunetori.Size = new System.Drawing.Size(54, 28);
             this.lblPunetori.TabIndex = 17;
@@ -107,7 +109,7 @@ namespace Bibloteka
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 740);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 772);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -464,9 +466,9 @@ namespace Bibloteka
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox3.Location = new System.Drawing.Point(37, 20);
+            this.pictureBox3.Location = new System.Drawing.Point(374, 22);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(29, 29);
+            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -475,37 +477,48 @@ namespace Bibloteka
             // 
             this.txtKerko.BackColor = System.Drawing.Color.Transparent;
             this.txtKerko.BaseColor = System.Drawing.Color.White;
-            this.txtKerko.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.txtKerko.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
             this.txtKerko.BorderSize = 1;
             this.txtKerko.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;
             this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtKerko.Font = new System.Drawing.Font("Poppins", 9F);
-            this.txtKerko.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtKerko.Location = new System.Drawing.Point(72, 18);
+            this.txtKerko.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKerko.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.txtKerko.Location = new System.Drawing.Point(44, 17);
             this.txtKerko.Name = "txtKerko";
             this.txtKerko.PasswordChar = '\0';
-            this.txtKerko.Radius = 3;
+            this.txtKerko.Radius = 15;
             this.txtKerko.SelectedText = "";
-            this.txtKerko.Size = new System.Drawing.Size(400, 33);
+            this.txtKerko.Size = new System.Drawing.Size(364, 33);
             this.txtKerko.TabIndex = 0;
-            this.txtKerko.Text = "Kerko ....";
+            this.txtKerko.Text = "Kërko këtu ....";
+            this.txtKerko.TextOffsetX = 15;
             // 
             // Wrapper
             // 
             this.Wrapper.BackColor = System.Drawing.Color.White;
+            this.Wrapper.Controls.Add(this.panelSeperator);
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(259, 76);
             this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(1069, 726);
+            this.Wrapper.Size = new System.Drawing.Size(1069, 758);
             this.Wrapper.TabIndex = 3;
+            // 
+            // panelSeperator
+            // 
+            this.panelSeperator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
+            this.panelSeperator.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSeperator.Location = new System.Drawing.Point(0, 0);
+            this.panelSeperator.Name = "panelSeperator";
+            this.panelSeperator.Size = new System.Drawing.Size(1069, 2);
+            this.panelSeperator.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1328, 802);
+            this.ClientSize = new System.Drawing.Size(1328, 834);
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -524,6 +537,7 @@ namespace Bibloteka
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Wrapper.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -548,5 +562,6 @@ namespace Bibloteka
         private System.Windows.Forms.Label lblPunetori;
         private System.Windows.Forms.Panel Wrapper;
         private System.Windows.Forms.PictureBox btnLogout;
+        private System.Windows.Forms.Panel panelSeperator;
     }
 }

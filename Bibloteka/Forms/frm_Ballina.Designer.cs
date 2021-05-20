@@ -36,15 +36,19 @@ namespace Bibloteka.Forms
             this.lblWelcome = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblKthimet = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblHuazimet = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblLibrat = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblKlientet = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
@@ -61,10 +65,6 @@ namespace Bibloteka.Forms
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -113,7 +113,7 @@ namespace Bibloteka.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.lblKthimet);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(747, 3);
@@ -121,6 +121,18 @@ namespace Bibloteka.Forms
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(217, 132);
             this.panel4.TabIndex = 3;
+            // 
+            // lblKthimet
+            // 
+            this.lblKthimet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblKthimet.AutoSize = true;
+            this.lblKthimet.BackColor = System.Drawing.Color.Transparent;
+            this.lblKthimet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKthimet.Location = new System.Drawing.Point(154, 32);
+            this.lblKthimet.Name = "lblKthimet";
+            this.lblKthimet.Size = new System.Drawing.Size(46, 48);
+            this.lblKthimet.TabIndex = 9;
+            this.lblKthimet.Text = "15";
             // 
             // pictureBox1
             // 
@@ -152,7 +164,7 @@ namespace Bibloteka.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.lblHuazimet);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(499, 3);
@@ -160,6 +172,18 @@ namespace Bibloteka.Forms
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(215, 132);
             this.panel3.TabIndex = 2;
+            // 
+            // lblHuazimet
+            // 
+            this.lblHuazimet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHuazimet.AutoSize = true;
+            this.lblHuazimet.BackColor = System.Drawing.Color.Transparent;
+            this.lblHuazimet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHuazimet.Location = new System.Drawing.Point(150, 32);
+            this.lblHuazimet.Name = "lblHuazimet";
+            this.lblHuazimet.Size = new System.Drawing.Size(54, 48);
+            this.lblHuazimet.TabIndex = 8;
+            this.lblHuazimet.Text = "45";
             // 
             // pictureBox4
             // 
@@ -191,7 +215,7 @@ namespace Bibloteka.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.lblLibrat);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(251, 3);
@@ -199,6 +223,18 @@ namespace Bibloteka.Forms
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(215, 132);
             this.panel2.TabIndex = 1;
+            // 
+            // lblLibrat
+            // 
+            this.lblLibrat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLibrat.AutoSize = true;
+            this.lblLibrat.BackColor = System.Drawing.Color.Transparent;
+            this.lblLibrat.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLibrat.Location = new System.Drawing.Point(140, 32);
+            this.lblLibrat.Name = "lblLibrat";
+            this.lblLibrat.Size = new System.Drawing.Size(53, 48);
+            this.lblLibrat.TabIndex = 7;
+            this.lblLibrat.Text = "35";
             // 
             // pictureBox3
             // 
@@ -230,7 +266,7 @@ namespace Bibloteka.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.lblKlientet);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -238,6 +274,18 @@ namespace Bibloteka.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 132);
             this.panel1.TabIndex = 0;
+            // 
+            // lblKlientet
+            // 
+            this.lblKlientet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblKlientet.AutoSize = true;
+            this.lblKlientet.BackColor = System.Drawing.Color.Transparent;
+            this.lblKlientet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKlientet.Location = new System.Drawing.Point(147, 32);
+            this.lblKlientet.Name = "lblKlientet";
+            this.lblKlientet.Size = new System.Drawing.Size(53, 48);
+            this.lblKlientet.TabIndex = 6;
+            this.lblKlientet.Text = "20";
             // 
             // pictureBox2
             // 
@@ -425,54 +473,6 @@ namespace Bibloteka.Forms
             this.label5.TabIndex = 13;
             this.label5.Text = "Kërkoni:";
             // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(147, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 48);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "20";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(140, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 48);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "35";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(150, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 48);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "45";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(154, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 48);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "15";
-            // 
             // frm_Ballina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,9 +537,9 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblKthimet;
+        private System.Windows.Forms.Label lblHuazimet;
+        private System.Windows.Forms.Label lblLibrat;
+        private System.Windows.Forms.Label lblKlientet;
     }
 }
