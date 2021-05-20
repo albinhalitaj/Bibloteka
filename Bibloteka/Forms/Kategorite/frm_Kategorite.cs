@@ -23,12 +23,6 @@ namespace Bibloteka.Forms
             InitializeComponent();
         }
 
-        private void btnShto_Click(object sender, EventArgs e)
-        {
-            var shto = new frm_Shto(this,_stafi);
-            shto.ShowDialog();
-        }
-
         public void LoadCategories()
         {
             dgv_Kategorite.Rows.Clear();
@@ -41,6 +35,8 @@ namespace Bibloteka.Forms
                 categoryRow.Cells[0].Value = Convert.ToInt32(kategori[0]);
                 categoryRow.Cells[1].Value = Convert.ToString(kategori[1]);
                 categoryRow.Cells[2].Value = Convert.ToString(kategori[2]);
+                categoryRow.Cells[3].Value = imageList1.Images[0];
+                categoryRow.Cells[4].Value = imageList1.Images[1];
                 dgv_Kategorite.Rows.Add(categoryRow);
             }
             lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
@@ -53,19 +49,7 @@ namespace Bibloteka.Forms
         }
 
 
-        private void dgv_Kategorite_DoubleClick(object sender, EventArgs e)
-        { 
-            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
-            var shto = new frm_Edito(_stafi, this, id, GetSelectedCategory());
-            shto.ShowDialog();
-        }
-
-        private void btnNdrysho_Click(object sender, EventArgs e)
-        {
-            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
-            var shto = new frm_Edito(_stafi, this,id,GetSelectedCategory());
-            shto.ShowDialog();
-        }
+        private void dgv_Kategorite_DoubleClick(object sender, EventArgs e) => NdryshoKategori();
 
         private Kategoria GetSelectedCategory()
         {
@@ -80,7 +64,6 @@ namespace Bibloteka.Forms
             return kategoria;
         }
 
-
         public int LastUpdatedNumber(int id)
         {
             var lun = string.Empty;
@@ -92,9 +75,9 @@ namespace Bibloteka.Forms
             return n;
         }
 
-        private void btnFshi_Click(object sender, EventArgs e)
+        private void FshiKategori()
         {
-            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
+             var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
             if (dgv_Kategorite.SelectedRows.Count != 1) return;
             if (MessageBox.Show(@"A jeni i sigurt që doni ta fshihni këtë kategori?", @"Warning",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
@@ -103,6 +86,13 @@ namespace Bibloteka.Forms
                 MessageBoxIcon.Information);
             LoadCategories();
             lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
+        }
+
+        private void NdryshoKategori()
+        {
+            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
+            var shto = new frm_Edito(_stafi, this, id, GetSelectedCategory());
+            shto.ShowDialog();
         }
 
         private void txtKerko_TextChanged(object sender, EventArgs e)
@@ -122,6 +112,8 @@ namespace Bibloteka.Forms
                             categoryRow.Cells[0].Value = Convert.ToInt32(row[0]);
                             categoryRow.Cells[1].Value = Convert.ToString(row[1]);
                             categoryRow.Cells[2].Value = Convert.ToString(row[2]);
+                            categoryRow.Cells[3].Value = imageList1.Images[0];
+                            categoryRow.Cells[4].Value = imageList1.Images[1];
                             dgv_Kategorite.Rows.Add(categoryRow);
                         }
                     }
@@ -134,6 +126,19 @@ namespace Bibloteka.Forms
             }
             else
                 LoadCategories();
+        }
+
+        private void dgv_Kategorite_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgv_Kategorite.CurrentCell.ColumnIndex.Equals(3)) NdryshoKategori();
+
+            if (dgv_Kategorite.CurrentCell.ColumnIndex.Equals(4)) FshiKategori();
+        }
+
+        private void btnShto_Click(object sender, EventArgs e)
+        {
+            var shto = new frm_Shto(this, _stafi);
+            shto.ShowDialog();
         }
     }
 }

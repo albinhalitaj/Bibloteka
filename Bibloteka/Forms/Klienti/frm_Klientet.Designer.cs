@@ -51,8 +51,8 @@ namespace Bibloteka.Forms
             this.btnNdrysho = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.lblKategorite = new System.Windows.Forms.Label();
             this.lblTotalKlients = new System.Windows.Forms.Label();
+            this.lblKategorite = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Klientet)).BeginInit();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -105,12 +105,12 @@ namespace Bibloteka.Forms
             this.dgv_Klientet.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Klientet.EnableHeadersVisualStyles = false;
             this.dgv_Klientet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Klientet.Location = new System.Drawing.Point(37, 105);
+            this.dgv_Klientet.Location = new System.Drawing.Point(37, 101);
             this.dgv_Klientet.Name = "dgv_Klientet";
             this.dgv_Klientet.ReadOnly = true;
             this.dgv_Klientet.RowHeadersVisible = false;
             this.dgv_Klientet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Klientet.Size = new System.Drawing.Size(987, 491);
+            this.dgv_Klientet.Size = new System.Drawing.Size(987, 494);
             this.dgv_Klientet.TabIndex = 23;
             this.dgv_Klientet.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgv_Klientet.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -213,7 +213,7 @@ namespace Bibloteka.Forms
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 10.2F);
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(704, 54);
+            this.label5.Location = new System.Drawing.Point(704, 46);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 25);
@@ -232,7 +232,7 @@ namespace Bibloteka.Forms
             this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtKerko.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKerko.Location = new System.Drawing.Point(774, 50);
+            this.txtKerko.Location = new System.Drawing.Point(774, 42);
             this.txtKerko.Name = "txtKerko";
             this.txtKerko.PasswordChar = '\0';
             this.txtKerko.Radius = 3;
@@ -260,7 +260,7 @@ namespace Bibloteka.Forms
             this.btnFshi.Image = null;
             this.btnFshi.ImageSize = new System.Drawing.Size(20, 20);
             this.btnFshi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnFshi.Location = new System.Drawing.Point(250, 45);
+            this.btnFshi.Location = new System.Drawing.Point(250, 37);
             this.btnFshi.Margin = new System.Windows.Forms.Padding(2);
             this.btnFshi.Name = "btnFshi";
             this.btnFshi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -296,7 +296,7 @@ namespace Bibloteka.Forms
             this.btnNdrysho.Image = null;
             this.btnNdrysho.ImageSize = new System.Drawing.Size(20, 20);
             this.btnNdrysho.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnNdrysho.Location = new System.Drawing.Point(138, 45);
+            this.btnNdrysho.Location = new System.Drawing.Point(138, 37);
             this.btnNdrysho.Margin = new System.Windows.Forms.Padding(2);
             this.btnNdrysho.Name = "btnNdrysho";
             this.btnNdrysho.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -331,7 +331,7 @@ namespace Bibloteka.Forms
             this.btnShto.Image = null;
             this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
             this.btnShto.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnShto.Location = new System.Drawing.Point(37, 45);
+            this.btnShto.Location = new System.Drawing.Point(37, 37);
             this.btnShto.Margin = new System.Windows.Forms.Padding(2);
             this.btnShto.Name = "btnShto";
             this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -359,19 +359,33 @@ namespace Bibloteka.Forms
             this.gunaGroupBox1.Controls.Add(this.lblTotalKlients);
             this.gunaGroupBox1.Controls.Add(this.btnFshi);
             this.gunaGroupBox1.Controls.Add(this.label5);
-            this.gunaGroupBox1.Controls.Add(this.btnShto);
             this.gunaGroupBox1.Controls.Add(this.txtKerko);
+            this.gunaGroupBox1.Controls.Add(this.btnShto);
             this.gunaGroupBox1.Controls.Add(this.btnNdrysho);
             this.gunaGroupBox1.Controls.Add(this.dgv_Klientet);
             this.gunaGroupBox1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.LineTop = 0;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(37, 100);
+            this.gunaGroupBox1.Location = new System.Drawing.Point(37, 101);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
             this.gunaGroupBox1.Radius = 5;
-            this.gunaGroupBox1.Size = new System.Drawing.Size(1062, 639);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(1062, 638);
             this.gunaGroupBox1.TabIndex = 29;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
+            // 
+            // lblTotalKlients
+            // 
+            this.lblTotalKlients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotalKlients.AutoSize = true;
+            this.lblTotalKlients.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalKlients.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblTotalKlients.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTotalKlients.Location = new System.Drawing.Point(32, 598);
+            this.lblTotalKlients.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalKlients.Name = "lblTotalKlients";
+            this.lblTotalKlients.Size = new System.Drawing.Size(110, 26);
+            this.lblTotalKlients.TabIndex = 29;
+            this.lblTotalKlients.Text = "Total Klientë:";
             // 
             // lblKategorite
             // 
@@ -382,20 +396,6 @@ namespace Bibloteka.Forms
             this.lblKategorite.Size = new System.Drawing.Size(107, 42);
             this.lblKategorite.TabIndex = 30;
             this.lblKategorite.Text = "Klientët";
-            // 
-            // lblTotalKlients
-            // 
-            this.lblTotalKlients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblTotalKlients.AutoSize = true;
-            this.lblTotalKlients.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalKlients.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblTotalKlients.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblTotalKlients.Location = new System.Drawing.Point(32, 599);
-            this.lblTotalKlients.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalKlients.Name = "lblTotalKlients";
-            this.lblTotalKlients.Size = new System.Drawing.Size(110, 26);
-            this.lblTotalKlients.TabIndex = 29;
-            this.lblTotalKlients.Text = "Total Klientë:";
             // 
             // frm_Klientet
             // 
