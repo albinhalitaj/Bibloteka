@@ -35,11 +35,6 @@ namespace Bibloteka.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblKategorite = new System.Windows.Forms.Label();
             this.dgv_Klientet = new Guna.UI.WinForms.GunaDataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
-            this.btnFshi = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnNdrysho = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMbiemri = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +47,11 @@ namespace Bibloteka.Forms
             this.colShteti = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colKodiPostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmaili = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
+            this.btnFshi = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnNdrysho = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Klientet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,6 +150,78 @@ namespace Bibloteka.Forms
             this.dgv_Klientet.ThemeStyle.RowsStyle.Height = 22;
             this.dgv_Klientet.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Klientet.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // colID
+            // 
+            this.colID.HeaderText = "KlientiID";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            // 
+            // colEmri
+            // 
+            this.colEmri.HeaderText = "Emri";
+            this.colEmri.Name = "colEmri";
+            this.colEmri.ReadOnly = true;
+            // 
+            // colMbiemri
+            // 
+            this.colMbiemri.HeaderText = "Mbiemri";
+            this.colMbiemri.Name = "colMbiemri";
+            this.colMbiemri.ReadOnly = true;
+            // 
+            // colDatalindjes
+            // 
+            this.colDatalindjes.HeaderText = "Datalindjes";
+            this.colDatalindjes.Name = "colDatalindjes";
+            this.colDatalindjes.ReadOnly = true;
+            // 
+            // colGjinia
+            // 
+            this.colGjinia.HeaderText = "Gjinia";
+            this.colGjinia.Name = "colGjinia";
+            this.colGjinia.ReadOnly = true;
+            // 
+            // colNrPersonal
+            // 
+            this.colNrPersonal.HeaderText = "NrPersonal";
+            this.colNrPersonal.Name = "colNrPersonal";
+            this.colNrPersonal.ReadOnly = true;
+            // 
+            // NrKontaktues
+            // 
+            this.NrKontaktues.HeaderText = "NrKontaktues";
+            this.NrKontaktues.Name = "NrKontaktues";
+            this.NrKontaktues.ReadOnly = true;
+            // 
+            // colAdresa
+            // 
+            this.colAdresa.HeaderText = "Adresa";
+            this.colAdresa.Name = "colAdresa";
+            this.colAdresa.ReadOnly = true;
+            // 
+            // colQyteti
+            // 
+            this.colQyteti.HeaderText = "Qyteti";
+            this.colQyteti.Name = "colQyteti";
+            this.colQyteti.ReadOnly = true;
+            // 
+            // colShteti
+            // 
+            this.colShteti.HeaderText = "Shteti";
+            this.colShteti.Name = "colShteti";
+            this.colShteti.ReadOnly = true;
+            // 
+            // colKodiPostal
+            // 
+            this.colKodiPostal.HeaderText = "KodiPostal";
+            this.colKodiPostal.Name = "colKodiPostal";
+            this.colKodiPostal.ReadOnly = true;
+            // 
+            // colEmaili
+            // 
+            this.colEmaili.HeaderText = "Emaili";
+            this.colEmaili.Name = "colEmaili";
+            this.colEmaili.ReadOnly = true;
             // 
             // label5
             // 
@@ -288,78 +360,7 @@ namespace Bibloteka.Forms
             this.btnShto.TabIndex = 24;
             this.btnShto.Text = "Shto";
             this.btnShto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // colID
-            // 
-            this.colID.HeaderText = "KlientiID";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            // 
-            // colEmri
-            // 
-            this.colEmri.HeaderText = "Emri";
-            this.colEmri.Name = "colEmri";
-            this.colEmri.ReadOnly = true;
-            // 
-            // colMbiemri
-            // 
-            this.colMbiemri.HeaderText = "Mbiemri";
-            this.colMbiemri.Name = "colMbiemri";
-            this.colMbiemri.ReadOnly = true;
-            // 
-            // colDatalindjes
-            // 
-            this.colDatalindjes.HeaderText = "Datalindjes";
-            this.colDatalindjes.Name = "colDatalindjes";
-            this.colDatalindjes.ReadOnly = true;
-            // 
-            // colGjinia
-            // 
-            this.colGjinia.HeaderText = "Gjinia";
-            this.colGjinia.Name = "colGjinia";
-            this.colGjinia.ReadOnly = true;
-            // 
-            // colNrPersonal
-            // 
-            this.colNrPersonal.HeaderText = "NrPersonal";
-            this.colNrPersonal.Name = "colNrPersonal";
-            this.colNrPersonal.ReadOnly = true;
-            // 
-            // NrKontaktues
-            // 
-            this.NrKontaktues.HeaderText = "NrKontaktues";
-            this.NrKontaktues.Name = "NrKontaktues";
-            this.NrKontaktues.ReadOnly = true;
-            // 
-            // colAdresa
-            // 
-            this.colAdresa.HeaderText = "Adresa";
-            this.colAdresa.Name = "colAdresa";
-            this.colAdresa.ReadOnly = true;
-            // 
-            // colQyteti
-            // 
-            this.colQyteti.HeaderText = "Qyteti";
-            this.colQyteti.Name = "colQyteti";
-            this.colQyteti.ReadOnly = true;
-            // 
-            // colShteti
-            // 
-            this.colShteti.HeaderText = "Shteti";
-            this.colShteti.Name = "colShteti";
-            this.colShteti.ReadOnly = true;
-            // 
-            // colKodiPostal
-            // 
-            this.colKodiPostal.HeaderText = "KodiPostal";
-            this.colKodiPostal.Name = "colKodiPostal";
-            this.colKodiPostal.ReadOnly = true;
-            // 
-            // colEmaili
-            // 
-            this.colEmaili.HeaderText = "Emaili";
-            this.colEmaili.Name = "colEmaili";
-            this.colEmaili.ReadOnly = true;
+            this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
             // 
             // frm_Klientet
             // 
@@ -378,6 +379,7 @@ namespace Bibloteka.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Klientet";
             this.Text = "frm_Klientet";
+            this.Load += new System.EventHandler(this.frm_Klientet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Klientet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

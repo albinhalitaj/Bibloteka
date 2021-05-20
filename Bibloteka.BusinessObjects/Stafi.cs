@@ -32,7 +32,7 @@ namespace Bibloteka.BusinessObjects
 
         public string Emaili { get; set; }
 
-        public string InsertBy { get; set; }
+        public int InsertBy { get; set; }
 
         public DateTime? InsertDate { get; set; }
 

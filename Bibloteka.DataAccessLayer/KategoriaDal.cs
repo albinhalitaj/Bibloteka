@@ -59,7 +59,6 @@ namespace Bibloteka.DataAccessLayer
             }
         }
 
-
         public void FshiKategori(int id)
         {
             try
@@ -107,7 +106,7 @@ namespace Bibloteka.DataAccessLayer
                 using (var con = DataAccessLayer.AppConnection())
                 {
                     var dt = new DataTable();
-                    var cmd = new SqlCommand("SELECT * FROM [Kategoria]", con) {CommandType = CommandType.Text};
+                    var cmd = new SqlCommand("usp_GetCategories", con) {CommandType = CommandType.StoredProcedure};
                     var sda = new SqlDataAdapter(cmd);
                     sda.Fill(dt);
                     return dt;

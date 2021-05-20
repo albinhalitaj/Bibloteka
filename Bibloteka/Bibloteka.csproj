@@ -57,6 +57,12 @@
     <Compile Include="Forms\frm_Ballina.Designer.cs">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Klienti\frm_ShtoKlient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Klienti\frm_ShtoKlient.Designer.cs">
+      <DependentUpon>frm_ShtoKlient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Kategorite\frm_Edito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,10 +81,10 @@
     <Compile Include="Forms\Kategorite\frm_Kategorite.Designer.cs">
       <DependentUpon>frm_Kategorite.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frm_Klientet.cs">
+    <Compile Include="Forms\Klienti\frm_Klientet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_Klientet.Designer.cs">
+    <Compile Include="Forms\Klienti\frm_Klientet.Designer.cs">
       <DependentUpon>frm_Klientet.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_Kthimet.cs">
@@ -122,6 +128,9 @@
     <EmbeddedResource Include="Forms\frm_Ballina.resx">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klienti\frm_ShtoKlient.resx">
+      <DependentUpon>frm_ShtoKlient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Kategorite\frm_Edito.resx">
       <DependentUpon>frm_Edito.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,7 +140,7 @@
     <EmbeddedResource Include="Forms\Kategorite\frm_Kategorite.resx">
       <DependentUpon>frm_Kategorite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_Klientet.resx">
+    <EmbeddedResource Include="Forms\Klienti\frm_Klientet.resx">
       <DependentUpon>frm_Klientet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_Kthimet.resx">

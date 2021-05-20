@@ -51,7 +51,7 @@ namespace Bibloteka
 
         private void btnKategorite_Click(object sender, EventArgs e) => OpenForm(new frm_Kategorite(_perdoruesi.Stafi));
 
-        private void btnKlientet_Click(object sender, EventArgs e) => OpenForm(new frm_Klientet());
+        private void btnKlientet_Click(object sender, EventArgs e) => OpenForm(new frm_Klientet(_perdoruesi.Stafi));
 
         private void btnKthimet_Click(object sender, EventArgs e) => OpenForm(new frm_Kthimet());
 
