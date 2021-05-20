@@ -48,9 +48,6 @@ namespace Bibloteka.Forms
             lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
         }
 
-
-        private void dgv_Kategorite_DoubleClick(object sender, EventArgs e) => NdryshoKategori();
-
         private Kategoria GetSelectedCategory()
         {
             if (dgv_Kategorite.Rows.Count <= 0) return null;
@@ -95,6 +92,22 @@ namespace Bibloteka.Forms
             shto.ShowDialog();
         }
 
+
+        private void btnShto_Click(object sender, EventArgs e)
+        {
+            var shto = new frm_Shto(this, _stafi);
+            shto.ShowDialog();
+        }
+
+        private void dgv_Kategorite_DoubleClick_1(object sender, EventArgs e) => NdryshoKategori();
+
+        private void dgv_Kategorite_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgv_Kategorite.CurrentCell.ColumnIndex.Equals(3)) NdryshoKategori();
+
+            if (dgv_Kategorite.CurrentCell.ColumnIndex.Equals(4)) FshiKategori();
+        }
+
         private void txtKerko_TextChanged(object sender, EventArgs e)
         {
             if (txtKerko.Text.Trim().Length != 0)
@@ -126,19 +139,6 @@ namespace Bibloteka.Forms
             }
             else
                 LoadCategories();
-        }
-
-        private void dgv_Kategorite_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgv_Kategorite.CurrentCell.ColumnIndex.Equals(3)) NdryshoKategori();
-
-            if (dgv_Kategorite.CurrentCell.ColumnIndex.Equals(4)) FshiKategori();
-        }
-
-        private void btnShto_Click(object sender, EventArgs e)
-        {
-            var shto = new frm_Shto(this, _stafi);
-            shto.ShowDialog();
         }
     }
 }

@@ -23,11 +23,6 @@ namespace Bibloteka.Forms
             InitializeComponent();
         }
 
-        private void btnShto_Click(object sender, EventArgs e)
-        {
-            var shtoKlient = new frm_ShtoKlient(_stafi,this);
-            shtoKlient.ShowDialog();
-        }
 
         public void LoadKlients()
         {
@@ -72,6 +67,12 @@ namespace Bibloteka.Forms
             MessageBox.Show(@"Klienti u fshi me sukses!", @"Information", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             LoadKlients();
+        }
+
+        private void btnShto_Click(object sender, EventArgs e)
+        {
+            var shtoKlient = new frm_ShtoKlient(_stafi,this);
+            shtoKlient.ShowDialog();
         }
     }
 }

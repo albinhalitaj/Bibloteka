@@ -127,10 +127,11 @@ namespace Bibloteka.Forms
             this.lblKthimet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblKthimet.AutoSize = true;
             this.lblKthimet.BackColor = System.Drawing.Color.Transparent;
-            this.lblKthimet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKthimet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKthimet.ForeColor = System.Drawing.Color.DimGray;
             this.lblKthimet.Location = new System.Drawing.Point(154, 32);
             this.lblKthimet.Name = "lblKthimet";
-            this.lblKthimet.Size = new System.Drawing.Size(46, 48);
+            this.lblKthimet.Size = new System.Drawing.Size(48, 48);
             this.lblKthimet.TabIndex = 9;
             this.lblKthimet.Text = "15";
             // 
@@ -178,10 +179,11 @@ namespace Bibloteka.Forms
             this.lblHuazimet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHuazimet.AutoSize = true;
             this.lblHuazimet.BackColor = System.Drawing.Color.Transparent;
-            this.lblHuazimet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHuazimet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHuazimet.ForeColor = System.Drawing.Color.DimGray;
             this.lblHuazimet.Location = new System.Drawing.Point(150, 32);
             this.lblHuazimet.Name = "lblHuazimet";
-            this.lblHuazimet.Size = new System.Drawing.Size(54, 48);
+            this.lblHuazimet.Size = new System.Drawing.Size(56, 48);
             this.lblHuazimet.TabIndex = 8;
             this.lblHuazimet.Text = "45";
             // 
@@ -229,10 +231,11 @@ namespace Bibloteka.Forms
             this.lblLibrat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLibrat.AutoSize = true;
             this.lblLibrat.BackColor = System.Drawing.Color.Transparent;
-            this.lblLibrat.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLibrat.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLibrat.ForeColor = System.Drawing.Color.DimGray;
             this.lblLibrat.Location = new System.Drawing.Point(140, 32);
             this.lblLibrat.Name = "lblLibrat";
-            this.lblLibrat.Size = new System.Drawing.Size(53, 48);
+            this.lblLibrat.Size = new System.Drawing.Size(54, 48);
             this.lblLibrat.TabIndex = 7;
             this.lblLibrat.Text = "35";
             // 
@@ -280,7 +283,8 @@ namespace Bibloteka.Forms
             this.lblKlientet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblKlientet.AutoSize = true;
             this.lblKlientet.BackColor = System.Drawing.Color.Transparent;
-            this.lblKlientet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKlientet.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKlientet.ForeColor = System.Drawing.Color.DimGray;
             this.lblKlientet.Location = new System.Drawing.Point(147, 32);
             this.lblKlientet.Name = "lblKlientet";
             this.lblKlientet.Size = new System.Drawing.Size(53, 48);
