@@ -54,32 +54,32 @@ namespace Bibloteka.Forms
 
 
         private void dgv_Kategorite_DoubleClick(object sender, EventArgs e)
-        {
-            if (dgv_Kategorite.Rows.Count <= 0) return;
-            if (dgv_Kategorite.SelectedRows.Count != 1) return;
-            var kategoria = new Kategoria()
-            {
-                Emertimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[1].Value),
-                Pershkrimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[2].Value)
-            };
+        { 
             var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
-            var shto = new frm_Edito(_stafi, this, id, kategoria);
+            var shto = new frm_Edito(_stafi, this, id, GetSelectedCategory());
             shto.ShowDialog();
         }
 
         private void btnNdrysho_Click(object sender, EventArgs e)
         {
-            if (dgv_Kategorite.Rows.Count <= 0) return;
-            if (dgv_Kategorite.SelectedRows.Count != 1) return;
+            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
+            var shto = new frm_Edito(_stafi, this,id,GetSelectedCategory());
+            shto.ShowDialog();
+        }
+
+        private Kategoria GetSelectedCategory()
+        {
+            if (dgv_Kategorite.Rows.Count <= 0) return null;
+            if (dgv_Kategorite.SelectedRows.Count != 1) return null;
             var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
             var kategoria = new Kategoria()
             {
                 Emertimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[1].Value),
                 Pershkrimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[2].Value)
             };
-            var shto = new frm_Edito(_stafi, this,id,kategoria);
-            shto.ShowDialog();
+            return kategoria;
         }
+
 
         public int LastUpdatedNumber(int id)
         {
