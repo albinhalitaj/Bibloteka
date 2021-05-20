@@ -96,10 +96,10 @@
     <Compile Include="Forms\frm_Kthimet.Designer.cs">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frm_Librat.cs">
+    <Compile Include="Forms\Librat\frm_Librat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_Librat.Designer.cs">
+    <Compile Include="Forms\Librat\frm_Librat.Designer.cs">
       <DependentUpon>frm_Librat.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Kategorite\frm_Shto.cs">
@@ -149,7 +149,7 @@
     <EmbeddedResource Include="Forms\frm_Kthimet.resx">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_Librat.resx">
+    <EmbeddedResource Include="Forms\Librat\frm_Librat.resx">
       <DependentUpon>frm_Librat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Kategorite\frm_Shto.resx">
