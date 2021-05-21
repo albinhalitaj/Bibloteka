@@ -43,10 +43,51 @@ namespace Bibloteka.DataAccessLayer
         }
 
 
-        public void Ndrysho(int id, Klienti klienti)
+        public void Ndrysho(string id, Klienti klienti)
         {
-
+            try
+            {
+                using (var con = DataAccessLayer.AppConnection())
+                {
+                    var cmd = new SqlCommand("usp_UpdateKlient", con) {CommandType = CommandType.StoredProcedure};
+                    cmd.Parameters.AddWithValue("@klientiId", id);
+                    cmd.Parameters.AddWithValue("@emri", klienti.Emri);
+                    cmd.Parameters.AddWithValue("@mbiemri", klienti.Mbiemri);
+                    cmd.Parameters.AddWithValue("@datalindjes", klienti.Datalindjes);
+                    cmd.Parameters.AddWithValue("@gjinia", klienti.Gjinia);
+                    cmd.Parameters.AddWithValue("@nrPersonal", klienti.NrPersonal);
+                    cmd.Parameters.AddWithValue("@nrKontaktues", klienti.NrKontaktues);
+                    cmd.Parameters.AddWithValue("@adresa", klienti.Adresa);
+                    cmd.Parameters.AddWithValue("@shteti", klienti.Shteti);
+                    cmd.Parameters.AddWithValue("@qyteti", klienti.Qyteti);
+                    cmd.Parameters.AddWithValue("@kodiPostal", klienti.KodiPostal);
+                    cmd.Parameters.AddWithValue("@emaili", klienti.Emaili);
+                    cmd.Parameters.AddWithValue("@lub", klienti.Lub);
+                    cmd.Parameters.AddWithValue("@lun", klienti.Lun);
+                    cmd.Parameters.AddWithValue("@lud", klienti.Lud);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
+
+        public DataTable GetKlientById(string id)
+        {
+            using (var con = DataAccessLayer.AppConnection())
+            {
+                var dt = new DataTable();
+                var cmd = new SqlCommand("usp_GetKlientById", con) {CommandType = CommandType.StoredProcedure};
+                cmd.Parameters.AddWithValue("@id", id);
+                var sda = new SqlDataAdapter(cmd);
+                sda.Fill(dt);
+                return dt;
+            }
+        }
+
 
 
         public DataTable GetAllKlients()

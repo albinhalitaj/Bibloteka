@@ -99,6 +99,7 @@ namespace Bibloteka.Forms
             this.colEmaili,
             this.Column1,
             this.Column2});
+            this.dgv_Klientet.Cursor = System.Windows.Forms.Cursors.Arrow;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

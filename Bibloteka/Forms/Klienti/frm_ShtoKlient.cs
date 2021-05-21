@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
@@ -25,36 +26,54 @@ namespace Bibloteka.Forms
 
         private void btnShto_Click(object sender, EventArgs e)
         {
+            var klienti = new Klienti
+            {
+                Emri = txtEmri.Text,
+                Mbiemri = txtMbiemri.Text,
+                Datalindjes = ToDateTime(dataKlientit.Value),
+                Gjinia = radioMashkull.Checked ? "M" : "F",
+                NrPersonal = txtNrPersonal.Text,
+                NrKontaktues = txtNrKontaktues.Text,
+                Adresa = txtAdresa.Text,
+                Shteti = Convert.ToString(comboShteti.SelectedItem),
+                Qyteti = Convert.ToString(comboQyteti.SelectedItem),
+                KodiPostal = txtKodiPostal.Text,
+                Emaili = txtEmaili.Text,
+            };
             if (!IsValid()) return;
             if (!string.IsNullOrEmpty(_id))
             {
-                //Ndrysho
+                klienti.Lub =  _stafi.StafiId;
+                klienti.Lun = LastUpdatedNumber(_id);
+                klienti.Lud = DateTime.Now;
+                _klientiManager.Update(_id,klienti);
+                MessageBox.Show(@"Klienti u ruajt me sukses", @"Information", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                _main.LoadKlients();
+                Close();
             }
             else
             {
-                //Shto
-                var klienti = new Klienti
-                {
-                    Emri = txtEmri.Text,
-                    Mbiemri = txtMbiemri.Text,
-                    Datalindjes = ToDateTime(dataKlientit.Value),
-                    Gjinia = radioMashkull.Checked ? "M" : "F",
-                    NrPersonal = txtNrPersonal.Text,
-                    NrKontaktues = txtNrKontaktues.Text,
-                    Adresa = txtAdresa.Text,
-                    Shteti = Convert.ToString(comboShteti.SelectedItem),
-                    Qyteti = Convert.ToString(comboQyteti.SelectedItem),
-                    KodiPostal = txtKodiPostal.Text,
-                    Emaili = txtEmaili.Text,
-                    InsertBy = _stafi.StafiId,
-                    InsertDate = DateTime.Now
-                };
+                klienti.InsertBy = _stafi.StafiId;
+                klienti.InsertDate = DateTime.Now;
                 _klientiManager.Add(klienti);
                 MessageBox.Show(@"Klienti u ruajt me sukses", @"Information", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 _main.LoadKlients();
                 Close();
             }
+        }
+
+
+        public int LastUpdatedNumber(string id)
+        {
+            var lun = string.Empty;
+            var klient = _klientiManager.GetById(id);
+            if (klient.Rows.Count > 0)
+                foreach (DataRow row in klient.Rows)
+                    lun = Convert.ToString(row[15]);
+            var n = string.IsNullOrEmpty(lun) ? 1 : Convert.ToInt32(Convert.ToInt32(lun) + 1);
+            return n;
         }
 
         private bool IsValid()

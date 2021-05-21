@@ -90,9 +90,9 @@ namespace Bibloteka.Forms
             this.label3.Location = new System.Drawing.Point(41, 60);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 25);
+            this.label3.Size = new System.Drawing.Size(41, 25);
             this.label3.TabIndex = 20;
-            this.label3.Text = "*Emri";
+            this.label3.Text = "Emri";
             // 
             // btnAnulo
             // 
