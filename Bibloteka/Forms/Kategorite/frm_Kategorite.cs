@@ -52,7 +52,6 @@ namespace Bibloteka.Forms
         {
             if (dgv_Kategorite.Rows.Count <= 0) return null;
             if (dgv_Kategorite.SelectedRows.Count != 1) return null;
-            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
             var kategoria = new Kategoria()
             {
                 Emertimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[1].Value),

@@ -29,11 +29,19 @@ namespace Bibloteka.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Klientet));
             this.dgv_Klientet = new Guna.UI.WinForms.GunaDataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lblTotalKlients = new System.Windows.Forms.Label();
+            this.lblKategorite = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMbiemri = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,14 +54,8 @@ namespace Bibloteka.Forms
             this.colShteti = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colKodiPostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmaili = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
-            this.btnFshi = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnNdrysho = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.lblTotalKlients = new System.Windows.Forms.Label();
-            this.lblKategorite = new System.Windows.Forms.Label();
-            this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Klientet)).BeginInit();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -94,7 +96,9 @@ namespace Bibloteka.Forms
             this.colQyteti,
             this.colShteti,
             this.colKodiPostal,
-            this.colEmaili});
+            this.colEmaili,
+            this.Column1,
+            this.Column2});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,78 +139,7 @@ namespace Bibloteka.Forms
             this.dgv_Klientet.ThemeStyle.RowsStyle.Height = 22;
             this.dgv_Klientet.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Klientet.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // colID
-            // 
-            this.colID.HeaderText = "KlientiID";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            // 
-            // colEmri
-            // 
-            this.colEmri.HeaderText = "Emri";
-            this.colEmri.Name = "colEmri";
-            this.colEmri.ReadOnly = true;
-            // 
-            // colMbiemri
-            // 
-            this.colMbiemri.HeaderText = "Mbiemri";
-            this.colMbiemri.Name = "colMbiemri";
-            this.colMbiemri.ReadOnly = true;
-            // 
-            // colDatalindjes
-            // 
-            this.colDatalindjes.HeaderText = "Datalindjes";
-            this.colDatalindjes.Name = "colDatalindjes";
-            this.colDatalindjes.ReadOnly = true;
-            // 
-            // colGjinia
-            // 
-            this.colGjinia.HeaderText = "Gjinia";
-            this.colGjinia.Name = "colGjinia";
-            this.colGjinia.ReadOnly = true;
-            // 
-            // colNrPersonal
-            // 
-            this.colNrPersonal.HeaderText = "NrPersonal";
-            this.colNrPersonal.Name = "colNrPersonal";
-            this.colNrPersonal.ReadOnly = true;
-            // 
-            // NrKontaktues
-            // 
-            this.NrKontaktues.HeaderText = "NrKontaktues";
-            this.NrKontaktues.Name = "NrKontaktues";
-            this.NrKontaktues.ReadOnly = true;
-            // 
-            // colAdresa
-            // 
-            this.colAdresa.HeaderText = "Adresa";
-            this.colAdresa.Name = "colAdresa";
-            this.colAdresa.ReadOnly = true;
-            // 
-            // colQyteti
-            // 
-            this.colQyteti.HeaderText = "Qyteti";
-            this.colQyteti.Name = "colQyteti";
-            this.colQyteti.ReadOnly = true;
-            // 
-            // colShteti
-            // 
-            this.colShteti.HeaderText = "Shteti";
-            this.colShteti.Name = "colShteti";
-            this.colShteti.ReadOnly = true;
-            // 
-            // colKodiPostal
-            // 
-            this.colKodiPostal.HeaderText = "KodiPostal";
-            this.colKodiPostal.Name = "colKodiPostal";
-            this.colKodiPostal.ReadOnly = true;
-            // 
-            // colEmaili
-            // 
-            this.colEmaili.HeaderText = "Emaili";
-            this.colEmaili.Name = "colEmaili";
-            this.colEmaili.ReadOnly = true;
+            this.dgv_Klientet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Klientet_CellContentClick);
             // 
             // label5
             // 
@@ -241,77 +174,6 @@ namespace Bibloteka.Forms
             this.txtKerko.Size = new System.Drawing.Size(250, 34);
             this.txtKerko.TabIndex = 27;
             // 
-            // btnFshi
-            // 
-            this.btnFshi.AnimationHoverSpeed = 0.07F;
-            this.btnFshi.AnimationSpeed = 0.03F;
-            this.btnFshi.BackColor = System.Drawing.Color.Transparent;
-            this.btnFshi.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.btnFshi.BorderColor = System.Drawing.Color.Black;
-            this.btnFshi.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnFshi.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnFshi.CheckedForeColor = System.Drawing.Color.White;
-            this.btnFshi.CheckedImage = null;
-            this.btnFshi.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnFshi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFshi.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnFshi.FocusedColor = System.Drawing.Color.Empty;
-            this.btnFshi.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnFshi.ForeColor = System.Drawing.Color.White;
-            this.btnFshi.Image = null;
-            this.btnFshi.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnFshi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnFshi.Location = new System.Drawing.Point(298, 37);
-            this.btnFshi.Margin = new System.Windows.Forms.Padding(2);
-            this.btnFshi.Name = "btnFshi";
-            this.btnFshi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnFshi.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnFshi.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnFshi.OnHoverImage = null;
-            this.btnFshi.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnFshi.OnPressedColor = System.Drawing.Color.Black;
-            this.btnFshi.Radius = 3;
-            this.btnFshi.Size = new System.Drawing.Size(86, 34);
-            this.btnFshi.TabIndex = 26;
-            this.btnFshi.Text = "Fshi";
-            this.btnFshi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnFshi.Click += new System.EventHandler(this.btnFshi_Click);
-            // 
-            // btnNdrysho
-            // 
-            this.btnNdrysho.AnimationHoverSpeed = 0.07F;
-            this.btnNdrysho.AnimationSpeed = 0.03F;
-            this.btnNdrysho.BackColor = System.Drawing.Color.Transparent;
-            this.btnNdrysho.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.btnNdrysho.BorderColor = System.Drawing.Color.Black;
-            this.btnNdrysho.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnNdrysho.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnNdrysho.CheckedForeColor = System.Drawing.Color.White;
-            this.btnNdrysho.CheckedImage = null;
-            this.btnNdrysho.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnNdrysho.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNdrysho.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnNdrysho.FocusedColor = System.Drawing.Color.Empty;
-            this.btnNdrysho.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnNdrysho.ForeColor = System.Drawing.Color.White;
-            this.btnNdrysho.Image = null;
-            this.btnNdrysho.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnNdrysho.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnNdrysho.Location = new System.Drawing.Point(186, 37);
-            this.btnNdrysho.Margin = new System.Windows.Forms.Padding(2);
-            this.btnNdrysho.Name = "btnNdrysho";
-            this.btnNdrysho.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnNdrysho.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnNdrysho.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnNdrysho.OnHoverImage = null;
-            this.btnNdrysho.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnNdrysho.OnPressedColor = System.Drawing.Color.Black;
-            this.btnNdrysho.Radius = 3;
-            this.btnNdrysho.Size = new System.Drawing.Size(86, 34);
-            this.btnNdrysho.TabIndex = 25;
-            this.btnNdrysho.Text = "Ndrysho";
-            this.btnNdrysho.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -323,10 +185,8 @@ namespace Bibloteka.Forms
             this.gunaGroupBox1.BorderSize = 2;
             this.gunaGroupBox1.Controls.Add(this.btnShto);
             this.gunaGroupBox1.Controls.Add(this.lblTotalKlients);
-            this.gunaGroupBox1.Controls.Add(this.btnFshi);
             this.gunaGroupBox1.Controls.Add(this.label5);
             this.gunaGroupBox1.Controls.Add(this.txtKerko);
-            this.gunaGroupBox1.Controls.Add(this.btnNdrysho);
             this.gunaGroupBox1.Controls.Add(this.dgv_Klientet);
             this.gunaGroupBox1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
@@ -337,30 +197,6 @@ namespace Bibloteka.Forms
             this.gunaGroupBox1.Size = new System.Drawing.Size(1062, 638);
             this.gunaGroupBox1.TabIndex = 29;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
-            // 
-            // lblTotalKlients
-            // 
-            this.lblTotalKlients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblTotalKlients.AutoSize = true;
-            this.lblTotalKlients.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalKlients.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblTotalKlients.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblTotalKlients.Location = new System.Drawing.Point(32, 598);
-            this.lblTotalKlients.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalKlients.Name = "lblTotalKlients";
-            this.lblTotalKlients.Size = new System.Drawing.Size(110, 26);
-            this.lblTotalKlients.TabIndex = 29;
-            this.lblTotalKlients.Text = "Total Klientë:";
-            // 
-            // lblKategorite
-            // 
-            this.lblKategorite.AutoSize = true;
-            this.lblKategorite.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKategorite.Location = new System.Drawing.Point(30, 29);
-            this.lblKategorite.Name = "lblKategorite";
-            this.lblKategorite.Size = new System.Drawing.Size(107, 42);
-            this.lblKategorite.TabIndex = 30;
-            this.lblKategorite.Text = "Klientët";
             // 
             // btnShto
             // 
@@ -396,6 +232,138 @@ namespace Bibloteka.Forms
             this.btnShto.Text = "Shto Klient";
             this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
             // 
+            // lblTotalKlients
+            // 
+            this.lblTotalKlients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotalKlients.AutoSize = true;
+            this.lblTotalKlients.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalKlients.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblTotalKlients.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTotalKlients.Location = new System.Drawing.Point(32, 598);
+            this.lblTotalKlients.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalKlients.Name = "lblTotalKlients";
+            this.lblTotalKlients.Size = new System.Drawing.Size(110, 26);
+            this.lblTotalKlients.TabIndex = 29;
+            this.lblTotalKlients.Text = "Total Klientë:";
+            // 
+            // lblKategorite
+            // 
+            this.lblKategorite.AutoSize = true;
+            this.lblKategorite.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKategorite.Location = new System.Drawing.Point(30, 29);
+            this.lblKategorite.Name = "lblKategorite";
+            this.lblKategorite.Size = new System.Drawing.Size(107, 42);
+            this.lblKategorite.TabIndex = 30;
+            this.lblKategorite.Text = "Klientët";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "edit.png");
+            this.imageList1.Images.SetKeyName(1, "delete.png");
+            // 
+            // colID
+            // 
+            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.colID.HeaderText = "KlientiID";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Width = 80;
+            // 
+            // colEmri
+            // 
+            this.colEmri.FillWeight = 50.71915F;
+            this.colEmri.HeaderText = "Emri";
+            this.colEmri.Name = "colEmri";
+            this.colEmri.ReadOnly = true;
+            // 
+            // colMbiemri
+            // 
+            this.colMbiemri.FillWeight = 50.71915F;
+            this.colMbiemri.HeaderText = "Mbiemri";
+            this.colMbiemri.Name = "colMbiemri";
+            this.colMbiemri.ReadOnly = true;
+            // 
+            // colDatalindjes
+            // 
+            this.colDatalindjes.FillWeight = 50.71915F;
+            this.colDatalindjes.HeaderText = "Datalindjes";
+            this.colDatalindjes.Name = "colDatalindjes";
+            this.colDatalindjes.ReadOnly = true;
+            // 
+            // colGjinia
+            // 
+            this.colGjinia.FillWeight = 50.71915F;
+            this.colGjinia.HeaderText = "Gjinia";
+            this.colGjinia.Name = "colGjinia";
+            this.colGjinia.ReadOnly = true;
+            // 
+            // colNrPersonal
+            // 
+            this.colNrPersonal.FillWeight = 50.71915F;
+            this.colNrPersonal.HeaderText = "NrPersonal";
+            this.colNrPersonal.Name = "colNrPersonal";
+            this.colNrPersonal.ReadOnly = true;
+            // 
+            // NrKontaktues
+            // 
+            this.NrKontaktues.FillWeight = 50.71915F;
+            this.NrKontaktues.HeaderText = "NrKontaktues";
+            this.NrKontaktues.Name = "NrKontaktues";
+            this.NrKontaktues.ReadOnly = true;
+            // 
+            // colAdresa
+            // 
+            this.colAdresa.FillWeight = 50.71915F;
+            this.colAdresa.HeaderText = "Adresa";
+            this.colAdresa.Name = "colAdresa";
+            this.colAdresa.ReadOnly = true;
+            // 
+            // colQyteti
+            // 
+            this.colQyteti.FillWeight = 50.71915F;
+            this.colQyteti.HeaderText = "Qyteti";
+            this.colQyteti.Name = "colQyteti";
+            this.colQyteti.ReadOnly = true;
+            // 
+            // colShteti
+            // 
+            this.colShteti.FillWeight = 50.71915F;
+            this.colShteti.HeaderText = "Shteti";
+            this.colShteti.Name = "colShteti";
+            this.colShteti.ReadOnly = true;
+            // 
+            // colKodiPostal
+            // 
+            this.colKodiPostal.FillWeight = 50.71915F;
+            this.colKodiPostal.HeaderText = "KodiPostal";
+            this.colKodiPostal.Name = "colKodiPostal";
+            this.colKodiPostal.ReadOnly = true;
+            // 
+            // colEmaili
+            // 
+            this.colEmaili.FillWeight = 50.71915F;
+            this.colEmaili.HeaderText = "Emaili";
+            this.colEmaili.Name = "colEmaili";
+            this.colEmaili.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column1.HeaderText = "";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column2.HeaderText = "";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 50;
+            // 
             // frm_Klientet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -420,8 +388,11 @@ namespace Bibloteka.Forms
         private Guna.UI.WinForms.GunaDataGridView dgv_Klientet;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox txtKerko;
-        private Guna.UI.WinForms.GunaAdvenceButton btnFshi;
-        private Guna.UI.WinForms.GunaAdvenceButton btnNdrysho;
+        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
+        private System.Windows.Forms.Label lblKategorite;
+        private System.Windows.Forms.Label lblTotalKlients;
+        private Guna.UI.WinForms.GunaAdvenceButton btnShto;
+        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmri;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMbiemri;
@@ -434,9 +405,7 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn colShteti;
         private System.Windows.Forms.DataGridViewTextBoxColumn colKodiPostal;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmaili;
-        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
-        private System.Windows.Forms.Label lblKategorite;
-        private System.Windows.Forms.Label lblTotalKlients;
-        private Guna.UI.WinForms.GunaAdvenceButton btnShto;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
+        private System.Windows.Forms.DataGridViewImageColumn Column2;
     }
 }

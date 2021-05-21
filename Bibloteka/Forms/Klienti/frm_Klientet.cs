@@ -46,6 +46,8 @@ namespace Bibloteka.Forms
                     klientRow.Cells[9].Value = Convert.ToString(klient[9]);
                     klientRow.Cells[10].Value = Convert.ToString(klient[10]);
                     klientRow.Cells[11].Value = Convert.ToString(klient[11]);
+                    klientRow.Cells[12].Value = imageList1.Images[0];
+                    klientRow.Cells[13].Value = imageList1.Images[1];
                     dgv_Klientet.Rows.Add(klientRow);
                 }
             }
@@ -57,7 +59,7 @@ namespace Bibloteka.Forms
             LoadKlients();
         }
 
-        private void btnFshi_Click(object sender, EventArgs e)
+        public void FshiKlient()
         {
             var id = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[0].Value);
             if (dgv_Klientet.SelectedRows.Count != 1) return;
@@ -71,8 +73,48 @@ namespace Bibloteka.Forms
 
         private void btnShto_Click(object sender, EventArgs e)
         {
-            var shtoKlient = new frm_ShtoKlient(_stafi,this);
+            var shtoKlient = new frm_ShtoKlient(_stafi, this, null,new Klienti());
             shtoKlient.ShowDialog();
+        }
+
+        private Klienti GetSelectedKlientInfo()
+        {
+            if (dgv_Klientet.Rows.Count <= 0)
+                return null;
+            if (dgv_Klientet.SelectedRows.Count != 1)
+                return null;
+            var datalindjes = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[3].Value);
+            var day = datalindjes.Substring(0, 2);
+            var month = datalindjes.Substring(3, 2);
+            var date = Convert.ToDateTime(string.Concat(month, "/", day, datalindjes.Substring(5, 5)));
+            var klienti = new Klienti()
+            {
+                Emri = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[1].Value),
+                Mbiemri = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[2].Value),
+                Datalindjes = date,
+                Gjinia = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[4].Value),
+                NrPersonal = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[5].Value),
+                NrKontaktues = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[6].Value),
+                Adresa = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[7].Value),
+                Shteti = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[9].Value),
+                Qyteti = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[8].Value),
+                KodiPostal = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[10].Value),
+                Emaili = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[11].Value)
+            };
+            return klienti;
+        }
+
+        private void NdryshoKlient()
+        {
+            var id = Convert.ToString(dgv_Klientet.CurrentRow?.Cells[0].Value);
+            var ndryshoKlient = new frm_ShtoKlient(_stafi, this, id,GetSelectedKlientInfo());
+            ndryshoKlient.ShowDialog();
+        }
+
+        private void dgv_Klientet_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgv_Klientet.CurrentCell.ColumnIndex.Equals(13)) FshiKlient();
+            if (dgv_Klientet.CurrentCell.ColumnIndex.Equals(12)) NdryshoKlient();
         }
     }
 }

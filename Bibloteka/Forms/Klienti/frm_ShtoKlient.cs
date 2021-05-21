@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
+using static System.Convert;
 
 namespace Bibloteka.Forms
 {
@@ -10,10 +11,14 @@ namespace Bibloteka.Forms
         private readonly KlientiManager _klientiManager;
         private readonly frm_Klientet _main;
         private readonly Stafi _stafi;
-        public frm_ShtoKlient(Stafi stafi,frm_Klientet main)
+        private readonly Klienti _klienti;
+        private readonly string _id;
+        public frm_ShtoKlient(Stafi stafi,frm_Klientet main,string id,Klienti klienti)
         {
             _stafi = stafi;
             _main = main;
+            _id = id;
+            _klienti = klienti;
             _klientiManager = new KlientiManager();
             InitializeComponent();
         }
@@ -21,27 +26,35 @@ namespace Bibloteka.Forms
         private void btnShto_Click(object sender, EventArgs e)
         {
             if (!IsValid()) return;
-            var klienti = new Klienti
+            if (!string.IsNullOrEmpty(_id))
             {
-                Emri = txtEmri.Text,
-                Mbiemri = txtMbiemri.Text,
-                Datalindjes = Convert.ToDateTime(dataKlientit.Value),
-                Gjinia = radioMashkull.Checked ? "M" : "F",
-                NrPersonal = txtNrPersonal.Text,
-                NrKontaktues = txtNrKontaktues.Text,
-                Adresa = txtAdresa.Text,
-                Shteti = Convert.ToString(comboShteti.SelectedItem),
-                Qyteti = Convert.ToString(comboQyteti.SelectedItem),
-                KodiPostal = txtKodiPostal.Text,
-                Emaili = txtEmaili.Text,
-                InsertBy = _stafi.StafiId,
-                InsertDate = DateTime.Now
-            };
-            _klientiManager.Add(klienti);
-            MessageBox.Show(@"Klienti u ruajt me sukses", @"Information", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-            _main.LoadKlients();
-            Close();
+                //Ndrysho
+            }
+            else
+            {
+                //Shto
+                var klienti = new Klienti
+                {
+                    Emri = txtEmri.Text,
+                    Mbiemri = txtMbiemri.Text,
+                    Datalindjes = ToDateTime(dataKlientit.Value),
+                    Gjinia = radioMashkull.Checked ? "M" : "F",
+                    NrPersonal = txtNrPersonal.Text,
+                    NrKontaktues = txtNrKontaktues.Text,
+                    Adresa = txtAdresa.Text,
+                    Shteti = Convert.ToString(comboShteti.SelectedItem),
+                    Qyteti = Convert.ToString(comboQyteti.SelectedItem),
+                    KodiPostal = txtKodiPostal.Text,
+                    Emaili = txtEmaili.Text,
+                    InsertBy = _stafi.StafiId,
+                    InsertDate = DateTime.Now
+                };
+                _klientiManager.Add(klienti);
+                MessageBox.Show(@"Klienti u ruajt me sukses", @"Information", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                _main.LoadKlients();
+                Close();
+            }
         }
 
         private bool IsValid()
@@ -95,8 +108,28 @@ namespace Bibloteka.Forms
 
         private void frm_ShtoKlient_Load(object sender, EventArgs e)
         {
-            comboShteti.SelectedIndex = 0;
-            comboQyteti.SelectedIndex = 0;
+            if (!string.IsNullOrEmpty(_id))
+            {
+                txtEmri.Text = _klienti.Emri;
+                txtMbiemri.Text = _klienti.Mbiemri;
+                dataKlientit.Value = _klienti.Datalindjes;
+                if (_klienti.Gjinia == "Mashkull")
+                    radioMashkull.Checked = true;
+                else
+                    radioFemer.Checked = true;
+                txtNrPersonal.Text = _klienti.NrPersonal;
+                txtNrKontaktues.Text = _klienti.NrKontaktues;
+                txtAdresa.Text = _klienti.Adresa;
+                comboShteti.SelectedItem = _klienti.Shteti;
+                comboQyteti.SelectedItem = _klienti.Qyteti;
+                txtKodiPostal.Text = _klienti.KodiPostal;
+                txtEmaili.Text = _klienti.Emaili;
+            }
+            else
+            {
+                comboShteti.SelectedIndex = 0;
+                comboQyteti.SelectedIndex = 0;
+            }
         }
 
         private void btnAnulo_Click(object sender, EventArgs e) => Close();
