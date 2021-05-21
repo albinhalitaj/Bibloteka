@@ -116,5 +116,47 @@ namespace Bibloteka.Forms
             if (dgv_Klientet.CurrentCell.ColumnIndex.Equals(13)) FshiKlient();
             if (dgv_Klientet.CurrentCell.ColumnIndex.Equals(12)) NdryshoKlient();
         }
+
+        private void txtKerko_TextChanged(object sender, EventArgs e)
+        {
+            if (txtKerko.Text.Trim().Length != 0)
+            {
+                dgv_Klientet.Rows.Clear();
+                try
+                {
+                    var klienti = _klientiManager.Search(txtKerko.Text);
+                    if (klienti.Rows.Count > 0)
+                    {
+                        foreach (DataRow klient in klienti.Rows)
+                        {
+                            var klientRow = new DataGridViewRow();
+                            klientRow.CreateCells(dgv_Klientet);
+                            klientRow.Cells[0].Value = Convert.ToString(klient[0]);
+                            klientRow.Cells[1].Value = Convert.ToString(klient[1]);
+                            klientRow.Cells[2].Value = Convert.ToString(klient[2]);
+                            klientRow.Cells[3].Value = Convert.ToDateTime(klient[3]).ToString("dd/MM/yyyy");
+                            klientRow.Cells[4].Value = Convert.ToString(klient[4].ToString().Trim()) == "M" ? "Mashkull" : "Femër";
+                            klientRow.Cells[5].Value = Convert.ToString(klient[5]);
+                            klientRow.Cells[6].Value = Convert.ToString(klient[6]);
+                            klientRow.Cells[7].Value = Convert.ToString(klient[7]);
+                            klientRow.Cells[8].Value = Convert.ToString(klient[8]);
+                            klientRow.Cells[9].Value = Convert.ToString(klient[9]);
+                            klientRow.Cells[10].Value = Convert.ToString(klient[10]);
+                            klientRow.Cells[11].Value = Convert.ToString(klient[11]);
+                            klientRow.Cells[12].Value = imageList1.Images[0];
+                            klientRow.Cells[13].Value = imageList1.Images[1];
+                            dgv_Klientet.Rows.Add(klientRow);
+                        }
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(@"Ndodhi nje gabim. Ju lutem provoni perseri", @"Error", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error); ;
+                }
+            }
+            else
+                LoadKlients();
+        }
     }
 }

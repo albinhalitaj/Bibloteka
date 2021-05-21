@@ -19,5 +19,6 @@ namespace Bibloteka.BusinessLogicLayer
         public int Count() => _klientiDal.TotalKlients();
         public void Update(string id, Klienti klienti) => _klientiDal.Ndrysho(id, klienti);
         public DataTable GetById(string id) => _klientiDal.GetKlientById(id);
+        public DataTable Search(string query) => _klientiDal.SearchKlients(query);
     }
 }
