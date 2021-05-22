@@ -32,8 +32,8 @@ namespace Bibloteka
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSqXK = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnEnUS = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@ namespace Bibloteka
             this.chkMeMbajMend = new Guna.UI.WinForms.GunaCheckBox();
             this.epLogin = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSqXK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEnUS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epLogin)).BeginInit();
@@ -53,14 +54,24 @@ namespace Bibloteka
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnSqXK);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnEnUS);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 492);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(21, 192);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(253, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // btnSqXK
             // 
@@ -74,19 +85,6 @@ namespace Bibloteka
             this.btnSqXK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSqXK.TabIndex = 8;
             this.btnSqXK.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 25.8F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(50, 206);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(208, 62);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Biblioteka";
             // 
             // btnEnUS
             // 
@@ -134,9 +132,9 @@ namespace Bibloteka
             this.label2.Location = new System.Drawing.Point(436, 47);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 42);
+            this.label2.Size = new System.Drawing.Size(86, 42);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Kyqu";
+            this.label2.Text = "Hyrja";
             // 
             // label1
             // 
@@ -148,7 +146,7 @@ namespace Bibloteka
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(217, 26);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Hyrja ne panelin e kontrollit";
+            this.label1.Text = "Hyrja në panelin e kontrollit";
             // 
             // txtPerdoruesi
             // 
@@ -220,7 +218,7 @@ namespace Bibloteka
             this.btnKyqu.Radius = 3;
             this.btnKyqu.Size = new System.Drawing.Size(250, 41);
             this.btnKyqu.TabIndex = 13;
-            this.btnKyqu.Text = "Kyqu";
+            this.btnKyqu.Text = "Kyçu";
             this.btnKyqu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnKyqu.Click += new System.EventHandler(this.btnKyqu_Click);
             // 
@@ -256,13 +254,14 @@ namespace Bibloteka
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(685, 531);
             this.MinimumSize = new System.Drawing.Size(685, 531);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Kyçu - Biblioteka";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSqXK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEnUS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.epLogin)).EndInit();
@@ -280,11 +279,11 @@ namespace Bibloteka
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaTextBox txtPerdoruesi;
         private Guna.UI.WinForms.GunaTextBox txtFjalekalimi;
-        private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaAdvenceButton btnKyqu;
         private System.Windows.Forms.PictureBox btnSqXK;
         private System.Windows.Forms.PictureBox btnEnUS;
         private Guna.UI.WinForms.GunaCheckBox chkMeMbajMend;
         private System.Windows.Forms.ErrorProvider epLogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
