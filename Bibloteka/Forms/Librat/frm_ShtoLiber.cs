@@ -31,18 +31,12 @@ namespace Bibloteka.Forms.Librat
 
         private void frm_ShtoLiber_Load(object sender, EventArgs e)
         {
+            LoadCategories();
             LoadComboBoxses();
         }
 
         public void LoadComboBoxses()
         {
-            var kategorite = new List<Kategoria>();
-            var dt = _kategoriaManager.Load();
-            if (dt.Rows.Count > 0)
-                kategorite.AddRange(from DataRow category in dt.Rows
-                    select new Kategoria {Emertimi = Convert.ToString(category[1])});
-            foreach (var kategoria in kategorite) comboKategoria.Items.Add(kategoria.Emertimi);
-            comboKategoria.Items.Add("Shto Kategori të re...");
             var gjuhet = _gjuhaManager.Load();
             foreach (var gjuha in gjuhet) comboGjuha.Items.Add(gjuha.Emertimi);
 
@@ -54,12 +48,24 @@ namespace Bibloteka.Forms.Librat
             comboTipi.SelectedIndex = 0;
         }
 
+        public void LoadCategories()
+        {
+            var kategorite = new List<Kategoria>();
+            var dt = _kategoriaManager.Load();
+            if (dt.Rows.Count > 0)
+                kategorite.AddRange(from DataRow category in dt.Rows
+                    select new Kategoria {Emertimi = Convert.ToString(category[1])});
+            foreach (var kategoria in kategorite) comboKategoria.Items.Add(kategoria.Emertimi);
+            comboKategoria.Items.Add("Shto Kategori të re...");
+        }
+
         private void txtSasia_ValueChanged(object sender, EventArgs e) => comboStatusi.SelectedIndex = Convert.ToInt32(txtSasia.Value) > 0 ? 0 : 1;
 
         private void comboKategoria_Click(object sender, EventArgs e)
         {
+            comboKategoria.SelectedIndex = 0;
             comboKategoria.Items.Clear();
-            LoadComboBoxses();
+            LoadCategories();
         }
 
         private void comboKategoria_SelectedValueChanged(object sender, EventArgs e)
