@@ -109,13 +109,19 @@ namespace Bibloteka.Forms
 
         private void comboShteti_SelectedIndexChanged(object sender, EventArgs e)
         {
-            object[] qyetetKosove = {"Prishtinë", "Suharekë", "Ferizaj", "Mitrovicë"};
-            object[] qytetetShqipteri = {"Tiranë", "Vlorë", "Berat", "Durrës"};
+            object[] qytetetShqipteri = {"Tirana", "Durrësi", "Shkodra", "Elbasani", "Vlora", "Korça", "Fieri", "Berati", "Lushnja", "Pogradeci", "Kavaja", "Laçi", "Lezha", "Kukësi", "Gjirokastra",
+                "Patosi","Kruja","Kuçova","Saranda","Peshkopia","Burreli","Cërriku","Çorovoda","Shijaku", "Librazhdi", "Tepelena", "Gramshi", "Poliçani", "Bulqiza", "Përmeti", "Fushë-Kruja", "Kamëza",
+                "Rrësheni","Ballshi","Mamurrasi","Bajram Curri", "Erseka", "Peqini", "Divjaka", "Selenica", "Bilishti", "Roskoveci", "Këlcyra", "Puka", "Memaliaj", "Rrogozhina", "Ura Vajgurore", "Himara",
+                "Delvina","Vora", "Kopliku", "Maliqi", "Përrenjasi", "Shtërmeni", "Kruma", "Libohova", "Orikumi", "Fushë-Arrëza", "Shëngjini", "Rubiku", "Miloti", "Leskoviku", "Konispoli", "Krasta", "Kërraba"};
+            object[] qytetetKosove = {"Deçan","Gjakovë","Gllogoc","Gjilan", "Dragash", "Istog", "Kaçanik", "Klinë", "Fushë Kosovë", "Kamenicë", "Leposaviq", "Lipjan","Obiliq",
+                "Rahovec", "Pejë","Podujevë","Prishtinë","Prizren","Skënderaj","Shtime","Shtërpcë","Suharekë", "Ferizaj", "Viti", "Vushtrri", "Zubin Potok", "Zveçan", "Malishevë",
+                "Novobërdë","Mitrovicë e Veriu", "Mitrovicë e Jugu", "Junik", "Hani i Elezit", "Mamushë", "Graçanicë", "Ranillug", "Partesh", "Kllokot"};
+           
             if ((string) comboShteti.SelectedItem == "Kosovë")
             {
                 comboQyteti.Items.Clear();
-                comboQyteti.Items.AddRange(qyetetKosove);
-                comboQyteti.SelectedIndex = 0;
+                comboQyteti.Items.AddRange(qytetetKosove);
+                comboQyteti.SelectedIndex = 16;
             }
             if ((string) comboShteti.SelectedItem == "Shqipëri")
             {
@@ -147,7 +153,7 @@ namespace Bibloteka.Forms
             else
             {
                 comboShteti.SelectedIndex = 0;
-                comboQyteti.SelectedIndex = 0;
+                comboQyteti.SelectedIndex = 16;
             }
         }
 
