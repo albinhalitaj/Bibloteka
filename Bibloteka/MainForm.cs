@@ -57,7 +57,7 @@ namespace Bibloteka
 
         private void btnHuazimet_Click(object sender, EventArgs e) => OpenForm(new frm_Huazimet());
 
-        private void btnLibrat_Click(object sender, EventArgs e) => OpenForm(new frm_Librat());
+        private void btnLibrat_Click(object sender, EventArgs e) => OpenForm(new frm_Librat(_perdoruesi.Stafi));
 
         private void btnStafi_Click(object sender, EventArgs e) => OpenForm(new frm_Stafi());
 

@@ -58,7 +58,7 @@
     <Compile Include="Roli.cs" />
     <Compile Include="Stafi.cs" />
     <Compile Include="StafiKualifikimi.cs" />
-    <Compile Include="Tipi.cs" />
+    <Compile Include="Formati.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

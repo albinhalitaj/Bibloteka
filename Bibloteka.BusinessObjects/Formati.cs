@@ -2,9 +2,9 @@
 
 namespace Bibloteka.BusinessObjects
 {
-    public class Tipi
+    public class Formati
     {
-        public int TipiId { get; set; }
+        public int FormatiId { get; set; }
 
         public string Emri { get; set; }
 

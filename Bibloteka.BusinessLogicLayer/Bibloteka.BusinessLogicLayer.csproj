@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormatiManager.cs" />
+    <Compile Include="GjuhaManager.cs" />
     <Compile Include="KategoriaManager.cs" />
     <Compile Include="KlientiManager.cs" />
+    <Compile Include="LibriManager.cs" />
     <Compile Include="SignInManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

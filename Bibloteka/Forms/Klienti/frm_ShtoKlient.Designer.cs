@@ -67,7 +67,7 @@ namespace Bibloteka.Forms
             // 
             this.txtEmri.BackColor = System.Drawing.Color.Transparent;
             this.txtEmri.BaseColor = System.Drawing.Color.White;
-            this.txtEmri.BorderColor = System.Drawing.Color.Gray;
+            this.txtEmri.BorderColor = System.Drawing.Color.Silver;
             this.txtEmri.BorderSize = 1;
             this.txtEmri.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmri.FocusedBaseColor = System.Drawing.Color.White;
@@ -114,7 +114,7 @@ namespace Bibloteka.Forms
             this.btnAnulo.Image = null;
             this.btnAnulo.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAnulo.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAnulo.Location = new System.Drawing.Point(462, 578);
+            this.btnAnulo.Location = new System.Drawing.Point(463, 588);
             this.btnAnulo.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnulo.Name = "btnAnulo";
             this.btnAnulo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -150,7 +150,7 @@ namespace Bibloteka.Forms
             this.btnShto.Image = null;
             this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
             this.btnShto.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnShto.Location = new System.Drawing.Point(556, 578);
+            this.btnShto.Location = new System.Drawing.Point(557, 588);
             this.btnShto.Margin = new System.Windows.Forms.Padding(2);
             this.btnShto.Name = "btnShto";
             this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -170,7 +170,7 @@ namespace Bibloteka.Forms
             // 
             this.txtMbiemri.BackColor = System.Drawing.Color.Transparent;
             this.txtMbiemri.BaseColor = System.Drawing.Color.White;
-            this.txtMbiemri.BorderColor = System.Drawing.Color.Gray;
+            this.txtMbiemri.BorderColor = System.Drawing.Color.Silver;
             this.txtMbiemri.BorderSize = 1;
             this.txtMbiemri.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMbiemri.FocusedBaseColor = System.Drawing.Color.White;
@@ -201,7 +201,7 @@ namespace Bibloteka.Forms
             // 
             this.txtNrPersonal.BackColor = System.Drawing.Color.Transparent;
             this.txtNrPersonal.BaseColor = System.Drawing.Color.White;
-            this.txtNrPersonal.BorderColor = System.Drawing.Color.Gray;
+            this.txtNrPersonal.BorderColor = System.Drawing.Color.Silver;
             this.txtNrPersonal.BorderSize = 1;
             this.txtNrPersonal.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNrPersonal.FocusedBaseColor = System.Drawing.Color.White;
@@ -232,7 +232,7 @@ namespace Bibloteka.Forms
             // 
             this.txtNrKontaktues.BackColor = System.Drawing.Color.Transparent;
             this.txtNrKontaktues.BaseColor = System.Drawing.Color.White;
-            this.txtNrKontaktues.BorderColor = System.Drawing.Color.Gray;
+            this.txtNrKontaktues.BorderColor = System.Drawing.Color.Silver;
             this.txtNrKontaktues.BorderSize = 1;
             this.txtNrKontaktues.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNrKontaktues.FocusedBaseColor = System.Drawing.Color.White;
@@ -263,7 +263,7 @@ namespace Bibloteka.Forms
             // 
             this.dataKlientit.BackColor = System.Drawing.Color.Transparent;
             this.dataKlientit.BaseColor = System.Drawing.Color.White;
-            this.dataKlientit.BorderColor = System.Drawing.Color.Gray;
+            this.dataKlientit.BorderColor = System.Drawing.Color.Silver;
             this.dataKlientit.BorderSize = 1;
             this.dataKlientit.CustomFormat = null;
             this.dataKlientit.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
@@ -312,7 +312,7 @@ namespace Bibloteka.Forms
             // 
             this.txtAdresa.BackColor = System.Drawing.Color.Transparent;
             this.txtAdresa.BaseColor = System.Drawing.Color.White;
-            this.txtAdresa.BorderColor = System.Drawing.Color.Gray;
+            this.txtAdresa.BorderColor = System.Drawing.Color.Silver;
             this.txtAdresa.BorderSize = 1;
             this.txtAdresa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAdresa.FocusedBaseColor = System.Drawing.Color.White;
@@ -343,7 +343,7 @@ namespace Bibloteka.Forms
             // 
             this.txtKodiPostal.BackColor = System.Drawing.Color.Transparent;
             this.txtKodiPostal.BaseColor = System.Drawing.Color.White;
-            this.txtKodiPostal.BorderColor = System.Drawing.Color.Gray;
+            this.txtKodiPostal.BorderColor = System.Drawing.Color.Silver;
             this.txtKodiPostal.BorderSize = 1;
             this.txtKodiPostal.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtKodiPostal.FocusedBaseColor = System.Drawing.Color.White;
@@ -386,7 +386,7 @@ namespace Bibloteka.Forms
             // 
             this.txtEmaili.BackColor = System.Drawing.Color.Transparent;
             this.txtEmaili.BaseColor = System.Drawing.Color.White;
-            this.txtEmaili.BorderColor = System.Drawing.Color.Gray;
+            this.txtEmaili.BorderColor = System.Drawing.Color.Silver;
             this.txtEmaili.BorderSize = 1;
             this.txtEmaili.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmaili.FocusedBaseColor = System.Drawing.Color.White;
@@ -417,7 +417,7 @@ namespace Bibloteka.Forms
             // 
             this.comboShteti.BackColor = System.Drawing.Color.Transparent;
             this.comboShteti.BaseColor = System.Drawing.Color.White;
-            this.comboShteti.BorderColor = System.Drawing.Color.Gray;
+            this.comboShteti.BorderColor = System.Drawing.Color.Silver;
             this.comboShteti.BorderSize = 1;
             this.comboShteti.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboShteti.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -444,7 +444,7 @@ namespace Bibloteka.Forms
             // 
             this.comboQyteti.BackColor = System.Drawing.Color.Transparent;
             this.comboQyteti.BaseColor = System.Drawing.Color.White;
-            this.comboQyteti.BorderColor = System.Drawing.Color.Gray;
+            this.comboQyteti.BorderColor = System.Drawing.Color.Silver;
             this.comboQyteti.BorderSize = 1;
             this.comboQyteti.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboQyteti.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;

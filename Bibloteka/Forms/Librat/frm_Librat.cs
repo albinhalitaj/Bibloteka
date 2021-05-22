@@ -7,13 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bibloteka.BusinessObjects;
+using Bibloteka.Forms.Librat;
 
 namespace Bibloteka.Forms
 {
     public partial class frm_Librat : Form
     {
-        public frm_Librat()
+        private readonly Stafi _stafi;
+        public frm_Librat(Stafi stafi)
         {
+            _stafi = stafi;
             InitializeComponent();
         }
 
@@ -48,6 +52,12 @@ namespace Bibloteka.Forms
             second.Cells[9].Value = imageList2.Images[0];
             second.Cells[10].Value = imageList2.Images[1];
             dgv_Librat.Rows.Add(second);
+        }
+
+        private void btnShto_Click(object sender, EventArgs e)
+        {
+            var frmShto = new frm_ShtoLiber(_stafi);
+            frmShto.ShowDialog();
         }
     }
 }
