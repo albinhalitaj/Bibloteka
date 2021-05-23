@@ -28,6 +28,23 @@ namespace Bibloteka.DataAccessLayer
             }
         }
 
+        public string GetName(int id)
+        {
+            try
+            {
+                using (var con = DataAccessLayer.AppConnection())
+                {
+                    const string sql = @"EXEC usp_GetFormatiById @id";
+                    return con.Query<string>(sql,new {id}).FirstOrDefault();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+
         public int GetFormatiId(string emri)
         {
             try

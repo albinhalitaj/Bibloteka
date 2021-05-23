@@ -42,5 +42,20 @@ namespace Bibloteka.DataAccessLayer
                 throw;
             }
         }
+
+        public string GetNameById(int id)
+        {
+            try
+            {
+                const string sql = @"EXEC usp_GetNameById @id";
+                using (var con = DataAccessLayer.AppConnection())
+                    return con.Query<string>(sql, new {id}).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
     }
 }

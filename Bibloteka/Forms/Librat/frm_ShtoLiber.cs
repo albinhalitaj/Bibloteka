@@ -19,9 +19,15 @@ namespace Bibloteka.Forms.Librat
         private readonly FormatiManager _formatiManager;
         private readonly Stafi _stafi;
         private readonly LibriManager _libriManager;
-        public frm_ShtoLiber(Stafi stafi)
+        private frm_Librat _main;
+        private readonly string _id;
+        private readonly Libri _libri;
+        public frm_ShtoLiber(Stafi stafi,frm_Librat main,string id,Libri libri)
         {
             _stafi = stafi;
+            _main = main;
+            _id = id;
+            _libri = libri;
             _formatiManager = new FormatiManager();
             _kategoriaManager = new KategoriaManager();
             _gjuhaManager = new GjuhaManager();
@@ -33,18 +39,33 @@ namespace Bibloteka.Forms.Librat
 
         private void frm_ShtoLiber_Load(object sender, EventArgs e)
         {
+            comboStatusi.SelectedIndex = 1;
+            if (!string.IsNullOrEmpty(_id))
+            {
+                var dt = _kategoriaManager.GetById(_libri.KategoriaId);
+                var kategoria = Convert.ToString(dt.Rows[0][1]);
+                txtTitulli.Text = _libri.Titulli;
+                txtAutori.Text = _libri.Autori;
+                txtBotuesi.Text = _libri.Botuesi;
+                comboGjuha.SelectedItem = _gjuhaManager.GetName(_libri.GjuhaId);
+                comboTipi.SelectedItem = _formatiManager.GetName(_libri.TipiId);
+                comboKategoria.SelectedItem = kategoria;
+                txtISBN.Text = _libri.Isbn;
+                txtEdtitioni.Text = _libri.Editioni;
+                txtSasia.Value = _libri.Sasia;
+                comboStatusi.SelectedIndex = Convert.ToInt32(_libri.Sasia) > 0 ? 0 : 1;
+            }
             LoadCategories();
-            LoadComboBoxses();
+            LoadComboBoxes();
         }
 
-        public void LoadComboBoxses()
+        public void LoadComboBoxes()
         {
             var gjuhet = _gjuhaManager.Load();
             foreach (var gjuha in gjuhet) comboGjuha.Items.Add(gjuha.Emertimi);
 
             var formatet = _formatiManager.Load();
             foreach (var formati in formatet) comboTipi.Items.Add(formati.Emri);
-            comboStatusi.SelectedIndex = 1;
             comboKategoria.SelectedIndex = 1;
             comboGjuha.SelectedIndex = 1;
             comboTipi.SelectedIndex = 1;
@@ -68,6 +89,7 @@ namespace Bibloteka.Forms.Librat
         {
             comboKategoria.Items.Clear();
             LoadCategories();
+            comboKategoria.SelectedIndex = 1;
         }
 
         private void comboKategoria_SelectedValueChanged(object sender, EventArgs e)
@@ -77,10 +99,15 @@ namespace Bibloteka.Forms.Librat
             {
                 var frmmain = new frm_Kategorite(_stafi);
                 var frmShtoKategori = new frm_Shto(frmmain, _stafi);
-                frmShtoKategori.ShowDialog();
-                comboKategoria.Items.Clear();
-                LoadCategories();
-                //comboKategoria.SelectedIndex = totalCategories;
+                if (frmShtoKategori.ShowDialog() == DialogResult.OK)
+                {
+                    comboKategoria.Items.Clear();
+                    LoadCategories();
+                    comboKategoria.SelectedIndex = totalCategories + 1;
+                    comboKategoria.SelectedIndex = 1;
+                }
+                else
+                    comboKategoria.SelectedIndex = 1;
             }
         }
 
@@ -101,12 +128,22 @@ namespace Bibloteka.Forms.Librat
                     Isbn = txtISBN.Text,
                     Editioni = txtEdtitioni.Text,
                     Sasia = txtSasia.Value,
-                    Statusi = statusi,
-                    InsertBy = _stafi.StafiId,
-                    InsertDate = DateTime.Now
+                    Statusi = statusi
                 };
-                _libriManager.Add(libri);
-                MessageBox.Show(@"Libri u shtua me sukses!", @"Information", MessageBoxButtons.OK,
+                if (_id == null)
+                {
+                    libri.InsertBy = _stafi.StafiId;
+                    libri.InsertDate = DateTime.Now;
+                    _libriManager.Add(libri);
+                }
+                else
+                {
+                    libri.Lub = _stafi.StafiId;
+                    libri.Lud = DateTime.Now;
+                    libri.Lun = LastUpdatedNumber(_id);
+                    _libriManager.Update(_id,libri);
+                }
+                MessageBox.Show(@"Libri u ruajt me sukses!", @"Information", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 Close();
             }
@@ -115,6 +152,14 @@ namespace Bibloteka.Forms.Librat
                 Console.WriteLine(exception);
                 throw;
             }
+        }
+
+        public int LastUpdatedNumber(string id)
+        {
+            var klient = _libriManager.FindById(id);
+            var lun = klient.Lun.ToString();
+            var n = string.IsNullOrEmpty(lun) ? 1 : Convert.ToInt32(Convert.ToInt32(lun) + 1);
+            return n;
         }
 
         public bool IsValid()

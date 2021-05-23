@@ -17,8 +17,14 @@ namespace Bibloteka.Forms
     {
         private readonly Stafi _stafi;
         private readonly LibriManager _libriManager;
+        private readonly GjuhaManager _gjuhaManager;
+        private readonly FormatiManager _formatiManager;
+        private readonly KategoriaManager _kategoriaManager;
         public frm_Librat(Stafi stafi)
         {
+            _gjuhaManager = new GjuhaManager();
+            _formatiManager = new FormatiManager();
+            _kategoriaManager = new KategoriaManager();
             _stafi = stafi;
             _libriManager = new LibriManager();
             InitializeComponent();
@@ -31,7 +37,7 @@ namespace Bibloteka.Forms
 
         private void btnShto_Click(object sender, EventArgs e)
         {
-            var frmShto = new frm_ShtoLiber(_stafi);
+            var frmShto = new frm_ShtoLiber(_stafi,this,null,new Libri());
             frmShto.ShowDialog();
             LoadLibrat();
             lblTotalLibra.Text = @"Total Libra: " + _libriManager.Count();
@@ -69,6 +75,36 @@ namespace Bibloteka.Forms
         private void dgv_Librat_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgv_Librat.CurrentCell.ColumnIndex.Equals(12)) FshiLibrin();
+            if (dgv_Librat.CurrentCell.ColumnIndex.Equals(11)) EditoLibrin();
+        }
+
+        private void EditoLibrin()
+        {
+            var id = Convert.ToString(dgv_Librat.CurrentRow?.Cells[0].Value);
+            var editoLiber = new frm_ShtoLiber(_stafi,this,id,GetLibriDetails());
+            editoLiber.ShowDialog();
+        }
+
+        public Libri GetLibriDetails()
+        {
+            if (dgv_Librat.Rows.Count <= 0)
+                return null;
+            if (dgv_Librat.SelectedRows.Count <= 0)
+                return null;
+            var libri = new Libri
+            {
+                Titulli = Convert.ToString(dgv_Librat.CurrentRow?.Cells[1].Value),
+                Autori = Convert.ToString(dgv_Librat.CurrentRow?.Cells[2].Value),
+                Botuesi = Convert.ToString(dgv_Librat.CurrentRow?.Cells[3].Value),
+                GjuhaId = _gjuhaManager.GetId(Convert.ToString(dgv_Librat.CurrentRow?.Cells[4].Value)),
+                TipiId = _formatiManager.GetId(Convert.ToString(dgv_Librat.CurrentRow?.Cells[5].Value)),
+                KategoriaId = _kategoriaManager.GetId(Convert.ToString(dgv_Librat.CurrentRow?.Cells[6].Value)),
+                Isbn = Convert.ToString(dgv_Librat.CurrentRow?.Cells[7].Value),
+                Editioni = Convert.ToString(dgv_Librat.CurrentRow?.Cells[8].Value),
+                Sasia = Convert.ToInt32(dgv_Librat.CurrentRow?.Cells[9].Value),
+            };
+            libri.Statusi = libri.Sasia > 0;
+            return libri;
         }
 
         private void FshiLibrin()

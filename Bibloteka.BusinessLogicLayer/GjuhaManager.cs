@@ -14,5 +14,6 @@ namespace Bibloteka.BusinessLogicLayer
         public GjuhaManager() => GjuhaDal = new GjuhaDal();
         public List<Gjuha> Load() => GjuhaDal.GetLanguages();
         public int GetId(string emri) => GjuhaDal.GetGjuhaById(emri);
+        public string GetName(int id) => GjuhaDal.GetNameById(id);
     }
 }

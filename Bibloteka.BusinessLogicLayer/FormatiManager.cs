@@ -19,5 +19,6 @@ namespace Bibloteka.BusinessLogicLayer
         public List<Formati> Load() => _formatiDal.GetFormats();
 
         public int GetId(string emri) => _formatiDal.GetFormatiId(emri);
+        public string GetName(int id) => _formatiDal.GetName(id);
     }
 }
