@@ -152,7 +152,7 @@ namespace Bibloteka.Forms
                 catch (Exception)
                 {
                     MessageBox.Show(@"Ndodhi nje gabim. Ju lutem provoni perseri", @"Error", MessageBoxButtons.OK,
-                        MessageBoxIcon.Error); ;
+                        MessageBoxIcon.Error);
                 }
             }
             else

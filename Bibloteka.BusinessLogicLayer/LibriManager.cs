@@ -19,5 +19,6 @@ namespace Bibloteka.BusinessLogicLayer
         public DataTable Load() => _libriDal.GetAllLibrat();
         public Libri FindById(string id) => _libriDal.GetLiberById(id);
         public int Count() => _libriDal.GetTotal();
+        public DataTable Search(string query) => _libriDal.SearchLibra(query);
     } 
 }

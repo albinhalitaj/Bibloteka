@@ -83,6 +83,7 @@ namespace Bibloteka.Forms
             var id = Convert.ToString(dgv_Librat.CurrentRow?.Cells[0].Value);
             var editoLiber = new frm_ShtoLiber(_stafi,this,id,GetLibriDetails());
             editoLiber.ShowDialog();
+            LoadLibrat();
         }
 
         public Libri GetLibriDetails()
@@ -118,6 +119,47 @@ namespace Bibloteka.Forms
                 LoadLibrat();
                 lblTotalLibra.Text = @"Total Libra: " + _libriManager.Count();
             }
+        }
+
+        private void txtKerko_TextChanged(object sender, EventArgs e)
+        {
+            if (txtKerko.Text.Trim().Length != 0)
+            {
+                dgv_Librat.Rows.Clear();
+                try
+                {
+                    var librat = _libriManager.Search(txtKerko.Text);
+                    if (librat.Rows.Count > 0)
+                    {
+                        foreach (DataRow liber in librat.Rows)
+                        {
+                            var liberRow = new DataGridViewRow();
+                            liberRow.CreateCells(dgv_Librat);
+                            liberRow.Cells[0].Value = Convert.ToString(liber[0]);
+                            liberRow.Cells[1].Value = Convert.ToString(liber[1]);
+                            liberRow.Cells[2].Value = Convert.ToString(liber[2]);
+                            liberRow.Cells[3].Value = Convert.ToString(liber[3]);
+                            liberRow.Cells[4].Value = Convert.ToString(liber[4]);
+                            liberRow.Cells[5].Value = Convert.ToString(liber[5]);
+                            liberRow.Cells[6].Value = Convert.ToString(liber[6]);
+                            liberRow.Cells[7].Value = Convert.ToString(liber[7]);
+                            liberRow.Cells[8].Value = Convert.ToString(liber[8]);
+                            liberRow.Cells[9].Value = Convert.ToString(liber[9]);
+                            liberRow.Cells[10].Value = Convert.ToBoolean(liber[10]) ? imageList1.Images[0] : imageList1.Images[1];
+                            liberRow.Cells[11].Value = imageList2.Images[0];
+                            liberRow.Cells[12].Value = imageList2.Images[1];
+                            dgv_Librat.Rows.Add(liberRow);
+                        }
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(@"Ndodhi nje gabim. Ju lutem provoni perseri", @"Error", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+            else
+                LoadLibrat();
         }
     }
 }

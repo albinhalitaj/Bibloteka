@@ -30,6 +30,7 @@ namespace Bibloteka.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Shto));
             this.txtPershkrimi = new Guna.UI.WinForms.GunaTextBox();
             this.txtEmertimi = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -191,6 +192,7 @@ namespace Bibloteka.Forms
             this.Controls.Add(this.txtEmertimi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(415, 409);
             this.MinimumSize = new System.Drawing.Size(415, 409);
             this.Name = "frm_Shto";

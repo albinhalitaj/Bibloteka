@@ -30,6 +30,7 @@ namespace Bibloteka.Forms.Librat
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ShtoLiber));
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
             this.txtBotuesi = new Guna.UI.WinForms.GunaTextBox();
             this.txtAutori = new Guna.UI.WinForms.GunaTextBox();
@@ -525,6 +526,7 @@ namespace Bibloteka.Forms.Librat
             this.ClientSize = new System.Drawing.Size(689, 607);
             this.Controls.Add(this.gunaGroupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_ShtoLiber";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shto Libër";

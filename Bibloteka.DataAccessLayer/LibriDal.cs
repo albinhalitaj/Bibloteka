@@ -50,7 +50,7 @@ namespace Bibloteka.DataAccessLayer
                using (var con = DataAccessLayer.AppConnection())
                {
                    var cmd = new SqlCommand("usp_UpdateLiber", con) {CommandType = CommandType.StoredProcedure};
-                   cmd.Parameters.AddWithValue("@libriId", libri.LibriId);
+                   cmd.Parameters.AddWithValue("@libriId", id);
                    cmd.Parameters.AddWithValue("@titulli", libri.Titulli);
                    cmd.Parameters.AddWithValue("@autori", libri.Autori);
                    cmd.Parameters.AddWithValue("@botuesi", libri.Botuesi);
@@ -126,7 +126,7 @@ namespace Bibloteka.DataAccessLayer
                    {
                        libriId = id
                    };
-                   var libriDetalet = con.Query<Libri>("usp_GetLiberById", param).FirstOrDefault();
+                   var libriDetalet = con.Query<Libri>("EXEC usp_GetLiberById @libriId", param).FirstOrDefault();
                    return libriDetalet;
                }
            }
@@ -146,6 +146,28 @@ namespace Bibloteka.DataAccessLayer
                {
                    var total = con.Query<int>("usp_GetTotalLiber").FirstOrDefault();
                    return total;
+               }
+           }
+           catch (Exception e)
+           {
+               Console.WriteLine(e);
+               throw;
+           }
+       }
+
+       // SEARCH LIBRA 
+       public DataTable SearchLibra(string query)
+       {
+           try
+           {
+               using (var con = DataAccessLayer.AppConnection())
+               {
+                   var dt = new DataTable();
+                   var cmd = new SqlCommand("usp_SearchLiber", con) {CommandType = CommandType.StoredProcedure};
+                   cmd.Parameters.AddWithValue("@query", query);
+                   var sda = new SqlDataAdapter(cmd);
+                   sda.Fill(dt);
+                   return dt;
                }
            }
            catch (Exception e)
