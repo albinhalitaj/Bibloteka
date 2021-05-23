@@ -78,28 +78,29 @@ namespace Bibloteka.Forms
 
         private bool IsValid()
         {
+            epKlienti.Clear();
             var status = true;
             if (txtEmri.Text.Trim().Length == 0)
             {
                 epKlienti.SetError(txtEmri, "Ju lutem shkruani emrin e klientit!");
                 status = false;
             }
-            if (txtMbiemri.Text.Trim().Length == 0)
+            else if (txtMbiemri.Text.Trim().Length == 0)
             {
                 epKlienti.SetError(txtMbiemri,"Ju lutem shkruani mbiemrin e klientit!");
                 status = false;
             }
-            if (txtNrPersonal.Text.Trim().Length == 0)
+            else if(txtNrPersonal.Text.Trim().Length == 0)
             {
                 epKlienti.SetError(txtNrPersonal, "Ju lutem shkruani numrin personal të klientit!");
                 status = false;
             }
-            if (txtNrKontaktues.Text.Trim().Length == 0)
+            else if(txtNrKontaktues.Text.Trim().Length == 0)
             {
                 epKlienti.SetError(txtNrKontaktues, "Ju lutem shkruani numrin kontaktues e klientit!");
                 status = false;
             }
-            if (txtAdresa.Text.Trim().Length == 0)
+            else if (txtAdresa.Text.Trim().Length == 0)
             {
                 epKlienti.SetError(txtMbiemri, "Ju lutem shkruani adresen e klientit!");
                 status = false;
