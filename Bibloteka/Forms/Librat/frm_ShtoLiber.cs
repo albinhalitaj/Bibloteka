@@ -40,6 +40,8 @@ namespace Bibloteka.Forms.Librat
         private void frm_ShtoLiber_Load(object sender, EventArgs e)
         {
             comboStatusi.SelectedIndex = 1;
+            LoadComboBoxes();
+            LoadCategories();
             if (!string.IsNullOrEmpty(_id))
             {
                 var dt = _kategoriaManager.GetById(_libri.KategoriaId);
@@ -55,8 +57,6 @@ namespace Bibloteka.Forms.Librat
                 txtSasia.Value = _libri.Sasia;
                 comboStatusi.SelectedIndex = Convert.ToInt32(_libri.Sasia) > 0 ? 0 : 1;
             }
-            LoadCategories();
-            LoadComboBoxes();
         }
 
         public void LoadComboBoxes()
@@ -66,7 +66,7 @@ namespace Bibloteka.Forms.Librat
 
             var formatet = _formatiManager.Load();
             foreach (var formati in formatet) comboTipi.Items.Add(formati.Emri);
-            comboKategoria.SelectedIndex = 1;
+            if (!string.IsNullOrEmpty(_id)) return;
             comboGjuha.SelectedIndex = 1;
             comboTipi.SelectedIndex = 1;
         }
@@ -81,6 +81,7 @@ namespace Bibloteka.Forms.Librat
                     select new Kategoria {Emertimi = Convert.ToString(category[1])});
             foreach (var kategoria in kategorite) comboKategoria.Items.Add(kategoria.Emertimi);
             comboKategoria.Items.Add("Shto Kategori të re...");
+            comboKategoria.SelectedIndex = 1;
         }
 
         private void txtSasia_ValueChanged(object sender, EventArgs e) => comboStatusi.SelectedIndex = Convert.ToInt32(txtSasia.Value) > 0 ? 0 : 1;
