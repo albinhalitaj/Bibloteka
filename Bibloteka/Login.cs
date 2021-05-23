@@ -12,6 +12,8 @@ namespace Bibloteka
             InitializeComponent();
         }
 
+        public bool RememberMe { get; set; }
+
         private void btnKyqu_Click(object sender, EventArgs e)
         {
             var signInManager = new SignInManager();
@@ -25,6 +27,18 @@ namespace Bibloteka
                     Username = txtPerdoruesi.Text,
                     Password = txtFjalekalimi.Text
                 };
+                if (chkMeMbajMend.Checked)
+                {
+                    Properties.Settings.Default.userName = model.Username;
+                    Properties.Settings.Default.password = model.Password;
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    Properties.Settings.Default.userName = string.Empty;
+                    Properties.Settings.Default.password = string.Empty;
+                    Properties.Settings.Default.Save();
+                }
                 var user = signInManager.LoginUser(model);
                 if (user!=null)
                 {
@@ -57,6 +71,14 @@ namespace Bibloteka
                     MessageBox.Show(@"Përdoruesi ose fjalëkalimi është gabim!", @"Information", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(Properties.Settings.Default.userName)) return;
+            txtPerdoruesi.Text = Properties.Settings.Default.userName;
+            txtFjalekalimi.Text = Properties.Settings.Default.password;
+            chkMeMbajMend.Checked = true;
         }
     }
 }
