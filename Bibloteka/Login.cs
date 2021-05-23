@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
@@ -27,7 +20,7 @@ namespace Bibloteka
                 epLogin.SetError(txtPerdoruesi, "Ju lutem shënoni fjalëkalimin!");
             else
             {
-                var model = new Perdoruesi()
+                var model = new Perdoruesi
                 {
                     Username = txtPerdoruesi.Text,
                     Password = txtFjalekalimi.Text
@@ -35,9 +28,30 @@ namespace Bibloteka
                 var user = signInManager.LoginUser(model);
                 if (user!=null)
                 {
-                    var dashboard = new MainForm(user);
-                    dashboard.Show();
-                    Hide();
+                    switch (user.Roli.Emertimi)
+                    {
+                        case "Administrator":
+                        {
+                            var dashboard = new MainForm(user);
+                            dashboard.Show();
+                            Hide();
+                            break;
+                        }
+                        case "Punëtor":
+                        {
+                            var dashboard = new MainForm(user);
+                            dashboard.Show();
+                            Hide();
+                            break;
+                        }
+                        case "Public":
+                        {
+                            var klienti = new KlientiMain();
+                            klienti.Show();
+                            Hide();
+                            break;
+                        }
+                    }
                 }
                 else
                     MessageBox.Show(@"Përdoruesi ose fjalëkalimi është gabim!", @"Information", MessageBoxButtons.OK,

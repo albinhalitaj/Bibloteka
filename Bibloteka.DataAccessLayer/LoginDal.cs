@@ -25,16 +25,33 @@ namespace Bibloteka.DataAccessLayer
                 Perdoruesi perdoruesi = null;
                 if (dt.Rows.Count > 0)
                 {
-                    const string sql = "EXEC usp_GetUserStafDetails @id";
-                    var param = new {id = dt.Rows[0][0]};
-                    perdoruesi = con.Query<Perdoruesi, Stafi, Roli, Perdoruesi>(sql,
-                            (useri, stafi, roli) =>
-                            {
-                                useri.Stafi = stafi;
-                                useri.Roli = roli;
-                                return useri;
-                            }, param, splitOn: "StafiID,Emertimi")
-                        .FirstOrDefault();
+                    var param = new DynamicParameters();
+                    string sql;
+                    if (dt.Rows[0][3].Equals("public"))
+                    {
+                       sql = "EXEC usp_GetPublicDetails @username, @password";
+                       param.Add("@username", user.Username);
+                       param.Add("@password", user.Password);
+                       perdoruesi = con.Query<Perdoruesi, Roli, Perdoruesi>(sql,
+                           (useri, roli) =>
+                           {
+                               useri.Roli = roli;
+                               return useri;
+                           }, param,splitOn:"Emertimi").FirstOrDefault();
+                    }
+                    else
+                    {
+                        sql = "EXEC usp_GetUserStafDetails @id";
+                        param.Add("@id",dt.Rows[0][0]);
+                        perdoruesi = con.Query<Perdoruesi, Stafi, Roli, Perdoruesi>(sql,
+                                (useri, stafi, roli) =>
+                                {
+                                    useri.Stafi = stafi;
+                                    useri.Roli = roli;
+                                    return useri;
+                                }, param, splitOn: "StafiID,Emertimi")
+                            .FirstOrDefault();
+                    }
                 }
                 return perdoruesi;
             }
