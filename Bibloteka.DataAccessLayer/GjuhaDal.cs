@@ -27,5 +27,20 @@ namespace Bibloteka.DataAccessLayer
                 throw;
             }
         }
+
+        public int GetGjuhaById(string emertimi)
+        {
+            try
+            {
+                var sql = @"EXEC usp_GetGjuhaId @emri";
+                using (var con = DataAccessLayer.AppConnection())
+                    return con.Query<int>(sql, new {emri = emertimi}).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
     }
 }

@@ -45,7 +45,7 @@ namespace Bibloteka.Forms.Librat
             var formatet = _formatiManager.Load();
             foreach (var formati in formatet) comboTipi.Items.Add(formati.Emri);
             comboStatusi.SelectedIndex = 1;
-            comboKategoria.SelectedIndex = 0;
+            comboKategoria.SelectedIndex = 1;
             comboGjuha.SelectedIndex = 1;
             comboTipi.SelectedIndex = 1;
         }
@@ -86,17 +86,17 @@ namespace Bibloteka.Forms.Librat
 
         private void btnShto_Click(object sender, EventArgs e)
         {
-            var id = _kategoriaManager.GetId(Convert.ToString(comboKategoria.SelectedItem));
             try
             {
+                if (!IsValid()) return;
                 var statusi = comboStatusi.SelectedIndex == 0;
                 var libri = new Libri
                 {
                     Titulli = txtTitulli.Text,
                     Autori = txtAutori.Text,
                     Botuesi = txtBotuesi.Text,
-                    GjuhaId = comboGjuha.SelectedIndex,
-                    TipiId = comboTipi.SelectedIndex,
+                    GjuhaId = _gjuhaManager.GetId(Convert.ToString(comboGjuha.SelectedItem)),
+                    TipiId = _formatiManager.GetId(Convert.ToString(comboTipi.SelectedItem)),
                     KategoriaId = _kategoriaManager.GetId(Convert.ToString(comboKategoria.SelectedItem)),
                     Isbn = txtISBN.Text,
                     Editioni = txtEdtitioni.Text,
@@ -115,6 +115,48 @@ namespace Bibloteka.Forms.Librat
                 Console.WriteLine(exception);
                 throw;
             }
+        }
+
+        public bool IsValid()
+        {
+            epLibri.Clear();
+            var status = true;
+            if (txtTitulli.Text.Trim().Length == 0)
+            {
+                epLibri.SetError(txtTitulli,"Ju lutem shkruani titullin e librit!");
+                status = false;
+            }
+            else if (txtAutori.Text.Trim().Length == 0)
+            {
+                epLibri.SetError(txtAutori,"Ju lutem shkurani autorin/ët e librit");
+                status = false;
+            }
+            else if (txtAutori.Text.Trim().Length == 0)
+            {
+                epLibri.SetError(txtBotuesi,"Ju lutem shkruani botuesin e librit");
+                status = false;
+            }
+            else if (comboGjuha.SelectedIndex == 0)
+            {
+                epLibri.SetError(comboGjuha,"Ju lutem selektoni një gjuhë");
+                status = false;
+            }
+            else if (comboTipi.SelectedIndex == 0)
+            {
+                epLibri.SetError(comboTipi,"Ju lutem selektoni një format");
+                status = false;
+            }
+            else if (comboKategoria.SelectedIndex == 0)
+            {
+                epLibri.SetError(comboKategoria,"Ju lutem selektoni një kategori");
+                status = false;
+            }
+            else if (txtISBN.Text.Trim().Length == 0)
+            {
+                epLibri.SetError(txtISBN,"Ju lutem shkruani ISBN-n");
+                status = false;
+            }
+            return status;
         }
     }
 }

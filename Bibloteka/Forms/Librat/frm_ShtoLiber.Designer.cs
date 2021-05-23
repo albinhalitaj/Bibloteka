@@ -31,6 +31,8 @@ namespace Bibloteka.Forms.Librat
         {
             this.components = new System.ComponentModel.Container();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.txtBotuesi = new Guna.UI.WinForms.GunaTextBox();
+            this.txtAutori = new Guna.UI.WinForms.GunaTextBox();
             this.txtSasia = new Guna.UI.WinForms.GunaNumeric();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,9 +55,9 @@ namespace Bibloteka.Forms.Librat
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.dragForm = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.txtAutori = new Guna.UI.WinForms.GunaTextBox();
-            this.txtBotuesi = new Guna.UI.WinForms.GunaTextBox();
+            this.epLibri = new System.Windows.Forms.ErrorProvider(this.components);
             this.gunaGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epLibri)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaGroupBox1
@@ -98,6 +100,44 @@ namespace Bibloteka.Forms.Librat
             this.gunaGroupBox1.TabIndex = 50;
             this.gunaGroupBox1.Text = "Informatat e Librit";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
+            // 
+            // txtBotuesi
+            // 
+            this.txtBotuesi.BackColor = System.Drawing.Color.Transparent;
+            this.txtBotuesi.BaseColor = System.Drawing.Color.White;
+            this.txtBotuesi.BorderColor = System.Drawing.Color.Silver;
+            this.txtBotuesi.BorderSize = 1;
+            this.txtBotuesi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBotuesi.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtBotuesi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtBotuesi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBotuesi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBotuesi.Location = new System.Drawing.Point(46, 194);
+            this.txtBotuesi.Name = "txtBotuesi";
+            this.txtBotuesi.PasswordChar = '\0';
+            this.txtBotuesi.Radius = 3;
+            this.txtBotuesi.SelectedText = "";
+            this.txtBotuesi.Size = new System.Drawing.Size(250, 34);
+            this.txtBotuesi.TabIndex = 3;
+            // 
+            // txtAutori
+            // 
+            this.txtAutori.BackColor = System.Drawing.Color.Transparent;
+            this.txtAutori.BaseColor = System.Drawing.Color.White;
+            this.txtAutori.BorderColor = System.Drawing.Color.Silver;
+            this.txtAutori.BorderSize = 1;
+            this.txtAutori.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAutori.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtAutori.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtAutori.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtAutori.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutori.Location = new System.Drawing.Point(385, 97);
+            this.txtAutori.Name = "txtAutori";
+            this.txtAutori.PasswordChar = '\0';
+            this.txtAutori.Radius = 3;
+            this.txtAutori.SelectedText = "";
+            this.txtAutori.Size = new System.Drawing.Size(250, 34);
+            this.txtAutori.TabIndex = 2;
             // 
             // txtSasia
             // 
@@ -474,43 +514,9 @@ namespace Bibloteka.Forms.Librat
             // 
             this.dragForm.TargetControl = this.gunaGroupBox1;
             // 
-            // txtAutori
+            // epLibri
             // 
-            this.txtAutori.BackColor = System.Drawing.Color.Transparent;
-            this.txtAutori.BaseColor = System.Drawing.Color.White;
-            this.txtAutori.BorderColor = System.Drawing.Color.Silver;
-            this.txtAutori.BorderSize = 1;
-            this.txtAutori.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAutori.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtAutori.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtAutori.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtAutori.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutori.Location = new System.Drawing.Point(385, 97);
-            this.txtAutori.Name = "txtAutori";
-            this.txtAutori.PasswordChar = '\0';
-            this.txtAutori.Radius = 3;
-            this.txtAutori.SelectedText = "";
-            this.txtAutori.Size = new System.Drawing.Size(250, 34);
-            this.txtAutori.TabIndex = 2;
-            // 
-            // txtBotuesi
-            // 
-            this.txtBotuesi.BackColor = System.Drawing.Color.Transparent;
-            this.txtBotuesi.BaseColor = System.Drawing.Color.White;
-            this.txtBotuesi.BorderColor = System.Drawing.Color.Silver;
-            this.txtBotuesi.BorderSize = 1;
-            this.txtBotuesi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBotuesi.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtBotuesi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtBotuesi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtBotuesi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBotuesi.Location = new System.Drawing.Point(46, 194);
-            this.txtBotuesi.Name = "txtBotuesi";
-            this.txtBotuesi.PasswordChar = '\0';
-            this.txtBotuesi.Radius = 3;
-            this.txtBotuesi.SelectedText = "";
-            this.txtBotuesi.Size = new System.Drawing.Size(250, 34);
-            this.txtBotuesi.TabIndex = 3;
+            this.epLibri.ContainerControl = this;
             // 
             // frm_ShtoLiber
             // 
@@ -525,6 +531,7 @@ namespace Bibloteka.Forms.Librat
             this.Load += new System.EventHandler(this.frm_ShtoLiber_Load);
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epLibri)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -556,5 +563,6 @@ namespace Bibloteka.Forms.Librat
         private Guna.UI.WinForms.GunaNumeric txtSasia;
         private Guna.UI.WinForms.GunaTextBox txtAutori;
         private Guna.UI.WinForms.GunaTextBox txtBotuesi;
+        private System.Windows.Forms.ErrorProvider epLibri;
     }
 }
