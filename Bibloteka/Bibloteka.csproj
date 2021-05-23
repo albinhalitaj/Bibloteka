@@ -96,6 +96,12 @@
     <Compile Include="Forms\frm_Kthimet.Designer.cs">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Librat\frm_Botuesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Librat\frm_Botuesi.Designer.cs">
+      <DependentUpon>frm_Botuesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Librat\frm_Librat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_Kthimet.resx">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Librat\frm_Botuesi.resx">
+      <DependentUpon>frm_Botuesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Librat\frm_Librat.resx">
       <DependentUpon>frm_Librat.cs</DependentUpon>

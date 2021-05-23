@@ -63,9 +63,10 @@ namespace Bibloteka.Forms.Librat
 
         private void comboKategoria_Click(object sender, EventArgs e)
         {
-            comboKategoria.SelectedIndex = 0;
+            var n = comboKategoria.SelectedIndex;
             comboKategoria.Items.Clear();
             LoadCategories();
+            comboKategoria.SelectedIndex = n;
         }
 
         private void comboKategoria_SelectedValueChanged(object sender, EventArgs e)
@@ -76,6 +77,18 @@ namespace Bibloteka.Forms.Librat
                 var frmmain = new frm_Kategorite(_stafi);
                 var frmShtoKategori = new frm_Shto(frmmain, _stafi);
                 frmShtoKategori.ShowDialog();
+                comboKategoria.Items.Clear();
+                LoadCategories();
+                comboKategoria.SelectedIndex = totalCategories;
+            }
+        }
+
+        private void comboBotuesi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBotuesi.SelectedIndex == 0)
+            {
+                var frmBotuesi = new frm_Botuesi();
+                frmBotuesi.ShowDialog();
             }
         }
     }
