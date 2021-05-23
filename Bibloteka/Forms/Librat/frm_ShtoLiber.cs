@@ -79,7 +79,7 @@ namespace Bibloteka.Forms.Librat
                 frmShtoKategori.ShowDialog();
                 comboKategoria.Items.Clear();
                 LoadCategories();
-                comboKategoria.SelectedIndex = totalCategories;
+                //comboKategoria.SelectedIndex = totalCategories;
             }
         }
 

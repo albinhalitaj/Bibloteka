@@ -8,6 +8,6 @@ namespace Bibloteka.DataAccessLayer
 {
     public class LibriDal
     {
-
+        
     }
 }

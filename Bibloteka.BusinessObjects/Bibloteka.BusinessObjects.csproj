@@ -41,8 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Autori.cs" />
-    <Compile Include="Botuesi.cs" />
     <Compile Include="Gjoba.cs" />
     <Compile Include="Gjuha.cs" />
     <Compile Include="Huazimi.cs" />
@@ -50,7 +48,6 @@
     <Compile Include="Klienti.cs" />
     <Compile Include="Kualifikimi.cs" />
     <Compile Include="Libri.cs" />
-    <Compile Include="LibriAutori.cs" />
     <Compile Include="LibriDetalet.cs" />
     <Compile Include="Perdoruesi.cs" />
     <Compile Include="PerdoruesiRoli.cs" />

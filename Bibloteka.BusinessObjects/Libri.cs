@@ -4,18 +4,14 @@ namespace Bibloteka.BusinessObjects
 {
     public class Libri
     {
-        public Libri()
-        {
-            
-        }
 
         public string LibriId { get; set; }
 
         public string Titulli { get; set; }
 
-        public int AutoriId { get; set; }
+        public string Autori { get; set; }
 
-        public int BotuesiId { get; set; }
+        public string Botuesi { get; set; }
 
         public int GjuhaId { get; set; }
 
@@ -25,10 +21,12 @@ namespace Bibloteka.BusinessObjects
 
         public string Isbn { get; set; }
 
+        public string Editioni { get; set; }
+        public int Sasia { get; set; }
+
         public bool Statusi { get; set; }
 
         public string InsertBy { get; set; }
-
 
         public DateTime? InsertDate { get; set; }
 

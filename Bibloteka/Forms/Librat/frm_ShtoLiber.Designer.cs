@@ -39,7 +39,6 @@ namespace Bibloteka.Forms.Librat
             this.label7 = new System.Windows.Forms.Label();
             this.comboKategoria = new Guna.UI.WinForms.GunaComboBox();
             this.comboTipi = new Guna.UI.WinForms.GunaComboBox();
-            this.comboBotuesi = new Guna.UI.WinForms.GunaComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnulo = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -55,6 +54,7 @@ namespace Bibloteka.Forms.Librat
             this.label9 = new System.Windows.Forms.Label();
             this.dragForm = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.txtAutori = new Guna.UI.WinForms.GunaTextBox();
+            this.txtBotuesi = new Guna.UI.WinForms.GunaTextBox();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,7 @@ namespace Bibloteka.Forms.Librat
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
             this.gunaGroupBox1.BorderSize = 2;
+            this.gunaGroupBox1.Controls.Add(this.txtBotuesi);
             this.gunaGroupBox1.Controls.Add(this.txtAutori);
             this.gunaGroupBox1.Controls.Add(this.txtSasia);
             this.gunaGroupBox1.Controls.Add(this.label4);
@@ -73,7 +74,6 @@ namespace Bibloteka.Forms.Librat
             this.gunaGroupBox1.Controls.Add(this.label7);
             this.gunaGroupBox1.Controls.Add(this.comboKategoria);
             this.gunaGroupBox1.Controls.Add(this.comboTipi);
-            this.gunaGroupBox1.Controls.Add(this.comboBotuesi);
             this.gunaGroupBox1.Controls.Add(this.panel2);
             this.gunaGroupBox1.Controls.Add(this.btnAnulo);
             this.gunaGroupBox1.Controls.Add(this.btnShto);
@@ -242,31 +242,6 @@ namespace Bibloteka.Forms.Librat
             this.comboTipi.Radius = 3;
             this.comboTipi.Size = new System.Drawing.Size(250, 34);
             this.comboTipi.TabIndex = 51;
-            // 
-            // comboBotuesi
-            // 
-            this.comboBotuesi.BackColor = System.Drawing.Color.Transparent;
-            this.comboBotuesi.BaseColor = System.Drawing.Color.White;
-            this.comboBotuesi.BorderColor = System.Drawing.Color.Silver;
-            this.comboBotuesi.BorderSize = 1;
-            this.comboBotuesi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBotuesi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBotuesi.FocusedColor = System.Drawing.Color.Empty;
-            this.comboBotuesi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBotuesi.ForeColor = System.Drawing.Color.Black;
-            this.comboBotuesi.FormattingEnabled = true;
-            this.comboBotuesi.ItemHeight = 28;
-            this.comboBotuesi.Items.AddRange(new object[] {
-            "Shto Botues të ri..."});
-            this.comboBotuesi.Location = new System.Drawing.Point(46, 194);
-            this.comboBotuesi.Name = "comboBotuesi";
-            this.comboBotuesi.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.comboBotuesi.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.comboBotuesi.Radius = 3;
-            this.comboBotuesi.Size = new System.Drawing.Size(250, 34);
-            this.comboBotuesi.StartIndex = 0;
-            this.comboBotuesi.TabIndex = 50;
-            this.comboBotuesi.SelectedIndexChanged += new System.EventHandler(this.comboBotuesi_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -513,6 +488,25 @@ namespace Bibloteka.Forms.Librat
             this.txtAutori.Size = new System.Drawing.Size(250, 34);
             this.txtAutori.TabIndex = 60;
             // 
+            // txtBotuesi
+            // 
+            this.txtBotuesi.BackColor = System.Drawing.Color.Transparent;
+            this.txtBotuesi.BaseColor = System.Drawing.Color.White;
+            this.txtBotuesi.BorderColor = System.Drawing.Color.Silver;
+            this.txtBotuesi.BorderSize = 1;
+            this.txtBotuesi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBotuesi.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtBotuesi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtBotuesi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtBotuesi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBotuesi.Location = new System.Drawing.Point(46, 194);
+            this.txtBotuesi.Name = "txtBotuesi";
+            this.txtBotuesi.PasswordChar = '\0';
+            this.txtBotuesi.Radius = 3;
+            this.txtBotuesi.SelectedText = "";
+            this.txtBotuesi.Size = new System.Drawing.Size(250, 34);
+            this.txtBotuesi.TabIndex = 61;
+            // 
             // frm_ShtoLiber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -540,7 +534,6 @@ namespace Bibloteka.Forms.Librat
         private System.Windows.Forms.Label label7;
         private Guna.UI.WinForms.GunaComboBox comboKategoria;
         private Guna.UI.WinForms.GunaComboBox comboTipi;
-        private Guna.UI.WinForms.GunaComboBox comboBotuesi;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI.WinForms.GunaAdvenceButton btnAnulo;
         private Guna.UI.WinForms.GunaAdvenceButton btnShto;
@@ -557,5 +550,6 @@ namespace Bibloteka.Forms.Librat
         private Guna.UI.WinForms.GunaDragControl dragForm;
         private Guna.UI.WinForms.GunaNumeric txtSasia;
         private Guna.UI.WinForms.GunaTextBox txtAutori;
+        private Guna.UI.WinForms.GunaTextBox txtBotuesi;
     }
 }
