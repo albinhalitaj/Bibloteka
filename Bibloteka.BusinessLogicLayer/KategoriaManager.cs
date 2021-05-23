@@ -27,5 +27,6 @@ namespace Bibloteka.BusinessLogicLayer
         public DataTable Search(string query) => _context.SearchCategories(query);
 
         public int Total() => _context.Total();
+        public int GetId(string emri) => _context.GetCategoryId(emri);
     }
 }

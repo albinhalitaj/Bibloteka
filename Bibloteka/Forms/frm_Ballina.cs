@@ -16,10 +16,12 @@ namespace Bibloteka.Forms
     {
         private readonly Stafi _stafi;
         private readonly KlientiManager _klientiManager;
+        private readonly LibriManager _libriManager;
         public frm_Ballina(Stafi stafi)
         {
             _stafi = stafi;
             _klientiManager = new KlientiManager();
+            _libriManager = new LibriManager();
             InitializeComponent();
         }
 
@@ -27,6 +29,7 @@ namespace Bibloteka.Forms
         {
             lblWelcome.Text = @"Mirësevini " + string.Concat(_stafi.Emri, " ", _stafi.Mbiemri);
             lblKlientet.Text = _klientiManager.Count().ToString();
+            lblLibrat.Text = _libriManager.Count().ToString();
         }
     }
 }

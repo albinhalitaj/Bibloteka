@@ -18,12 +18,14 @@ namespace Bibloteka.Forms.Librat
         private readonly GjuhaManager _gjuhaManager;
         private readonly FormatiManager _formatiManager;
         private readonly Stafi _stafi;
+        private readonly LibriManager _libriManager;
         public frm_ShtoLiber(Stafi stafi)
         {
             _stafi = stafi;
             _formatiManager = new FormatiManager();
             _kategoriaManager = new KategoriaManager();
             _gjuhaManager = new GjuhaManager();
+            _libriManager = new LibriManager();
             InitializeComponent();
         }
 
@@ -44,12 +46,13 @@ namespace Bibloteka.Forms.Librat
             foreach (var formati in formatet) comboTipi.Items.Add(formati.Emri);
             comboStatusi.SelectedIndex = 1;
             comboKategoria.SelectedIndex = 0;
-            comboGjuha.SelectedIndex = 0;
-            comboTipi.SelectedIndex = 0;
+            comboGjuha.SelectedIndex = 1;
+            comboTipi.SelectedIndex = 1;
         }
 
         public void LoadCategories()
         {
+            comboKategoria.Items.Add("Zgjedh Kategorinë");
             var kategorite = new List<Kategoria>();
             var dt = _kategoriaManager.Load();
             if (dt.Rows.Count > 0)
@@ -63,16 +66,14 @@ namespace Bibloteka.Forms.Librat
 
         private void comboKategoria_Click(object sender, EventArgs e)
         {
-            var n = comboKategoria.SelectedIndex;
             comboKategoria.Items.Clear();
             LoadCategories();
-            comboKategoria.SelectedIndex = n;
         }
 
         private void comboKategoria_SelectedValueChanged(object sender, EventArgs e)
         {
             var totalCategories = _kategoriaManager.Total();
-            if (comboKategoria.SelectedIndex == totalCategories)
+            if (comboKategoria.SelectedIndex == totalCategories + 1)
             {
                 var frmmain = new frm_Kategorite(_stafi);
                 var frmShtoKategori = new frm_Shto(frmmain, _stafi);
@@ -83,12 +84,36 @@ namespace Bibloteka.Forms.Librat
             }
         }
 
-        private void comboBotuesi_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnShto_Click(object sender, EventArgs e)
         {
-            if (comboBotuesi.SelectedIndex == 0)
+            var id = _kategoriaManager.GetId(Convert.ToString(comboKategoria.SelectedItem));
+            try
             {
-                var frmBotuesi = new frm_Botuesi();
-                frmBotuesi.ShowDialog();
+                var statusi = comboStatusi.SelectedIndex == 0;
+                var libri = new Libri
+                {
+                    Titulli = txtTitulli.Text,
+                    Autori = txtAutori.Text,
+                    Botuesi = txtBotuesi.Text,
+                    GjuhaId = comboGjuha.SelectedIndex,
+                    TipiId = comboTipi.SelectedIndex,
+                    KategoriaId = _kategoriaManager.GetId(Convert.ToString(comboKategoria.SelectedItem)),
+                    Isbn = txtISBN.Text,
+                    Editioni = txtEdtitioni.Text,
+                    Sasia = txtSasia.Value,
+                    Statusi = statusi,
+                    InsertBy = _stafi.StafiId,
+                    InsertDate = DateTime.Now
+                };
+                _libriManager.Add(libri);
+                MessageBox.Show(@"Libri u shtua me sukses!", @"Information", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                Close();
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
             }
         }
     }

@@ -22,11 +22,11 @@ namespace Bibloteka.BusinessObjects
         public string Isbn { get; set; }
 
         public string Editioni { get; set; }
-        public int Sasia { get; set; }
+        public long Sasia { get; set; }
 
         public bool Statusi { get; set; }
 
-        public string InsertBy { get; set; }
+        public int? InsertBy { get; set; }
 
         public DateTime? InsertDate { get; set; }
 

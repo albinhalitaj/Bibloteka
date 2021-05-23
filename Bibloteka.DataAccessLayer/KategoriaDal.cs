@@ -140,6 +140,28 @@ namespace Bibloteka.DataAccessLayer
             }
         }
 
+        public int GetCategoryId(string emri)
+        {
+            try
+            {
+                using (var con = DataAccessLayer.AppConnection())
+                {
+                    var dt = new DataTable();
+                    var cmd = new SqlCommand("[usp_GetCategoryId]", con) {CommandType = CommandType.StoredProcedure};
+                    cmd.Parameters.AddWithValue("@emri", emri);
+                    var sda = new SqlDataAdapter(cmd);
+                    sda.Fill(dt);
+                    var id = Convert.ToInt32(dt.Rows[0][0]);
+                    return id;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+
         public int Total()
         {
             int tot;

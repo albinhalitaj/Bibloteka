@@ -114,7 +114,7 @@ namespace Bibloteka.Forms.Librat
             this.txtSasia.Name = "txtSasia";
             this.txtSasia.Radius = 3;
             this.txtSasia.Size = new System.Drawing.Size(250, 30);
-            this.txtSasia.TabIndex = 59;
+            this.txtSasia.TabIndex = 9;
             this.txtSasia.Value = ((long)(0));
             this.txtSasia.ValueChanged += new System.EventHandler(this.txtSasia_ValueChanged);
             // 
@@ -159,7 +159,7 @@ namespace Bibloteka.Forms.Librat
             this.txtEdtitioni.Radius = 3;
             this.txtEdtitioni.SelectedText = "";
             this.txtEdtitioni.Size = new System.Drawing.Size(250, 34);
-            this.txtEdtitioni.TabIndex = 55;
+            this.txtEdtitioni.TabIndex = 8;
             // 
             // comboStatusi
             // 
@@ -185,7 +185,7 @@ namespace Bibloteka.Forms.Librat
             this.comboStatusi.Radius = 3;
             this.comboStatusi.Size = new System.Drawing.Size(250, 34);
             this.comboStatusi.StartIndex = 0;
-            this.comboStatusi.TabIndex = 54;
+            this.comboStatusi.TabIndex = 10;
             // 
             // label7
             // 
@@ -218,7 +218,7 @@ namespace Bibloteka.Forms.Librat
             this.comboKategoria.OnHoverItemForeColor = System.Drawing.Color.White;
             this.comboKategoria.Radius = 3;
             this.comboKategoria.Size = new System.Drawing.Size(250, 34);
-            this.comboKategoria.TabIndex = 52;
+            this.comboKategoria.TabIndex = 6;
             this.comboKategoria.SelectedValueChanged += new System.EventHandler(this.comboKategoria_SelectedValueChanged);
             this.comboKategoria.Click += new System.EventHandler(this.comboKategoria_Click);
             // 
@@ -235,13 +235,15 @@ namespace Bibloteka.Forms.Librat
             this.comboTipi.ForeColor = System.Drawing.Color.Black;
             this.comboTipi.FormattingEnabled = true;
             this.comboTipi.ItemHeight = 28;
+            this.comboTipi.Items.AddRange(new object[] {
+            "Zgjedh Formatin"});
             this.comboTipi.Location = new System.Drawing.Point(46, 287);
             this.comboTipi.Name = "comboTipi";
             this.comboTipi.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.comboTipi.OnHoverItemForeColor = System.Drawing.Color.White;
             this.comboTipi.Radius = 3;
             this.comboTipi.Size = new System.Drawing.Size(250, 34);
-            this.comboTipi.TabIndex = 51;
+            this.comboTipi.TabIndex = 5;
             // 
             // panel2
             // 
@@ -282,7 +284,7 @@ namespace Bibloteka.Forms.Librat
             this.btnAnulo.OnPressedColor = System.Drawing.Color.Black;
             this.btnAnulo.Radius = 3;
             this.btnAnulo.Size = new System.Drawing.Size(78, 34);
-            this.btnAnulo.TabIndex = 11;
+            this.btnAnulo.TabIndex = 12;
             this.btnAnulo.Text = "Anulo";
             this.btnAnulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAnulo.Click += new System.EventHandler(this.btnAnulo_Click);
@@ -318,9 +320,10 @@ namespace Bibloteka.Forms.Librat
             this.btnShto.OnPressedColor = System.Drawing.Color.Black;
             this.btnShto.Radius = 3;
             this.btnShto.Size = new System.Drawing.Size(78, 34);
-            this.btnShto.TabIndex = 10;
+            this.btnShto.TabIndex = 11;
             this.btnShto.Text = "Ruaj";
             this.btnShto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
             // 
             // label3
             // 
@@ -351,7 +354,7 @@ namespace Bibloteka.Forms.Librat
             this.txtTitulli.Radius = 3;
             this.txtTitulli.SelectedText = "";
             this.txtTitulli.Size = new System.Drawing.Size(250, 34);
-            this.txtTitulli.TabIndex = 0;
+            this.txtTitulli.TabIndex = 1;
             // 
             // label11
             // 
@@ -378,13 +381,15 @@ namespace Bibloteka.Forms.Librat
             this.comboGjuha.ForeColor = System.Drawing.Color.Black;
             this.comboGjuha.FormattingEnabled = true;
             this.comboGjuha.ItemHeight = 28;
+            this.comboGjuha.Items.AddRange(new object[] {
+            "Zgjedh Gjuhën"});
             this.comboGjuha.Location = new System.Drawing.Point(385, 194);
             this.comboGjuha.Name = "comboGjuha";
             this.comboGjuha.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.comboGjuha.OnHoverItemForeColor = System.Drawing.Color.White;
             this.comboGjuha.Radius = 3;
             this.comboGjuha.Size = new System.Drawing.Size(250, 34);
-            this.comboGjuha.TabIndex = 7;
+            this.comboGjuha.TabIndex = 4;
             // 
             // label1
             // 
@@ -415,7 +420,7 @@ namespace Bibloteka.Forms.Librat
             this.txtISBN.Radius = 3;
             this.txtISBN.SelectedText = "";
             this.txtISBN.Size = new System.Drawing.Size(250, 34);
-            this.txtISBN.TabIndex = 8;
+            this.txtISBN.TabIndex = 7;
             // 
             // label8
             // 
@@ -486,7 +491,7 @@ namespace Bibloteka.Forms.Librat
             this.txtAutori.Radius = 3;
             this.txtAutori.SelectedText = "";
             this.txtAutori.Size = new System.Drawing.Size(250, 34);
-            this.txtAutori.TabIndex = 60;
+            this.txtAutori.TabIndex = 2;
             // 
             // txtBotuesi
             // 
@@ -505,7 +510,7 @@ namespace Bibloteka.Forms.Librat
             this.txtBotuesi.Radius = 3;
             this.txtBotuesi.SelectedText = "";
             this.txtBotuesi.Size = new System.Drawing.Size(250, 34);
-            this.txtBotuesi.TabIndex = 61;
+            this.txtBotuesi.TabIndex = 3;
             // 
             // frm_ShtoLiber
             // 

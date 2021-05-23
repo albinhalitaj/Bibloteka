@@ -42,6 +42,8 @@ namespace Bibloteka.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
             this.dgv_Librat = new Guna.UI.WinForms.GunaDataGridView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTitulli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAutori = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,11 +52,11 @@ namespace Bibloteka.Forms
             this.colTipi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colKategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEditioni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStatusi = new System.Windows.Forms.DataGridViewImageColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.gunaGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Librat)).BeginInit();
             this.SuspendLayout();
@@ -215,6 +217,8 @@ namespace Bibloteka.Forms
             this.colTipi,
             this.colKategoria,
             this.colISBN,
+            this.colEditioni,
+            this.colSasia,
             this.colStatusi,
             this.Edit,
             this.Delete});
@@ -259,6 +263,21 @@ namespace Bibloteka.Forms
             this.dgv_Librat.ThemeStyle.RowsStyle.Height = 22;
             this.dgv_Librat.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Librat.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_Librat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Librat_CellContentClick);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "badge.png");
+            this.imageList1.Images.SetKeyName(1, "badgeJoaktiv.png");
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "Picture2.png");
+            this.imageList2.Images.SetKeyName(1, "Picture1.png");
             // 
             // colID
             // 
@@ -308,6 +327,18 @@ namespace Bibloteka.Forms
             this.colISBN.Name = "colISBN";
             this.colISBN.ReadOnly = true;
             // 
+            // colEditioni
+            // 
+            this.colEditioni.HeaderText = "Editioni";
+            this.colEditioni.Name = "colEditioni";
+            this.colEditioni.ReadOnly = true;
+            // 
+            // colSasia
+            // 
+            this.colSasia.HeaderText = "Sasia";
+            this.colSasia.Name = "colSasia";
+            this.colSasia.ReadOnly = true;
+            // 
             // colStatusi
             // 
             this.colStatusi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -332,20 +363,6 @@ namespace Bibloteka.Forms
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
             this.Delete.Width = 50;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "badge.png");
-            this.imageList1.Images.SetKeyName(1, "badgeJoaktiv.png");
-            // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "Picture2.png");
-            this.imageList2.Images.SetKeyName(1, "Picture1.png");
             // 
             // frm_Librat
             // 
@@ -388,6 +405,8 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn colTipi;
         private System.Windows.Forms.DataGridViewTextBoxColumn colKategoria;
         private System.Windows.Forms.DataGridViewTextBoxColumn colISBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEditioni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSasia;
         private System.Windows.Forms.DataGridViewImageColumn colStatusi;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
