@@ -128,7 +128,7 @@ namespace Bibloteka.Forms
             this.gunaGroupBox1.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.LineTop = 0;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(32, 100);
+            this.gunaGroupBox1.Location = new System.Drawing.Point(52, 101);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
             this.gunaGroupBox1.Radius = 5;
             this.gunaGroupBox1.Size = new System.Drawing.Size(886, 560);

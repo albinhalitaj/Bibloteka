@@ -38,7 +38,10 @@ namespace Bibloteka.Forms
             this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnAnulo = new Guna.UI.WinForms.GunaAdvenceButton();
             this.epKategorite = new System.Windows.Forms.ErrorProvider(this.components);
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.epKategorite)).BeginInit();
+            this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtPershkrimi
@@ -52,7 +55,7 @@ namespace Bibloteka.Forms
             this.txtPershkrimi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtPershkrimi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtPershkrimi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPershkrimi.Location = new System.Drawing.Point(70, 191);
+            this.txtPershkrimi.Location = new System.Drawing.Point(74, 208);
             this.txtPershkrimi.Name = "txtPershkrimi";
             this.txtPershkrimi.PasswordChar = '\0';
             this.txtPershkrimi.Radius = 3;
@@ -71,7 +74,7 @@ namespace Bibloteka.Forms
             this.txtEmertimi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtEmertimi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtEmertimi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmertimi.Location = new System.Drawing.Point(70, 86);
+            this.txtEmertimi.Location = new System.Drawing.Point(74, 115);
             this.txtEmertimi.Name = "txtEmertimi";
             this.txtEmertimi.PasswordChar = '\0';
             this.txtEmertimi.Radius = 3;
@@ -84,7 +87,7 @@ namespace Bibloteka.Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins", 10.2F);
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(65, 163);
+            this.label4.Location = new System.Drawing.Point(69, 180);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 25);
@@ -96,12 +99,12 @@ namespace Bibloteka.Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 10.2F);
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(65, 57);
+            this.label3.Location = new System.Drawing.Point(69, 86);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.Size = new System.Drawing.Size(72, 25);
             this.label3.TabIndex = 17;
-            this.label3.Text = "*Emërtimi";
+            this.label3.Text = "Emërtimi";
             // 
             // btnShto
             // 
@@ -123,7 +126,7 @@ namespace Bibloteka.Forms
             this.btnShto.Image = null;
             this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
             this.btnShto.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnShto.Location = new System.Drawing.Point(242, 286);
+            this.btnShto.Location = new System.Drawing.Point(246, 313);
             this.btnShto.Margin = new System.Windows.Forms.Padding(2);
             this.btnShto.Name = "btnShto";
             this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -159,7 +162,7 @@ namespace Bibloteka.Forms
             this.btnAnulo.Image = null;
             this.btnAnulo.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAnulo.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAnulo.Location = new System.Drawing.Point(147, 286);
+            this.btnAnulo.Location = new System.Drawing.Point(151, 313);
             this.btnAnulo.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnulo.Name = "btnAnulo";
             this.btnAnulo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
@@ -179,28 +182,58 @@ namespace Bibloteka.Forms
             // 
             this.epKategorite.ContainerControl = this;
             // 
+            // gunaGroupBox1
+            // 
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
+            this.gunaGroupBox1.BorderSize = 2;
+            this.gunaGroupBox1.Controls.Add(this.panel2);
+            this.gunaGroupBox1.Controls.Add(this.btnAnulo);
+            this.gunaGroupBox1.Controls.Add(this.btnShto);
+            this.gunaGroupBox1.Controls.Add(this.txtEmertimi);
+            this.gunaGroupBox1.Controls.Add(this.label3);
+            this.gunaGroupBox1.Controls.Add(this.txtPershkrimi);
+            this.gunaGroupBox1.Controls.Add(this.label4);
+            this.gunaGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaGroupBox1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaGroupBox1.LineColor = System.Drawing.Color.Gray;
+            this.gunaGroupBox1.LineTop = 0;
+            this.gunaGroupBox1.Location = new System.Drawing.Point(0, 0);
+            this.gunaGroupBox1.Name = "gunaGroupBox1";
+            this.gunaGroupBox1.Radius = 5;
+            this.gunaGroupBox1.Size = new System.Drawing.Size(402, 409);
+            this.gunaGroupBox1.TabIndex = 51;
+            this.gunaGroupBox1.Text = "Informatat e Kategorisë";
+            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
+            this.panel2.Location = new System.Drawing.Point(235, 26);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(89, 3);
+            this.panel2.TabIndex = 49;
+            // 
             // frm_Shto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnAnulo;
-            this.ClientSize = new System.Drawing.Size(399, 370);
-            this.Controls.Add(this.btnAnulo);
-            this.Controls.Add(this.btnShto);
-            this.Controls.Add(this.txtPershkrimi);
-            this.Controls.Add(this.txtEmertimi);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(402, 409);
+            this.Controls.Add(this.gunaGroupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(415, 409);
-            this.MinimumSize = new System.Drawing.Size(415, 409);
+            this.MaximumSize = new System.Drawing.Size(402, 409);
+            this.MinimumSize = new System.Drawing.Size(402, 409);
             this.Name = "frm_Shto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shto Kategori";
             ((System.ComponentModel.ISupportInitialize)(this.epKategorite)).EndInit();
+            this.gunaGroupBox1.ResumeLayout(false);
+            this.gunaGroupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -213,5 +246,7 @@ namespace Bibloteka.Forms
         private Guna.UI.WinForms.GunaAdvenceButton btnShto;
         private Guna.UI.WinForms.GunaAdvenceButton btnAnulo;
         private System.Windows.Forms.ErrorProvider epKategorite;
+        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
