@@ -54,10 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\frm_Ballina.cs">
+    <Compile Include="Forms\Ballina\frm_Ballina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_Ballina.Designer.cs">
+    <Compile Include="Forms\Ballina\frm_Ballina.Designer.cs">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Klienti\frm_ShtoKlient.cs">
@@ -72,10 +72,10 @@
     <Compile Include="Forms\Kategorite\frm_Edito.Designer.cs">
       <DependentUpon>frm_Edito.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frm_Huazimet.cs">
+    <Compile Include="Forms\Huazimet\frm_Huazimet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_Huazimet.Designer.cs">
+    <Compile Include="Forms\Huazimet\frm_Huazimet.Designer.cs">
       <DependentUpon>frm_Huazimet.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Kategorite\frm_Kategorite.cs">
@@ -90,10 +90,10 @@
     <Compile Include="Forms\Klienti\frm_Klientet.Designer.cs">
       <DependentUpon>frm_Klientet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frm_Kthimet.cs">
+    <Compile Include="Forms\Kthimet\frm_Kthimet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_Kthimet.Designer.cs">
+    <Compile Include="Forms\Kthimet\frm_Kthimet.Designer.cs">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Librat\frm_Librat.cs">
@@ -108,10 +108,10 @@
     <Compile Include="Forms\Kategorite\frm_Shto.Designer.cs">
       <DependentUpon>frm_Shto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frm_Stafi.cs">
+    <Compile Include="Forms\Stafi\frm_Stafi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_Stafi.Designer.cs">
+    <Compile Include="Forms\Stafi\frm_Stafi.Designer.cs">
       <DependentUpon>frm_Stafi.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Librat\frm_ShtoLiber.cs">
@@ -140,7 +140,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\frm_Ballina.resx">
+    <EmbeddedResource Include="Forms\Ballina\frm_Ballina.resx">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Klienti\frm_ShtoKlient.resx">
@@ -149,7 +149,7 @@
     <EmbeddedResource Include="Forms\Kategorite\frm_Edito.resx">
       <DependentUpon>frm_Edito.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_Huazimet.resx">
+    <EmbeddedResource Include="Forms\Huazimet\frm_Huazimet.resx">
       <DependentUpon>frm_Huazimet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Kategorite\frm_Kategorite.resx">
@@ -158,7 +158,7 @@
     <EmbeddedResource Include="Forms\Klienti\frm_Klientet.resx">
       <DependentUpon>frm_Klientet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_Kthimet.resx">
+    <EmbeddedResource Include="Forms\Kthimet\frm_Kthimet.resx">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Librat\frm_Librat.resx">
@@ -167,7 +167,7 @@
     <EmbeddedResource Include="Forms\Kategorite\frm_Shto.resx">
       <DependentUpon>frm_Shto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_Stafi.resx">
+    <EmbeddedResource Include="Forms\Stafi\frm_Stafi.resx">
       <DependentUpon>frm_Stafi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Librat\frm_ShtoLiber.resx">

@@ -52,19 +52,15 @@ namespace Bibloteka.Forms
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.colHuazimiId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colKlienti = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLibri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDataHuazimit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDataKthimit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatusi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -338,17 +334,13 @@ namespace Bibloteka.Forms
             this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gunaDataGridView1.ColumnHeadersHeight = 41;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11});
+            this.colHuazimiId,
+            this.colKlienti,
+            this.colLibri,
+            this.colSasia,
+            this.colDataHuazimit,
+            this.colDataKthimit,
+            this.colStatusi});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -389,61 +381,6 @@ namespace Bibloteka.Forms
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Emri";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Mbiemri";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Datelindja";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Gjinia";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "NrPersonal";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "NrKontaktues";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Adresa";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Qyteti";
-            this.Column9.Name = "Column9";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Shteti";
-            this.Column10.Name = "Column10";
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "KodiPostal";
-            this.Column11.Name = "Column11";
-            // 
             // txtKerko
             // 
             this.txtKerko.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -476,6 +413,41 @@ namespace Bibloteka.Forms
             this.label5.Size = new System.Drawing.Size(65, 25);
             this.label5.TabIndex = 13;
             this.label5.Text = "Kërkoni:";
+            // 
+            // colHuazimiId
+            // 
+            this.colHuazimiId.HeaderText = "HuazimiID";
+            this.colHuazimiId.Name = "colHuazimiId";
+            // 
+            // colKlienti
+            // 
+            this.colKlienti.HeaderText = "Klienti";
+            this.colKlienti.Name = "colKlienti";
+            // 
+            // colLibri
+            // 
+            this.colLibri.HeaderText = "Libri";
+            this.colLibri.Name = "colLibri";
+            // 
+            // colSasia
+            // 
+            this.colSasia.HeaderText = "Sasia";
+            this.colSasia.Name = "colSasia";
+            // 
+            // colDataHuazimit
+            // 
+            this.colDataHuazimit.HeaderText = "DataHuazimit";
+            this.colDataHuazimit.Name = "colDataHuazimit";
+            // 
+            // colDataKthimit
+            // 
+            this.colDataKthimit.HeaderText = "DataKthimit";
+            this.colDataKthimit.Name = "colDataKthimit";
+            // 
+            // colStatusi
+            // 
+            this.colStatusi.HeaderText = "Statusi";
+            this.colStatusi.Name = "colStatusi";
             // 
             // frm_Ballina
             // 
@@ -524,17 +496,6 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private Guna.UI.WinForms.GunaTextBox txtKerko;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -545,5 +506,12 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.Label lblHuazimet;
         private System.Windows.Forms.Label lblLibrat;
         private System.Windows.Forms.Label lblKlientet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHuazimiId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colKlienti;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLibri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSasia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDataHuazimit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDataKthimit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colStatusi;
     }
 }
