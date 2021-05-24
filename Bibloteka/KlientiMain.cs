@@ -27,6 +27,7 @@ namespace Bibloteka
 
         public void LoadLibrat()
         {
+            dgv_Librat.Rows.Clear();
             var dt = _libriManager.Load();
             if (dt.Rows.Count > 0)
             {

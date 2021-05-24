@@ -12,6 +12,7 @@ namespace Bibloteka.Forms
         private readonly KategoriaManager _kategoriaManager;
         private readonly int _id;
         private readonly Kategoria _kategoria;
+
         public frm_Edito(Stafi stafi, 
             frm_Kategorite main,int id, Kategoria kategoria)
         {
@@ -23,7 +24,13 @@ namespace Bibloteka.Forms
             InitializeComponent();
         }
 
-        private void btnRuaj_Click(object sender, EventArgs e)
+        private void frm_Edito_Load(object sender, EventArgs e)
+        {
+            txtEmertimi.Text = _kategoria.Emertimi;
+            txtPershkrimi.Text = _kategoria.Pershkrimi;
+        }
+
+        private void btnShto_Click(object sender, EventArgs e)
         {
             if (txtEmertimi.Text.Trim().Length == 0)
                 epKategorite.SetError(txtEmertimi, "Ju lutem shkruani emertimin e kategorisë!");
@@ -43,14 +50,9 @@ namespace Bibloteka.Forms
                 _main.LoadCategories();
                 Close();
             }
+
         }
 
         private void btnAnulo_Click(object sender, EventArgs e) => Close();
-
-        private void frm_Edito_Load(object sender, EventArgs e)
-        {
-            txtEmertimi.Text = _kategoria.Emertimi;
-            txtPershkrimi.Text = _kategoria.Pershkrimi;
-        }
     }
 }
