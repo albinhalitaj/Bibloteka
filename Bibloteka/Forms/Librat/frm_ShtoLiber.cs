@@ -186,12 +186,12 @@ namespace Bibloteka.Forms.Librat
                 epLibri.SetError(txtBotuesi,"Ju lutem shkruani botuesin e librit");
                 status = false;
             }
-            else if (comboGjuha.SelectedIndex == 0)
+            else if (comboGjuha.SelectedIndex == -1)
             {
                 epLibri.SetError(comboGjuha,"Ju lutem selektoni një gjuhë");
                 status = false;
             }
-            else if (comboTipi.SelectedIndex == 0)
+            else if (comboTipi.SelectedIndex == -1)
             {
                 epLibri.SetError(comboTipi,"Ju lutem selektoni një format");
                 status = false;
