@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
@@ -73,7 +67,7 @@ namespace Bibloteka.Forms
 
         private void FshiKategori()
         {
-             var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
+            var id = Convert.ToInt32(dgv_Kategorite.CurrentRow?.Cells[0].Value);
             if (dgv_Kategorite.SelectedRows.Count != 1) return;
             if (MessageBox.Show(@"A jeni i sigurt që doni ta fshihni këtë kategori?", @"Warning",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;

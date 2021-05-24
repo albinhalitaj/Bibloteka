@@ -166,7 +166,7 @@ namespace Bibloteka.DataAccessLayer
         {
             int tot;
             using (var con = DataAccessLayer.AppConnection())
-                tot = con.Query<int>("SELECT COUNT(*) FROM Kategoria").FirstOrDefault();
+                tot = con.Query<int>("usp_GetTotalKategori").FirstOrDefault();
             return tot;
         }
     }

@@ -35,13 +35,6 @@ namespace Bibloteka.Forms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Klientet));
             this.dgv_Klientet = new Guna.UI.WinForms.GunaDataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lblTotalKlients = new System.Windows.Forms.Label();
-            this.lblKategorite = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMbiemri = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +49,13 @@ namespace Bibloteka.Forms
             this.colEmaili = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lblTotalKlients = new System.Windows.Forms.Label();
+            this.lblKategorite = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Klientet)).BeginInit();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -141,129 +141,6 @@ namespace Bibloteka.Forms
             this.dgv_Klientet.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Klientet.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_Klientet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Klientet_CellContentClick);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(704, 46);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 25);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Kërkoni:";
-            // 
-            // txtKerko
-            // 
-            this.txtKerko.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKerko.BackColor = System.Drawing.Color.Transparent;
-            this.txtKerko.BaseColor = System.Drawing.Color.White;
-            this.txtKerko.BorderColor = System.Drawing.Color.Gray;
-            this.txtKerko.BorderSize = 1;
-            this.txtKerko.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtKerko.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKerko.Location = new System.Drawing.Point(774, 42);
-            this.txtKerko.Name = "txtKerko";
-            this.txtKerko.PasswordChar = '\0';
-            this.txtKerko.Radius = 3;
-            this.txtKerko.SelectedText = "";
-            this.txtKerko.Size = new System.Drawing.Size(250, 34);
-            this.txtKerko.TabIndex = 27;
-            this.txtKerko.TextChanged += new System.EventHandler(this.txtKerko_TextChanged);
-            // 
-            // gunaGroupBox1
-            // 
-            this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
-            this.gunaGroupBox1.BorderSize = 2;
-            this.gunaGroupBox1.Controls.Add(this.btnShto);
-            this.gunaGroupBox1.Controls.Add(this.lblTotalKlients);
-            this.gunaGroupBox1.Controls.Add(this.label5);
-            this.gunaGroupBox1.Controls.Add(this.txtKerko);
-            this.gunaGroupBox1.Controls.Add(this.dgv_Klientet);
-            this.gunaGroupBox1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.LineTop = 0;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(37, 101);
-            this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Radius = 5;
-            this.gunaGroupBox1.Size = new System.Drawing.Size(1062, 638);
-            this.gunaGroupBox1.TabIndex = 29;
-            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
-            // 
-            // btnShto
-            // 
-            this.btnShto.AnimationHoverSpeed = 0.07F;
-            this.btnShto.AnimationSpeed = 0.03F;
-            this.btnShto.BackColor = System.Drawing.Color.Transparent;
-            this.btnShto.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.btnShto.BorderColor = System.Drawing.Color.Black;
-            this.btnShto.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnShto.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnShto.CheckedForeColor = System.Drawing.Color.White;
-            this.btnShto.CheckedImage = null;
-            this.btnShto.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnShto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShto.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnShto.FocusedColor = System.Drawing.Color.Empty;
-            this.btnShto.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.ForeColor = System.Drawing.Color.White;
-            this.btnShto.Image = ((System.Drawing.Image)(resources.GetObject("btnShto.Image")));
-            this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnShto.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnShto.Location = new System.Drawing.Point(37, 37);
-            this.btnShto.Name = "btnShto";
-            this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnShto.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnShto.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnShto.OnHoverImage = null;
-            this.btnShto.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnShto.OnPressedColor = System.Drawing.Color.Black;
-            this.btnShto.Radius = 3;
-            this.btnShto.Size = new System.Drawing.Size(126, 34);
-            this.btnShto.TabIndex = 30;
-            this.btnShto.Text = "Shto Klient";
-            this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
-            // 
-            // lblTotalKlients
-            // 
-            this.lblTotalKlients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblTotalKlients.AutoSize = true;
-            this.lblTotalKlients.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalKlients.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblTotalKlients.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblTotalKlients.Location = new System.Drawing.Point(32, 598);
-            this.lblTotalKlients.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalKlients.Name = "lblTotalKlients";
-            this.lblTotalKlients.Size = new System.Drawing.Size(110, 26);
-            this.lblTotalKlients.TabIndex = 29;
-            this.lblTotalKlients.Text = "Total Klientë:";
-            // 
-            // lblKategorite
-            // 
-            this.lblKategorite.AutoSize = true;
-            this.lblKategorite.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKategorite.Location = new System.Drawing.Point(30, 29);
-            this.lblKategorite.Name = "lblKategorite";
-            this.lblKategorite.Size = new System.Drawing.Size(107, 42);
-            this.lblKategorite.TabIndex = 30;
-            this.lblKategorite.Text = "Klientët";
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "edit.png");
-            this.imageList1.Images.SetKeyName(1, "delete.png");
             // 
             // colID
             // 
@@ -367,6 +244,129 @@ namespace Bibloteka.Forms
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Width = 50;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Poppins", 10.2F);
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(704, 46);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 25);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Kërkoni:";
+            // 
+            // txtKerko
+            // 
+            this.txtKerko.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKerko.BackColor = System.Drawing.Color.Transparent;
+            this.txtKerko.BaseColor = System.Drawing.Color.White;
+            this.txtKerko.BorderColor = System.Drawing.Color.Silver;
+            this.txtKerko.BorderSize = 1;
+            this.txtKerko.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtKerko.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKerko.Location = new System.Drawing.Point(774, 42);
+            this.txtKerko.Name = "txtKerko";
+            this.txtKerko.PasswordChar = '\0';
+            this.txtKerko.Radius = 3;
+            this.txtKerko.SelectedText = "";
+            this.txtKerko.Size = new System.Drawing.Size(250, 34);
+            this.txtKerko.TabIndex = 27;
+            this.txtKerko.TextChanged += new System.EventHandler(this.txtKerko_TextChanged);
+            // 
+            // gunaGroupBox1
+            // 
+            this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
+            this.gunaGroupBox1.BorderSize = 2;
+            this.gunaGroupBox1.Controls.Add(this.btnShto);
+            this.gunaGroupBox1.Controls.Add(this.lblTotalKlients);
+            this.gunaGroupBox1.Controls.Add(this.label5);
+            this.gunaGroupBox1.Controls.Add(this.txtKerko);
+            this.gunaGroupBox1.Controls.Add(this.dgv_Klientet);
+            this.gunaGroupBox1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox1.LineTop = 0;
+            this.gunaGroupBox1.Location = new System.Drawing.Point(37, 101);
+            this.gunaGroupBox1.Name = "gunaGroupBox1";
+            this.gunaGroupBox1.Radius = 5;
+            this.gunaGroupBox1.Size = new System.Drawing.Size(1062, 638);
+            this.gunaGroupBox1.TabIndex = 29;
+            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
+            // 
+            // btnShto
+            // 
+            this.btnShto.AnimationHoverSpeed = 0.07F;
+            this.btnShto.AnimationSpeed = 0.03F;
+            this.btnShto.BackColor = System.Drawing.Color.Transparent;
+            this.btnShto.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.btnShto.BorderColor = System.Drawing.Color.Black;
+            this.btnShto.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnShto.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnShto.CheckedForeColor = System.Drawing.Color.White;
+            this.btnShto.CheckedImage = null;
+            this.btnShto.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnShto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShto.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnShto.FocusedColor = System.Drawing.Color.Empty;
+            this.btnShto.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.ForeColor = System.Drawing.Color.White;
+            this.btnShto.Image = ((System.Drawing.Image)(resources.GetObject("btnShto.Image")));
+            this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnShto.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnShto.Location = new System.Drawing.Point(37, 37);
+            this.btnShto.Name = "btnShto";
+            this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnShto.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnShto.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnShto.OnHoverImage = null;
+            this.btnShto.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnShto.OnPressedColor = System.Drawing.Color.Black;
+            this.btnShto.Radius = 3;
+            this.btnShto.Size = new System.Drawing.Size(126, 34);
+            this.btnShto.TabIndex = 30;
+            this.btnShto.Text = "Shto Klient";
+            this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
+            // 
+            // lblTotalKlients
+            // 
+            this.lblTotalKlients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotalKlients.AutoSize = true;
+            this.lblTotalKlients.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalKlients.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblTotalKlients.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTotalKlients.Location = new System.Drawing.Point(32, 598);
+            this.lblTotalKlients.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalKlients.Name = "lblTotalKlients";
+            this.lblTotalKlients.Size = new System.Drawing.Size(110, 26);
+            this.lblTotalKlients.TabIndex = 29;
+            this.lblTotalKlients.Text = "Total Klientë:";
+            // 
+            // lblKategorite
+            // 
+            this.lblKategorite.AutoSize = true;
+            this.lblKategorite.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKategorite.Location = new System.Drawing.Point(30, 29);
+            this.lblKategorite.Name = "lblKategorite";
+            this.lblKategorite.Size = new System.Drawing.Size(107, 42);
+            this.lblKategorite.TabIndex = 30;
+            this.lblKategorite.Text = "Klientët";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "edit.png");
+            this.imageList1.Images.SetKeyName(1, "delete.png");
             // 
             // frm_Klientet
             // 

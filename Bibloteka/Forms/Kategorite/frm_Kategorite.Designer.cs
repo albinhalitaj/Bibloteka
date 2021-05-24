@@ -274,7 +274,7 @@ namespace Bibloteka.Forms
             this.txtKerko.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKerko.BackColor = System.Drawing.Color.Transparent;
             this.txtKerko.BaseColor = System.Drawing.Color.White;
-            this.txtKerko.BorderColor = System.Drawing.Color.Gray;
+            this.txtKerko.BorderColor = System.Drawing.Color.Silver;
             this.txtKerko.BorderSize = 1;
             this.txtKerko.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;

@@ -117,7 +117,7 @@ namespace Bibloteka.Forms
             // 
             this.txtPershkrimi.BackColor = System.Drawing.Color.Transparent;
             this.txtPershkrimi.BaseColor = System.Drawing.Color.White;
-            this.txtPershkrimi.BorderColor = System.Drawing.Color.Gray;
+            this.txtPershkrimi.BorderColor = System.Drawing.Color.Silver;
             this.txtPershkrimi.BorderSize = 1;
             this.txtPershkrimi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPershkrimi.FocusedBaseColor = System.Drawing.Color.White;
@@ -136,7 +136,7 @@ namespace Bibloteka.Forms
             // 
             this.txtEmertimi.BackColor = System.Drawing.Color.Transparent;
             this.txtEmertimi.BaseColor = System.Drawing.Color.White;
-            this.txtEmertimi.BorderColor = System.Drawing.Color.Gray;
+            this.txtEmertimi.BorderColor = System.Drawing.Color.Silver;
             this.txtEmertimi.BorderSize = 1;
             this.txtEmertimi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmertimi.FocusedBaseColor = System.Drawing.Color.White;
