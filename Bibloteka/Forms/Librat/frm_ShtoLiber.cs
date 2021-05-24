@@ -62,10 +62,14 @@ namespace Bibloteka.Forms.Librat
         public void LoadComboBoxes()
         {
             var gjuhet = _gjuhaManager.Load();
-            foreach (var gjuha in gjuhet) comboGjuha.Items.Add(gjuha.Emertimi);
+            comboGjuha.DataSource = gjuhet;
+            comboGjuha.DisplayMember = "Emertimi";
+            comboGjuha.ValueMember = "GjuhaiD";
 
             var formatet = _formatiManager.Load();
-            foreach (var formati in formatet) comboTipi.Items.Add(formati.Emri);
+            comboTipi.DataSource = formatet;
+            comboTipi.DisplayMember = "Emri";
+            comboTipi.ValueMember = "FormatiId";
             if (!string.IsNullOrEmpty(_id)) return;
             comboGjuha.SelectedIndex = 1;
             comboTipi.SelectedIndex = 1;
@@ -123,8 +127,8 @@ namespace Bibloteka.Forms.Librat
                     Titulli = txtTitulli.Text,
                     Autori = txtAutori.Text,
                     Botuesi = txtBotuesi.Text,
-                    GjuhaId = _gjuhaManager.GetId(Convert.ToString(comboGjuha.SelectedItem)),
-                    TipiId = _formatiManager.GetId(Convert.ToString(comboTipi.SelectedItem)),
+                    GjuhaId = Convert.ToInt32(comboGjuha.SelectedValue),
+                    TipiId = Convert.ToInt32(comboTipi.SelectedValue),
                     KategoriaId = _kategoriaManager.GetId(Convert.ToString(comboKategoria.SelectedItem)),
                     Isbn = txtISBN.Text,
                     Editioni = txtEdtitioni.Text,

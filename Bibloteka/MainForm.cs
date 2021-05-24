@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibloteka.BusinessObjects;
 using Bibloteka.Forms;
@@ -61,9 +54,6 @@ namespace Bibloteka
 
         private void btnStafi_Click(object sender, EventArgs e) => OpenForm(new frm_Stafi());
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            Application.Restart();
-        }
+        private void btnLogout_Click(object sender, EventArgs e) => Application.Restart();
     }
 }
