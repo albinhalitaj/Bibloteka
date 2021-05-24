@@ -19,13 +19,11 @@ namespace Bibloteka.Forms.Librat
         private readonly FormatiManager _formatiManager;
         private readonly Stafi _stafi;
         private readonly LibriManager _libriManager;
-        private frm_Librat _main;
         private readonly string _id;
         private readonly Libri _libri;
-        public frm_ShtoLiber(Stafi stafi,frm_Librat main,string id,Libri libri)
+        public frm_ShtoLiber(Stafi stafi,string id,Libri libri)
         {
             _stafi = stafi;
-            _main = main;
             _id = id;
             _libri = libri;
             _formatiManager = new FormatiManager();
@@ -71,8 +69,8 @@ namespace Bibloteka.Forms.Librat
             comboTipi.DisplayMember = "Emri";
             comboTipi.ValueMember = "FormatiId";
             if (!string.IsNullOrEmpty(_id)) return;
-            comboGjuha.SelectedIndex = 1;
-            comboTipi.SelectedIndex = 1;
+            comboGjuha.SelectedIndex = 0;
+            comboTipi.SelectedIndex = 0;
         }
 
         public void LoadCategories()

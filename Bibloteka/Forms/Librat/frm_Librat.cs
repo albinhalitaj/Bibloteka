@@ -37,7 +37,7 @@ namespace Bibloteka.Forms
 
         private void btnShto_Click(object sender, EventArgs e)
         {
-            var frmShto = new frm_ShtoLiber(_stafi,this,null,new Libri());
+            var frmShto = new frm_ShtoLiber(_stafi,null,new Libri());
             frmShto.ShowDialog();
             LoadLibrat();
             lblTotalLibra.Text = @"Total Libra: " + _libriManager.Count();
@@ -81,7 +81,7 @@ namespace Bibloteka.Forms
         private void EditoLibrin()
         {
             var id = Convert.ToString(dgv_Librat.CurrentRow?.Cells[0].Value);
-            var editoLiber = new frm_ShtoLiber(_stafi,this,id,GetLibriDetails());
+            var editoLiber = new frm_ShtoLiber(_stafi,id,GetLibriDetails());
             editoLiber.ShowDialog();
             LoadLibrat();
         }
