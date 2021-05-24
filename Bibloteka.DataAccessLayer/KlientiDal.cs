@@ -153,7 +153,7 @@ namespace Bibloteka.DataAccessLayer
             try
             {
                 using (var con = DataAccessLayer.AppConnection())
-                    return con.Query<int>("SELECT COUNT(*) FROM Klienti").FirstOrDefault();
+                    return con.Query<int>("usp_GetTotalKlients").FirstOrDefault();
             }
             catch (Exception e)
             {
