@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
+using static Bibloteka.Properties.Settings;
 
 namespace Bibloteka
 {
@@ -11,8 +12,6 @@ namespace Bibloteka
         {
             InitializeComponent();
         }
-
-        public bool RememberMe { get; set; }
 
         private void btnKyqu_Click(object sender, EventArgs e)
         {
@@ -29,15 +28,15 @@ namespace Bibloteka
                 };
                 if (chkMeMbajMend.Checked)
                 {
-                    Properties.Settings.Default.userName = model.Username;
-                    Properties.Settings.Default.password = model.Password;
-                    Properties.Settings.Default.Save();
+                    Default.userName = model.Username;
+                    Default.password = model.Password;
+                    Default.Save();
                 }
                 else
                 {
-                    Properties.Settings.Default.userName = string.Empty;
-                    Properties.Settings.Default.password = string.Empty;
-                    Properties.Settings.Default.Save();
+                    Default.userName = string.Empty;
+                    Default.password = string.Empty;
+                    Default.Save();
                 }
                 var user = signInManager.LoginUser(model);
                 if (user!=null)
@@ -75,9 +74,9 @@ namespace Bibloteka
 
         private void Login_Load(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Properties.Settings.Default.userName)) return;
-            txtPerdoruesi.Text = Properties.Settings.Default.userName;
-            txtFjalekalimi.Text = Properties.Settings.Default.password;
+            if (string.IsNullOrEmpty(Default.userName)) return;
+            txtPerdoruesi.Text = Default.userName;
+            txtFjalekalimi.Text = Default.password;
             chkMeMbajMend.Checked = true;
         }
     }
