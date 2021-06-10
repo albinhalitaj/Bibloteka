@@ -35,10 +35,10 @@ namespace Bibloteka.Forms
             // lblStafi
             // 
             this.lblStafi.AutoSize = true;
-            this.lblStafi.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStafi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStafi.Location = new System.Drawing.Point(24, 18);
             this.lblStafi.Name = "lblStafi";
-            this.lblStafi.Size = new System.Drawing.Size(71, 42);
+            this.lblStafi.Size = new System.Drawing.Size(60, 29);
             this.lblStafi.TabIndex = 3;
             this.lblStafi.Text = "Stafi";
             // 
