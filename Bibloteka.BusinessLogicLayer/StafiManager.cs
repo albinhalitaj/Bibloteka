@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,8 +9,16 @@ using Bibloteka.DataAccessLayer;
 
 namespace Bibloteka.BusinessLogicLayer
 {
-    class StafiManager
+    public class StafiManager
     {
+        private readonly StafiDal StafiDal;
+        public StafiManager() => StafiDal = new StafiDal();
+        public void Add(Stafi stafi) => StafiDal.InsertStafi(stafi);
+        public void Update(string id, Stafi stafi) => StafiDal.UpdateStafin(id, stafi);
+        public void Remove(string id) => StafiDal.DeleteStafin(id);
+        public DataTable Load() => StafiDal.GetAllStafin();
+        public DataTable FindById(string id) => StafiDal.GetStafinById(id);
+        public DataTable Search(string query) => StafiDal.SearchStafin(query);
 
     }
 }
