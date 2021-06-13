@@ -19,11 +19,11 @@ namespace Bibloteka.Forms
 {
     public partial class frm_Ballina : Form
     {
-        private readonly Stafi _stafi;
+        private readonly BusinessObjects.Stafi _stafi;
         private readonly KlientiManager _klientiManager;
         private readonly LibriManager _libriManager;
         private readonly ChartDataManager _chartDataManager;
-        public frm_Ballina(Stafi stafi)
+        public frm_Ballina(BusinessObjects.Stafi stafi)
         {
             _stafi = stafi;
             _klientiManager = new KlientiManager();
