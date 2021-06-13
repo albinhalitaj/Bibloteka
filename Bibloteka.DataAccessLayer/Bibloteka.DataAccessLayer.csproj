@@ -64,11 +64,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChartDataDal.cs" />
     <Compile Include="DataAccessLayer.cs" />
     <Compile Include="FormatiDal.cs" />
     <Compile Include="GjuhaDal.cs" />
+    <Compile Include="HuazimetDal.cs" />
     <Compile Include="KategoriaDal.cs" />
     <Compile Include="KlientiDal.cs" />
+    <Compile Include="KthimetDal.cs" />
     <Compile Include="LibriDal.cs" />
     <Compile Include="LoginDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

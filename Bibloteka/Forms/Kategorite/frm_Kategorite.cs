@@ -71,11 +71,18 @@ namespace Bibloteka.Forms
             if (dgv_Kategorite.SelectedRows.Count != 1) return;
             if (MessageBox.Show(@"A jeni i sigurt që doni ta fshihni këtë kategori?", @"Warning",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
-            _kategoriaManager.Remove(id);
-            MessageBox.Show(@"Kategoria u fshi me sukses!", @"Information", MessageBoxButtons.OK,
+            var result = _kategoriaManager.Remove(id);
+            if (result)
+            {
+                MessageBox.Show(@"Kategoria u fshi me sukses!", @"Information", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
-            LoadCategories();
-            lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
+                LoadCategories();
+                lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
+            }
+            else
+                MessageBox.Show(@"Kategoria nuk mund të fshihet sepse ka libra me këtë kategori!", @"Information",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
         }
 
         private void NdryshoKategori()

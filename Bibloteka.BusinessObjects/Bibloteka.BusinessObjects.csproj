@@ -41,16 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aktiviteti.cs" />
     <Compile Include="Gjoba.cs" />
     <Compile Include="Gjuha.cs" />
     <Compile Include="Huazimi.cs" />
     <Compile Include="Kategoria.cs" />
     <Compile Include="Klienti.cs" />
+    <Compile Include="Kthimi.cs" />
     <Compile Include="Kualifikimi.cs" />
     <Compile Include="Libri.cs" />
     <Compile Include="LibriDetalet.cs" />
     <Compile Include="Perdoruesi.cs" />
     <Compile Include="PerdoruesiRoli.cs" />
+    <Compile Include="PieViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roli.cs" />
     <Compile Include="Stafi.cs" />

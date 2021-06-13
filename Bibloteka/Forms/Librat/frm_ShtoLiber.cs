@@ -52,8 +52,8 @@ namespace Bibloteka.Forms.Librat
                 comboKategoria.SelectedItem = kategoria;
                 txtISBN.Text = _libri.Isbn;
                 txtEdtitioni.Text = _libri.Editioni;
-                txtSasia.Value = _libri.Sasia;
-                comboStatusi.SelectedIndex = Convert.ToInt32(_libri.Sasia) > 0 ? 0 : 1;
+                txtSasia.Value = _libri.NumriKopjeve;
+                comboStatusi.SelectedIndex = Convert.ToInt32(_libri.NumriKopjeve) > 0 ? 0 : 1;
             }
         }
 
@@ -130,7 +130,7 @@ namespace Bibloteka.Forms.Librat
                     KategoriaId = _kategoriaManager.GetId(Convert.ToString(comboKategoria.SelectedItem)),
                     Isbn = txtISBN.Text,
                     Editioni = txtEdtitioni.Text,
-                    Sasia = txtSasia.Value,
+                    NumriKopjeve = txtSasia.Value,
                     Statusi = statusi
                 };
                 if (_id == null)

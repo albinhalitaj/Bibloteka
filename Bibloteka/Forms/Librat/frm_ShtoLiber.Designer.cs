@@ -169,7 +169,7 @@ namespace Bibloteka.Forms.Librat
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 25);
             this.label4.TabIndex = 58;
-            this.label4.Text = "Sasia";
+            this.label4.Text = "NumriKopjeve";
             // 
             // label2
             // 

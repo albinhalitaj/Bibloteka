@@ -22,7 +22,7 @@ namespace Bibloteka.BusinessObjects
         public string Isbn { get; set; }
 
         public string Editioni { get; set; }
-        public long Sasia { get; set; }
+        public long NumriKopjeve { get; set; }
 
         public bool Statusi { get; set; }
 

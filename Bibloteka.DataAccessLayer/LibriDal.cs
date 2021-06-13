@@ -28,7 +28,7 @@ namespace Bibloteka.DataAccessLayer
                    cmd.Parameters.AddWithValue("@kategoriaId", libri.KategoriaId);
                    cmd.Parameters.AddWithValue("@isbn", libri.Isbn);
                    cmd.Parameters.AddWithValue("@editioni", libri.Editioni);
-                   cmd.Parameters.AddWithValue("@numriKopjeve", libri.Sasia);
+                   cmd.Parameters.AddWithValue("@numriKopjeve", libri.NumriKopjeve);
                    cmd.Parameters.AddWithValue("@statusi", libri.Statusi);
                    cmd.Parameters.AddWithValue("@insertBy", libri.InsertBy);
                    cmd.Parameters.AddWithValue("@insertDate", libri.InsertDate);
@@ -59,7 +59,7 @@ namespace Bibloteka.DataAccessLayer
                    cmd.Parameters.AddWithValue("@kategoriaId", libri.KategoriaId);
                    cmd.Parameters.AddWithValue("@isbn", libri.Isbn);
                    cmd.Parameters.AddWithValue("@editioni", libri.Editioni);
-                   cmd.Parameters.AddWithValue("@numriKopjeve", libri.Sasia);
+                   cmd.Parameters.AddWithValue("@numriKopjeve", libri.NumriKopjeve);
                    cmd.Parameters.AddWithValue("@statusi", libri.Statusi);
                    cmd.Parameters.AddWithValue("@lub", libri.Lub);
                    cmd.Parameters.AddWithValue("@lun", libri.Lun);

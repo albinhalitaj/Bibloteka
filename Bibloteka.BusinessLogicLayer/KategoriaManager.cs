@@ -18,9 +18,9 @@ namespace Bibloteka.BusinessLogicLayer
 
         public void Update(int id, Kategoria kategoria) => _context.EditoKategori(id, kategoria);
 
-        public void Remove(int id) => _context.FshiKategori(id);
+        public bool Remove(int id) => _context.FshiKategori(id);
 
-        public DataTable GetById(int id) => _context.GetCategoryById(id);
+        public DataTable GetById(int id) => KategoriaDal.GetCategoryById(id);
 
         public DataTable Load() => _context.GetAllCategories();
 

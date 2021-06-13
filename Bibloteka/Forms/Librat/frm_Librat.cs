@@ -102,9 +102,9 @@ namespace Bibloteka.Forms
                 KategoriaId = _kategoriaManager.GetId(Convert.ToString(dgv_Librat.CurrentRow?.Cells[6].Value)),
                 Isbn = Convert.ToString(dgv_Librat.CurrentRow?.Cells[7].Value),
                 Editioni = Convert.ToString(dgv_Librat.CurrentRow?.Cells[8].Value),
-                Sasia = Convert.ToInt32(dgv_Librat.CurrentRow?.Cells[9].Value),
+                NumriKopjeve = Convert.ToInt32(dgv_Librat.CurrentRow?.Cells[9].Value),
             };
-            libri.Statusi = libri.Sasia > 0;
+            libri.Statusi = libri.NumriKopjeve > 0;
             return libri;
         }
 

@@ -17,6 +17,7 @@ namespace Bibloteka
         {
             _perdoruesi = perdoruesi;
             InitializeComponent();
+            Customize();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -38,6 +39,24 @@ namespace Bibloteka
             form.Show();
         }
 
+        private void Customize() => panelReportsSubMenu.Visible = false;
+
+        private void HideSubMenu()
+        {
+            if (panelReportsSubMenu.Visible) panelReportsSubMenu.Visible = false;
+        }
+
+        private void ShowSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                HideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
         private void btnBallina_Click(object sender, EventArgs e) => OpenForm(new frm_Ballina(_perdoruesi.Stafi));
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
@@ -46,14 +65,15 @@ namespace Bibloteka
 
         private void btnKlientet_Click(object sender, EventArgs e) => OpenForm(new frm_Klientet(_perdoruesi.Stafi));
 
-        private void btnKthimet_Click(object sender, EventArgs e) => OpenForm(new frm_Kthimet());
 
-        private void btnHuazimet_Click(object sender, EventArgs e) => OpenForm(new frm_Huazimet());
+        private void btnHuazimet_Click(object sender, EventArgs e) => OpenForm(new frm_Huazimet(_perdoruesi.Stafi));
 
         private void btnLibrat_Click(object sender, EventArgs e) => OpenForm(new frm_Librat(_perdoruesi.Stafi));
 
         private void btnStafi_Click(object sender, EventArgs e) => OpenForm(new frm_Stafi());
 
         private void btnLogout_Click(object sender, EventArgs e) => Application.Restart();
+
+        private void btnRaportet_Click(object sender, EventArgs e) => ShowSubMenu(panelReportsSubMenu);
     }
 }

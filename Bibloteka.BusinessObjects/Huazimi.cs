@@ -6,8 +6,6 @@ namespace Bibloteka.BusinessObjects
     {
         public int HuazimiId { get; set; }
 
-        public int StafiId { get; set; }
-
         public string LibriId { get; set; }
 
         public string KlientiId { get; set; }

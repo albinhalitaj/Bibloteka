@@ -241,7 +241,7 @@ namespace Bibloteka
             // 
             // colSasia
             // 
-            this.colSasia.HeaderText = "Sasia";
+            this.colSasia.HeaderText = "NumriKopjeve";
             this.colSasia.Name = "colSasia";
             this.colSasia.ReadOnly = true;
             // 

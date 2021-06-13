@@ -31,11 +31,15 @@ namespace Bibloteka
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelReportsSubMenu = new System.Windows.Forms.Panel();
+            this.gunaAdvenceButton11 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaAdvenceButton10 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaAdvenceButton9 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaAdvenceButton8 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnLogout = new System.Windows.Forms.PictureBox();
             this.lblPunetori = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnLibrat = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnKthimet = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnRaportet = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnHuazimet = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnStafi = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -50,6 +54,7 @@ namespace Bibloteka
             this.Wrapper = new System.Windows.Forms.Panel();
             this.panelSeperator = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panelReportsSubMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -62,11 +67,11 @@ namespace Bibloteka
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.panel1.Controls.Add(this.panelReportsSubMenu);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.lblPunetori);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnLibrat);
-            this.panel1.Controls.Add(this.btnKthimet);
             this.panel1.Controls.Add(this.btnRaportet);
             this.panel1.Controls.Add(this.btnHuazimet);
             this.panel1.Controls.Add(this.btnStafi);
@@ -79,6 +84,162 @@ namespace Bibloteka
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(259, 834);
             this.panel1.TabIndex = 1;
+            // 
+            // panelReportsSubMenu
+            // 
+            this.panelReportsSubMenu.Controls.Add(this.gunaAdvenceButton11);
+            this.panelReportsSubMenu.Controls.Add(this.gunaAdvenceButton10);
+            this.panelReportsSubMenu.Controls.Add(this.gunaAdvenceButton9);
+            this.panelReportsSubMenu.Controls.Add(this.gunaAdvenceButton8);
+            this.panelReportsSubMenu.Location = new System.Drawing.Point(2, 556);
+            this.panelReportsSubMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.panelReportsSubMenu.Name = "panelReportsSubMenu";
+            this.panelReportsSubMenu.Size = new System.Drawing.Size(257, 218);
+            this.panelReportsSubMenu.TabIndex = 19;
+            // 
+            // gunaAdvenceButton11
+            // 
+            this.gunaAdvenceButton11.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton11.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton11.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gunaAdvenceButton11.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton11.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton11.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton11.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton11.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton11.CheckedImage")));
+            this.gunaAdvenceButton11.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton11.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaAdvenceButton11.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton11.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton11.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton11.Image")));
+            this.gunaAdvenceButton11.ImageOffsetX = 30;
+            this.gunaAdvenceButton11.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaAdvenceButton11.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton11.Location = new System.Drawing.Point(0, 150);
+            this.gunaAdvenceButton11.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaAdvenceButton11.Name = "gunaAdvenceButton11";
+            this.gunaAdvenceButton11.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaAdvenceButton11.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton11.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton11.OnHoverImage = null;
+            this.gunaAdvenceButton11.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton11.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton11.Size = new System.Drawing.Size(257, 50);
+            this.gunaAdvenceButton11.TabIndex = 3;
+            this.gunaAdvenceButton11.Text = "Raporti Kthimeve";
+            this.gunaAdvenceButton11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaAdvenceButton11.TextOffsetX = 25;
+            // 
+            // gunaAdvenceButton10
+            // 
+            this.gunaAdvenceButton10.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton10.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton10.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gunaAdvenceButton10.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton10.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton10.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton10.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton10.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton10.CheckedImage")));
+            this.gunaAdvenceButton10.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton10.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaAdvenceButton10.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton10.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton10.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton10.Image")));
+            this.gunaAdvenceButton10.ImageOffsetX = 30;
+            this.gunaAdvenceButton10.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaAdvenceButton10.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton10.Location = new System.Drawing.Point(0, 100);
+            this.gunaAdvenceButton10.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaAdvenceButton10.Name = "gunaAdvenceButton10";
+            this.gunaAdvenceButton10.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaAdvenceButton10.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton10.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton10.OnHoverImage = null;
+            this.gunaAdvenceButton10.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton10.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton10.Size = new System.Drawing.Size(257, 50);
+            this.gunaAdvenceButton10.TabIndex = 2;
+            this.gunaAdvenceButton10.Text = "Raporti Huazimeve";
+            this.gunaAdvenceButton10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaAdvenceButton10.TextOffsetX = 18;
+            // 
+            // gunaAdvenceButton9
+            // 
+            this.gunaAdvenceButton9.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton9.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton9.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gunaAdvenceButton9.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton9.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton9.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton9.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton9.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton9.CheckedImage")));
+            this.gunaAdvenceButton9.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton9.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaAdvenceButton9.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton9.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton9.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton9.Image")));
+            this.gunaAdvenceButton9.ImageOffsetX = 30;
+            this.gunaAdvenceButton9.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaAdvenceButton9.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton9.Location = new System.Drawing.Point(0, 50);
+            this.gunaAdvenceButton9.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaAdvenceButton9.Name = "gunaAdvenceButton9";
+            this.gunaAdvenceButton9.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaAdvenceButton9.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton9.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton9.OnHoverImage = null;
+            this.gunaAdvenceButton9.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton9.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton9.Size = new System.Drawing.Size(257, 50);
+            this.gunaAdvenceButton9.TabIndex = 1;
+            this.gunaAdvenceButton9.Text = "Raporti Librave";
+            this.gunaAdvenceButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaAdvenceButton9.TextOffsetX = 40;
+            // 
+            // gunaAdvenceButton8
+            // 
+            this.gunaAdvenceButton8.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton8.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton8.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.gunaAdvenceButton8.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton8.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.gunaAdvenceButton8.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton8.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton8.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton8.CheckedImage")));
+            this.gunaAdvenceButton8.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.gunaAdvenceButton8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaAdvenceButton8.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaAdvenceButton8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaAdvenceButton8.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaAdvenceButton8.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton8.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton8.Image")));
+            this.gunaAdvenceButton8.ImageOffsetX = 30;
+            this.gunaAdvenceButton8.ImageSize = new System.Drawing.Size(25, 25);
+            this.gunaAdvenceButton8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton8.Location = new System.Drawing.Point(0, 0);
+            this.gunaAdvenceButton8.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaAdvenceButton8.Name = "gunaAdvenceButton8";
+            this.gunaAdvenceButton8.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.gunaAdvenceButton8.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton8.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton8.OnHoverImage = null;
+            this.gunaAdvenceButton8.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.gunaAdvenceButton8.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton8.Size = new System.Drawing.Size(257, 50);
+            this.gunaAdvenceButton8.TabIndex = 0;
+            this.gunaAdvenceButton8.Text = "Raporti Klientëve";
+            this.gunaAdvenceButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaAdvenceButton8.TextOffsetX = 19;
             // 
             // btnLogout
             // 
@@ -156,45 +317,6 @@ namespace Bibloteka
             this.btnLibrat.TextOffsetX = 10;
             this.btnLibrat.Click += new System.EventHandler(this.btnLibrat_Click);
             // 
-            // btnKthimet
-            // 
-            this.btnKthimet.Animated = true;
-            this.btnKthimet.AnimationHoverSpeed = 0.07F;
-            this.btnKthimet.AnimationSpeed = 0.03F;
-            this.btnKthimet.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnKthimet.BorderColor = System.Drawing.Color.Black;
-            this.btnKthimet.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnKthimet.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
-            this.btnKthimet.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnKthimet.CheckedForeColor = System.Drawing.Color.White;
-            this.btnKthimet.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnKthimet.CheckedImage")));
-            this.btnKthimet.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnKthimet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKthimet.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnKthimet.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKthimet.Font = new System.Drawing.Font("Poppins Light", 12F);
-            this.btnKthimet.ForeColor = System.Drawing.Color.White;
-            this.btnKthimet.Image = ((System.Drawing.Image)(resources.GetObject("btnKthimet.Image")));
-            this.btnKthimet.ImageOffsetX = 10;
-            this.btnKthimet.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnKthimet.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnKthimet.LineLeft = 5;
-            this.btnKthimet.Location = new System.Drawing.Point(2, 449);
-            this.btnKthimet.Margin = new System.Windows.Forms.Padding(2);
-            this.btnKthimet.Name = "btnKthimet";
-            this.btnKthimet.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnKthimet.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnKthimet.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnKthimet.OnHoverImage = null;
-            this.btnKthimet.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnKthimet.OnPressedColor = System.Drawing.Color.Black;
-            this.btnKthimet.OnPressedDepth = 0;
-            this.btnKthimet.Size = new System.Drawing.Size(255, 52);
-            this.btnKthimet.TabIndex = 14;
-            this.btnKthimet.Text = "Kthimet";
-            this.btnKthimet.TextOffsetX = 10;
-            this.btnKthimet.Click += new System.EventHandler(this.btnKthimet_Click);
-            // 
             // btnRaportet
             // 
             this.btnRaportet.Animated = true;
@@ -218,7 +340,7 @@ namespace Bibloteka
             this.btnRaportet.ImageSize = new System.Drawing.Size(30, 30);
             this.btnRaportet.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.btnRaportet.LineLeft = 5;
-            this.btnRaportet.Location = new System.Drawing.Point(2, 553);
+            this.btnRaportet.Location = new System.Drawing.Point(2, 502);
             this.btnRaportet.Margin = new System.Windows.Forms.Padding(2);
             this.btnRaportet.Name = "btnRaportet";
             this.btnRaportet.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
@@ -232,6 +354,7 @@ namespace Bibloteka
             this.btnRaportet.TabIndex = 15;
             this.btnRaportet.Text = "Raportet";
             this.btnRaportet.TextOffsetX = 10;
+            this.btnRaportet.Click += new System.EventHandler(this.btnRaportet_Click);
             // 
             // btnHuazimet
             // 
@@ -295,7 +418,7 @@ namespace Bibloteka
             this.btnStafi.ImageSize = new System.Drawing.Size(30, 30);
             this.btnStafi.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.btnStafi.LineLeft = 5;
-            this.btnStafi.Location = new System.Drawing.Point(2, 501);
+            this.btnStafi.Location = new System.Drawing.Point(2, 450);
             this.btnStafi.Margin = new System.Windows.Forms.Padding(2);
             this.btnStafi.Name = "btnStafi";
             this.btnStafi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
@@ -530,6 +653,7 @@ namespace Bibloteka
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelReportsSubMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -546,7 +670,6 @@ namespace Bibloteka
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI.WinForms.GunaAdvenceButton btnLibrat;
-        private Guna.UI.WinForms.GunaAdvenceButton btnKthimet;
         private Guna.UI.WinForms.GunaAdvenceButton btnRaportet;
         private Guna.UI.WinForms.GunaAdvenceButton btnHuazimet;
         private Guna.UI.WinForms.GunaAdvenceButton btnStafi;
@@ -562,5 +685,10 @@ namespace Bibloteka
         private System.Windows.Forms.PictureBox btnLogout;
         private System.Windows.Forms.Panel panelSeperator;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelReportsSubMenu;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton11;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton10;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton9;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton8;
     }
 }

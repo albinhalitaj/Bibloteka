@@ -59,26 +59,26 @@ namespace Bibloteka.DataAccessLayer
             }
         }
 
-        public void FshiKategori(int id)
+        public bool FshiKategori(int id)
         {
             try
             {
                 using (var con = DataAccessLayer.AppConnection())
                 {
                     var cmd = new SqlCommand("usp_DeleteCategory", con) { CommandType = CommandType.StoredProcedure };
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+                    cmd.Parameters.AddWithValue("@id", id); 
+                    var res = cmd.ExecuteNonQuery();
+                    return res <= 0;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e);
-                throw;
+                return false;
             }
         }
 
 
-        public DataTable GetCategoryById(int id)
+        public static DataTable GetCategoryById(int id)
         {
             try
             {
