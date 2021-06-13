@@ -72,6 +72,7 @@
     <Compile Include="NjoftimiService.cs" />
     <Compile Include="SignInManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StafiManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bibloteka.BusinessObjects\Bibloteka.BusinessObjects.csproj">

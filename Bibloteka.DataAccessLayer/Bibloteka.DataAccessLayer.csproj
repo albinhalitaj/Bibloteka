@@ -75,6 +75,7 @@
     <Compile Include="LibriDal.cs" />
     <Compile Include="LoginDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StafiDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

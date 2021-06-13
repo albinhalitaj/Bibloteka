@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bibloteka.Forms
+namespace Bibloteka.Forms.Stafi
 {
-    public partial class frm_Stafi : Form
+    public partial class Form1 : Form
     {
-        public frm_Stafi()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void gunaGroupBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

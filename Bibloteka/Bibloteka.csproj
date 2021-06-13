@@ -137,6 +137,12 @@
     <Compile Include="Forms\Kategorite\frm_Shto.Designer.cs">
       <DependentUpon>frm_Shto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Stafi\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Stafi\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Stafi\frm_Stafi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Kategorite\frm_Shto.resx">
       <DependentUpon>frm_Shto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Stafi\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Stafi\frm_Stafi.resx">
       <DependentUpon>frm_Stafi.cs</DependentUpon>
