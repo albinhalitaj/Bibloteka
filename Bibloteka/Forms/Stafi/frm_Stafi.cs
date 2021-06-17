@@ -164,6 +164,18 @@ namespace Bibloteka.Forms
             var shtoStaf = new frm_ShtoStafi( this,null, new Stafi());
             shtoStaf.ShowDialog();
         }
+
+        private void dgv_Stafi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgv_Stafi.CurrentCell.ColumnIndex.Equals(11))
+            {
+                NdryshoStafin();
+            }
+            if (dgv_Stafi.CurrentCell.ColumnIndex.Equals(12))
+            {
+                FshiStaf();
+            }
+        }
     }
 }
 
