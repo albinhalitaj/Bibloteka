@@ -1,7 +1,7 @@
 ﻿
-namespace Bibloteka.Forms.Stafi
+namespace Bibloteka.Forms
 {
-    partial class Form1
+    partial class frm_ShtoStafi
     {
         /// <summary>
         /// Required designer variable.
@@ -32,16 +32,16 @@ namespace Bibloteka.Forms.Stafi
             this.components = new System.ComponentModel.Container();
             this.dgv_InformatatStafit = new Guna.UI.WinForms.GunaGroupBox();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.radioFemer = new Guna.UI.WinForms.GunaRadioButton();
+            this.radioMashkull = new Guna.UI.WinForms.GunaRadioButton();
             this.comboRoli = new System.Windows.Forms.ComboBox();
             this.txtPassword = new Guna.UI.WinForms.GunaTextBox();
             this.txtUsername = new Guna.UI.WinForms.GunaTextBox();
-            this.txtEmail = new Guna.UI.WinForms.GunaTextBox();
+            this.txtEmaili = new Guna.UI.WinForms.GunaTextBox();
             this.txtKodiPostal = new Guna.UI.WinForms.GunaTextBox();
-            this.txtShteti = new Guna.UI.WinForms.GunaTextBox();
-            this.txtQyteti = new Guna.UI.WinForms.GunaTextBox();
             this.comboKualifikimet = new System.Windows.Forms.ComboBox();
             this.txtNrKontaktues = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.dataStafit = new Guna.UI.WinForms.GunaDateTimePicker();
             this.txtEmri = new Guna.UI.WinForms.GunaTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -58,18 +58,19 @@ namespace Bibloteka.Forms.Stafi
             this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboGjinia = new Guna.UI.WinForms.GunaComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNrPersonal = new Guna.UI.WinForms.GunaTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.epLibri = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epStafi = new System.Windows.Forms.ErrorProvider(this.components);
             this.dragForm = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.txtShteti = new Guna.UI.WinForms.GunaTextBox();
+            this.txtQyteti = new Guna.UI.WinForms.GunaTextBox();
             this.dgv_InformatatStafit.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.epLibri)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epStafi)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_InformatatStafit
@@ -81,7 +82,7 @@ namespace Bibloteka.Forms.Stafi
             this.dgv_InformatatStafit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_InformatatStafit.LineColor = System.Drawing.Color.Gainsboro;
             this.dgv_InformatatStafit.Location = new System.Drawing.Point(0, 0);
-            this.dgv_InformatatStafit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_InformatatStafit.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_InformatatStafit.Name = "dgv_InformatatStafit";
             this.dgv_InformatatStafit.Size = new System.Drawing.Size(730, 725);
             this.dgv_InformatatStafit.TabIndex = 0;
@@ -94,16 +95,16 @@ namespace Bibloteka.Forms.Stafi
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
             this.gunaGroupBox1.BorderSize = 2;
+            this.gunaGroupBox1.Controls.Add(this.radioFemer);
+            this.gunaGroupBox1.Controls.Add(this.radioMashkull);
             this.gunaGroupBox1.Controls.Add(this.comboRoli);
             this.gunaGroupBox1.Controls.Add(this.txtPassword);
             this.gunaGroupBox1.Controls.Add(this.txtUsername);
-            this.gunaGroupBox1.Controls.Add(this.txtEmail);
+            this.gunaGroupBox1.Controls.Add(this.txtEmaili);
             this.gunaGroupBox1.Controls.Add(this.txtKodiPostal);
-            this.gunaGroupBox1.Controls.Add(this.txtShteti);
-            this.gunaGroupBox1.Controls.Add(this.txtQyteti);
             this.gunaGroupBox1.Controls.Add(this.comboKualifikimet);
             this.gunaGroupBox1.Controls.Add(this.txtNrKontaktues);
-            this.gunaGroupBox1.Controls.Add(this.gunaDateTimePicker1);
+            this.gunaGroupBox1.Controls.Add(this.dataStafit);
             this.gunaGroupBox1.Controls.Add(this.txtEmri);
             this.gunaGroupBox1.Controls.Add(this.label15);
             this.gunaGroupBox1.Controls.Add(this.label14);
@@ -113,6 +114,8 @@ namespace Bibloteka.Forms.Stafi
             this.gunaGroupBox1.Controls.Add(this.label10);
             this.gunaGroupBox1.Controls.Add(this.label4);
             this.gunaGroupBox1.Controls.Add(this.label2);
+            this.gunaGroupBox1.Controls.Add(this.txtQyteti);
+            this.gunaGroupBox1.Controls.Add(this.txtShteti);
             this.gunaGroupBox1.Controls.Add(this.txtAdresa);
             this.gunaGroupBox1.Controls.Add(this.label7);
             this.gunaGroupBox1.Controls.Add(this.panel2);
@@ -120,7 +123,6 @@ namespace Bibloteka.Forms.Stafi
             this.gunaGroupBox1.Controls.Add(this.btnShto);
             this.gunaGroupBox1.Controls.Add(this.label3);
             this.gunaGroupBox1.Controls.Add(this.label11);
-            this.gunaGroupBox1.Controls.Add(this.comboGjinia);
             this.gunaGroupBox1.Controls.Add(this.label1);
             this.gunaGroupBox1.Controls.Add(this.txtNrPersonal);
             this.gunaGroupBox1.Controls.Add(this.label8);
@@ -139,11 +141,35 @@ namespace Bibloteka.Forms.Stafi
             this.gunaGroupBox1.Text = "Informatat e Librit";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
             // 
+            // radioFemer
+            // 
+            this.radioFemer.BaseColor = System.Drawing.SystemColors.Control;
+            this.radioFemer.CheckedOffColor = System.Drawing.Color.Gray;
+            this.radioFemer.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.radioFemer.FillColor = System.Drawing.Color.White;
+            this.radioFemer.Location = new System.Drawing.Point(481, 171);
+            this.radioFemer.Name = "radioFemer";
+            this.radioFemer.Size = new System.Drawing.Size(62, 20);
+            this.radioFemer.TabIndex = 81;
+            this.radioFemer.Text = "Femer";
+            // 
+            // radioMashkull
+            // 
+            this.radioMashkull.BaseColor = System.Drawing.SystemColors.Control;
+            this.radioMashkull.CheckedOffColor = System.Drawing.Color.Gray;
+            this.radioMashkull.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.radioMashkull.FillColor = System.Drawing.Color.White;
+            this.radioMashkull.Location = new System.Drawing.Point(378, 171);
+            this.radioMashkull.Name = "radioMashkull";
+            this.radioMashkull.Size = new System.Drawing.Size(75, 20);
+            this.radioMashkull.TabIndex = 80;
+            this.radioMashkull.Text = "Mashkull";
+            // 
             // comboRoli
             // 
             this.comboRoli.FormattingEnabled = true;
             this.comboRoli.Location = new System.Drawing.Point(45, 641);
-            this.comboRoli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboRoli.Margin = new System.Windows.Forms.Padding(2);
             this.comboRoli.Name = "comboRoli";
             this.comboRoli.Size = new System.Drawing.Size(253, 28);
             this.comboRoli.TabIndex = 79;
@@ -185,25 +211,26 @@ namespace Bibloteka.Forms.Stafi
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(250, 25);
             this.txtUsername.TabIndex = 77;
+            //this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged_1);
             // 
-            // txtEmail
+            // txtEmaili
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
-            this.txtEmail.BaseColor = System.Drawing.Color.White;
-            this.txtEmail.BorderColor = System.Drawing.Color.Silver;
-            this.txtEmail.BorderSize = 1;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtEmail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(385, 479);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PasswordChar = '\0';
-            this.txtEmail.Radius = 3;
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(250, 25);
-            this.txtEmail.TabIndex = 76;
+            this.txtEmaili.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmaili.BaseColor = System.Drawing.Color.White;
+            this.txtEmaili.BorderColor = System.Drawing.Color.Silver;
+            this.txtEmaili.BorderSize = 1;
+            this.txtEmaili.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmaili.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtEmaili.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtEmaili.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtEmaili.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmaili.Location = new System.Drawing.Point(385, 479);
+            this.txtEmaili.Name = "txtEmaili";
+            this.txtEmaili.PasswordChar = '\0';
+            this.txtEmaili.Radius = 3;
+            this.txtEmaili.SelectedText = "";
+            this.txtEmaili.Size = new System.Drawing.Size(250, 25);
+            this.txtEmaili.TabIndex = 76;
             // 
             // txtKodiPostal
             // 
@@ -224,49 +251,11 @@ namespace Bibloteka.Forms.Stafi
             this.txtKodiPostal.Size = new System.Drawing.Size(250, 25);
             this.txtKodiPostal.TabIndex = 75;
             // 
-            // txtShteti
-            // 
-            this.txtShteti.BackColor = System.Drawing.Color.Transparent;
-            this.txtShteti.BaseColor = System.Drawing.Color.White;
-            this.txtShteti.BorderColor = System.Drawing.Color.Silver;
-            this.txtShteti.BorderSize = 1;
-            this.txtShteti.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtShteti.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtShteti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtShteti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtShteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShteti.Location = new System.Drawing.Point(385, 391);
-            this.txtShteti.Name = "txtShteti";
-            this.txtShteti.PasswordChar = '\0';
-            this.txtShteti.Radius = 3;
-            this.txtShteti.SelectedText = "";
-            this.txtShteti.Size = new System.Drawing.Size(250, 25);
-            this.txtShteti.TabIndex = 74;
-            // 
-            // txtQyteti
-            // 
-            this.txtQyteti.BackColor = System.Drawing.Color.Transparent;
-            this.txtQyteti.BaseColor = System.Drawing.Color.White;
-            this.txtQyteti.BorderColor = System.Drawing.Color.Silver;
-            this.txtQyteti.BorderSize = 1;
-            this.txtQyteti.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtQyteti.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtQyteti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtQyteti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtQyteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQyteti.Location = new System.Drawing.Point(46, 391);
-            this.txtQyteti.Name = "txtQyteti";
-            this.txtQyteti.PasswordChar = '\0';
-            this.txtQyteti.Radius = 3;
-            this.txtQyteti.SelectedText = "";
-            this.txtQyteti.Size = new System.Drawing.Size(250, 25);
-            this.txtQyteti.TabIndex = 73;
-            // 
             // comboKualifikimet
             // 
             this.comboKualifikimet.FormattingEnabled = true;
             this.comboKualifikimet.Location = new System.Drawing.Point(45, 311);
-            this.comboKualifikimet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboKualifikimet.Margin = new System.Windows.Forms.Padding(2);
             this.comboKualifikimet.Name = "comboKualifikimet";
             this.comboKualifikimet.Size = new System.Drawing.Size(253, 28);
             this.comboKualifikimet.TabIndex = 72;
@@ -290,28 +279,28 @@ namespace Bibloteka.Forms.Stafi
             this.txtNrKontaktues.Size = new System.Drawing.Size(250, 25);
             this.txtNrKontaktues.TabIndex = 71;
             // 
-            // gunaDateTimePicker1
+            // dataStafit
             // 
-            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaDateTimePicker1.CustomFormat = null;
-            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(45, 171);
-            this.gunaDateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
-            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
-            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(251, 34);
-            this.gunaDateTimePicker1.TabIndex = 64;
-            this.gunaDateTimePicker1.Text = "11/06/2021";
-            this.gunaDateTimePicker1.Value = new System.DateTime(2021, 6, 11, 16, 20, 47, 117);
+            this.dataStafit.BaseColor = System.Drawing.Color.White;
+            this.dataStafit.BorderColor = System.Drawing.Color.Silver;
+            this.dataStafit.CustomFormat = null;
+            this.dataStafit.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dataStafit.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataStafit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dataStafit.ForeColor = System.Drawing.Color.Black;
+            this.dataStafit.Location = new System.Drawing.Point(45, 171);
+            this.dataStafit.Margin = new System.Windows.Forms.Padding(2);
+            this.dataStafit.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dataStafit.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dataStafit.Name = "dataStafit";
+            this.dataStafit.OnHoverBaseColor = System.Drawing.Color.White;
+            this.dataStafit.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataStafit.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataStafit.OnPressedColor = System.Drawing.Color.Black;
+            this.dataStafit.Size = new System.Drawing.Size(251, 34);
+            this.dataStafit.TabIndex = 64;
+            this.dataStafit.Text = "11/06/2021";
+            this.dataStafit.Value = new System.DateTime(2021, 6, 11, 16, 20, 47, 117);
             // 
             // txtEmri
             // 
@@ -323,7 +312,7 @@ namespace Bibloteka.Forms.Stafi
             this.txtEmri.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtEmri.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmri.Location = new System.Drawing.Point(45, 97);
-            this.txtEmri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmri.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmri.Name = "txtEmri";
             this.txtEmri.PasswordChar = '\0';
             this.txtEmri.SelectedText = "";
@@ -493,7 +482,7 @@ namespace Bibloteka.Forms.Stafi
             this.btnAnulo.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAnulo.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnAnulo.Location = new System.Drawing.Point(468, 641);
-            this.btnAnulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnulo.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnulo.Name = "btnAnulo";
             this.btnAnulo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.btnAnulo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -506,6 +495,7 @@ namespace Bibloteka.Forms.Stafi
             this.btnAnulo.TabIndex = 12;
             this.btnAnulo.Text = "Anulo";
             this.btnAnulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAnulo.Click += new System.EventHandler(this.btnAnulo_Click);
             // 
             // btnShto
             // 
@@ -528,7 +518,7 @@ namespace Bibloteka.Forms.Stafi
             this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
             this.btnShto.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnShto.Location = new System.Drawing.Point(557, 641);
-            this.btnShto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShto.Margin = new System.Windows.Forms.Padding(2);
             this.btnShto.Name = "btnShto";
             this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.btnShto.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -541,6 +531,7 @@ namespace Bibloteka.Forms.Stafi
             this.btnShto.TabIndex = 11;
             this.btnShto.Text = "Ruaj";
             this.btnShto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
             // 
             // label3
             // 
@@ -565,29 +556,6 @@ namespace Bibloteka.Forms.Stafi
             this.label11.Size = new System.Drawing.Size(70, 17);
             this.label11.TabIndex = 42;
             this.label11.Text = "Kualifikimi";
-            // 
-            // comboGjinia
-            // 
-            this.comboGjinia.BackColor = System.Drawing.Color.Transparent;
-            this.comboGjinia.BaseColor = System.Drawing.Color.White;
-            this.comboGjinia.BorderColor = System.Drawing.Color.Silver;
-            this.comboGjinia.BorderSize = 1;
-            this.comboGjinia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboGjinia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboGjinia.FocusedColor = System.Drawing.Color.Empty;
-            this.comboGjinia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboGjinia.ForeColor = System.Drawing.Color.Black;
-            this.comboGjinia.FormattingEnabled = true;
-            this.comboGjinia.ItemHeight = 28;
-            this.comboGjinia.Items.AddRange(new object[] {
-            "Zgjedh Gjuhën"});
-            this.comboGjinia.Location = new System.Drawing.Point(383, 171);
-            this.comboGjinia.Name = "comboGjinia";
-            this.comboGjinia.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.comboGjinia.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.comboGjinia.Radius = 3;
-            this.comboGjinia.Size = new System.Drawing.Size(250, 34);
-            this.comboGjinia.TabIndex = 4;
             // 
             // label1
             // 
@@ -668,28 +636,66 @@ namespace Bibloteka.Forms.Stafi
             this.label9.TabIndex = 37;
             this.label9.Text = "Gjinia";
             // 
-            // epLibri
+            // epStafi
             // 
-            this.epLibri.ContainerControl = this;
+            this.epStafi.ContainerControl = this;
             // 
             // dragForm
             // 
             this.dragForm.TargetControl = this.gunaGroupBox1;
             // 
-            // Form1
+            // txtShteti
+            // 
+            this.txtShteti.BackColor = System.Drawing.Color.Transparent;
+            this.txtShteti.BaseColor = System.Drawing.Color.White;
+            this.txtShteti.BorderColor = System.Drawing.Color.Silver;
+            this.txtShteti.BorderSize = 1;
+            this.txtShteti.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtShteti.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtShteti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtShteti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtShteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtShteti.Location = new System.Drawing.Point(385, 386);
+            this.txtShteti.Name = "txtShteti";
+            this.txtShteti.PasswordChar = '\0';
+            this.txtShteti.Radius = 3;
+            this.txtShteti.SelectedText = "";
+            this.txtShteti.Size = new System.Drawing.Size(250, 25);
+            this.txtShteti.TabIndex = 8;
+            // 
+            // txtQyteti
+            // 
+            this.txtQyteti.BackColor = System.Drawing.Color.Transparent;
+            this.txtQyteti.BaseColor = System.Drawing.Color.White;
+            this.txtQyteti.BorderColor = System.Drawing.Color.Silver;
+            this.txtQyteti.BorderSize = 1;
+            this.txtQyteti.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQyteti.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtQyteti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtQyteti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtQyteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQyteti.Location = new System.Drawing.Point(48, 386);
+            this.txtQyteti.Name = "txtQyteti";
+            this.txtQyteti.PasswordChar = '\0';
+            this.txtQyteti.Radius = 3;
+            this.txtQyteti.SelectedText = "";
+            this.txtQyteti.Size = new System.Drawing.Size(250, 25);
+            this.txtQyteti.TabIndex = 8;
+            // 
+            // frm_ShtoStafi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 725);
             this.Controls.Add(this.dgv_InformatatStafit);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "frm_ShtoStafi";
             this.Text = "Shto Stafin";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.frm_ShtoStafin_Load);
             this.dgv_InformatatStafit.ResumeLayout(false);
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.epLibri)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epStafi)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -708,14 +714,13 @@ namespace Bibloteka.Forms.Stafi
         private Guna.UI.WinForms.GunaAdvenceButton btnShto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label11;
-        private Guna.UI.WinForms.GunaComboBox comboGjinia;
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaTextBox txtNrPersonal;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ErrorProvider epLibri;
+        private System.Windows.Forms.ErrorProvider epStafi;
         private Guna.UI.WinForms.GunaDragControl dragForm;
         private Guna.UI.WinForms.GunaTextBox txtEmri;
         private System.Windows.Forms.Label label15;
@@ -723,15 +728,17 @@ namespace Bibloteka.Forms.Stafi
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
-        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private Guna.UI.WinForms.GunaDateTimePicker dataStafit;
         private Guna.UI.WinForms.GunaTextBox txtNrKontaktues;
         private System.Windows.Forms.ComboBox comboKualifikimet;
         private System.Windows.Forms.ComboBox comboRoli;
         private Guna.UI.WinForms.GunaTextBox txtPassword;
         private Guna.UI.WinForms.GunaTextBox txtUsername;
-        private Guna.UI.WinForms.GunaTextBox txtEmail;
+        private Guna.UI.WinForms.GunaTextBox txtEmaili;
         private Guna.UI.WinForms.GunaTextBox txtKodiPostal;
-        private Guna.UI.WinForms.GunaTextBox txtShteti;
+        private Guna.UI.WinForms.GunaRadioButton radioFemer;
+        private Guna.UI.WinForms.GunaRadioButton radioMashkull;
         private Guna.UI.WinForms.GunaTextBox txtQyteti;
+        private Guna.UI.WinForms.GunaTextBox txtShteti;
     }
 }

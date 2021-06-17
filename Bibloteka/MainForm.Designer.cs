@@ -82,7 +82,7 @@ namespace Bibloteka
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(259, 834);
+            this.panel1.Size = new System.Drawing.Size(259, 749);
             this.panel1.TabIndex = 1;
             // 
             // panelReportsSubMenu
@@ -246,7 +246,7 @@ namespace Bibloteka
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(207, 779);
+            this.btnLogout.Location = new System.Drawing.Point(207, 694);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(30, 27);
             this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -258,11 +258,11 @@ namespace Bibloteka
             // 
             this.lblPunetori.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblPunetori.AutoSize = true;
-            this.lblPunetori.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPunetori.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPunetori.ForeColor = System.Drawing.Color.White;
-            this.lblPunetori.Location = new System.Drawing.Point(60, 781);
+            this.lblPunetori.Location = new System.Drawing.Point(60, 696);
             this.lblPunetori.Name = "lblPunetori";
-            this.lblPunetori.Size = new System.Drawing.Size(54, 28);
+            this.lblPunetori.Size = new System.Drawing.Size(51, 20);
             this.lblPunetori.TabIndex = 17;
             this.lblPunetori.Text = "User: ";
             // 
@@ -271,7 +271,7 @@ namespace Bibloteka
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 772);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 687);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(47, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -294,7 +294,7 @@ namespace Bibloteka
             this.btnLibrat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLibrat.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLibrat.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLibrat.Font = new System.Drawing.Font("Poppins Light", 12F);
+            this.btnLibrat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnLibrat.ForeColor = System.Drawing.Color.White;
             this.btnLibrat.Image = ((System.Drawing.Image)(resources.GetObject("btnLibrat.Image")));
             this.btnLibrat.ImageOffsetX = 10;
@@ -333,7 +333,7 @@ namespace Bibloteka
             this.btnRaportet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRaportet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRaportet.FocusedColor = System.Drawing.Color.Empty;
-            this.btnRaportet.Font = new System.Drawing.Font("Poppins Light", 12F);
+            this.btnRaportet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnRaportet.ForeColor = System.Drawing.Color.White;
             this.btnRaportet.Image = ((System.Drawing.Image)(resources.GetObject("btnRaportet.Image")));
             this.btnRaportet.ImageOffsetX = 10;
@@ -372,7 +372,7 @@ namespace Bibloteka
             this.btnHuazimet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuazimet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHuazimet.FocusedColor = System.Drawing.Color.Empty;
-            this.btnHuazimet.Font = new System.Drawing.Font("Poppins Light", 12F);
+            this.btnHuazimet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnHuazimet.ForeColor = System.Drawing.Color.White;
             this.btnHuazimet.Image = ((System.Drawing.Image)(resources.GetObject("btnHuazimet.Image")));
             this.btnHuazimet.ImageOffsetX = 10;
@@ -411,7 +411,7 @@ namespace Bibloteka
             this.btnStafi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStafi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnStafi.FocusedColor = System.Drawing.Color.Empty;
-            this.btnStafi.Font = new System.Drawing.Font("Poppins Light", 12F);
+            this.btnStafi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnStafi.ForeColor = System.Drawing.Color.White;
             this.btnStafi.Image = ((System.Drawing.Image)(resources.GetObject("btnStafi.Image")));
             this.btnStafi.ImageOffsetX = 10;
@@ -450,7 +450,7 @@ namespace Bibloteka
             this.btnKlientet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKlientet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKlientet.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKlientet.Font = new System.Drawing.Font("Poppins Light", 12F);
+            this.btnKlientet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnKlientet.ForeColor = System.Drawing.Color.White;
             this.btnKlientet.Image = ((System.Drawing.Image)(resources.GetObject("btnKlientet.Image")));
             this.btnKlientet.ImageOffsetX = 10;
@@ -489,7 +489,7 @@ namespace Bibloteka
             this.btnKategorite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKategorite.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKategorite.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKategorite.Font = new System.Drawing.Font("Poppins Light", 12F);
+            this.btnKategorite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnKategorite.ForeColor = System.Drawing.Color.White;
             this.btnKategorite.Image = ((System.Drawing.Image)(resources.GetObject("btnKategorite.Image")));
             this.btnKategorite.ImageOffsetX = 10;
@@ -529,7 +529,7 @@ namespace Bibloteka
             this.btnBallina.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBallina.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBallina.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBallina.Font = new System.Drawing.Font("Poppins Light", 12F);
+            this.btnBallina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnBallina.ForeColor = System.Drawing.Color.White;
             this.btnBallina.Image = ((System.Drawing.Image)(resources.GetObject("btnBallina.Image")));
             this.btnBallina.ImageOffsetX = 10;
@@ -604,7 +604,7 @@ namespace Bibloteka
             this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;
             this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtKerko.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKerko.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKerko.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.txtKerko.Location = new System.Drawing.Point(44, 17);
             this.txtKerko.Name = "txtKerko";
@@ -623,7 +623,7 @@ namespace Bibloteka
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(259, 76);
             this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(1069, 758);
+            this.Wrapper.Size = new System.Drawing.Size(1069, 673);
             this.Wrapper.TabIndex = 3;
             // 
             // panelSeperator
@@ -639,12 +639,12 @@ namespace Bibloteka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1328, 834);
+            this.ClientSize = new System.Drawing.Size(1328, 749);
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1344, 841);
+            this.MinimumSize = new System.Drawing.Size(1344, 726);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paneli i Kontrollit - Biblioteka";

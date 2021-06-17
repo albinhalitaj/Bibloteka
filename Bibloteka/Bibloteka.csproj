@@ -50,7 +50,7 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MstHtmlEditor">
-      <HintPath>..\..\..\..\Desktop\HtmlEditor Control for NET4\MstHtmlEditor.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\MstHtmlEditor.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -137,11 +137,11 @@
     <Compile Include="Forms\Kategorite\frm_Shto.Designer.cs">
       <DependentUpon>frm_Shto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Stafi\Form1.cs">
+    <Compile Include="Forms\Stafi\frm_ShtoStafin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Stafi\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\Stafi\frm_ShtoStafin.Designer.cs">
+      <DependentUpon>frm_ShtoStafin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Stafi\frm_Stafi.cs">
       <SubType>Form</SubType>
@@ -208,8 +208,8 @@
     <EmbeddedResource Include="Forms\Kategorite\frm_Shto.resx">
       <DependentUpon>frm_Shto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Stafi\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Stafi\frm_ShtoStafin.resx">
+      <DependentUpon>frm_ShtoStafin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Stafi\frm_Stafi.resx">
       <DependentUpon>frm_Stafi.cs</DependentUpon>

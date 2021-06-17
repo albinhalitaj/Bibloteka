@@ -22,6 +22,8 @@ namespace Bibloteka.BusinessObjects
 
         public string NrKontaktues { get; set; }
 
+        public int KualifikimiID { get; set; }
+
         public string Adresa { get; set; }
 
         public string Qyteti { get; set; }
@@ -32,7 +34,7 @@ namespace Bibloteka.BusinessObjects
 
         public string Emaili { get; set; }
 
-        public int InsertBy { get; set; }
+        public int? InsertBy { get; set; }
 
         public DateTime? InsertDate { get; set; }
 

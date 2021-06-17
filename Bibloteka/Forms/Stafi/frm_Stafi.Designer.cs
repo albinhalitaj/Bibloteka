@@ -29,17 +29,20 @@ namespace Bibloteka.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Stafi));
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Stafi));
             this.lblStafi = new System.Windows.Forms.Label();
             this.GrbStafi = new Guna.UI.WinForms.GunaGroupBox();
-            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.btnShto = new Guna.UI.WinForms.GunaButton();
-            this.dgv_Stafi = new Guna.UI.WinForms.GunaDataGridView();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dgv_Stafi = new Guna.UI.WinForms.GunaDataGridView();
+            this.btnShto = new Guna.UI.WinForms.GunaButton();
+            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.colStafiID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMbiemri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDatelindja = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +53,8 @@ namespace Bibloteka.Forms
             this.colAdresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRoli = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colImage1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colImage2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.GrbStafi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Stafi)).BeginInit();
             this.SuspendLayout();
@@ -58,10 +63,9 @@ namespace Bibloteka.Forms
             // 
             this.lblStafi.AutoSize = true;
             this.lblStafi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStafi.Location = new System.Drawing.Point(36, 28);
-            this.lblStafi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStafi.Location = new System.Drawing.Point(24, 18);
             this.lblStafi.Name = "lblStafi";
-            this.lblStafi.Size = new System.Drawing.Size(89, 40);
+            this.lblStafi.Size = new System.Drawing.Size(60, 29);
             this.lblStafi.TabIndex = 3;
             this.lblStafi.Text = "Stafi";
             // 
@@ -78,49 +82,45 @@ namespace Bibloteka.Forms
             this.GrbStafi.Controls.Add(this.gunaGroupBox2);
             this.GrbStafi.LineColor = System.Drawing.Color.Gainsboro;
             this.GrbStafi.LineTop = 0;
-            this.GrbStafi.Location = new System.Drawing.Point(116, 143);
+            this.GrbStafi.Location = new System.Drawing.Point(29, 76);
+            this.GrbStafi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GrbStafi.Name = "GrbStafi";
-            this.GrbStafi.Size = new System.Drawing.Size(1705, 912);
+            this.GrbStafi.Size = new System.Drawing.Size(966, 460);
             this.GrbStafi.TabIndex = 4;
             this.GrbStafi.TextLocation = new System.Drawing.Point(10, 8);
-            this.GrbStafi.Click += new System.EventHandler(this.gunaGroupBox1_Click);
             // 
-            // gunaGroupBox2
+            // txtKerko
             // 
-            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox2.Location = new System.Drawing.Point(237, 14);
-            this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(13, 8);
-            this.gunaGroupBox2.TabIndex = 0;
-            this.gunaGroupBox2.Text = "gunaGroupBox2";
-            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
+            this.txtKerko.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKerko.BackColor = System.Drawing.Color.Transparent;
+            this.txtKerko.BaseColor = System.Drawing.Color.White;
+            this.txtKerko.BorderColor = System.Drawing.Color.Silver;
+            this.txtKerko.BorderSize = 1;
+            this.txtKerko.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtKerko.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKerko.Location = new System.Drawing.Point(680, 37);
+            this.txtKerko.Name = "txtKerko";
+            this.txtKerko.PasswordChar = '\0';
+            this.txtKerko.Radius = 3;
+            this.txtKerko.SelectedText = "";
+            this.txtKerko.Size = new System.Drawing.Size(250, 34);
+            this.txtKerko.TabIndex = 30;
             // 
-            // btnShto
+            // label5
             // 
-            this.btnShto.AnimationHoverSpeed = 0.07F;
-            this.btnShto.AnimationSpeed = 0.03F;
-            this.btnShto.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.btnShto.BorderColor = System.Drawing.Color.Black;
-            this.btnShto.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnShto.FocusedColor = System.Drawing.Color.Empty;
-            this.btnShto.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnShto.ForeColor = System.Drawing.Color.White;
-            this.btnShto.Image = ((System.Drawing.Image)(resources.GetObject("btnShto.Image")));
-            this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnShto.Location = new System.Drawing.Point(56, 57);
-            this.btnShto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnShto.Name = "btnShto";
-            this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnShto.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnShto.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnShto.OnHoverImage = null;
-            this.btnShto.OnPressedColor = System.Drawing.Color.Black;
-            this.btnShto.Size = new System.Drawing.Size(189, 52);
-            this.btnShto.TabIndex = 30;
-            this.btnShto.Text = "Shto";
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(591, 37);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 17);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Kërkoni:";
             // 
             // dgv_Stafi
             // 
@@ -147,6 +147,7 @@ namespace Bibloteka.Forms
             this.dgv_Stafi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Stafi.ColumnHeadersHeight = 41;
             this.dgv_Stafi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colStafiID,
             this.colEmri,
             this.colMbiemri,
             this.colDatelindja,
@@ -156,7 +157,9 @@ namespace Bibloteka.Forms
             this.colKualifikimi,
             this.colAdresa,
             this.colEmail,
-            this.colRoli});
+            this.colRoli,
+            this.colImage1,
+            this.colImage2});
             this.dgv_Stafi.Cursor = System.Windows.Forms.Cursors.Arrow;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -169,14 +172,13 @@ namespace Bibloteka.Forms
             this.dgv_Stafi.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Stafi.EnableHeadersVisualStyles = false;
             this.dgv_Stafi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_Stafi.Location = new System.Drawing.Point(37, 179);
-            this.dgv_Stafi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgv_Stafi.Location = new System.Drawing.Point(25, 116);
             this.dgv_Stafi.Name = "dgv_Stafi";
             this.dgv_Stafi.ReadOnly = true;
             this.dgv_Stafi.RowHeadersVisible = false;
             this.dgv_Stafi.RowHeadersWidth = 62;
             this.dgv_Stafi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Stafi.Size = new System.Drawing.Size(1615, 686);
+            this.dgv_Stafi.Size = new System.Drawing.Size(906, 313);
             this.dgv_Stafi.TabIndex = 24;
             this.dgv_Stafi.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgv_Stafi.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -201,38 +203,55 @@ namespace Bibloteka.Forms
             this.dgv_Stafi.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Stafi.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // label5
+            // btnShto
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(1143, 57);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 25);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Kërkoni:";
+            this.btnShto.AnimationHoverSpeed = 0.07F;
+            this.btnShto.AnimationSpeed = 0.03F;
+            this.btnShto.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.btnShto.BorderColor = System.Drawing.Color.Black;
+            this.btnShto.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnShto.FocusedColor = System.Drawing.Color.Empty;
+            this.btnShto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnShto.ForeColor = System.Drawing.Color.White;
+            this.btnShto.Image = ((System.Drawing.Image)(resources.GetObject("btnShto.Image")));
+            this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnShto.Location = new System.Drawing.Point(37, 37);
+            this.btnShto.Name = "btnShto";
+            this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnShto.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnShto.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnShto.OnHoverImage = null;
+            this.btnShto.OnPressedColor = System.Drawing.Color.Black;
+            this.btnShto.Size = new System.Drawing.Size(126, 34);
+            this.btnShto.TabIndex = 30;
+            this.btnShto.Text = "Shto";
+            this.btnShto.Click += new System.EventHandler(this.btnShto_Click_1);
             // 
-            // txtKerko
+            // gunaGroupBox2
             // 
-            this.txtKerko.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKerko.BackColor = System.Drawing.Color.Transparent;
-            this.txtKerko.BaseColor = System.Drawing.Color.White;
-            this.txtKerko.BorderColor = System.Drawing.Color.Silver;
-            this.txtKerko.BorderSize = 1;
-            this.txtKerko.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtKerko.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKerko.Location = new System.Drawing.Point(1277, 57);
-            this.txtKerko.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtKerko.Name = "txtKerko";
-            this.txtKerko.PasswordChar = '\0';
-            this.txtKerko.Radius = 3;
-            this.txtKerko.SelectedText = "";
-            this.txtKerko.Size = new System.Drawing.Size(375, 52);
-            this.txtKerko.TabIndex = 30;
+            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox2.Location = new System.Drawing.Point(158, 9);
+            this.gunaGroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaGroupBox2.Name = "gunaGroupBox2";
+            this.gunaGroupBox2.Size = new System.Drawing.Size(9, 5);
+            this.gunaGroupBox2.TabIndex = 0;
+            this.gunaGroupBox2.Text = "gunaGroupBox2";
+            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // colStafiID
+            // 
+            this.colStafiID.HeaderText = "StafiID";
+            this.colStafiID.Name = "colStafiID";
+            this.colStafiID.ReadOnly = true;
             // 
             // colEmri
             // 
@@ -306,18 +325,30 @@ namespace Bibloteka.Forms
             this.colRoli.Name = "colRoli";
             this.colRoli.ReadOnly = true;
             // 
+            // colImage1
+            // 
+            this.colImage1.HeaderText = "";
+            this.colImage1.Name = "colImage1";
+            this.colImage1.ReadOnly = true;
+            // 
+            // colImage2
+            // 
+            this.colImage2.HeaderText = "";
+            this.colImage2.Name = "colImage2";
+            this.colImage2.ReadOnly = true;
+            // 
             // frm_Stafi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1833, 1089);
+            this.ClientSize = new System.Drawing.Size(995, 576);
             this.Controls.Add(this.GrbStafi);
             this.Controls.Add(this.lblStafi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frm_Stafi";
             this.Text = "frm_Stafi";
+            this.Load += new System.EventHandler(this.frm_Stafi_Load);
             this.GrbStafi.ResumeLayout(false);
             this.GrbStafi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Stafi)).EndInit();
@@ -335,6 +366,8 @@ namespace Bibloteka.Forms
         private Guna.UI.WinForms.GunaDataGridView dgv_Stafi;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox txtKerko;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colStafiID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmri;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMbiemri;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDatelindja;
@@ -345,5 +378,7 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn colAdresa;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRoli;
+        private System.Windows.Forms.DataGridViewImageColumn colImage1;
+        private System.Windows.Forms.DataGridViewImageColumn colImage2;
     }
 }

@@ -70,7 +70,7 @@ namespace Bibloteka
 
         private void btnLibrat_Click(object sender, EventArgs e) => OpenForm(new frm_Librat(_perdoruesi.Stafi));
 
-        private void btnStafi_Click(object sender, EventArgs e) => OpenForm(new frm_Stafi());
+        private void btnStafi_Click(object sender, EventArgs e) => OpenForm(new frm_Stafi(_perdoruesi.Stafi));
 
         private void btnLogout_Click(object sender, EventArgs e) => Application.Restart();
 
