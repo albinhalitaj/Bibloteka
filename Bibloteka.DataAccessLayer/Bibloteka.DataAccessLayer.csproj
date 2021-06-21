@@ -72,9 +72,12 @@
     <Compile Include="KategoriaDal.cs" />
     <Compile Include="KlientiDal.cs" />
     <Compile Include="KthimetDal.cs" />
+    <Compile Include="KualifikimiDal.cs" />
     <Compile Include="LibriDal.cs" />
     <Compile Include="LoginDal.cs" />
+    <Compile Include="PerdorusiDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoliDal.cs" />
     <Compile Include="StafiDal.cs" />
   </ItemGroup>
   <ItemGroup>
