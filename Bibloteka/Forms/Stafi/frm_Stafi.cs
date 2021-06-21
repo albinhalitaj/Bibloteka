@@ -18,11 +18,14 @@ namespace Bibloteka.Forms
     {
         private readonly Stafi _stafi;
         private readonly StafiManager stafiManager;
+        private readonly PerdoruesiManager perdoruesiManager;
+       
         public frm_Stafi(Stafi stafi)
         {
-
+          
             _stafi = stafi;
             stafiManager = new StafiManager();
+            perdoruesiManager = new PerdoruesiManager();
             InitializeComponent();
             LoadStafin();
         }
@@ -81,7 +84,8 @@ namespace Bibloteka.Forms
             var datalindjes = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[3].Value);
             var day = datalindjes.Substring(0, 2);
             var month = datalindjes.Substring(3, 2);
-            var date = Convert.ToDateTime(string.Concat(month, "/", day, datalindjes.Substring(5, 5)));
+            var date = Convert.ToDateTime(string.Concat(day, "/", month, datalindjes.Substring(5, 5)));
+            var p = new Perdoruesi();
             var staf = new Stafi()
             {
                 Emri = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[1].Value),
@@ -90,13 +94,17 @@ namespace Bibloteka.Forms
                 Gjinia = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[4].Value),
                 NrPersonal = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[5].Value),
                 NrKontaktues = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[6].Value),
-                Adresa = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[7].Value),
-                Shteti = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[9].Value),
-                Qyteti = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[8].Value),
-                KodiPostal = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[10].Value),
-                Emaili = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[11].Value)
+                KualifikimiID = Convert.ToInt32(dgv_Stafi.CurrentRow?.Cells[7].Value),
+                Adresa = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[8].Value),
+                //Shteti = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[9].Value),
+                //Qyteti = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[10].Value),
+                //KodiPostal = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[11].Value),
+                Emaili = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[9].Value)
+                //RoliID = _roliManager.GetId(Convert.ToString(dgv_Stafi.CurrentRow?.Cells[10].Value))
             };
+            //var perdoruesi = GetPerdoruesiByID(p);
             return staf;
+
         }
 
         private void NdryshoStafin()

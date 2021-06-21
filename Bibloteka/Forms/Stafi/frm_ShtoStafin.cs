@@ -53,7 +53,7 @@ namespace Bibloteka.Forms
                 _stafi.Lub = _stafi.StafiId;
                 _stafi.Lun = LastUpdatedNumber(_id);
                 _stafi.Lud = DateTime.Now;
-                _stafiManager.Update(_id, _stafi);
+                _stafiManager.Update(_id, _stafi,_perdoruesi,roliID);
                 MessageBox.Show(@"Stafi u ruajt me sukses", @"Information", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 _main.LoadStafin();

@@ -1,4 +1,5 @@
 ﻿using Bibloteka.BusinessObjects;
+using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -58,6 +59,30 @@ namespace Bibloteka.DataAccessLayer
                 Console.WriteLine(e);
                 throw;
             }
+        }
+
+
+        public Perdoruesi GetPerdoruesiById(string id)
+        {
+            try
+            {
+                var perdoruesi = new Perdoruesi();
+                using (var con = DataAccessLayer.AppConnection())
+                {
+                    var dt = new DataTable();
+                    var cmd = new SqlCommand("usp_GetPerdoruesiById", con) { CommandType = CommandType.StoredProcedure };
+                    cmd.Parameters.AddWithValue("@id",id);
+                    var sda = new SqlDataAdapter(cmd);
+                    sda.Fill(dt);
+                    return perdoruesi;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
         }
     }
 }

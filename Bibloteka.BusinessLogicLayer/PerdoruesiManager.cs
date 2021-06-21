@@ -15,5 +15,8 @@ namespace Bibloteka.BusinessLogicLayer
         public PerdoruesiManager() => PerdoruesiDal = new PerdorusiDal();
         public void Add(Perdoruesi perdoruesi) => PerdoruesiDal.InsertPerdoruesi(perdoruesi);
         public void Update(string id, Perdoruesi perdoruesi) => PerdoruesiDal.UpdatePerdoruesi(id, perdoruesi);
+        public void GetPerdoruesiByID(string perdoruesi) => PerdoruesiDal.GetPerdoruesiById(perdoruesi);
+
     }
+
 }

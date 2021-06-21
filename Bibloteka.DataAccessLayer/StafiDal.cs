@@ -47,7 +47,7 @@ namespace Bibloteka.DataAccessLayer
         }
 
 
-        public void UpdateStafin(string id, Stafi stafi)
+        public void UpdateStafin(string id, Stafi stafi,Perdoruesi perdoruesi, int roliID)
         {
             try
             {
@@ -67,6 +67,9 @@ namespace Bibloteka.DataAccessLayer
                     cmd.Parameters.AddWithValue("@qyteti", stafi.Qyteti);
                     cmd.Parameters.AddWithValue("@kodiPostal", stafi.KodiPostal);
                     cmd.Parameters.AddWithValue("@emaili", stafi.Emaili);
+                    cmd.Parameters.AddWithValue("@username", perdoruesi.Username);
+                    cmd.Parameters.AddWithValue("@password", perdoruesi.Password);
+                    cmd.Parameters.AddWithValue("@roliID", roliID);
                     cmd.Parameters.AddWithValue("@lub", stafi.Lub);
                     cmd.Parameters.AddWithValue("@lun", stafi.Lun);
                     cmd.Parameters.AddWithValue("@lud", stafi.Lud);
@@ -86,6 +89,18 @@ namespace Bibloteka.DataAccessLayer
             {
                 var dt = new DataTable();
                 var cmd = new SqlCommand("usp_GetStafById", con) { CommandType = CommandType.StoredProcedure };
+                cmd.Parameters.AddWithValue("@id", id);
+                var sda = new SqlDataAdapter(cmd);
+                sda.Fill(dt);
+                return dt;
+            }
+        }
+        public DataTable GetShtetiById(string id)
+        {
+            using (var con = DataAccessLayer.AppConnection())
+            {
+                var dt = new DataTable();
+                var cmd = new SqlCommand("usp_GetShtetiById", con) { CommandType = CommandType.StoredProcedure };
                 cmd.Parameters.AddWithValue("@id", id);
                 var sda = new SqlDataAdapter(cmd);
                 sda.Fill(dt);
