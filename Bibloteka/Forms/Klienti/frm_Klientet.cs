@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
+using ClosedXML.Excel;
 
 namespace Bibloteka.Forms
 {
@@ -132,6 +133,33 @@ namespace Bibloteka.Forms
             }
             else
                 LoadKlients(_klientiManager.Load());
+        }
+
+        private void btnShkarko_Click(object sender, EventArgs e)
+        {
+            using (var sfd = new SaveFileDialog { Filter = @"Excel WorkBook|*.xlsx"})
+            {
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (var workbook = new XLWorkbook())
+                        {
+                            var dt = workbook.Worksheets.Add(_klientiManager.Load(), "Klientët");
+                            dt.Columns().AdjustToContents();
+                            dt.Rows().AdjustToContents();
+                            workbook.SaveAs(sfd.FileName);
+                        }
+                        MessageBox.Show(@"Të dhënat janë eksportuar me sukses!", @"Information", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show(@"Ndodhi një gabim ju lutem provoni përsëri", @"Error", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                }
+            } 
         }
     }
 }

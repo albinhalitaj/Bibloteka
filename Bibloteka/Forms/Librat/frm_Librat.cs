@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
 using Bibloteka.Forms.Librat;
+using ClosedXML.Excel;
 
 namespace Bibloteka.Forms
 {
@@ -139,6 +134,31 @@ namespace Bibloteka.Forms
             }
             else
                 LoadLibrat(_libriManager.Load());
+        }
+
+        private void btnShkarko_Click(object sender, EventArgs e)
+        {
+            using (var sfd = new SaveFileDialog { Filter = @"Excel WorkBook|*.xlsx" })
+            {
+                if (sfd.ShowDialog() != DialogResult.OK) return;
+                try
+                {
+                    using (var workbook = new XLWorkbook())
+                    {
+                        var ts = workbook.Worksheets.Add(_libriManager.Load(), "Librat");
+                        ts.Columns().AdjustToContents();
+                        ts.Rows().AdjustToContents();
+                        workbook.SaveAs(sfd.FileName);
+                    }
+                    MessageBox.Show(@"Të dhënat janë eksportuar me sukses!", @"Information", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(@"Ndodhi një gabim ju lutem provoni përsëri", @"Error", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

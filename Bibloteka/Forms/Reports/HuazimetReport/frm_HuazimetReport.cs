@@ -24,13 +24,13 @@ namespace Bibloteka.Forms.Reports.HuazimetReport
             deriData.Value = DateTime.Today;
             var dt = new usp_GetHuazimetMuajitAktualTableAdapter().GetData();
             uspGetHuazimetReportDataBindingSource.DataSource = dt;
-            var date = Convert.ToDateTime(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)).ToString("dd/MM/yyyy"); 
+            var date = Convert.ToDateTime(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)).ToString("dd/MM/yyyy");
             var deriDate = Convert.ToDateTime(new DateTime(DateTime.Now.Year, DateTime.Now.Month,
                 DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month))).ToString("dd/MM/yyyy");
             var r = new[]
             {
-                new ReportParameter("ngaData", date),
-                new ReportParameter("deriData",deriDate)
+                new ReportParameter("nData", date),
+                new ReportParameter("dData",deriDate)
             };
             reportViewer1.LocalReport.SetParameters(r);
             reportViewer1.RefreshReport();
@@ -44,8 +44,8 @@ namespace Bibloteka.Forms.Reports.HuazimetReport
             uspGetHuazimetReportDataBindingSource.DataSource = dt;
             var r = new[]
             {
-                new ReportParameter("ngaData", ngaData.Value.ToString("dd/MM/yyyy")),
-                new ReportParameter("deriData", deriData.Value.ToString("dd/MM/yyyy"))
+                new ReportParameter("nData", ngaData.Value.ToString("dd/MM/yyyy")),
+                new ReportParameter("dData", deriData.Value.ToString("dd/MM/yyyy"))
             };
             reportViewer1.LocalReport.SetParameters(r);
             reportViewer1.RefreshReport();

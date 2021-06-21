@@ -51,6 +51,8 @@ namespace Bibloteka.Forms
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtQyteti = new Guna.UI.WinForms.GunaTextBox();
+            this.txtShteti = new Guna.UI.WinForms.GunaTextBox();
             this.txtAdresa = new Guna.UI.WinForms.GunaTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -66,8 +68,6 @@ namespace Bibloteka.Forms
             this.label9 = new System.Windows.Forms.Label();
             this.epStafi = new System.Windows.Forms.ErrorProvider(this.components);
             this.dragForm = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.txtShteti = new Guna.UI.WinForms.GunaTextBox();
-            this.txtQyteti = new Guna.UI.WinForms.GunaTextBox();
             this.dgv_InformatatStafit.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epStafi)).BeginInit();
@@ -149,7 +149,7 @@ namespace Bibloteka.Forms
             this.radioFemer.FillColor = System.Drawing.Color.White;
             this.radioFemer.Location = new System.Drawing.Point(481, 171);
             this.radioFemer.Name = "radioFemer";
-            this.radioFemer.Size = new System.Drawing.Size(62, 20);
+            this.radioFemer.Size = new System.Drawing.Size(79, 22);
             this.radioFemer.TabIndex = 81;
             this.radioFemer.Text = "Femer";
             // 
@@ -211,7 +211,6 @@ namespace Bibloteka.Forms
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(250, 25);
             this.txtUsername.TabIndex = 77;
-            //this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged_1);
             // 
             // txtEmaili
             // 
@@ -299,7 +298,7 @@ namespace Bibloteka.Forms
             this.dataStafit.OnPressedColor = System.Drawing.Color.Black;
             this.dataStafit.Size = new System.Drawing.Size(251, 34);
             this.dataStafit.TabIndex = 64;
-            this.dataStafit.Text = "11/06/2021";
+            this.dataStafit.Text = "Friday, June 11, 2021";
             this.dataStafit.Value = new System.DateTime(2021, 6, 11, 16, 20, 47, 117);
             // 
             // txtEmri
@@ -421,6 +420,44 @@ namespace Bibloteka.Forms
             this.label2.Size = new System.Drawing.Size(53, 17);
             this.label2.TabIndex = 56;
             this.label2.Text = "Adresa";
+            // 
+            // txtQyteti
+            // 
+            this.txtQyteti.BackColor = System.Drawing.Color.Transparent;
+            this.txtQyteti.BaseColor = System.Drawing.Color.White;
+            this.txtQyteti.BorderColor = System.Drawing.Color.Silver;
+            this.txtQyteti.BorderSize = 1;
+            this.txtQyteti.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQyteti.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtQyteti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtQyteti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtQyteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQyteti.Location = new System.Drawing.Point(48, 386);
+            this.txtQyteti.Name = "txtQyteti";
+            this.txtQyteti.PasswordChar = '\0';
+            this.txtQyteti.Radius = 3;
+            this.txtQyteti.SelectedText = "";
+            this.txtQyteti.Size = new System.Drawing.Size(250, 25);
+            this.txtQyteti.TabIndex = 8;
+            // 
+            // txtShteti
+            // 
+            this.txtShteti.BackColor = System.Drawing.Color.Transparent;
+            this.txtShteti.BaseColor = System.Drawing.Color.White;
+            this.txtShteti.BorderColor = System.Drawing.Color.Silver;
+            this.txtShteti.BorderSize = 1;
+            this.txtShteti.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtShteti.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtShteti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.txtShteti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtShteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtShteti.Location = new System.Drawing.Point(385, 386);
+            this.txtShteti.Name = "txtShteti";
+            this.txtShteti.PasswordChar = '\0';
+            this.txtShteti.Radius = 3;
+            this.txtShteti.SelectedText = "";
+            this.txtShteti.Size = new System.Drawing.Size(250, 25);
+            this.txtShteti.TabIndex = 8;
             // 
             // txtAdresa
             // 
@@ -643,44 +680,6 @@ namespace Bibloteka.Forms
             // dragForm
             // 
             this.dragForm.TargetControl = this.gunaGroupBox1;
-            // 
-            // txtShteti
-            // 
-            this.txtShteti.BackColor = System.Drawing.Color.Transparent;
-            this.txtShteti.BaseColor = System.Drawing.Color.White;
-            this.txtShteti.BorderColor = System.Drawing.Color.Silver;
-            this.txtShteti.BorderSize = 1;
-            this.txtShteti.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtShteti.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtShteti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtShteti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtShteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShteti.Location = new System.Drawing.Point(385, 386);
-            this.txtShteti.Name = "txtShteti";
-            this.txtShteti.PasswordChar = '\0';
-            this.txtShteti.Radius = 3;
-            this.txtShteti.SelectedText = "";
-            this.txtShteti.Size = new System.Drawing.Size(250, 25);
-            this.txtShteti.TabIndex = 8;
-            // 
-            // txtQyteti
-            // 
-            this.txtQyteti.BackColor = System.Drawing.Color.Transparent;
-            this.txtQyteti.BaseColor = System.Drawing.Color.White;
-            this.txtQyteti.BorderColor = System.Drawing.Color.Silver;
-            this.txtQyteti.BorderSize = 1;
-            this.txtQyteti.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtQyteti.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtQyteti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.txtQyteti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtQyteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQyteti.Location = new System.Drawing.Point(48, 386);
-            this.txtQyteti.Name = "txtQyteti";
-            this.txtQyteti.PasswordChar = '\0';
-            this.txtQyteti.Radius = 3;
-            this.txtQyteti.SelectedText = "";
-            this.txtQyteti.Size = new System.Drawing.Size(250, 25);
-            this.txtQyteti.TabIndex = 8;
             // 
             // frm_ShtoStafi
             // 

@@ -31,9 +31,9 @@ namespace Bibloteka.Forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Librat));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblKategorite = new System.Windows.Forms.Label();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
@@ -42,8 +42,6 @@ namespace Bibloteka.Forms
             this.lblTotalLibra = new System.Windows.Forms.Label();
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
             this.dgv_Librat = new Guna.UI.WinForms.GunaDataGridView();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTitulli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAutori = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,14 +55,17 @@ namespace Bibloteka.Forms
             this.colStatusi = new System.Windows.Forms.DataGridViewImageColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.btnShkarko = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Librat)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // lblKategorite
@@ -97,7 +98,6 @@ namespace Bibloteka.Forms
             // 
             // btnShto
             // 
-            resources.ApplyResources(this.btnShto, "btnShto");
             this.btnShto.AnimationHoverSpeed = 0.07F;
             this.btnShto.AnimationSpeed = 0.03F;
             this.btnShto.BackColor = System.Drawing.Color.Transparent;
@@ -111,6 +111,7 @@ namespace Bibloteka.Forms
             this.btnShto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShto.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnShto.FocusedColor = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.btnShto, "btnShto");
             this.btnShto.ForeColor = System.Drawing.Color.White;
             this.btnShto.Image = ((System.Drawing.Image)(resources.GetObject("btnShto.Image")));
             this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
@@ -150,11 +151,11 @@ namespace Bibloteka.Forms
             // 
             // dgv_Librat
             // 
-            resources.ApplyResources(this.dgv_Librat, "dgv_Librat");
             this.dgv_Librat.AllowUserToAddRows = false;
             this.dgv_Librat.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgv_Librat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgv_Librat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            resources.ApplyResources(this.dgv_Librat, "dgv_Librat");
             this.dgv_Librat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Librat.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Librat.BackgroundColor = System.Drawing.Color.White;
@@ -165,11 +166,10 @@ namespace Bibloteka.Forms
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_Librat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgv_Librat.ColumnHeadersHeight = 41;
             this.dgv_Librat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
             this.colTitulli,
@@ -189,7 +189,6 @@ namespace Bibloteka.Forms
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(8);
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -223,20 +222,6 @@ namespace Bibloteka.Forms
             this.dgv_Librat.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Librat.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_Librat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Librat_CellContentClick);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "aktiv.png");
-            this.imageList1.Images.SetKeyName(1, "joaktiv.png");
-            // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "Picture2.png");
-            this.imageList2.Images.SetKeyName(1, "Picture1.png");
             // 
             // colID
             // 
@@ -324,11 +309,56 @@ namespace Bibloteka.Forms
             this.Delete.Name = "Delete";
             this.Delete.ReadOnly = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "aktiv.png");
+            this.imageList1.Images.SetKeyName(1, "joaktiv.png");
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "Picture2.png");
+            this.imageList2.Images.SetKeyName(1, "Picture1.png");
+            // 
+            // btnShkarko
+            // 
+            resources.ApplyResources(this.btnShkarko, "btnShkarko");
+            this.btnShkarko.AnimationHoverSpeed = 0.07F;
+            this.btnShkarko.AnimationSpeed = 0.03F;
+            this.btnShkarko.BackColor = System.Drawing.Color.Transparent;
+            this.btnShkarko.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.btnShkarko.BorderColor = System.Drawing.Color.Black;
+            this.btnShkarko.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnShkarko.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnShkarko.CheckedForeColor = System.Drawing.Color.White;
+            this.btnShkarko.CheckedImage = null;
+            this.btnShkarko.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnShkarko.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShkarko.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnShkarko.FocusedColor = System.Drawing.Color.Empty;
+            this.btnShkarko.ForeColor = System.Drawing.Color.White;
+            this.btnShkarko.Image = ((System.Drawing.Image)(resources.GetObject("btnShkarko.Image")));
+            this.btnShkarko.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnShkarko.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnShkarko.Name = "btnShkarko";
+            this.btnShkarko.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnShkarko.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnShkarko.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnShkarko.OnHoverImage = null;
+            this.btnShkarko.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnShkarko.OnPressedColor = System.Drawing.Color.Black;
+            this.btnShkarko.Radius = 3;
+            this.btnShkarko.Click += new System.EventHandler(this.btnShkarko_Click);
+            // 
             // frm_Librat
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnShkarko);
             this.Controls.Add(this.gunaGroupBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblKategorite);
@@ -368,5 +398,6 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.DataGridViewImageColumn colStatusi;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private Guna.UI.WinForms.GunaAdvenceButton btnShkarko;
     }
 }

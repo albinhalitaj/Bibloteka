@@ -32,23 +32,13 @@ namespace Bibloteka.Forms.Reports.KlientetReport
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_KlientReport));
-            this.uspGetKlientReportDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reportsData = new Bibloteka.Forms.Reports.ReportsData();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.reportsData = new Bibloteka.Forms.Reports.ReportsData();
+            this.uspGetKlientReportDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usp_GetKlientReportDataTableAdapter = new Bibloteka.Forms.Reports.ReportsDataTableAdapters.usp_GetKlientReportDataTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.uspGetKlientReportDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportsData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uspGetKlientReportDataBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // uspGetKlientReportDataBindingSource
-            // 
-            this.uspGetKlientReportDataBindingSource.DataMember = "usp_GetKlientReportData";
-            this.uspGetKlientReportDataBindingSource.DataSource = this.reportsData;
-            // 
-            // reportsData
-            // 
-            this.reportsData.DataSetName = "ReportsData";
-            this.reportsData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -60,8 +50,18 @@ namespace Bibloteka.Forms.Reports.KlientetReport
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(743, 682);
+            this.reportViewer1.Size = new System.Drawing.Size(798, 586);
             this.reportViewer1.TabIndex = 0;
+            // 
+            // reportsData
+            // 
+            this.reportsData.DataSetName = "ReportsData";
+            this.reportsData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // uspGetKlientReportDataBindingSource
+            // 
+            this.uspGetKlientReportDataBindingSource.DataMember = "usp_GetKlientReportData";
+            this.uspGetKlientReportDataBindingSource.DataSource = this.reportsData;
             // 
             // usp_GetKlientReportDataTableAdapter
             // 
@@ -71,7 +71,7 @@ namespace Bibloteka.Forms.Reports.KlientetReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(743, 682);
+            this.ClientSize = new System.Drawing.Size(798, 586);
             this.Controls.Add(this.reportViewer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_KlientReport";
@@ -79,8 +79,8 @@ namespace Bibloteka.Forms.Reports.KlientetReport
             this.Text = "Raporti i Klientëve";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_KlientReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.uspGetKlientReportDataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reportsData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uspGetKlientReportDataBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

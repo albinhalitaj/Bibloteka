@@ -39,9 +39,6 @@ namespace Bibloteka.Forms
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgv_Stafi = new Guna.UI.WinForms.GunaDataGridView();
-            this.btnShto = new Guna.UI.WinForms.GunaButton();
-            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.colStafiID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMbiemri = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,6 +52,9 @@ namespace Bibloteka.Forms
             this.colRoli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colImage1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.colImage2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnShto = new Guna.UI.WinForms.GunaButton();
+            this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.GrbStafi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Stafi)).BeginInit();
             this.SuspendLayout();
@@ -204,50 +204,6 @@ namespace Bibloteka.Forms
             this.dgv_Stafi.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_Stafi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Stafi_CellContentClick);
             // 
-            // btnShto
-            // 
-            this.btnShto.AnimationHoverSpeed = 0.07F;
-            this.btnShto.AnimationSpeed = 0.03F;
-            this.btnShto.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.btnShto.BorderColor = System.Drawing.Color.Black;
-            this.btnShto.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnShto.FocusedColor = System.Drawing.Color.Empty;
-            this.btnShto.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnShto.ForeColor = System.Drawing.Color.White;
-            this.btnShto.Image = ((System.Drawing.Image)(resources.GetObject("btnShto.Image")));
-            this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnShto.Location = new System.Drawing.Point(37, 37);
-            this.btnShto.Name = "btnShto";
-            this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            this.btnShto.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnShto.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnShto.OnHoverImage = null;
-            this.btnShto.OnPressedColor = System.Drawing.Color.Black;
-            this.btnShto.Size = new System.Drawing.Size(126, 34);
-            this.btnShto.TabIndex = 30;
-            this.btnShto.Text = "Shto";
-            this.btnShto.Click += new System.EventHandler(this.btnShto_Click_1);
-            // 
-            // gunaGroupBox2
-            // 
-            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox2.Location = new System.Drawing.Point(158, 9);
-            this.gunaGroupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(9, 5);
-            this.gunaGroupBox2.TabIndex = 0;
-            this.gunaGroupBox2.Text = "gunaGroupBox2";
-            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // colStafiID
             // 
             this.colStafiID.HeaderText = "StafiID";
@@ -338,12 +294,56 @@ namespace Bibloteka.Forms
             this.colImage2.Name = "colImage2";
             this.colImage2.ReadOnly = true;
             // 
+            // btnShto
+            // 
+            this.btnShto.AnimationHoverSpeed = 0.07F;
+            this.btnShto.AnimationSpeed = 0.03F;
+            this.btnShto.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.btnShto.BorderColor = System.Drawing.Color.Black;
+            this.btnShto.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnShto.FocusedColor = System.Drawing.Color.Empty;
+            this.btnShto.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnShto.ForeColor = System.Drawing.Color.White;
+            this.btnShto.Image = ((System.Drawing.Image)(resources.GetObject("btnShto.Image")));
+            this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnShto.Location = new System.Drawing.Point(37, 37);
+            this.btnShto.Name = "btnShto";
+            this.btnShto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnShto.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnShto.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnShto.OnHoverImage = null;
+            this.btnShto.OnPressedColor = System.Drawing.Color.Black;
+            this.btnShto.Size = new System.Drawing.Size(126, 34);
+            this.btnShto.TabIndex = 30;
+            this.btnShto.Text = "Shto";
+            this.btnShto.Click += new System.EventHandler(this.btnShto_Click_1);
+            // 
+            // gunaGroupBox2
+            // 
+            this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox2.LineColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBox2.Location = new System.Drawing.Point(158, 9);
+            this.gunaGroupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaGroupBox2.Name = "gunaGroupBox2";
+            this.gunaGroupBox2.Size = new System.Drawing.Size(9, 5);
+            this.gunaGroupBox2.TabIndex = 0;
+            this.gunaGroupBox2.Text = "gunaGroupBox2";
+            this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // frm_Stafi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(995, 576);
+            this.ClientSize = new System.Drawing.Size(1058, 610);
             this.Controls.Add(this.GrbStafi);
             this.Controls.Add(this.lblStafi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

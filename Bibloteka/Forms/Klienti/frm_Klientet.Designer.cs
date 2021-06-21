@@ -30,20 +30,12 @@ namespace Bibloteka.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Klientet));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_Klientet = new Guna.UI.WinForms.GunaDataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lblTotalKlients = new System.Windows.Forms.Label();
-            this.lblKategorite = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMbiemri = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +50,15 @@ namespace Bibloteka.Forms
             this.colEmaili = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.btnShto = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.lblTotalKlients = new System.Windows.Forms.Label();
+            this.lblKategorite = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnShkarko = new Guna.UI.WinForms.GunaAdvenceButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Klientet)).BeginInit();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,8 +67,8 @@ namespace Bibloteka.Forms
             // 
             this.dgv_Klientet.AllowUserToAddRows = false;
             this.dgv_Klientet.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_Klientet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            this.dgv_Klientet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             resources.ApplyResources(this.dgv_Klientet, "dgv_Klientet");
             this.dgv_Klientet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Klientet.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -75,14 +76,14 @@ namespace Bibloteka.Forms
             this.dgv_Klientet.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_Klientet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_Klientet.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Klientet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Klientet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dgv_Klientet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
             this.colEmri,
@@ -99,15 +100,15 @@ namespace Bibloteka.Forms
             this.Column1,
             this.Column2});
             this.dgv_Klientet.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(8);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Klientet.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle20.Padding = new System.Windows.Forms.Padding(8);
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Klientet.DefaultCellStyle = dataGridViewCellStyle20;
             this.dgv_Klientet.EnableHeadersVisualStyles = false;
             this.dgv_Klientet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Klientet.Name = "dgv_Klientet";
@@ -137,6 +138,108 @@ namespace Bibloteka.Forms
             this.dgv_Klientet.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Klientet.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_Klientet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Klientet_CellContentClick);
+            // 
+            // colID
+            // 
+            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            resources.ApplyResources(this.colID, "colID");
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            // 
+            // colEmri
+            // 
+            this.colEmri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.colEmri.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colEmri, "colEmri");
+            this.colEmri.Name = "colEmri";
+            this.colEmri.ReadOnly = true;
+            // 
+            // colMbiemri
+            // 
+            this.colMbiemri.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colMbiemri, "colMbiemri");
+            this.colMbiemri.Name = "colMbiemri";
+            this.colMbiemri.ReadOnly = true;
+            // 
+            // colDatalindjes
+            // 
+            dataGridViewCellStyle19.Format = "D";
+            dataGridViewCellStyle19.NullValue = null;
+            this.colDatalindjes.DefaultCellStyle = dataGridViewCellStyle19;
+            this.colDatalindjes.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colDatalindjes, "colDatalindjes");
+            this.colDatalindjes.Name = "colDatalindjes";
+            this.colDatalindjes.ReadOnly = true;
+            // 
+            // colGjinia
+            // 
+            this.colGjinia.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colGjinia, "colGjinia");
+            this.colGjinia.Name = "colGjinia";
+            this.colGjinia.ReadOnly = true;
+            // 
+            // colNrPersonal
+            // 
+            this.colNrPersonal.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colNrPersonal, "colNrPersonal");
+            this.colNrPersonal.Name = "colNrPersonal";
+            this.colNrPersonal.ReadOnly = true;
+            // 
+            // NrKontaktues
+            // 
+            this.NrKontaktues.FillWeight = 50.71915F;
+            resources.ApplyResources(this.NrKontaktues, "NrKontaktues");
+            this.NrKontaktues.Name = "NrKontaktues";
+            this.NrKontaktues.ReadOnly = true;
+            // 
+            // colAdresa
+            // 
+            this.colAdresa.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colAdresa, "colAdresa");
+            this.colAdresa.Name = "colAdresa";
+            this.colAdresa.ReadOnly = true;
+            // 
+            // colQyteti
+            // 
+            this.colQyteti.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colQyteti, "colQyteti");
+            this.colQyteti.Name = "colQyteti";
+            this.colQyteti.ReadOnly = true;
+            // 
+            // colShteti
+            // 
+            this.colShteti.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colShteti, "colShteti");
+            this.colShteti.Name = "colShteti";
+            this.colShteti.ReadOnly = true;
+            // 
+            // colKodiPostal
+            // 
+            this.colKodiPostal.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colKodiPostal, "colKodiPostal");
+            this.colKodiPostal.Name = "colKodiPostal";
+            this.colKodiPostal.ReadOnly = true;
+            // 
+            // colEmaili
+            // 
+            this.colEmaili.FillWeight = 50.71915F;
+            resources.ApplyResources(this.colEmaili, "colEmaili");
+            this.colEmaili.Name = "colEmaili";
+            this.colEmaili.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            resources.ApplyResources(this.Column2, "Column2");
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // label5
             // 
@@ -232,113 +335,42 @@ namespace Bibloteka.Forms
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // colID
+            // btnShkarko
             // 
-            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            resources.ApplyResources(this.colID, "colID");
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            // 
-            // colEmri
-            // 
-            this.colEmri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.colEmri.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colEmri, "colEmri");
-            this.colEmri.Name = "colEmri";
-            this.colEmri.ReadOnly = true;
-            // 
-            // colMbiemri
-            // 
-            this.colMbiemri.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colMbiemri, "colMbiemri");
-            this.colMbiemri.Name = "colMbiemri";
-            this.colMbiemri.ReadOnly = true;
-            // 
-            // colDatalindjes
-            // 
-            dataGridViewCellStyle3.Format = "D";
-            dataGridViewCellStyle3.NullValue = null;
-            this.colDatalindjes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.colDatalindjes.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colDatalindjes, "colDatalindjes");
-            this.colDatalindjes.Name = "colDatalindjes";
-            this.colDatalindjes.ReadOnly = true;
-            // 
-            // colGjinia
-            // 
-            this.colGjinia.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colGjinia, "colGjinia");
-            this.colGjinia.Name = "colGjinia";
-            this.colGjinia.ReadOnly = true;
-            // 
-            // colNrPersonal
-            // 
-            this.colNrPersonal.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colNrPersonal, "colNrPersonal");
-            this.colNrPersonal.Name = "colNrPersonal";
-            this.colNrPersonal.ReadOnly = true;
-            // 
-            // NrKontaktues
-            // 
-            this.NrKontaktues.FillWeight = 50.71915F;
-            resources.ApplyResources(this.NrKontaktues, "NrKontaktues");
-            this.NrKontaktues.Name = "NrKontaktues";
-            this.NrKontaktues.ReadOnly = true;
-            // 
-            // colAdresa
-            // 
-            this.colAdresa.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colAdresa, "colAdresa");
-            this.colAdresa.Name = "colAdresa";
-            this.colAdresa.ReadOnly = true;
-            // 
-            // colQyteti
-            // 
-            this.colQyteti.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colQyteti, "colQyteti");
-            this.colQyteti.Name = "colQyteti";
-            this.colQyteti.ReadOnly = true;
-            // 
-            // colShteti
-            // 
-            this.colShteti.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colShteti, "colShteti");
-            this.colShteti.Name = "colShteti";
-            this.colShteti.ReadOnly = true;
-            // 
-            // colKodiPostal
-            // 
-            this.colKodiPostal.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colKodiPostal, "colKodiPostal");
-            this.colKodiPostal.Name = "colKodiPostal";
-            this.colKodiPostal.ReadOnly = true;
-            // 
-            // colEmaili
-            // 
-            this.colEmaili.FillWeight = 50.71915F;
-            resources.ApplyResources(this.colEmaili, "colEmaili");
-            this.colEmaili.Name = "colEmaili";
-            this.colEmaili.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            resources.ApplyResources(this.Column2, "Column2");
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            resources.ApplyResources(this.btnShkarko, "btnShkarko");
+            this.btnShkarko.AnimationHoverSpeed = 0.07F;
+            this.btnShkarko.AnimationSpeed = 0.03F;
+            this.btnShkarko.BackColor = System.Drawing.Color.Transparent;
+            this.btnShkarko.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.btnShkarko.BorderColor = System.Drawing.Color.Black;
+            this.btnShkarko.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnShkarko.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnShkarko.CheckedForeColor = System.Drawing.Color.White;
+            this.btnShkarko.CheckedImage = null;
+            this.btnShkarko.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnShkarko.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShkarko.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnShkarko.FocusedColor = System.Drawing.Color.Empty;
+            this.btnShkarko.ForeColor = System.Drawing.Color.White;
+            this.btnShkarko.Image = ((System.Drawing.Image)(resources.GetObject("btnShkarko.Image")));
+            this.btnShkarko.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnShkarko.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnShkarko.Name = "btnShkarko";
+            this.btnShkarko.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            this.btnShkarko.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnShkarko.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnShkarko.OnHoverImage = null;
+            this.btnShkarko.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnShkarko.OnPressedColor = System.Drawing.Color.Black;
+            this.btnShkarko.Radius = 3;
+            this.btnShkarko.Click += new System.EventHandler(this.btnShkarko_Click);
             // 
             // frm_Klientet
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnShkarko);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblKategorite);
             this.Controls.Add(this.gunaGroupBox1);
@@ -377,5 +409,6 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmaili;
         private System.Windows.Forms.DataGridViewImageColumn Column1;
         private System.Windows.Forms.DataGridViewImageColumn Column2;
+        private Guna.UI.WinForms.GunaAdvenceButton btnShkarko;
     }
 }

@@ -66,7 +66,6 @@ namespace Bibloteka
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.panel1.Controls.Add(this.panelReportsSubMenu);
             this.panel1.Controls.Add(this.btnLogout);
@@ -80,22 +79,20 @@ namespace Bibloteka
             this.panel1.Controls.Add(this.btnKategorite);
             this.panel1.Controls.Add(this.btnBallina);
             this.panel1.Controls.Add(this.panel2);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(259, 749);
-            this.panel1.TabIndex = 1;
             // 
             // panelReportsSubMenu
             // 
-            resources.ApplyResources(this.panelReportsSubMenu, "panelReportsSubMenu");
             this.panelReportsSubMenu.Controls.Add(this.btnKthimetReport);
             this.panelReportsSubMenu.Controls.Add(this.btnHuazimetReport);
             this.panelReportsSubMenu.Controls.Add(this.btnLibratReport);
             this.panelReportsSubMenu.Controls.Add(this.btnKlientReport);
+            resources.ApplyResources(this.panelReportsSubMenu, "panelReportsSubMenu");
             this.panelReportsSubMenu.Name = "panelReportsSubMenu";
             // 
             // btnKthimetReport
             // 
-            resources.ApplyResources(this.btnKthimetReport, "btnKthimetReport");
             this.btnKthimetReport.AnimationHoverSpeed = 0.07F;
             this.btnKthimetReport.AnimationSpeed = 0.03F;
             this.btnKthimetReport.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
@@ -107,6 +104,7 @@ namespace Bibloteka
             this.btnKthimetReport.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnKthimetReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKthimetReport.DialogResult = System.Windows.Forms.DialogResult.None;
+            resources.ApplyResources(this.btnKthimetReport, "btnKthimetReport");
             this.btnKthimetReport.FocusedColor = System.Drawing.Color.Empty;
             this.btnKthimetReport.ForeColor = System.Drawing.Color.White;
             this.btnKthimetReport.Image = ((System.Drawing.Image)(resources.GetObject("btnKthimetReport.Image")));
@@ -126,7 +124,6 @@ namespace Bibloteka
             // 
             // btnHuazimetReport
             // 
-            resources.ApplyResources(this.btnHuazimetReport, "btnHuazimetReport");
             this.btnHuazimetReport.AnimationHoverSpeed = 0.07F;
             this.btnHuazimetReport.AnimationSpeed = 0.03F;
             this.btnHuazimetReport.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
@@ -138,6 +135,7 @@ namespace Bibloteka
             this.btnHuazimetReport.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnHuazimetReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuazimetReport.DialogResult = System.Windows.Forms.DialogResult.None;
+            resources.ApplyResources(this.btnHuazimetReport, "btnHuazimetReport");
             this.btnHuazimetReport.FocusedColor = System.Drawing.Color.Empty;
             this.btnHuazimetReport.ForeColor = System.Drawing.Color.White;
             this.btnHuazimetReport.Image = ((System.Drawing.Image)(resources.GetObject("btnHuazimetReport.Image")));
@@ -157,7 +155,6 @@ namespace Bibloteka
             // 
             // btnLibratReport
             // 
-            resources.ApplyResources(this.btnLibratReport, "btnLibratReport");
             this.btnLibratReport.AnimationHoverSpeed = 0.07F;
             this.btnLibratReport.AnimationSpeed = 0.03F;
             this.btnLibratReport.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
@@ -169,6 +166,7 @@ namespace Bibloteka
             this.btnLibratReport.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnLibratReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLibratReport.DialogResult = System.Windows.Forms.DialogResult.None;
+            resources.ApplyResources(this.btnLibratReport, "btnLibratReport");
             this.btnLibratReport.FocusedColor = System.Drawing.Color.Empty;
             this.btnLibratReport.ForeColor = System.Drawing.Color.White;
             this.btnLibratReport.Image = ((System.Drawing.Image)(resources.GetObject("btnLibratReport.Image")));
@@ -188,7 +186,6 @@ namespace Bibloteka
             // 
             // btnKlientReport
             // 
-            resources.ApplyResources(this.btnKlientReport, "btnKlientReport");
             this.btnKlientReport.AnimationHoverSpeed = 0.07F;
             this.btnKlientReport.AnimationSpeed = 0.03F;
             this.btnKlientReport.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
@@ -200,6 +197,7 @@ namespace Bibloteka
             this.btnKlientReport.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnKlientReport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKlientReport.DialogResult = System.Windows.Forms.DialogResult.None;
+            resources.ApplyResources(this.btnKlientReport, "btnKlientReport");
             this.btnKlientReport.FocusedColor = System.Drawing.Color.Empty;
             this.btnKlientReport.ForeColor = System.Drawing.Color.White;
             this.btnKlientReport.Image = ((System.Drawing.Image)(resources.GetObject("btnKlientReport.Image")));
@@ -221,36 +219,24 @@ namespace Bibloteka
             // 
             resources.ApplyResources(this.btnLogout, "btnLogout");
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(207, 779);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.TabStop = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // lblPunetori
             // 
-            this.lblPunetori.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblPunetori.AutoSize = true;
-            this.lblPunetori.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblPunetori, "lblPunetori");
             this.lblPunetori.ForeColor = System.Drawing.Color.White;
-            this.lblPunetori.Location = new System.Drawing.Point(60, 781);
             this.lblPunetori.Name = "lblPunetori";
-            this.lblPunetori.Size = new System.Drawing.Size(54, 28);
-            this.lblPunetori.TabIndex = 17;
-            this.lblPunetori.Text = "User: ";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 772);
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // btnLibrat
             // 
-            resources.ApplyResources(this.btnLibrat, "btnLibrat");
             this.btnLibrat.Animated = true;
             this.btnLibrat.AnimationHoverSpeed = 0.07F;
             this.btnLibrat.AnimationSpeed = 0.03F;
@@ -265,7 +251,7 @@ namespace Bibloteka
             this.btnLibrat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLibrat.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLibrat.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLibrat.Font = new System.Drawing.Font("Poppins Light", 12F);
+            resources.ApplyResources(this.btnLibrat, "btnLibrat");
             this.btnLibrat.ForeColor = System.Drawing.Color.White;
             this.btnLibrat.Image = ((System.Drawing.Image)(resources.GetObject("btnLibrat.Image")));
             this.btnLibrat.ImageOffsetX = 10;
@@ -285,7 +271,6 @@ namespace Bibloteka
             // 
             // btnRaportet
             // 
-            resources.ApplyResources(this.btnRaportet, "btnRaportet");
             this.btnRaportet.Animated = true;
             this.btnRaportet.AnimationHoverSpeed = 0.07F;
             this.btnRaportet.AnimationSpeed = 0.03F;
@@ -300,7 +285,7 @@ namespace Bibloteka
             this.btnRaportet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRaportet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRaportet.FocusedColor = System.Drawing.Color.Empty;
-            this.btnRaportet.Font = new System.Drawing.Font("Poppins Light", 12F);
+            resources.ApplyResources(this.btnRaportet, "btnRaportet");
             this.btnRaportet.ForeColor = System.Drawing.Color.White;
             this.btnRaportet.Image = ((System.Drawing.Image)(resources.GetObject("btnRaportet.Image")));
             this.btnRaportet.ImageOffsetX = 10;
@@ -320,7 +305,6 @@ namespace Bibloteka
             // 
             // btnHuazimet
             // 
-            resources.ApplyResources(this.btnHuazimet, "btnHuazimet");
             this.btnHuazimet.Animated = true;
             this.btnHuazimet.AnimationHoverSpeed = 0.07F;
             this.btnHuazimet.AnimationSpeed = 0.03F;
@@ -335,7 +319,7 @@ namespace Bibloteka
             this.btnHuazimet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuazimet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHuazimet.FocusedColor = System.Drawing.Color.Empty;
-            this.btnHuazimet.Font = new System.Drawing.Font("Poppins Light", 12F);
+            resources.ApplyResources(this.btnHuazimet, "btnHuazimet");
             this.btnHuazimet.ForeColor = System.Drawing.Color.White;
             this.btnHuazimet.Image = ((System.Drawing.Image)(resources.GetObject("btnHuazimet.Image")));
             this.btnHuazimet.ImageOffsetX = 10;
@@ -355,7 +339,6 @@ namespace Bibloteka
             // 
             // btnStafi
             // 
-            resources.ApplyResources(this.btnStafi, "btnStafi");
             this.btnStafi.Animated = true;
             this.btnStafi.AnimationHoverSpeed = 0.07F;
             this.btnStafi.AnimationSpeed = 0.03F;
@@ -370,7 +353,7 @@ namespace Bibloteka
             this.btnStafi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStafi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnStafi.FocusedColor = System.Drawing.Color.Empty;
-            this.btnStafi.Font = new System.Drawing.Font("Poppins Light", 12F);
+            resources.ApplyResources(this.btnStafi, "btnStafi");
             this.btnStafi.ForeColor = System.Drawing.Color.White;
             this.btnStafi.Image = ((System.Drawing.Image)(resources.GetObject("btnStafi.Image")));
             this.btnStafi.ImageOffsetX = 10;
@@ -386,10 +369,10 @@ namespace Bibloteka
             this.btnStafi.OnPressedColor = System.Drawing.Color.Black;
             this.btnStafi.OnPressedDepth = 0;
             this.btnStafi.TextOffsetX = 10;
+            this.btnStafi.Click += new System.EventHandler(this.btnStafi_Click_1);
             // 
             // btnKlientet
             // 
-            resources.ApplyResources(this.btnKlientet, "btnKlientet");
             this.btnKlientet.Animated = true;
             this.btnKlientet.AnimationHoverSpeed = 0.07F;
             this.btnKlientet.AnimationSpeed = 0.03F;
@@ -404,7 +387,7 @@ namespace Bibloteka
             this.btnKlientet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKlientet.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKlientet.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKlientet.Font = new System.Drawing.Font("Poppins Light", 12F);
+            resources.ApplyResources(this.btnKlientet, "btnKlientet");
             this.btnKlientet.ForeColor = System.Drawing.Color.White;
             this.btnKlientet.Image = ((System.Drawing.Image)(resources.GetObject("btnKlientet.Image")));
             this.btnKlientet.ImageOffsetX = 10;
@@ -424,7 +407,6 @@ namespace Bibloteka
             // 
             // btnKategorite
             // 
-            resources.ApplyResources(this.btnKategorite, "btnKategorite");
             this.btnKategorite.Animated = true;
             this.btnKategorite.AnimationHoverSpeed = 0.07F;
             this.btnKategorite.AnimationSpeed = 0.03F;
@@ -439,7 +421,7 @@ namespace Bibloteka
             this.btnKategorite.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKategorite.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKategorite.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKategorite.Font = new System.Drawing.Font("Poppins Light", 12F);
+            resources.ApplyResources(this.btnKategorite, "btnKategorite");
             this.btnKategorite.ForeColor = System.Drawing.Color.White;
             this.btnKategorite.Image = ((System.Drawing.Image)(resources.GetObject("btnKategorite.Image")));
             this.btnKategorite.ImageOffsetX = 10;
@@ -459,7 +441,6 @@ namespace Bibloteka
             // 
             // btnBallina
             // 
-            resources.ApplyResources(this.btnBallina, "btnBallina");
             this.btnBallina.Animated = true;
             this.btnBallina.AnimationHoverSpeed = 0.07F;
             this.btnBallina.AnimationSpeed = 0.03F;
@@ -475,7 +456,7 @@ namespace Bibloteka
             this.btnBallina.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBallina.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBallina.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBallina.Font = new System.Drawing.Font("Poppins Light", 12F);
+            resources.ApplyResources(this.btnBallina, "btnBallina");
             this.btnBallina.ForeColor = System.Drawing.Color.White;
             this.btnBallina.Image = ((System.Drawing.Image)(resources.GetObject("btnBallina.Image")));
             this.btnBallina.ImageOffsetX = 10;
@@ -495,9 +476,9 @@ namespace Bibloteka
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.panel2.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // pictureBox1
@@ -508,10 +489,10 @@ namespace Bibloteka
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.txtKerko);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // pictureBox3
@@ -522,7 +503,6 @@ namespace Bibloteka
             // 
             // txtKerko
             // 
-            resources.ApplyResources(this.txtKerko, "txtKerko");
             this.txtKerko.BackColor = System.Drawing.Color.Transparent;
             this.txtKerko.BaseColor = System.Drawing.Color.White;
             this.txtKerko.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
@@ -531,7 +511,7 @@ namespace Bibloteka
             this.txtKerko.FocusedBaseColor = System.Drawing.Color.White;
             this.txtKerko.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtKerko.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtKerko.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.txtKerko, "txtKerko");
             this.txtKerko.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.txtKerko.Name = "txtKerko";
             this.txtKerko.PasswordChar = '\0';
@@ -541,29 +521,24 @@ namespace Bibloteka
             // 
             // Wrapper
             // 
-            resources.ApplyResources(this.Wrapper, "Wrapper");
             this.Wrapper.BackColor = System.Drawing.Color.White;
             this.Wrapper.Controls.Add(this.panelSeperator);
+            resources.ApplyResources(this.Wrapper, "Wrapper");
             this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(1069, 758);
-            this.Wrapper.TabIndex = 3;
             // 
             // panelSeperator
             // 
-            resources.ApplyResources(this.panelSeperator, "panelSeperator");
             this.panelSeperator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
+            resources.ApplyResources(this.panelSeperator, "panelSeperator");
             this.panelSeperator.Name = "panelSeperator";
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1328, 834);
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1344, 841);
             this.Name = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
