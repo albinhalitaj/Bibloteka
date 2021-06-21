@@ -54,6 +54,7 @@ namespace Bibloteka.Forms.Huazimet
             // 
             // gunaGroupBox1
             // 
+            resources.ApplyResources(this.gunaGroupBox1, "gunaGroupBox1");
             this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
@@ -73,84 +74,76 @@ namespace Bibloteka.Forms.Huazimet
             this.gunaGroupBox1.Controls.Add(this.dataHuazimit);
             this.gunaGroupBox1.Controls.Add(this.label5);
             this.gunaGroupBox1.Controls.Add(this.label9);
-            this.gunaGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaGroupBox1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.epHuazimet.SetError(this.gunaGroupBox1, resources.GetString("gunaGroupBox1.Error"));
+            this.epHuazimet.SetIconAlignment(this.gunaGroupBox1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("gunaGroupBox1.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.gunaGroupBox1, ((int)(resources.GetObject("gunaGroupBox1.IconPadding"))));
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Gray;
             this.gunaGroupBox1.LineTop = 0;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
             this.gunaGroupBox1.Radius = 5;
-            this.gunaGroupBox1.Size = new System.Drawing.Size(717, 496);
-            this.gunaGroupBox1.TabIndex = 50;
-            this.gunaGroupBox1.Text = "Informatat e Huazimit";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
             // 
             // comboLibri
             // 
+            resources.ApplyResources(this.comboLibri, "comboLibri");
             this.comboLibri.BackColor = System.Drawing.Color.Transparent;
             this.comboLibri.BaseColor = System.Drawing.Color.White;
             this.comboLibri.BorderColor = System.Drawing.Color.Silver;
             this.comboLibri.BorderSize = 1;
             this.comboLibri.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboLibri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.epHuazimet.SetError(this.comboLibri, resources.GetString("comboLibri.Error"));
             this.comboLibri.FocusedColor = System.Drawing.Color.Empty;
-            this.comboLibri.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboLibri.ForeColor = System.Drawing.Color.Black;
             this.comboLibri.FormattingEnabled = true;
-            this.comboLibri.ItemHeight = 28;
+            this.epHuazimet.SetIconAlignment(this.comboLibri, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("comboLibri.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.comboLibri, ((int)(resources.GetObject("comboLibri.IconPadding"))));
             this.comboLibri.Items.AddRange(new object[] {
-            "Selekto Librin"});
-            this.comboLibri.Location = new System.Drawing.Point(396, 113);
+            resources.GetString("comboLibri.Items")});
             this.comboLibri.Name = "comboLibri";
             this.comboLibri.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.comboLibri.OnHoverItemForeColor = System.Drawing.Color.White;
             this.comboLibri.Radius = 3;
-            this.comboLibri.Size = new System.Drawing.Size(250, 34);
-            this.comboLibri.TabIndex = 61;
             this.comboLibri.SelectedIndexChanged += new System.EventHandler(this.comboLibri_SelectedIndexChanged);
             // 
             // txtSasia
             // 
+            resources.ApplyResources(this.txtSasia, "txtSasia");
             this.txtSasia.BackColor = System.Drawing.Color.Transparent;
             this.txtSasia.BaseColor = System.Drawing.Color.White;
             this.txtSasia.BorderColor = System.Drawing.Color.Silver;
             this.txtSasia.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtSasia.ButtonForeColor = System.Drawing.Color.White;
-            this.txtSasia.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.epHuazimet.SetError(this.txtSasia, resources.GetString("txtSasia.Error"));
             this.txtSasia.ForeColor = System.Drawing.Color.Black;
-            this.txtSasia.Location = new System.Drawing.Point(57, 316);
+            this.epHuazimet.SetIconAlignment(this.txtSasia, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtSasia.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.txtSasia, ((int)(resources.GetObject("txtSasia.IconPadding"))));
             this.txtSasia.Maximum = ((long)(9999999));
             this.txtSasia.Minimum = ((long)(0));
             this.txtSasia.Name = "txtSasia";
             this.txtSasia.Radius = 3;
-            this.txtSasia.Size = new System.Drawing.Size(250, 30);
-            this.txtSasia.TabIndex = 59;
             this.txtSasia.Value = ((long)(0));
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(52, 288);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label4, "label4");
+            this.epHuazimet.SetError(this.label4, resources.GetString("label4.Error"));
+            this.epHuazimet.SetIconAlignment(this.label4, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label4.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.label4, ((int)(resources.GetObject("label4.IconPadding"))));
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 25);
-            this.label4.TabIndex = 60;
-            this.label4.Text = "NumriKopjeve";
             // 
             // dataKthimit
             // 
+            resources.ApplyResources(this.dataKthimit, "dataKthimit");
             this.dataKthimit.BackColor = System.Drawing.Color.Transparent;
             this.dataKthimit.BaseColor = System.Drawing.Color.White;
             this.dataKthimit.BorderColor = System.Drawing.Color.Silver;
             this.dataKthimit.BorderSize = 1;
-            this.dataKthimit.CustomFormat = null;
-            this.dataKthimit.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.epHuazimet.SetError(this.dataKthimit, resources.GetString("dataKthimit.Error"));
             this.dataKthimit.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.dataKthimit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dataKthimit.ForeColor = System.Drawing.Color.Black;
-            this.dataKthimit.Location = new System.Drawing.Point(396, 212);
+            this.epHuazimet.SetIconAlignment(this.dataKthimit, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("dataKthimit.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.dataKthimit, ((int)(resources.GetObject("dataKthimit.IconPadding"))));
             this.dataKthimit.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dataKthimit.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dataKthimit.Name = "dataKthimit";
@@ -159,33 +152,28 @@ namespace Bibloteka.Forms.Huazimet
             this.dataKthimit.OnHoverForeColor = System.Drawing.Color.Black;
             this.dataKthimit.OnPressedColor = System.Drawing.Color.Black;
             this.dataKthimit.Radius = 3;
-            this.dataKthimit.Size = new System.Drawing.Size(250, 37);
-            this.dataKthimit.TabIndex = 50;
-            this.dataKthimit.Text = "Thursday, May 20, 2021";
             this.dataKthimit.Value = new System.DateTime(2021, 5, 20, 14, 58, 37, 411);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(391, 179);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label2, "label2");
+            this.epHuazimet.SetError(this.label2, resources.GetString("label2.Error"));
+            this.epHuazimet.SetIconAlignment(this.label2, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label2.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.label2, ((int)(resources.GetObject("label2.IconPadding"))));
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 25);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "Data Kthimit";
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
-            this.panel2.Location = new System.Drawing.Point(215, 25);
+            this.epHuazimet.SetError(this.panel2, resources.GetString("panel2.Error"));
+            this.epHuazimet.SetIconAlignment(this.panel2, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("panel2.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.panel2, ((int)(resources.GetObject("panel2.IconPadding"))));
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(415, 3);
-            this.panel2.TabIndex = 49;
             // 
             // btnAnulo
             // 
+            resources.ApplyResources(this.btnAnulo, "btnAnulo");
             this.btnAnulo.AnimationHoverSpeed = 0.07F;
             this.btnAnulo.AnimationSpeed = 0.03F;
             this.btnAnulo.BackColor = System.Drawing.Color.Transparent;
@@ -198,14 +186,14 @@ namespace Bibloteka.Forms.Huazimet
             this.btnAnulo.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnAnulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnulo.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.epHuazimet.SetError(this.btnAnulo, resources.GetString("btnAnulo.Error"));
             this.btnAnulo.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAnulo.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnAnulo.ForeColor = System.Drawing.Color.White;
+            this.epHuazimet.SetIconAlignment(this.btnAnulo, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("btnAnulo.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.btnAnulo, ((int)(resources.GetObject("btnAnulo.IconPadding"))));
             this.btnAnulo.Image = null;
             this.btnAnulo.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAnulo.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAnulo.Location = new System.Drawing.Point(474, 396);
-            this.btnAnulo.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnulo.Name = "btnAnulo";
             this.btnAnulo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.btnAnulo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -214,14 +202,12 @@ namespace Bibloteka.Forms.Huazimet
             this.btnAnulo.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnAnulo.OnPressedColor = System.Drawing.Color.Black;
             this.btnAnulo.Radius = 3;
-            this.btnAnulo.Size = new System.Drawing.Size(78, 34);
-            this.btnAnulo.TabIndex = 11;
-            this.btnAnulo.Text = "Anulo";
             this.btnAnulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAnulo.Click += new System.EventHandler(this.btnAnulo_Click);
             // 
             // btnHuazo
             // 
+            resources.ApplyResources(this.btnHuazo, "btnHuazo");
             this.btnHuazo.AnimationHoverSpeed = 0.07F;
             this.btnHuazo.AnimationSpeed = 0.03F;
             this.btnHuazo.BackColor = System.Drawing.Color.Transparent;
@@ -234,14 +220,14 @@ namespace Bibloteka.Forms.Huazimet
             this.btnHuazo.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnHuazo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuazo.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.epHuazimet.SetError(this.btnHuazo, resources.GetString("btnHuazo.Error"));
             this.btnHuazo.FocusedColor = System.Drawing.Color.Empty;
-            this.btnHuazo.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnHuazo.ForeColor = System.Drawing.Color.White;
+            this.epHuazimet.SetIconAlignment(this.btnHuazo, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("btnHuazo.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.btnHuazo, ((int)(resources.GetObject("btnHuazo.IconPadding"))));
             this.btnHuazo.Image = null;
             this.btnHuazo.ImageSize = new System.Drawing.Size(20, 20);
             this.btnHuazo.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnHuazo.Location = new System.Drawing.Point(568, 396);
-            this.btnHuazo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuazo.Name = "btnHuazo";
             this.btnHuazo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.btnHuazo.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -250,90 +236,78 @@ namespace Bibloteka.Forms.Huazimet
             this.btnHuazo.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnHuazo.OnPressedColor = System.Drawing.Color.Black;
             this.btnHuazo.Radius = 3;
-            this.btnHuazo.Size = new System.Drawing.Size(78, 34);
-            this.btnHuazo.TabIndex = 10;
-            this.btnHuazo.Text = "Huazo";
             this.btnHuazo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHuazo.Click += new System.EventHandler(this.btnHuazo_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(52, 85);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label3, "label3");
+            this.epHuazimet.SetError(this.label3, resources.GetString("label3.Error"));
+            this.epHuazimet.SetIconAlignment(this.label3, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label3.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.label3, ((int)(resources.GetObject("label3.IconPadding"))));
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 25);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Klienti";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(391, 85);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label7, "label7");
+            this.epHuazimet.SetError(this.label7, resources.GetString("label7.Error"));
+            this.epHuazimet.SetIconAlignment(this.label7, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label7.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.label7, ((int)(resources.GetObject("label7.IconPadding"))));
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 25);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "Libri";
             // 
             // comboKlienti
             // 
+            resources.ApplyResources(this.comboKlienti, "comboKlienti");
             this.comboKlienti.BackColor = System.Drawing.Color.Transparent;
             this.comboKlienti.BaseColor = System.Drawing.Color.White;
             this.comboKlienti.BorderColor = System.Drawing.Color.Silver;
             this.comboKlienti.BorderSize = 1;
             this.comboKlienti.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboKlienti.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.epHuazimet.SetError(this.comboKlienti, resources.GetString("comboKlienti.Error"));
             this.comboKlienti.FocusedColor = System.Drawing.Color.Empty;
-            this.comboKlienti.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboKlienti.ForeColor = System.Drawing.Color.Black;
             this.comboKlienti.FormattingEnabled = true;
-            this.comboKlienti.ItemHeight = 28;
+            this.epHuazimet.SetIconAlignment(this.comboKlienti, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("comboKlienti.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.comboKlienti, ((int)(resources.GetObject("comboKlienti.IconPadding"))));
             this.comboKlienti.Items.AddRange(new object[] {
-            "Selekto Klientin"});
-            this.comboKlienti.Location = new System.Drawing.Point(57, 114);
+            resources.GetString("comboKlienti.Items")});
             this.comboKlienti.Name = "comboKlienti";
             this.comboKlienti.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.comboKlienti.OnHoverItemForeColor = System.Drawing.Color.White;
             this.comboKlienti.Radius = 3;
-            this.comboKlienti.Size = new System.Drawing.Size(250, 34);
-            this.comboKlienti.TabIndex = 6;
             // 
             // txtPershkrimi
             // 
+            resources.ApplyResources(this.txtPershkrimi, "txtPershkrimi");
             this.txtPershkrimi.BackColor = System.Drawing.Color.Transparent;
             this.txtPershkrimi.BaseColor = System.Drawing.Color.White;
             this.txtPershkrimi.BorderColor = System.Drawing.Color.Silver;
             this.txtPershkrimi.BorderSize = 1;
             this.txtPershkrimi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.epHuazimet.SetError(this.txtPershkrimi, resources.GetString("txtPershkrimi.Error"));
             this.txtPershkrimi.FocusedBaseColor = System.Drawing.Color.White;
             this.txtPershkrimi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtPershkrimi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtPershkrimi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPershkrimi.Location = new System.Drawing.Point(396, 312);
+            this.epHuazimet.SetIconAlignment(this.txtPershkrimi, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtPershkrimi.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.txtPershkrimi, ((int)(resources.GetObject("txtPershkrimi.IconPadding"))));
             this.txtPershkrimi.Name = "txtPershkrimi";
             this.txtPershkrimi.PasswordChar = '\0';
             this.txtPershkrimi.Radius = 3;
             this.txtPershkrimi.SelectedText = "";
-            this.txtPershkrimi.Size = new System.Drawing.Size(250, 34);
-            this.txtPershkrimi.TabIndex = 8;
             // 
             // dataHuazimit
             // 
+            resources.ApplyResources(this.dataHuazimit, "dataHuazimit");
             this.dataHuazimit.BackColor = System.Drawing.Color.Transparent;
             this.dataHuazimit.BaseColor = System.Drawing.Color.White;
             this.dataHuazimit.BorderColor = System.Drawing.Color.Silver;
             this.dataHuazimit.BorderSize = 1;
-            this.dataHuazimit.CustomFormat = null;
-            this.dataHuazimit.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.epHuazimet.SetError(this.dataHuazimit, resources.GetString("dataHuazimit.Error"));
             this.dataHuazimit.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
-            this.dataHuazimit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dataHuazimit.ForeColor = System.Drawing.Color.Black;
-            this.dataHuazimit.Location = new System.Drawing.Point(57, 212);
+            this.epHuazimet.SetIconAlignment(this.dataHuazimit, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("dataHuazimit.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.dataHuazimit, ((int)(resources.GetObject("dataHuazimit.IconPadding"))));
             this.dataHuazimit.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dataHuazimit.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dataHuazimit.Name = "dataHuazimit";
@@ -342,50 +316,36 @@ namespace Bibloteka.Forms.Huazimet
             this.dataHuazimit.OnHoverForeColor = System.Drawing.Color.Black;
             this.dataHuazimit.OnPressedColor = System.Drawing.Color.Black;
             this.dataHuazimit.Radius = 3;
-            this.dataHuazimit.Size = new System.Drawing.Size(250, 37);
-            this.dataHuazimit.TabIndex = 2;
-            this.dataHuazimit.Text = "Thursday, May 20, 2021";
             this.dataHuazimit.Value = new System.DateTime(2021, 5, 20, 14, 58, 37, 411);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(52, 179);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label5, "label5");
+            this.epHuazimet.SetError(this.label5, resources.GetString("label5.Error"));
+            this.epHuazimet.SetIconAlignment(this.label5, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label5.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.label5, ((int)(resources.GetObject("label5.IconPadding"))));
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 25);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Data Huazimit";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(391, 280);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label9, "label9");
+            this.epHuazimet.SetError(this.label9, resources.GetString("label9.Error"));
+            this.epHuazimet.SetIconAlignment(this.label9, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label9.IconAlignment"))));
+            this.epHuazimet.SetIconPadding(this.label9, ((int)(resources.GetObject("label9.IconPadding"))));
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 25);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "Përshkrimi";
             // 
             // epHuazimet
             // 
             this.epHuazimet.ContainerControl = this;
+            resources.ApplyResources(this.epHuazimet, "epHuazimet");
             // 
             // frm_HuazoLiber
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 496);
             this.Controls.Add(this.gunaGroupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_HuazoLiber";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Huazo Libër";
             this.Load += new System.EventHandler(this.frm_HuazoLiber_Load);
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();

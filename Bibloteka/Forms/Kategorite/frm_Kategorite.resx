@@ -117,259 +117,477 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="&gt;&gt;gunaGroupBox1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaGroupBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>964, 695</value>
+  </data>
+  <data name="&gt;&gt;dgv_Kategorite.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dataGridViewImageColumn1.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="lblTotalCategories.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 11.25pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtKerko.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="gunaGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="dgv_Kategorite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 110</value>
+  </data>
+  <data name="txtKerko.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;txtKerko.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblTotalCategories.Text" xml:space="preserve">
+    <value>Total Kategori:</value>
+  </data>
+  <data name="lblKategorite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="btnShto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 34</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="lblTotalCategories.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 520</value>
+  </data>
+  <data name="lblKategorite.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnShto.Text" xml:space="preserve">
+    <value>Shto Kategori</value>
+  </data>
+  <data name="&gt;&gt;btnShto.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="lblKategorite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 42</value>
+  </data>
+  <data name="txtKerko.Location" type="System.Drawing.Point, System.Drawing">
+    <value>604, 54</value>
+  </data>
+  <data name="&gt;&gt;lblTotalCategories.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="lblTotalCategories.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="dataGridViewImageColumn1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnShto.Name" xml:space="preserve">
+    <value>btnShto</value>
+  </data>
+  <data name="&gt;&gt;lblTotalCategories.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblTotalCategories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 26</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="btnShto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblTotalCategories.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;btnShto.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn3.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn3</value>
+  </data>
+  <data name="dgv_Kategorite.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;txtKerko.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblKategorite.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 18pt</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 3</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="btnShto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 54</value>
+  </data>
+  <data name="btnShto.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblTotalCategories.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Përshkrimi</value>
+  </data>
   <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACO
-        OAAAAk1TRnQBSQFMAgEBAgEAATABAAEwAQABIAEAASABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAGA
-        AwABIAMAAQEBAAEgBgABQBIAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wE/AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEY
-        Af4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wE/AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wE/AYgB7AH+ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wE/AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wE/
-        AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wE/AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEY
-        Af4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wE/AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH+AfYB5w3/Af4B+AHtAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wE/AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8B4gHvAf4l/wF4
-        AbcB+wH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH+AfAB1hL/Af0B+QH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgt/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        /wABAAHuAaIBGAH+AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B/QHcAZoW/wH8AfcB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8BPwGIAewB/gE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+C3/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH7AcUBUxr/AfgB7AH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8BPwGI
-        AewB/gE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+C3/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6AbYBKR3/
-        Af4B7AHLAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8BPwGIAewB/gE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+C3/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af//AAEA
-        Ae4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfwB3QGfHf8B/QHjAa8B/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8BPwGIAewB/gE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+C3/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B/QHpAcEd/wH8Ac8BcgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8BPwGIAewB/gE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE9AZYB+C3/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIC/wH6AfId/wH7
-        Ab8BQwH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BUwGiAfkt/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH//wABAAHuAaIBGAH+AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIC/wH4Aewd/wH7Ab4BPgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wE/AYgB7AH+
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/AWoBsAH6Lf8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8AAQAB7gGiARgB/gH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARID/wH+Hf8B+gG1ASYB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BhgG7Afst/wFAAZgB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH//wABAAHuAaIBGAH+
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESHf8B+gGuARIB/wH6AbMBHgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BrAHRAfwt/wFRAaEB+QH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        /wABAAHuAaIBGAH+AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIV/wH6Aa4BEgH/Af4B6QHABf8B+gGvARQB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8BPwGIAewB/gE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wHJAeAB/S3/
-        AWIBqgH6Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af//AAEAAe4BogEYAf4B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESDf8B+gGuARIB/wH8AdoBkw3/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wE/AYgB7AH+
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/AeUB8AH+Lf8BgQG5AfsB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8AAQAB7gGiARgB/gH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgX/
-        AfoBrgESAf8B+wHJAVwR/wH8AdEBdgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8BPwGIAewB/gE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH//wABAAHuAaIBGAH+AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH7AcIBShX/AfoBsQEbAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wE/AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGU
-        AfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wHcAesB/jX/AXgBtwH6Af8BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH//wABAAHuAaIBGAH+
-        AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/
-        AfoBrgESAf8B+gGuARIB/wH6AbEBGxH/AfwByAFeAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGu
-        ARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/
-        ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/AfUB+Tb/AZQBwwH7
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH//wABAAHuAaIBGAH+AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfsBuAEtCf8B/QHSAXgB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wE/AYgB7AH+ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/AUABmAH4Af8BQAGYAfgB/wFAAZgB+AH/AUgBnQH5
-        Ff8BQAGYAfgB/wFAAZgB+AH/AUABmAH4Af8BQgGZAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8AAQAB7gGiARgB/gH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8AAQAB7gGiARgB/gH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8A
-        AQAB7gGiARgB/gH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8AAQAB7gGiARgB/gH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AT8BiAHs
-        Af4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB//8AAQAB7gGiARgB/gH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8AAQAB7gGiARgB/gH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8AAQAB7gGiARgB/gH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8A
-        AQAB7gGiARgB/gH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6
-        Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgESAf8B+gGuARIB/wH6Aa4BEgH/AfoBrgES
-        Af8B+gGuARIB/wH6Aa4BEgH/AT8BiAHsAf4BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5
-        AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4
-        Af8BOQGUAfgB/wE5AZQB+AH/ATkBlAH4Af8BOQGUAfgB//8AAQABQgFNAT4HAAE+AwABKAMAAYADAAEg
-        AwABAQEAAQEGAAECFgAD//8A/wADAAs=
+        OAAAAk1TRnQBSQFMAgEBAgEAATgBAAFEAQABIAEAASABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAGA
+        AwABIAMAAQEBAAEgBgABQBIAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wE/AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEY
+        Af4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wE/AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wE/AYYB6gH+ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wE/AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wE/
+        AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wE/AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEY
+        Af4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wE/AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH+AfYB5w3/Af4B+AHtAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wE/AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8B4gHvAf4l/wF3
+        AbcB+wH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH+AfAB1hL/Af0B+QH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgt/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        /wABAAHsAaABGAH+AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B/QHcAZoW/wH8AfcB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8BPwGGAeoB/gE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+C3/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH7AcUBUhr/AfgB7AH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8BPwGG
+        AeoB/gE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+C3/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6AbYBKB3/
+        Af4B7AHLAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8BPwGGAeoB/gE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+C3/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af//AAEA
+        AewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfwB3QGfHf8B/QHjAa8B/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8BPwGGAeoB/gE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+C3/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B/QHpAcEd/wH8Ac8BcQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8BPwGGAeoB/gE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE8AZYB+C3/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREC/wH6AfId/wH7
+        Ab8BQgH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BUgGiAfkt/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH//wABAAHsAaABGAH+AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREC/wH4Aewd/wH7Ab4BPQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wE/AYYB6gH+
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/AWkBsAH6Lf8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8AAQAB7AGgARgB/gH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuARED/wH+Hf8B+gG1ASUB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BhgG7Afst/wE/AZgB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH//wABAAHsAaABGAH+
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERHf8B+gGuAREB/wH6AbMBHQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BrAHRAfwt/wFQAaEB+QH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        /wABAAHsAaABGAH+AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREV/wH6Aa4BEQH/Af4B6QHABf8B+gGvARMB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8BPwGGAeoB/gE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wHJAeAB/S3/
+        AWEBqgH6Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af//AAEAAewBoAEYAf4B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERDf8B+gGuAREB/wH8AdoBkw3/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wE/AYYB6gH+
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/AeUB8AH+Lf8BgQG5AfsB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8AAQAB7AGgARgB/gH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQX/
+        AfoBrgERAf8B+wHJAVsR/wH8AdEBdQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8BPwGGAeoB/gE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH//wABAAHsAaABGAH+AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH7AcIBSRX/AfoBsQEaAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wE/AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGU
+        AfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wHcAesB/jX/AXcBtwH6Af8BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH//wABAAHsAaABGAH+
+        AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/
+        AfoBrgERAf8B+gGuAREB/wH6AbEBGhH/AfwByAFdAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGu
+        AREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/
+        ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/AfUB+Tb/AZQBwwH7
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH//wABAAHsAaABGAH+AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfsBuAEsCf8B/QHSAXcB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wE/AYYB6gH+ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/AT8BmAH4Af8BPwGYAfgB/wE/AZgB+AH/AUcBnQH5
+        Ff8BPwGYAfgB/wE/AZgB+AH/AT8BmAH4Af8BQQGZAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8AAQAB7AGgARgB/gH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8AAQAB7AGgARgB/gH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8A
+        AQAB7AGgARgB/gH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8AAQAB7AGgARgB/gH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AT8BhgHq
+        Af4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB//8AAQAB7AGgARgB/gH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8AAQAB7AGgARgB/gH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8AAQAB7AGgARgB/gH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8A
+        AQAB7AGgARgB/gH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6
+        Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgERAf8B+gGuAREB/wH6Aa4BEQH/AfoBrgER
+        Af8B+gGuAREB/wH6Aa4BEQH/AT8BhgHqAf4BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4
+        AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4
+        Af8BOAGUAfgB/wE4AZQB+AH/ATgBlAH4Af8BOAGUAfgB//8AAQABQgFNAT4HAAE+AwABKAMAAYADAAEg
+        AwABAQEAAQEGAAECFgAD//8A/wAZAAs=
 </value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;gunaGroupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgv_Kategorite.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaDataGridView, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;gunaGroupBox1.Name" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn1.Name" xml:space="preserve">
+    <value>dataGridViewImageColumn1</value>
+  </data>
+  <data name="lblTotalCategories.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;lblKategorite.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="dataGridViewImageColumn2.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gunaGroupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;lblKategorite.Name" xml:space="preserve">
+    <value>lblKategorite</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn2.Name" xml:space="preserve">
+    <value>dataGridViewImageColumn2</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;gunaGroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="dgv_Kategorite.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblKategorite.Text" xml:space="preserve">
+    <value>Kategoritë</value>
+  </data>
+  <data name="lblKategorite.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;dgv_Kategorite.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblTotalCategories.Name" xml:space="preserve">
+    <value>lblTotalCategories</value>
+  </data>
   <data name="btnShto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAoZJREFUeF7t
@@ -386,16 +604,112 @@
         sOUBmHP5Qb4SAZeng8sur7I+qiw32JvysGop73s7JkmSpA9s234D3JWeSFSG1J4AAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="txtKerko.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="&gt;&gt;lblTotalCategories.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frm_Kategorite</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>534, 58</value>
+  </data>
+  <data name="gunaGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 101</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dgv_Kategorite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 389</value>
+  </data>
+  <data name="dataGridViewImageColumn2.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;dataGridViewImageColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 11.25pt</value>
+  </data>
+  <data name="&gt;&gt;btnShto.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 68</value>
+  </data>
+  <data name="txtKerko.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;lblKategorite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frm_Kategorite</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtKerko.Name" xml:space="preserve">
+    <value>txtKerko</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 25</value>
+  </data>
+  <data name="lblTotalCategories.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="gunaGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>886, 560</value>
+  </data>
+  <data name="&gt;&gt;lblKategorite.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgv_Kategorite.Name" xml:space="preserve">
+    <value>dgv_Kategorite</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Kërkoni:</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtKerko.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="dgv_Kategorite.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Emertimi</value>
+  </data>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="dataGridViewImageColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dataGridViewTextBoxColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="dataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dataGridViewImageColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="dataGridViewTextBoxColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="dataGridViewImageColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

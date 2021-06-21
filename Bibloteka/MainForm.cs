@@ -2,6 +2,10 @@
 using System.Windows.Forms;
 using Bibloteka.BusinessObjects;
 using Bibloteka.Forms;
+using Bibloteka.Forms.Reports.HuazimetReport;
+using Bibloteka.Forms.Reports.KlientetReport;
+using Bibloteka.Forms.Reports.KthimetReport;
+using Bibloteka.Forms.Reports.LibratReport;
 
 namespace Bibloteka
 {
@@ -70,10 +74,33 @@ namespace Bibloteka
 
         private void btnLibrat_Click(object sender, EventArgs e) => OpenForm(new frm_Librat(_perdoruesi.Stafi));
 
-        private void btnStafi_Click(object sender, EventArgs e) => OpenForm(new frm_Stafi());
 
         private void btnLogout_Click(object sender, EventArgs e) => Application.Restart();
 
         private void btnRaportet_Click(object sender, EventArgs e) => ShowSubMenu(panelReportsSubMenu);
+
+        private void btnKlientReport_Click(object sender, EventArgs e)
+        {
+            var klientReport = new frm_KlientReport();
+            klientReport.ShowDialog();
+        }
+
+        private void btnLibratReport_Click(object sender, EventArgs e)
+        {
+            var libratReport = new frm_LibratReport();
+            libratReport.ShowDialog();
+        }
+
+        private void btnHuazimetReport_Click(object sender, EventArgs e)
+        {
+            var huazimetReport = new frm_HuazimetReport();
+            huazimetReport.ShowDialog();
+        }
+
+        private void btnKthimetReport_Click(object sender, EventArgs e)
+        {
+            var kthimetReport = new frm_KthimetReport();
+            kthimetReport.ShowDialog();
+        }
     }
 }

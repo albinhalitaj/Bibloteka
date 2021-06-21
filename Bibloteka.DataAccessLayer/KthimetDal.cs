@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bibloteka.BusinessObjects;
+using Dapper;
 
 namespace Bibloteka.DataAccessLayer
 {
@@ -90,6 +91,14 @@ namespace Bibloteka.DataAccessLayer
                 Console.WriteLine(e);
                 throw;
             }
+        }
+
+        public int GetTotalKthimet()
+        {
+            int kthimet;
+            using (var con = DataAccessLayer.AppConnection())
+                kthimet = con.Query<int>("exec usp_GetTotalKthimet").FirstOrDefault();
+            return kthimet;
         }
     }
 }

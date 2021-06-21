@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +30,7 @@ namespace Bibloteka.Forms
             _klientiManager = new KlientiManager();
             _kthimetManager = new KthimetManager();
             InitializeComponent();
+            deriData.Value = DateTime.Today;
         }
 
         private void btnHuazo_Click(object sender, EventArgs e)

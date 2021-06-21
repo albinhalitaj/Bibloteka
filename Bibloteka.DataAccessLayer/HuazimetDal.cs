@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bibloteka.BusinessObjects;
+using Dapper;
 
 namespace Bibloteka.DataAccessLayer
 {
@@ -48,7 +49,7 @@ namespace Bibloteka.DataAccessLayer
                     var cmd = new SqlCommand("usp_InsertAktivitet", con) {CommandType = CommandType.StoredProcedure};
                     cmd.Parameters.AddWithValue("klientiId", act.KlientiId);
                     cmd.Parameters.AddWithValue("libriId", act.LibriId);
-                    cmd.Parameters.AddWithValue("data", act.Data);
+                    cmd.Parameters.AddWithValue("date", act.Data);
                     cmd.Parameters.AddWithValue("tipi", act.Tipi);
                     cmd.Parameters.AddWithValue("insertBy", act.InsertBy);
                     cmd.ExecuteNonQuery();
@@ -217,10 +218,18 @@ namespace Bibloteka.DataAccessLayer
                 }
             }
             catch (Exception e)
-    {
+            {
                 Console.WriteLine(e);
                 throw;
             }
+        }
+
+        public int GetHuazimetTotal()
+        {
+            int huazimet;
+            using (var con = DataAccessLayer.AppConnection())
+                huazimet = con.Query<int>("exec usp_GetHuazimetTotal").FirstOrDefault();
+            return huazimet;
         }
 
     }

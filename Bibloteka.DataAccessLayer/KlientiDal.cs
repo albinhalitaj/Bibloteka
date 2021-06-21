@@ -130,7 +130,7 @@ namespace Bibloteka.DataAccessLayer
             }
         }
 
-        public void FshiKlient(string id)
+        public bool FshiKlient(string id)
         {
             try
             {
@@ -138,13 +138,13 @@ namespace Bibloteka.DataAccessLayer
                 {
                     var cmd = new SqlCommand("usp_DeleteKlient", con) {CommandType = CommandType.StoredProcedure};
                     cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+                    var res = cmd.ExecuteNonQuery();
+                    return res <= 0;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e);
-                throw;
+                return false;
             }
         }
 

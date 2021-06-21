@@ -112,6 +112,38 @@ namespace Bibloteka.DataAccessLayer
                 throw;
             }
         }
+
+        public List<Aktiviteti> Aktivitetet()
+        {
+            try
+            {
+                using (var con = DataAccessLayer.AppConnection())
+                {
+                    var dt = new DataTable();
+                    var cmd = new SqlCommand("usp_GetAktivitetet", con) {CommandType = CommandType.StoredProcedure};
+                    var sda = new SqlDataAdapter(cmd);
+                    sda.Fill(dt);
+                    var aktivitetet = new List<Aktiviteti>();
+                    if (dt.Rows.Count > 0)
+                    {
+                        aktivitetet.AddRange(from DataRow row in dt.Rows
+                            select new Aktiviteti
+                            {
+                                Klienti = Convert.ToString(row[0]),
+                                Libri = Convert.ToString(row[1]),
+                                Data = Convert.ToDateTime(row[2]),
+                                Tipi = Convert.ToInt32(row[3]) == 0 ? Tipi.Huazim : Tipi.Kthim
+                            });
+                    }
+                    return aktivitetet;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
     }
 
     public class ChartViewModel

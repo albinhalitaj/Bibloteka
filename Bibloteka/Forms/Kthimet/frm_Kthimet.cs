@@ -50,10 +50,7 @@ namespace Bibloteka.Forms
             }
         }
 
-        private void frm_Kthimet_Load(object sender, EventArgs e)
-        {
-            LoadData();
-        }
+        private void frm_Kthimet_Load(object sender, EventArgs e) => LoadData();
 
 
         private void txtShuma_TextChanged(object sender, EventArgs e)
@@ -92,17 +89,17 @@ namespace Bibloteka.Forms
                             InsertBy = _stafi.StafiId,
                             InsertDate = DateTime.Now
                         };
-                        var act = new Aktiviteti
-                        {
-                            KlientiId = _model.KlientiId,
-                            LibriId = _model.LibriId,
-                            Tipi = Tipi.Kthim,
-                            Data = DateTime.Now,
-                            InsertBy = _stafi.StafiId
-                        };
-                        _huazimetManager.ShtoAktivitet(act);
                         _kthimetManager.ShtoGjobe(gjoba);
                     }
+                    var act = new Aktiviteti
+                    {
+                        KlientiId = _model.KlientiId,
+                        LibriId = _model.LibriId,
+                        Tipi = Tipi.Kthim,
+                        Data = DateTime.Now,
+                        InsertBy = _stafi.StafiId
+                    };
+                    _huazimetManager.ShtoAktivitet(act);
                     _kthimetManager.Kthe(_model.LibriId, _model.HuazimiId, _model.Sasia);
                     MessageBox.Show(@"Libri u kthye me sukses!", @"Information", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);

@@ -49,7 +49,7 @@ namespace Bibloteka.Forms
                 _klientiManager.Update(_id,klienti);
                 MessageBox.Show(@"Klienti u ruajt me sukses", @"Information", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-                _main.LoadKlients();
+                _main.LoadKlients(_klientiManager.Load());
                 Close();
             }
             else
@@ -59,7 +59,7 @@ namespace Bibloteka.Forms
                 _klientiManager.Add(klienti);
                 MessageBox.Show(@"Klienti u ruajt me sukses", @"Information", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-                _main.LoadKlients();
+                _main.LoadKlients(_klientiManager.Load());
                 Close();
             }
         }

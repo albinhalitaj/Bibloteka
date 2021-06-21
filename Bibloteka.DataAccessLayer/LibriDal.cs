@@ -75,7 +75,7 @@ namespace Bibloteka.DataAccessLayer
        }
 
        // DELETE LIBER 
-       public void DeleteLiber(string id)
+       public bool DeleteLiber(string id)
        {
            try
            {
@@ -83,13 +83,13 @@ namespace Bibloteka.DataAccessLayer
                {
                    var cmd = new SqlCommand("usp_DeleteLiber", con) {CommandType = CommandType.StoredProcedure};
                    cmd.Parameters.AddWithValue("@libriId", id);
-                   cmd.ExecuteNonQuery();
+                   var res = cmd.ExecuteNonQuery();
+                   return res <= 0;
                }
            }
-           catch (Exception e)
+           catch (Exception)
            {
-               Console.WriteLine(e);
-               throw;
+               return false;
            }
        }
 

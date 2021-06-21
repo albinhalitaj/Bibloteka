@@ -32,21 +32,20 @@ namespace Bibloteka.Forms
 
         private void frm_Librat_Load(object sender, EventArgs e)
         {
-            LoadLibrat();
+            LoadLibrat(_libriManager.Load());
         }
 
         private void btnShto_Click(object sender, EventArgs e)
         {
             var frmShto = new frm_ShtoLiber(_stafi,null,new Libri());
             frmShto.ShowDialog();
-            LoadLibrat();
+            LoadLibrat(_libriManager.Load());
             lblTotalLibra.Text = @"Total Libra: " + _libriManager.Count();
         }
 
-        private void LoadLibrat()
+        private void LoadLibrat(DataTable dt)
         {
             dgv_Librat.Rows.Clear();
-            var dt = _libriManager.Load();
             if (dt.Rows.Count > 0)
             {
                 foreach (DataRow liber in dt.Rows)
@@ -83,7 +82,7 @@ namespace Bibloteka.Forms
             var id = Convert.ToString(dgv_Librat.CurrentRow?.Cells[0].Value);
             var editoLiber = new frm_ShtoLiber(_stafi,id,GetLibriDetails());
             editoLiber.ShowDialog();
-            LoadLibrat();
+            LoadLibrat(_libriManager.Load());
         }
 
         public Libri GetLibriDetails()
@@ -113,10 +112,11 @@ namespace Bibloteka.Forms
             if (MessageBox.Show(@"A jeni i sigurt qe deshironi ta fshihni këtë libër?",@"Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 var id = Convert.ToString(dgv_Librat.CurrentRow?.Cells[0].Value);
-                _libriManager.Remove(id);
-                MessageBox.Show(@"Libri u fshi me sukses!", @"Information", MessageBoxButtons.OK,
+                var result = _libriManager.Remove(id);
+                MessageBox.Show(result ? @"Libri u fshi me sukses!" : @"Ky libër nuk mund të fshihet!", @"Information",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-                LoadLibrat();
+                LoadLibrat(_libriManager.Load());
                 lblTotalLibra.Text = @"Total Libra: " + _libriManager.Count();
             }
         }
@@ -129,28 +129,7 @@ namespace Bibloteka.Forms
                 try
                 {
                     var librat = _libriManager.Search(txtKerko.Text);
-                    if (librat.Rows.Count > 0)
-                    {
-                        foreach (DataRow liber in librat.Rows)
-                        {
-                            var liberRow = new DataGridViewRow();
-                            liberRow.CreateCells(dgv_Librat);
-                            liberRow.Cells[0].Value = Convert.ToString(liber[0]);
-                            liberRow.Cells[1].Value = Convert.ToString(liber[1]);
-                            liberRow.Cells[2].Value = Convert.ToString(liber[2]);
-                            liberRow.Cells[3].Value = Convert.ToString(liber[3]);
-                            liberRow.Cells[4].Value = Convert.ToString(liber[4]);
-                            liberRow.Cells[5].Value = Convert.ToString(liber[5]);
-                            liberRow.Cells[6].Value = Convert.ToString(liber[6]);
-                            liberRow.Cells[7].Value = Convert.ToString(liber[7]);
-                            liberRow.Cells[8].Value = Convert.ToString(liber[8]);
-                            liberRow.Cells[9].Value = Convert.ToString(liber[9]);
-                            liberRow.Cells[10].Value = Convert.ToBoolean(liber[10]) ? imageList1.Images[0] : imageList1.Images[1];
-                            liberRow.Cells[11].Value = imageList2.Images[0];
-                            liberRow.Cells[12].Value = imageList2.Images[1];
-                            dgv_Librat.Rows.Add(liberRow);
-                        }
-                    }
+                    LoadLibrat(librat);
                 }
                 catch (Exception)
                 {
@@ -159,7 +138,7 @@ namespace Bibloteka.Forms
                 }
             }
             else
-                LoadLibrat();
+                LoadLibrat(_libriManager.Load());
         }
     }
 }

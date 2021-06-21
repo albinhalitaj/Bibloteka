@@ -86,13 +86,11 @@ namespace Bibloteka.Forms.Huazimet
             _huazimetManager.ShtoAktivitet(act);
             MessageBox.Show(@"Libri u huazua me sukses!", @"Information", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+            _main.LoadData(_huazimetManager.GetHuazimetEMuajitAktual());
             Close();
         }
 
-        private void btnAnulo_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void btnAnulo_Click(object sender, EventArgs e) => Close();
 
         private void comboLibri_SelectedIndexChanged(object sender, EventArgs e)
         {

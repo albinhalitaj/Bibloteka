@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Configuration;
 using System.Drawing;
-using System.Linq;
-using System.Management;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
 using LiveCharts;
 using LiveCharts.Wpf;
-using FontStyle = System.Drawing.FontStyle;
 
 namespace Bibloteka.Forms
 {
@@ -23,84 +15,33 @@ namespace Bibloteka.Forms
         private readonly KlientiManager _klientiManager;
         private readonly LibriManager _libriManager;
         private readonly ChartDataManager _chartDataManager;
-        public frm_Ballina(BusinessObjects.Stafi stafi)
+        private readonly HuazimetManager _huazimetManager;
+        private readonly KthimetManager _kthimetManager;
+        public frm_Ballina(Stafi stafi)
         {
             _stafi = stafi;
             _klientiManager = new KlientiManager();
             _libriManager = new LibriManager();
             _chartDataManager = new ChartDataManager();
+            _huazimetManager = new HuazimetManager();
+            _kthimetManager = new KthimetManager();
             InitializeComponent();
             LoadCharts();
             LoadPieChart();
+            LoadAktivitetet();
         }
-        public class Aktiviteti
-        {
-            public string Klienti { get; set; }
-            public string Libri { get; set; }
-            public string Tipi { get; set; }
-            public DateTime Data { get; set; }
-        }
+
 
         private void frm_Ballina_Load(object sender, EventArgs e)
         {
-            var aktivitetet = new List<Aktiviteti>
-            {
-                new Aktiviteti {Klienti = "Albin Halitaj", Libri = "Keshtjella", Data = DateTime.Now, Tipi = "Huazim"},
-                new Aktiviteti
-                    {Klienti = "Filan Halitaj", Libri = "Game of Thrones", Data = DateTime.Now, Tipi = "Kthim"},
-                new Aktiviteti {Klienti = "Syle Sylani", Libri = "Lord of Rings", Data = DateTime.Now, Tipi = "Huazim"},
-                new Aktiviteti {Klienti = "John Doe", Libri = "Palace of Dreams", Data = DateTime.Now, Tipi = "Kthim"},
-                new Aktiviteti {Klienti = "Mary Jane", Libri = "Palace of Dreams", Data = DateTime.Now, Tipi = "Huazim"}
-            };
-            lblWelcome.Text = @"Mirësevini " + string.Concat(_stafi.Emri, " ", _stafi.Mbiemri);
+            if (ConfigurationManager.AppSettings["language"] == "en-US")
+                lblWelcome.Text = @"Welcome " + string.Concat(_stafi.Emri, " ", _stafi.Mbiemri);
+            else
+                lblWelcome.Text = @"Mirësevini " + string.Concat(_stafi.Emri, " ", _stafi.Mbiemri);
             lblKlientet.Text = _klientiManager.Count().ToString();
             lblLibrat.Text = _libriManager.Count().ToString();
-            var distance = 0;
-
-            foreach (var aktiviteti in aktivitetet)
-            {
-                var datelbl = new Label
-                {
-                    Text = aktiviteti.Data.ToString("D"),
-                    Top = 635 + distance,
-                    Font = new Font("Poppins", 8),
-                    Left = 85,
-                    Width = 500
-                };
-                switch (aktiviteti.Tipi)
-                {
-                    case "Huazim":
-                    {
-                        var lbl = new Label
-                        {
-                            Text = $@"{aktiviteti.Klienti} huazoj librin '{aktiviteti.Libri}'",
-                            Top = 650 + distance,
-                            Font = new Font("Poppins", 11),
-                            Left = 85,
-                            Width = 5000
-                        };
-                        Controls.Add(lbl);
-                        Controls.Add(datelbl);
-                        distance += 58;
-                        break;
-                    }
-                    case "Kthim":
-                    {
-                        var lbl = new Label
-                        {
-                            Text = $@"{aktiviteti.Klienti} ktheu librin '{aktiviteti.Libri}'",
-                            Top = 650 + distance,
-                            Font = new Font("Poppins", 11),
-                            Left = 85,
-                            Width = 5000
-                        };
-                        Controls.Add(lbl);
-                        Controls.Add(datelbl);
-                        distance += 58;
-                        break;
-                    }
-                }
-            }
+            lblHuazimet.Text = _huazimetManager.Count().ToString();
+            lblKthimet.Text = _kthimetManager.Count().ToString();
         }
 
         private void LoadCharts()
@@ -114,12 +55,12 @@ namespace Bibloteka.Forms
                 new ColumnSeries
                 {
                     Values = Huazimet,
-                    Title = "Huazimet"
+                    Title = ConfigurationManager.AppSettings["language"] == "en-US" ? "Loans" : "Huazimet"
                 },
                 new ColumnSeries
                 {
                     Values = Kthimet,
-                    Title = "Kthimet"
+                    Title = ConfigurationManager.AppSettings["language"] == "en-US" ? "Returns" : "Kthimet"
                 }
             };
             cartesianChart1.AxisX.Add(new Axis
@@ -139,9 +80,62 @@ namespace Bibloteka.Forms
             });
         }
 
+        public void LoadAktivitetet()
+        {
+            var aktivitetet = _chartDataManager.GetAktivitetet();
+            var distance = 0;
+            foreach (var aktiviteti in aktivitetet)
+            {
+                var datelbl = new Label
+                {
+                    Text = aktiviteti.Data.ToString("F"),
+                    Top = 635 + distance,
+                    Font = new Font("Poppins", 8),
+                    Left = 85,
+                    Width = 500
+                };
+                var lbl = new Label
+                {
+                    Top = 650 + distance,
+                    Font = new Font("Poppins", 11),
+                    Left = 85,
+                    Width = 5000
+                };
+                switch (aktiviteti.Tipi)
+                {
+                    case Tipi.Huazim:
+                    {
+                        lbl.Text = ConfigurationManager.AppSettings["language"] == "en-US" ? $@"{aktiviteti.Klienti} borrowed the book '{aktiviteti.Libri}'" : $@"{aktiviteti.Klienti} huazoj librin '{aktiviteti.Libri}'";
+                        Controls.Add(lbl);
+                        Controls.Add(datelbl);
+                        distance += 58;
+                        break;
+                    }
+                    case Tipi.Kthim:
+                    {
+                        lbl.Text = ConfigurationManager.AppSettings["language"] == "en-US" ? $@"{aktiviteti.Klienti} returned the book '{aktiviteti.Libri}'" : $@"{aktiviteti.Klienti} ktheu librin '{aktiviteti.Libri}'";
+                        Controls.Add(lbl);
+                        Controls.Add(datelbl);
+                        distance += 58;
+                        break;
+                    }
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+        }
+
         private void LoadPieChart()
         {
-            string LabelPoint(ChartPoint chartPoint) => Math.Abs(chartPoint.Y - 1) < 2 ? $"{chartPoint.Y} Libër" : $"{chartPoint.Y} Libra";
+            string LabelPoint(ChartPoint chartPoint)
+            {
+                if (ConfigurationManager.AppSettings["language"] == "en-US")
+                {
+                    return Math.Abs(chartPoint.Y - 1) < 2 ? $"{chartPoint.Y} Book" : $"{chartPoint.Y} Books";
+                }
+                return Math.Abs(chartPoint.Y - 1) < 2 ? $"{chartPoint.Y} Libër" : $"{chartPoint.Y} Libra";
+            }
+
             var kategorite = _chartDataManager.GetKategoriteData();
             foreach (var data in kategorite)
             {
@@ -158,5 +152,6 @@ namespace Bibloteka.Forms
 
         public ChartValues<int> Huazimet { get; set; }
         public ChartValues<int> Kthimet { get; set; }
+
     }
 }

@@ -53,141 +53,121 @@ namespace Bibloteka
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnSqXK);
             this.panel1.Controls.Add(this.btnEnUS);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.epLogin.SetError(this.panel1, resources.GetString("panel1.Error"));
+            this.epLogin.SetIconAlignment(this.panel1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("panel1.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.panel1, ((int)(resources.GetObject("panel1.IconPadding"))));
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 492);
-            this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(21, 192);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.epLogin.SetError(this.pictureBox1, resources.GetString("pictureBox1.Error"));
+            this.epLogin.SetIconAlignment(this.pictureBox1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("pictureBox1.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.pictureBox1, ((int)(resources.GetObject("pictureBox1.IconPadding"))));
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // btnSqXK
             // 
+            resources.ApplyResources(this.btnSqXK, "btnSqXK");
             this.btnSqXK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSqXK.Image = ((System.Drawing.Image)(resources.GetObject("btnSqXK.Image")));
-            this.btnSqXK.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSqXK.Location = new System.Drawing.Point(47, 459);
-            this.btnSqXK.Margin = new System.Windows.Forms.Padding(2);
+            this.epLogin.SetError(this.btnSqXK, resources.GetString("btnSqXK.Error"));
+            this.epLogin.SetIconAlignment(this.btnSqXK, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("btnSqXK.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.btnSqXK, ((int)(resources.GetObject("btnSqXK.IconPadding"))));
             this.btnSqXK.Name = "btnSqXK";
-            this.btnSqXK.Size = new System.Drawing.Size(34, 22);
-            this.btnSqXK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnSqXK.TabIndex = 8;
             this.btnSqXK.TabStop = false;
+            this.btnSqXK.Click += new System.EventHandler(this.btnSqXK_Click);
             // 
             // btnEnUS
             // 
+            resources.ApplyResources(this.btnEnUS, "btnEnUS");
             this.btnEnUS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEnUS.Image = ((System.Drawing.Image)(resources.GetObject("btnEnUS.Image")));
-            this.btnEnUS.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnEnUS.Location = new System.Drawing.Point(9, 459);
-            this.btnEnUS.Margin = new System.Windows.Forms.Padding(2);
+            this.epLogin.SetError(this.btnEnUS, resources.GetString("btnEnUS.Error"));
+            this.epLogin.SetIconAlignment(this.btnEnUS, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("btnEnUS.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.btnEnUS, ((int)(resources.GetObject("btnEnUS.IconPadding"))));
             this.btnEnUS.Name = "btnEnUS";
-            this.btnEnUS.Size = new System.Drawing.Size(34, 22);
-            this.btnEnUS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnEnUS.TabIndex = 7;
             this.btnEnUS.TabStop = false;
+            this.btnEnUS.Click += new System.EventHandler(this.btnEnUS_Click);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(360, 243);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label4, "label4");
+            this.epLogin.SetError(this.label4, resources.GetString("label4.Error"));
+            this.epLogin.SetIconAlignment(this.label4, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label4.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.label4, ((int)(resources.GetObject("label4.IconPadding"))));
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 25);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Fjalëkalimi";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 10.2F);
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(360, 163);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label3, "label3");
+            this.epLogin.SetError(this.label3, resources.GetString("label3.Error"));
+            this.epLogin.SetIconAlignment(this.label3, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label3.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.label3, ((int)(resources.GetObject("label3.IconPadding"))));
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 25);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Përdoruesi";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label2, "label2");
+            this.epLogin.SetError(this.label2, resources.GetString("label2.Error"));
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(436, 47);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.epLogin.SetIconAlignment(this.label2, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label2.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.label2, ((int)(resources.GetObject("label2.IconPadding"))));
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 42);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Hyrja";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 10.8F);
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(373, 99);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            resources.ApplyResources(this.label1, "label1");
+            this.epLogin.SetError(this.label1, resources.GetString("label1.Error"));
+            this.epLogin.SetIconAlignment(this.label1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("label1.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.label1, ((int)(resources.GetObject("label1.IconPadding"))));
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 26);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Hyrja në panelin e kontrollit";
             // 
             // txtPerdoruesi
             // 
+            resources.ApplyResources(this.txtPerdoruesi, "txtPerdoruesi");
             this.txtPerdoruesi.BackColor = System.Drawing.Color.Transparent;
             this.txtPerdoruesi.BaseColor = System.Drawing.Color.White;
             this.txtPerdoruesi.BorderColor = System.Drawing.Color.Gray;
             this.txtPerdoruesi.BorderSize = 1;
             this.txtPerdoruesi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.epLogin.SetError(this.txtPerdoruesi, resources.GetString("txtPerdoruesi.Error"));
             this.txtPerdoruesi.FocusedBaseColor = System.Drawing.Color.White;
             this.txtPerdoruesi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtPerdoruesi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtPerdoruesi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPerdoruesi.Location = new System.Drawing.Point(365, 192);
+            this.epLogin.SetIconAlignment(this.txtPerdoruesi, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtPerdoruesi.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.txtPerdoruesi, ((int)(resources.GetObject("txtPerdoruesi.IconPadding"))));
             this.txtPerdoruesi.Name = "txtPerdoruesi";
             this.txtPerdoruesi.PasswordChar = '\0';
             this.txtPerdoruesi.Radius = 3;
             this.txtPerdoruesi.SelectedText = "";
-            this.txtPerdoruesi.Size = new System.Drawing.Size(250, 34);
-            this.txtPerdoruesi.TabIndex = 11;
             // 
             // txtFjalekalimi
             // 
+            resources.ApplyResources(this.txtFjalekalimi, "txtFjalekalimi");
             this.txtFjalekalimi.BackColor = System.Drawing.Color.Transparent;
             this.txtFjalekalimi.BaseColor = System.Drawing.Color.White;
             this.txtFjalekalimi.BorderColor = System.Drawing.Color.Gray;
             this.txtFjalekalimi.BorderSize = 1;
             this.txtFjalekalimi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.epLogin.SetError(this.txtFjalekalimi, resources.GetString("txtFjalekalimi.Error"));
             this.txtFjalekalimi.FocusedBaseColor = System.Drawing.Color.White;
             this.txtFjalekalimi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtFjalekalimi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtFjalekalimi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFjalekalimi.Location = new System.Drawing.Point(365, 271);
+            this.epLogin.SetIconAlignment(this.txtFjalekalimi, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtFjalekalimi.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.txtFjalekalimi, ((int)(resources.GetObject("txtFjalekalimi.IconPadding"))));
             this.txtFjalekalimi.Name = "txtFjalekalimi";
             this.txtFjalekalimi.PasswordChar = '*';
             this.txtFjalekalimi.Radius = 3;
             this.txtFjalekalimi.SelectedText = "";
-            this.txtFjalekalimi.Size = new System.Drawing.Size(250, 34);
-            this.txtFjalekalimi.TabIndex = 12;
             // 
             // btnKyqu
             // 
+            resources.ApplyResources(this.btnKyqu, "btnKyqu");
             this.btnKyqu.AnimationHoverSpeed = 0.07F;
             this.btnKyqu.AnimationSpeed = 0.03F;
             this.btnKyqu.BackColor = System.Drawing.Color.Transparent;
@@ -200,14 +180,14 @@ namespace Bibloteka
             this.btnKyqu.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnKyqu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKyqu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.epLogin.SetError(this.btnKyqu, resources.GetString("btnKyqu.Error"));
             this.btnKyqu.FocusedColor = System.Drawing.Color.Empty;
-            this.btnKyqu.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnKyqu.ForeColor = System.Drawing.Color.White;
+            this.epLogin.SetIconAlignment(this.btnKyqu, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("btnKyqu.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.btnKyqu, ((int)(resources.GetObject("btnKyqu.IconPadding"))));
             this.btnKyqu.Image = null;
             this.btnKyqu.ImageSize = new System.Drawing.Size(20, 20);
             this.btnKyqu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnKyqu.Location = new System.Drawing.Point(365, 356);
-            this.btnKyqu.Margin = new System.Windows.Forms.Padding(2);
             this.btnKyqu.Name = "btnKyqu";
             this.btnKyqu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.btnKyqu.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -216,35 +196,31 @@ namespace Bibloteka
             this.btnKyqu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnKyqu.OnPressedColor = System.Drawing.Color.Black;
             this.btnKyqu.Radius = 3;
-            this.btnKyqu.Size = new System.Drawing.Size(250, 41);
-            this.btnKyqu.TabIndex = 13;
-            this.btnKyqu.Text = "Kyçu";
             this.btnKyqu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnKyqu.Click += new System.EventHandler(this.btnKyqu_Click);
             // 
             // chkMeMbajMend
             // 
+            resources.ApplyResources(this.chkMeMbajMend, "chkMeMbajMend");
             this.chkMeMbajMend.BaseColor = System.Drawing.Color.White;
             this.chkMeMbajMend.CheckedOffColor = System.Drawing.Color.Gray;
             this.chkMeMbajMend.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
+            this.epLogin.SetError(this.chkMeMbajMend, resources.GetString("chkMeMbajMend.Error"));
             this.chkMeMbajMend.FillColor = System.Drawing.Color.White;
-            this.chkMeMbajMend.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkMeMbajMend.Location = new System.Drawing.Point(365, 321);
+            this.epLogin.SetIconAlignment(this.chkMeMbajMend, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("chkMeMbajMend.IconAlignment"))));
+            this.epLogin.SetIconPadding(this.chkMeMbajMend, ((int)(resources.GetObject("chkMeMbajMend.IconPadding"))));
             this.chkMeMbajMend.Name = "chkMeMbajMend";
-            this.chkMeMbajMend.Size = new System.Drawing.Size(135, 22);
-            this.chkMeMbajMend.TabIndex = 15;
-            this.chkMeMbajMend.Text = "Më mbaj mend.";
             // 
             // epLogin
             // 
             this.epLogin.ContainerControl = this;
+            resources.ApplyResources(this.epLogin, "epLogin");
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(669, 492);
             this.Controls.Add(this.chkMeMbajMend);
             this.Controls.Add(this.btnKyqu);
             this.Controls.Add(this.txtFjalekalimi);
@@ -254,12 +230,7 @@ namespace Bibloteka
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(685, 531);
-            this.MinimumSize = new System.Drawing.Size(685, 531);
             this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kyçu - Biblioteka";
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

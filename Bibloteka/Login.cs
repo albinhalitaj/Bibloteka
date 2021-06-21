@@ -79,5 +79,19 @@ namespace Bibloteka
             txtFjalekalimi.Text = Default.password;
             chkMeMbajMend.Checked = true;
         }
+
+        private void btnEnUS_Click(object sender, EventArgs e)
+        {
+            var lang = new ChangeLanguage();
+            lang.UpdateLang("language","en-US");
+            Application.Restart();
+        }
+
+        private void btnSqXK_Click(object sender, EventArgs e)
+        {
+            var lang = new ChangeLanguage();
+            lang.UpdateLang("language","sq-XK");
+            Application.Restart();
+        }
     }
 }

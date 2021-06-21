@@ -14,8 +14,8 @@ namespace Bibloteka.BusinessObjects
         public Tipi Tipi { get; set; }
         public int InsertBy { get; set; }
 
-        public Klienti Klienti { get; set; }
-        public Libri Libri { get; set; }
+        public string Klienti { get; set; }
+        public string Libri { get; set; }
         
     }
 

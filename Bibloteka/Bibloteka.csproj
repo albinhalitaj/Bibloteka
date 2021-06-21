@@ -48,6 +48,24 @@
     <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MstHtmlEditor">
       <HintPath>..\..\..\..\Desktop\HtmlEditor Control for NET4\MstHtmlEditor.dll</HintPath>
@@ -55,6 +73,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xaml" />
@@ -137,23 +156,43 @@
     <Compile Include="Forms\Kategorite\frm_Shto.Designer.cs">
       <DependentUpon>frm_Shto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Stafi\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Stafi\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Stafi\frm_Stafi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Stafi\frm_Stafi.Designer.cs">
-      <DependentUpon>frm_Stafi.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Librat\frm_ShtoLiber.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Librat\frm_ShtoLiber.Designer.cs">
       <DependentUpon>frm_ShtoLiber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\HuazimetReport\frm_HuazimetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\HuazimetReport\frm_HuazimetReport.Designer.cs">
+      <DependentUpon>frm_HuazimetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\KlientetReport\frm_KlientReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\KlientetReport\frm_KlientReport.Designer.cs">
+      <DependentUpon>frm_KlientReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\KthimetReport\frm_KthimetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\KthimetReport\frm_KthimetReport.Designer.cs">
+      <DependentUpon>frm_KthimetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\LibratReport\frm_LibratReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports\LibratReport\frm_LibratReport.Designer.cs">
+      <DependentUpon>frm_LibratReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\ReportsData.cs">
+      <DependentUpon>ReportsData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports\ReportsData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportsData.xsd</DependentUpon>
     </Compile>
     <Compile Include="KlientiMain.cs">
       <SubType>Form</SubType>
@@ -175,14 +214,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Forms\Ballina\frm_Ballina.en-US.resx">
+      <DependentUpon>frm_Ballina.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Ballina\frm_Ballina.resx">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Huazimet\frm_Huazimet.en-US.resx">
+      <DependentUpon>frm_Huazimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Huazimet\frm_HuazoLiber.en-US.resx">
+      <DependentUpon>frm_HuazoLiber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Huazimet\frm_HuazoLiber.resx">
       <DependentUpon>frm_HuazoLiber.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Huazimet\frm_Njofto.en-US.resx">
+      <DependentUpon>frm_Njofto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Huazimet\frm_Njofto.resx">
       <DependentUpon>frm_Njofto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kategorite\frm_Edito.en-US.resx">
+      <DependentUpon>frm_Edito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kategorite\frm_Kategorite.en-US.resx">
+      <DependentUpon>frm_Kategorite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kategorite\frm_Shto.en-US.resx">
+      <DependentUpon>frm_Shto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klienti\frm_Klientet.en-US.resx">
+      <DependentUpon>frm_Klientet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klienti\frm_ShtoKlient.en-US.resx">
+      <DependentUpon>frm_ShtoKlient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Klienti\frm_ShtoKlient.resx">
       <DependentUpon>frm_ShtoKlient.cs</DependentUpon>
@@ -199,8 +266,14 @@
     <EmbeddedResource Include="Forms\Klienti\frm_Klientet.resx">
       <DependentUpon>frm_Klientet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kthimet\frm_Kthimet.en-US.resx">
+      <DependentUpon>frm_Kthimet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Kthimet\frm_Kthimet.resx">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Librat\frm_Librat.en-US.resx">
+      <DependentUpon>frm_Librat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Librat\frm_Librat.resx">
       <DependentUpon>frm_Librat.cs</DependentUpon>
@@ -208,20 +281,42 @@
     <EmbeddedResource Include="Forms\Kategorite\frm_Shto.resx">
       <DependentUpon>frm_Shto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Stafi\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Stafi\frm_Stafi.resx">
-      <DependentUpon>frm_Stafi.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Librat\frm_ShtoLiber.en-US.resx">
+      <DependentUpon>frm_ShtoLiber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Librat\frm_ShtoLiber.resx">
       <DependentUpon>frm_ShtoLiber.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\HuazimetReport\frm_HuazimetReport.resx">
+      <DependentUpon>frm_HuazimetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\HuazimetReport\HuazimetReport.rdlc" />
+    <EmbeddedResource Include="Forms\Reports\KlientetReport\frm_KlientReport.resx">
+      <DependentUpon>frm_KlientReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\KlientetReport\KlientReport.rdlc" />
+    <EmbeddedResource Include="Forms\Reports\KthimetReport\frm_KthimetReport.resx">
+      <DependentUpon>frm_KthimetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\KthimetReport\KthimetReport.rdlc" />
+    <EmbeddedResource Include="Forms\Reports\LibratReport\frm_LibratReport.resx">
+      <DependentUpon>frm_LibratReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports\LibratReport\LibratReport.rdlc" />
     <EmbeddedResource Include="KlientiMain.resx">
       <DependentUpon>KlientiMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.en-US.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.sq-XK.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.en-US.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -235,6 +330,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Forms\Reports\ReportsData.xsc">
+      <DependentUpon>ReportsData.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\Reports\ReportsData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportsData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forms\Reports\ReportsData.xss">
+      <DependentUpon>ReportsData.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -266,6 +372,19 @@
     </Content>
     <Content Include="DLLs\Hunspellx86.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

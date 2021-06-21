@@ -15,5 +15,6 @@ namespace Bibloteka.BusinessLogicLayer
         public int[] GetHuazimetData() => _chartData.Huazimet();
         public int[] GetKthimetData() => _chartData.Kthimet();
         public List<PieViewModel> GetKategoriteData() => _chartData.Kategorite();
+        public List<Aktiviteti> GetAktivitetet() => _chartData.Aktivitetet();
     }
 }

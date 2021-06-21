@@ -19,5 +19,6 @@ namespace Bibloteka.BusinessLogicLayer
         public Kthimi GetKthimiData(int id) => _kthimetDal.GetHuazimiById(id);
         public void ShtoGjobe(Gjoba gjoba) => _kthimetDal.ShtoGjobe(gjoba);
         public void Kthe(string libriId, int id, int sasia) => _kthimetDal.KtheLibrin(libriId, id, sasia);
+        public int Count() => _kthimetDal.GetTotalKthimet();
     }
 }

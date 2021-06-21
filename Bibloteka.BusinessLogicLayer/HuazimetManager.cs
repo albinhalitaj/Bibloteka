@@ -26,5 +26,6 @@ namespace Bibloteka.BusinessLogicLayer
         public DataTable Filtro(DateTime nga, DateTime deri) => _huazimetDal.FiltroHuazimet(nga, deri);
         public DataTable Search(string query) => _huazimetDal.Kerko(query);
         public Huazimi GetHuazimiById(int id) => _huazimetDal.GetHuazimById(id);
+        public int Count() => _huazimetDal.GetHuazimetTotal();
     }
 }
