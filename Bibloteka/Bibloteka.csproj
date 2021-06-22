@@ -244,14 +244,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Ballina\frm_Ballina.en-US.resx">
+      <DependentUpon>frm_Ballina.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Ballina\frm_Ballina.resx">
       <DependentUpon>frm_Ballina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Huazimet\frm_Huazimet.en-US.resx">
+      <DependentUpon>frm_Huazimet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Huazimet\frm_HuazoLiber.en-US.resx">
+      <DependentUpon>frm_HuazoLiber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Huazimet\frm_HuazoLiber.resx">
       <DependentUpon>frm_HuazoLiber.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Huazimet\frm_Njofto.en-US.resx">
+      <DependentUpon>frm_Njofto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Huazimet\frm_Njofto.resx">
       <DependentUpon>frm_Njofto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kategorite\frm_Edito.en-US.resx">
+      <DependentUpon>frm_Edito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kategorite\frm_Kategorite.en-US.resx">
+      <DependentUpon>frm_Kategorite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kategorite\frm_Shto.en-US.resx">
+      <DependentUpon>frm_Shto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klienti\frm_Klientet.en-US.resx">
+      <DependentUpon>frm_Klientet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Klienti\frm_ShtoKlient.en-US.resx">
+      <DependentUpon>frm_ShtoKlient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Klienti\frm_ShtoKlient.resx">
       <DependentUpon>frm_ShtoKlient.cs</DependentUpon>
@@ -267,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Klienti\frm_Klientet.resx">
       <DependentUpon>frm_Klientet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kthimet\frm_Kthimet.en-US.resx">
+      <DependentUpon>frm_Kthimet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Kthimet\frm_Kthimet.resx">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
@@ -305,8 +335,17 @@
     <EmbeddedResource Include="KlientiMain.resx">
       <DependentUpon>KlientiMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.en-US.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.sq-XK.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.en-US.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

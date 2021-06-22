@@ -43,6 +43,10 @@ namespace Bibloteka.BusinessObjects
         public int? Lun { get; set; }
 
         public DateTime? Lud { get; set; }
+
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public int RoliId { get; set; }
         
     }
 }

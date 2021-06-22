@@ -174,9 +174,6 @@
   <data name="btnSqXK.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 459</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtFjalekalimi.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -350,8 +347,11 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDR3Oc+/x+LQTJykBawGAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 26</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="&gt;&gt;epLogin.Type" xml:space="preserve">
     <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4925,11 +4925,11 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="btnKyqu.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
   </data>
   <data name="txtPerdoruesi.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4954,9 +4954,6 @@
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Login</value>
-  </data>
-  <data name="txtFjalekalimi.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
   </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6028,6 +6025,9 @@
   <data name="label1.Error" xml:space="preserve">
     <value />
   </data>
+  <data name="btnKyqu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt, style=Bold</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -6037,11 +6037,14 @@
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnSqXK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;chkMeMbajMend.Name" xml:space="preserve">
+    <value>chkMeMbajMend</value>
   </data>
   <data name="&gt;&gt;btnSqXK.Name" xml:space="preserve">
     <value>btnSqXK</value>
+  </data>
+  <data name="label2.Error" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -6052,8 +6055,14 @@
   <data name="chkMeMbajMend.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
   </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;btnEnUS.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="label4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 492</value>
@@ -6061,11 +6070,11 @@
   <data name="btnEnUS.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 22</value>
   </data>
-  <data name="&gt;&gt;chkMeMbajMend.Name" xml:space="preserve">
-    <value>chkMeMbajMend</value>
+  <data name="&gt;&gt;btnKyqu.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+  <data name="btnSqXK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 10.2pt</value>
@@ -6073,8 +6082,8 @@
   <data name="panel1.IconPadding" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="chkMeMbajMend.Error" xml:space="preserve">
-    <value />
+  <data name="btnEnUS.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -6105,6 +6114,9 @@
   </data>
   <data name="btnSqXK.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Fjalëkalimi</value>
   </data>
   <data name="&gt;&gt;epLogin.Name" xml:space="preserve">
     <value>epLogin</value>
@@ -6145,9 +6157,6 @@
   <data name="&gt;&gt;btnSqXK.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;btnKyqu.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
   <data name="btnKyqu.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -6157,8 +6166,8 @@
   <data name="&gt;&gt;chkMeMbajMend.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnKyqu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt, style=Bold</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 26</value>
   </data>
   <data name="label1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
@@ -6175,17 +6184,14 @@
   <data name="txtFjalekalimi.Location" type="System.Drawing.Point, System.Drawing">
     <value>365, 271</value>
   </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;btnKyqu.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Hyrja ne panelin e kontrollit</value>
   </data>
   <data name="&gt;&gt;txtFjalekalimi.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;txtFjalekalimi.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="chkMeMbajMend.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9.75pt</value>
@@ -6202,14 +6208,11 @@
   <data name="btnEnUS.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 47</value>
-  </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="btnKyqu.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 47</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>669, 492</value>
@@ -6235,20 +6238,17 @@
   <data name="panel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
     <value>MiddleRight</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;btnKyqu.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="pictureBox1.Error" xml:space="preserve">
     <value />
   </data>
+  <data name="txtFjalekalimi.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
   <data name="&gt;&gt;btnKyqu.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="label2.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="btnEnUS.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -6283,14 +6283,14 @@
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label4.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="chkMeMbajMend.Error" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;txtFjalekalimi.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Fjalëkalimi</value>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -8632,9 +8632,6 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>sq-XK</value>
   </metadata>
   <metadata name="epLogin.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="ChangeLanguage.cs" />
     <Compile Include="ChartDataManager.cs" />
+    <Compile Include="Cities.cs" />
     <Compile Include="FormatiManager.cs" />
     <Compile Include="GjuhaManager.cs" />
     <Compile Include="HuazimetManager.cs" />

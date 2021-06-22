@@ -12,7 +12,7 @@ namespace Bibloteka.DataAccessLayer
 {
      public class StafiDal
     {
-        public void InsertStafi(Stafi stafi,Perdoruesi perdoruesi,int roliID)
+        public void InsertStafi(Stafi stafi,Perdoruesi perdoruesi)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace Bibloteka.DataAccessLayer
                     cmd.Parameters.AddWithValue("@insertDate", stafi.InsertDate);
                     cmd.Parameters.AddWithValue("@username", perdoruesi.Username);
                     cmd.Parameters.AddWithValue("@password", perdoruesi.Password);
-                    cmd.Parameters.AddWithValue("@roliID", roliID);
+                    cmd.Parameters.AddWithValue("@roliID", perdoruesi.RoliId);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -47,14 +47,14 @@ namespace Bibloteka.DataAccessLayer
         }
 
 
-        public void UpdateStafin(string id, Stafi stafi,Perdoruesi perdoruesi, int roliID)
+        public void UpdateStafin(int id, Stafi stafi,Perdoruesi perdoruesi)
         {
             try
             {
                 using (var con = DataAccessLayer.AppConnection())
                 {
                     var cmd = new SqlCommand("usp_UpdateStaf", con) { CommandType = CommandType.StoredProcedure };
-                    cmd.Parameters.AddWithValue("@stafiid", id);
+                    cmd.Parameters.AddWithValue("@stafId", id);
                     cmd.Parameters.AddWithValue("@emri", stafi.Emri);
                     cmd.Parameters.AddWithValue("@mbiemri", stafi.Mbiemri);
                     cmd.Parameters.AddWithValue("@datalindjes", stafi.Datelindja);
@@ -69,7 +69,7 @@ namespace Bibloteka.DataAccessLayer
                     cmd.Parameters.AddWithValue("@emaili", stafi.Emaili);
                     cmd.Parameters.AddWithValue("@username", perdoruesi.Username);
                     cmd.Parameters.AddWithValue("@password", perdoruesi.Password);
-                    cmd.Parameters.AddWithValue("@roliID", roliID);
+                    cmd.Parameters.AddWithValue("@roliID", perdoruesi.RoliId);
                     cmd.Parameters.AddWithValue("@lub", stafi.Lub);
                     cmd.Parameters.AddWithValue("@lun", stafi.Lun);
                     cmd.Parameters.AddWithValue("@lud", stafi.Lud);
@@ -83,7 +83,7 @@ namespace Bibloteka.DataAccessLayer
             }
         }
 
-        public DataTable GetStafinById(string id)
+        public DataTable GetStafinById(int id)
         {
             using (var con = DataAccessLayer.AppConnection())
             {
@@ -189,7 +189,7 @@ namespace Bibloteka.DataAccessLayer
             }
         }
 
-        public void DeleteStafin(string id)
+        public bool DeleteStafin(int id)
         {
             try
             {
@@ -197,13 +197,13 @@ namespace Bibloteka.DataAccessLayer
                 {
                     var cmd = new SqlCommand("usp_DeleteStaf", con) { CommandType = CommandType.StoredProcedure };
                     cmd.Parameters.AddWithValue("@id", id);
-                    cmd.ExecuteNonQuery();
+                    var res = cmd.ExecuteNonQuery();
+                    return res <= 0;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                Console.WriteLine(e);
-                throw;
+                return false;
             }
         }
 

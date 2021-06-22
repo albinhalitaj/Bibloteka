@@ -10,107 +10,105 @@ namespace Bibloteka.Forms
     public partial class frm_Stafi : Form
     {
         private readonly Stafi _stafi;
-        private readonly StafiManager stafiManager;
-        private readonly PerdoruesiManager perdoruesiManager;
+        private readonly StafiManager _stafiManager;
        
         public frm_Stafi(Stafi stafi)
         {
           
             _stafi = stafi;
-            stafiManager = new StafiManager();
-            perdoruesiManager = new PerdoruesiManager();
+            _stafiManager = new StafiManager();
             InitializeComponent();
-            LoadStafin();
+            LoadStafin(_stafiManager.Load());
         }
 
 
-        public void LoadStafin()
+        public void LoadStafin(DataTable dt)
         {
             dgv_Stafi.Rows.Clear();
-            var dt = stafiManager.Load();
             if (dt.Rows.Count > 0)
             {
                 foreach (DataRow stafi in dt.Rows)
                 {
-                    DataGridViewRow stafiRow = new DataGridViewRow();
+                    var stafiRow = new DataGridViewRow();
                     stafiRow.CreateCells(dgv_Stafi);
                     stafiRow.Cells[0].Value = Convert.ToString(stafi[0]);
                     stafiRow.Cells[1].Value = Convert.ToString(stafi[1]);
                     stafiRow.Cells[2].Value = Convert.ToString(stafi[2]);
                     stafiRow.Cells[3].Value = Convert.ToDateTime(stafi[3]).ToString("dd/MM/yyyy");
-                    stafiRow.Cells[4].Value = Convert.ToString(stafi[4].ToString().Trim()) == "M" ? "Mashkull" : "Femër";
+                    stafiRow.Cells[4].Value = Convert.ToString(stafi[4]);
                     stafiRow.Cells[5].Value = Convert.ToString(stafi[5]);
                     stafiRow.Cells[6].Value = Convert.ToString(stafi[6]);
                     stafiRow.Cells[7].Value = Convert.ToString(stafi[7]);
-                    stafiRow.Cells[8].Value = Convert.ToString(stafi[8]);
-                    stafiRow.Cells[9].Value = Convert.ToString(stafi[9]);
-                    stafiRow.Cells[10].Value = Convert.ToString(stafi[10]);
-                    //stafiRow.Cells[11].Value = imageList1.Images[0];
-                    //stafiRow.Cells[12].Value = imageList1.Images[1];
+                    stafiRow.Cells[8].Value = imageList1.Images[0];
+                    stafiRow.Cells[9].Value = imageList1.Images[1];
                     dgv_Stafi.Rows.Add(stafiRow);
                 }
             }
         }
 
-       
-
-        public void FshiStaf()
-        {
-            var id = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[0].Value);
-            if (dgv_Stafi.SelectedRows.Count != 1) return;
-            if (MessageBox.Show(@"A jeni i sigurt që doni ta fshihni këtë staf?", @"Warning",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
-            stafiManager.Remove(id);
-            MessageBox.Show(@"Stafi u fshi me sukses!", @"Information", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-            LoadStafin();
-        }
-
-       
-
-        private Stafi GetSelectedStafInfo()
+        private Stafi GetSelectedStafInfo(int id)
         {
             if (dgv_Stafi.Rows.Count <= 0)
                 return null;
             if (dgv_Stafi.SelectedRows.Count != 1)
                 return null;
-            var datalindjes = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[3].Value);
-            var day = datalindjes.Substring(0, 2);
-            var month = datalindjes.Substring(3, 2);
-            var date = Convert.ToDateTime(string.Concat(day, "/", month, datalindjes.Substring(5, 5)));
-            var p = new Perdoruesi();
-            var staf = new Stafi()
+            var stafi = _stafiManager.FindById(id);
+            var staf = new Stafi();
+            foreach (DataRow s in stafi.Rows)
             {
-                Emri = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[1].Value),
-                Mbiemri = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[2].Value),
-                Datelindja = date,
-                Gjinia = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[4].Value),
-                NrPersonal = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[5].Value),
-                NrKontaktues = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[6].Value),
-                KualifikimiID = Convert.ToInt32(dgv_Stafi.CurrentRow?.Cells[7].Value),
-                Adresa = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[8].Value),
-                //Shteti = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[9].Value),
-                //Qyteti = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[10].Value),
-                //KodiPostal = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[11].Value),
-                Emaili = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[9].Value)
-                //RoliID = _roliManager.GetId(Convert.ToString(dgv_Stafi.CurrentRow?.Cells[10].Value))
-            };
-            //var perdoruesi = GetPerdoruesiByID(p);
+                staf.Emri = Convert.ToString(s[0]);
+                staf.Mbiemri = Convert.ToString(s[1]);
+                staf.Datelindja = Convert.ToDateTime(s[2]);
+                staf.Gjinia = Convert.ToString(s[3]);
+                staf.NrPersonal = Convert.ToString(s[4]);
+                staf.NrKontaktues = Convert.ToString(s[5]);
+                staf.KualifikimiID = Convert.ToInt32(s[6]);
+                staf.Adresa = Convert.ToString(s[7]);
+                staf.Qyteti = Convert.ToString(s[8]);
+                staf.Shteti = Convert.ToString(s[9]);
+                staf.KodiPostal = Convert.ToString(s[10]);
+                staf.Emaili = Convert.ToString(s[11]);
+                staf.RoliId = Convert.ToInt32(s[12]);
+                staf.Username = Convert.ToString(s[13]);
+                staf.Password = Convert.ToString(s[14]);
+            }
             return staf;
-
         }
 
         private void NdryshoStafin()
         {
-            var id = Convert.ToString(dgv_Stafi.CurrentRow?.Cells[0].Value);
-            var ndryshoStafin = new frm_ShtoStafi( this,id, GetSelectedStafInfo());
+            var id = Convert.ToInt32(dgv_Stafi.CurrentRow?.Cells[0].Value);
+            var ndryshoStafin = new frm_ShtoStafi( this,id, GetSelectedStafInfo(id),_stafi.StafiId);
             ndryshoStafin.ShowDialog();
         }
 
-        private void dvg_Stafi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void FshiStafin()
         {
-            if (dgv_Stafi.CurrentCell.ColumnIndex.Equals(13)) FshiStaf();
-            if (dgv_Stafi.CurrentCell.ColumnIndex.Equals(12)) NdryshoStafin();
+            var id = Convert.ToInt32(dgv_Stafi.CurrentRow?.Cells[0].Value);
+            if (MessageBox.Show(@"A jeni i sigurt që doni ta fshihni këtë stafi?", @"Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
+            var result = _stafiManager.Remove(id);
+            MessageBox.Show(result ? @"Stafi u fshi me sukses!" : @"Ky Staf nuk mund të fshihet!", @"Information",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            LoadStafin(_stafiManager.Load());
+        }
+
+        private void frm_Stafi_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnShto_Click(object sender, EventArgs e)
+        {
+            var shtoStaf = new frm_ShtoStafi(this,0,new Stafi(),_stafi.StafiId);
+            shtoStaf.ShowDialog();
+        }
+
+        private void dgv_Stafi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgv_Stafi.CurrentCell.ColumnIndex.Equals(8)) NdryshoStafin();
+            if (dgv_Stafi.CurrentCell.ColumnIndex.Equals(9)) FshiStafin();
         }
 
         private void txtKerko_TextChanged(object sender, EventArgs e)
@@ -120,30 +118,8 @@ namespace Bibloteka.Forms
                 dgv_Stafi.Rows.Clear();
                 try
                 {
-                    var staf = stafiManager.Search(txtKerko.Text);
-                    if (staf.Rows.Count > 0)
-                    {
-                        foreach (DataRow item in staf.Rows)
-                        {
-                            var stafRow = new DataGridViewRow();
-                            stafRow.CreateCells(dgv_Stafi);
-                            stafRow.Cells[0].Value = Convert.ToString(item[0]);
-                            stafRow.Cells[1].Value = Convert.ToString(item[1]);
-                            stafRow.Cells[2].Value = Convert.ToString(item[2]);
-                            stafRow.Cells[3].Value = Convert.ToDateTime(item[3]).ToString("dd/MM/yyyy");
-                            stafRow.Cells[4].Value = Convert.ToString(item[4].ToString().Trim()) == "M" ? "Mashkull" : "Femër";
-                            stafRow.Cells[5].Value = Convert.ToString(item[5]);
-                            stafRow.Cells[6].Value = Convert.ToString(item[6]);
-                            stafRow.Cells[7].Value = Convert.ToString(item[7]);
-                            stafRow.Cells[8].Value = Convert.ToString(item[8]);
-                            stafRow.Cells[9].Value = Convert.ToString(item[9]);
-                            stafRow.Cells[10].Value = Convert.ToString(item[10]);
-                            stafRow.Cells[11].Value = Convert.ToString(item[11]);
-                            stafRow.Cells[12].Value = imageList1.Images[0];
-                            stafRow.Cells[13].Value = imageList1.Images[1];
-                            dgv_Stafi.Rows.Add(stafRow);
-                        }
-                    }
+                    var stafi = _stafiManager.Search(txtKerko.Text);
+                    LoadStafin(stafi);
                 }
                 catch (Exception)
                 {
@@ -152,30 +128,7 @@ namespace Bibloteka.Forms
                 }
             }
             else
-                LoadStafin();
-        }
-
-        private void frm_Stafi_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnShto_Click_1(object sender, EventArgs e)
-        {
-            var shtoStaf = new frm_ShtoStafi( this,null, new Stafi());
-            shtoStaf.ShowDialog();
-        }
-
-        private void dgv_Stafi_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgv_Stafi.CurrentCell.ColumnIndex.Equals(11))
-            {
-                NdryshoStafin();
-            }
-            if (dgv_Stafi.CurrentCell.ColumnIndex.Equals(12))
-            {
-                FshiStaf();
-            }
+                LoadStafin(_stafiManager.Load());
         }
     }
 }
