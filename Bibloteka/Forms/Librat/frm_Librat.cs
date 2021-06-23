@@ -104,16 +104,15 @@ namespace Bibloteka.Forms
 
         private void FshiLibrin()
         {
-            if (MessageBox.Show(@"A jeni i sigurt qe deshironi ta fshihni këtë libër?",@"Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-                var id = Convert.ToString(dgv_Librat.CurrentRow?.Cells[0].Value);
-                var result = _libriManager.Remove(id);
-                MessageBox.Show(result ? @"Libri u fshi me sukses!" : @"Ky libër nuk mund të fshihet!", @"Information",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-                LoadLibrat(_libriManager.Load());
-                lblTotalLibra.Text = @"Total Libra: " + _libriManager.Count();
-            }
+            if (MessageBox.Show(@"A jeni i sigurt qe deshironi ta fshihni këtë libër?", @"Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
+            var id = Convert.ToString(dgv_Librat.CurrentRow?.Cells[0].Value);
+            var result = _libriManager.Remove(id);
+            MessageBox.Show(result ? @"Libri u fshi me sukses!" : @"Ky libër nuk mund të fshihet!", @"Information",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            LoadLibrat(_libriManager.Load());
+            lblTotalLibra.Text = @"Total Libra: " + _libriManager.Count();
         }
 
         private void txtKerko_TextChanged(object sender, EventArgs e)

@@ -34,9 +34,11 @@ namespace Bibloteka
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KlientiMain));
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtKerko = new Guna.UI.WinForms.GunaTextBox();
             this.dgv_Librat = new Guna.UI.WinForms.GunaDataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTitulli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAutori = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,8 +48,6 @@ namespace Bibloteka
             this.colISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEditioni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.gunaGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Librat)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,17 @@ namespace Bibloteka
             this.gunaGroupBox1.Size = new System.Drawing.Size(1278, 588);
             this.gunaGroupBox1.TabIndex = 31;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(33, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(175, 19);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Klikoni mbi kolona për rënditje";
             // 
             // label5
             // 
@@ -185,6 +196,17 @@ namespace Bibloteka
             this.dgv_Librat.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Librat.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(23, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 37);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Kërkimi i librave";
+            // 
             // colID
             // 
             this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -241,31 +263,9 @@ namespace Bibloteka
             // 
             // colSasia
             // 
-            this.colSasia.HeaderText = "NumriKopjeve";
+            this.colSasia.HeaderText = "Sasia";
             this.colSasia.Name = "colSasia";
             this.colSasia.ReadOnly = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(33, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 19);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Klikoni mbi kolona për rënditje";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(23, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 37);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Kërkimi i librave";
             // 
             // KlientiMain
             // 
@@ -297,6 +297,7 @@ namespace Bibloteka
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox txtKerko;
         private Guna.UI.WinForms.GunaDataGridView dgv_Librat;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTitulli;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAutori;
@@ -306,6 +307,5 @@ namespace Bibloteka
         private System.Windows.Forms.DataGridViewTextBoxColumn colISBN;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEditioni;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSasia;
-        private System.Windows.Forms.Label label2;
     }
 }

@@ -29,6 +29,7 @@ namespace Bibloteka.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Kthimet));
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,12 +55,13 @@ namespace Bibloteka.Forms
             this.dataHuazimit = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.epKthimet = new System.Windows.Forms.ErrorProvider(this.components);
             this.gunaGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epKthimet)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaGroupBox1
             // 
-            resources.ApplyResources(this.gunaGroupBox1, "gunaGroupBox1");
             this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
@@ -87,6 +89,7 @@ namespace Bibloteka.Forms
             this.gunaGroupBox1.Controls.Add(this.dataHuazimit);
             this.gunaGroupBox1.Controls.Add(this.label5);
             this.gunaGroupBox1.Controls.Add(this.label9);
+            resources.ApplyResources(this.gunaGroupBox1, "gunaGroupBox1");
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Gray;
             this.gunaGroupBox1.LineTop = 0;
             this.gunaGroupBox1.Name = "gunaGroupBox1";
@@ -100,8 +103,8 @@ namespace Bibloteka.Forms
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // label6
@@ -111,12 +114,12 @@ namespace Bibloteka.Forms
             // 
             // txtSasia
             // 
-            resources.ApplyResources(this.txtSasia, "txtSasia");
             this.txtSasia.BackColor = System.Drawing.Color.Transparent;
             this.txtSasia.BaseColor = System.Drawing.Color.White;
             this.txtSasia.BorderColor = System.Drawing.Color.Silver;
             this.txtSasia.BorderSize = 1;
             this.txtSasia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.txtSasia, "txtSasia");
             this.txtSasia.FocusedBaseColor = System.Drawing.Color.White;
             this.txtSasia.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtSasia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -132,12 +135,12 @@ namespace Bibloteka.Forms
             // 
             // txtLibri
             // 
-            resources.ApplyResources(this.txtLibri, "txtLibri");
             this.txtLibri.BackColor = System.Drawing.Color.Transparent;
             this.txtLibri.BaseColor = System.Drawing.Color.White;
             this.txtLibri.BorderColor = System.Drawing.Color.Silver;
             this.txtLibri.BorderSize = 1;
             this.txtLibri.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.txtLibri, "txtLibri");
             this.txtLibri.FocusedBaseColor = System.Drawing.Color.White;
             this.txtLibri.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtLibri.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -148,12 +151,12 @@ namespace Bibloteka.Forms
             // 
             // txtDitet
             // 
-            resources.ApplyResources(this.txtDitet, "txtDitet");
             this.txtDitet.BackColor = System.Drawing.Color.Transparent;
             this.txtDitet.BaseColor = System.Drawing.Color.White;
             this.txtDitet.BorderColor = System.Drawing.Color.Silver;
             this.txtDitet.BorderSize = 1;
             this.txtDitet.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.txtDitet, "txtDitet");
             this.txtDitet.FocusedBaseColor = System.Drawing.Color.White;
             this.txtDitet.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtDitet.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -164,12 +167,12 @@ namespace Bibloteka.Forms
             // 
             // txtKlienti
             // 
-            resources.ApplyResources(this.txtKlienti, "txtKlienti");
             this.txtKlienti.BackColor = System.Drawing.Color.Transparent;
             this.txtKlienti.BaseColor = System.Drawing.Color.White;
             this.txtKlienti.BorderColor = System.Drawing.Color.Silver;
             this.txtKlienti.BorderSize = 1;
             this.txtKlienti.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.txtKlienti, "txtKlienti");
             this.txtKlienti.FocusedBaseColor = System.Drawing.Color.White;
             this.txtKlienti.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtKlienti.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -185,12 +188,12 @@ namespace Bibloteka.Forms
             // 
             // txtShuma
             // 
-            resources.ApplyResources(this.txtShuma, "txtShuma");
             this.txtShuma.BackColor = System.Drawing.Color.Transparent;
             this.txtShuma.BaseColor = System.Drawing.Color.White;
             this.txtShuma.BorderColor = System.Drawing.Color.Silver;
             this.txtShuma.BorderSize = 1;
             this.txtShuma.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.txtShuma, "txtShuma");
             this.txtShuma.FocusedBaseColor = System.Drawing.Color.White;
             this.txtShuma.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtShuma.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -207,12 +210,12 @@ namespace Bibloteka.Forms
             // 
             // txtTotali
             // 
-            resources.ApplyResources(this.txtTotali, "txtTotali");
             this.txtTotali.BackColor = System.Drawing.Color.Transparent;
             this.txtTotali.BaseColor = System.Drawing.Color.White;
             this.txtTotali.BorderColor = System.Drawing.Color.Silver;
             this.txtTotali.BorderSize = 1;
             this.txtTotali.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.txtTotali, "txtTotali");
             this.txtTotali.FocusedBaseColor = System.Drawing.Color.White;
             this.txtTotali.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtTotali.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -223,11 +226,11 @@ namespace Bibloteka.Forms
             // 
             // dataKthimit
             // 
-            resources.ApplyResources(this.dataKthimit, "dataKthimit");
             this.dataKthimit.BackColor = System.Drawing.Color.Transparent;
             this.dataKthimit.BaseColor = System.Drawing.Color.White;
             this.dataKthimit.BorderColor = System.Drawing.Color.Silver;
             this.dataKthimit.BorderSize = 1;
+            resources.ApplyResources(this.dataKthimit, "dataKthimit");
             this.dataKthimit.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.dataKthimit.ForeColor = System.Drawing.Color.Black;
             this.dataKthimit.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -242,7 +245,6 @@ namespace Bibloteka.Forms
             // 
             // btnAnulo
             // 
-            resources.ApplyResources(this.btnAnulo, "btnAnulo");
             this.btnAnulo.AnimationHoverSpeed = 0.07F;
             this.btnAnulo.AnimationSpeed = 0.03F;
             this.btnAnulo.BackColor = System.Drawing.Color.Transparent;
@@ -256,6 +258,7 @@ namespace Bibloteka.Forms
             this.btnAnulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnulo.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnAnulo.FocusedColor = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.btnAnulo, "btnAnulo");
             this.btnAnulo.ForeColor = System.Drawing.Color.White;
             this.btnAnulo.Image = null;
             this.btnAnulo.ImageSize = new System.Drawing.Size(20, 20);
@@ -278,7 +281,6 @@ namespace Bibloteka.Forms
             // 
             // btnKthe
             // 
-            resources.ApplyResources(this.btnKthe, "btnKthe");
             this.btnKthe.AnimationHoverSpeed = 0.07F;
             this.btnKthe.AnimationSpeed = 0.03F;
             this.btnKthe.BackColor = System.Drawing.Color.Transparent;
@@ -292,6 +294,7 @@ namespace Bibloteka.Forms
             this.btnKthe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKthe.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKthe.FocusedColor = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.btnKthe, "btnKthe");
             this.btnKthe.ForeColor = System.Drawing.Color.White;
             this.btnKthe.Image = null;
             this.btnKthe.ImageSize = new System.Drawing.Size(20, 20);
@@ -309,8 +312,8 @@ namespace Bibloteka.Forms
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // label3
@@ -325,12 +328,12 @@ namespace Bibloteka.Forms
             // 
             // txtPershkrimi
             // 
-            resources.ApplyResources(this.txtPershkrimi, "txtPershkrimi");
             this.txtPershkrimi.BackColor = System.Drawing.Color.Transparent;
             this.txtPershkrimi.BaseColor = System.Drawing.Color.White;
             this.txtPershkrimi.BorderColor = System.Drawing.Color.Silver;
             this.txtPershkrimi.BorderSize = 1;
             this.txtPershkrimi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.txtPershkrimi, "txtPershkrimi");
             this.txtPershkrimi.FocusedBaseColor = System.Drawing.Color.White;
             this.txtPershkrimi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.txtPershkrimi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -341,11 +344,11 @@ namespace Bibloteka.Forms
             // 
             // dataHuazimit
             // 
-            resources.ApplyResources(this.dataHuazimit, "dataHuazimit");
             this.dataHuazimit.BackColor = System.Drawing.Color.Transparent;
             this.dataHuazimit.BaseColor = System.Drawing.Color.White;
             this.dataHuazimit.BorderColor = System.Drawing.Color.Silver;
             this.dataHuazimit.BorderSize = 1;
+            resources.ApplyResources(this.dataHuazimit, "dataHuazimit");
             this.dataHuazimit.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(188)))), ((int)(((byte)(83)))));
             this.dataHuazimit.ForeColor = System.Drawing.Color.Black;
             this.dataHuazimit.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -368,6 +371,10 @@ namespace Bibloteka.Forms
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
             // 
+            // epKthimet
+            // 
+            this.epKthimet.ContainerControl = this;
+            // 
             // frm_Kthimet
             // 
             resources.ApplyResources(this, "$this");
@@ -378,6 +385,7 @@ namespace Bibloteka.Forms
             this.Load += new System.EventHandler(this.frm_Kthimet_Load);
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epKthimet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -408,5 +416,6 @@ namespace Bibloteka.Forms
         private Guna.UI.WinForms.GunaTextBox txtLibri;
         private Guna.UI.WinForms.GunaTextBox txtKlienti;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider epKthimet;
     }
 }

@@ -26,7 +26,7 @@ namespace Bibloteka
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            lblPunetori.Text = @"User:     " + _perdoruesi.Username;
+            lblUser.Text = @"User:   " + _perdoruesi.Username;
             OpenForm(new frm_Ballina(_perdoruesi.Stafi));
         }
 
@@ -69,12 +69,9 @@ namespace Bibloteka
 
         private void btnKlientet_Click(object sender, EventArgs e) => OpenForm(new frm_Klientet(_perdoruesi.Stafi));
 
-
         private void btnHuazimet_Click(object sender, EventArgs e) => OpenForm(new frm_Huazimet(_perdoruesi.Stafi));
 
         private void btnLibrat_Click(object sender, EventArgs e) => OpenForm(new frm_Librat(_perdoruesi.Stafi));
-
-        private void btnLogout_Click(object sender, EventArgs e) => Application.Restart();
 
         private void btnRaportet_Click(object sender, EventArgs e) => ShowSubMenu(panelReportsSubMenu);
 
@@ -103,5 +100,7 @@ namespace Bibloteka
         }
 
         private void btnStafi_Click_1(object sender, EventArgs e) => OpenForm(new frm_Stafi(_perdoruesi.Stafi));
+
+        private void btnLogout_Click(object sender, EventArgs e) => Application.Restart();
     }
 }

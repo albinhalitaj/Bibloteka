@@ -36,17 +36,13 @@ namespace Bibloteka.Forms
             lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
         }
 
-        private void frm_Kategorite_Load(object sender, EventArgs e)
-        {
-            LoadCategories();
-            lblTotalCategories.Text = @"Total Kategori: " + _kategoriaManager.Total();
-        }
+        private void frm_Kategorite_Load(object sender, EventArgs e) => LoadCategories();
 
         private Kategoria GetSelectedCategory()
         {
             if (dgv_Kategorite.Rows.Count <= 0) return null;
             if (dgv_Kategorite.SelectedRows.Count != 1) return null;
-            var kategoria = new Kategoria()
+            var kategoria = new Kategoria
             {
                 Emertimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[1].Value),
                 Pershkrimi = Convert.ToString(dgv_Kategorite.CurrentRow?.Cells[2].Value)

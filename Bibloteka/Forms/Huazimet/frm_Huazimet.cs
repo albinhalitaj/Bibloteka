@@ -1,18 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
 using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
 using Bibloteka.Forms.Huazimet;
-using Microsoft.VisualBasic;
+using static System.Convert;
 
 namespace Bibloteka.Forms
 {
@@ -48,21 +40,18 @@ namespace Bibloteka.Forms
             {
                 var huazimiRow = new DataGridViewRow();
                 huazimiRow.CreateCells(dgv_Huazimet);
-                huazimiRow.Cells[0].Value = Convert.ToInt32(huazimetRow[0]);
+                huazimiRow.Cells[0].Value = ToInt32(huazimetRow[0]);
                 huazimiRow.Cells[1].Value = Convert.ToString(huazimetRow[2]);
                 huazimiRow.Cells[2].Value = Convert.ToString(huazimetRow[1]);
-                huazimiRow.Cells[3].Value = Convert.ToInt32(huazimetRow[3]);
-                huazimiRow.Cells[4].Value = Convert.ToDateTime(huazimetRow[4]).ToString("dd/MM/yyyy");
-                huazimiRow.Cells[5].Value = Convert.ToDateTime(huazimetRow[5]).ToString("dd/MM/yyyy");
-                if (Convert.ToBoolean(huazimetRow[6]))
+                huazimiRow.Cells[3].Value = ToInt32(huazimetRow[3]);
+                huazimiRow.Cells[4].Value = ToDateTime(huazimetRow[4]).ToString("dd/MM/yyyy");
+                huazimiRow.Cells[5].Value = ToDateTime(huazimetRow[5]).ToString("dd/MM/yyyy");
+                if (ToBoolean(huazimetRow[6]))
                 {
                     huazimiRow.Cells[6].Value = imageList1.Images[0];
                     huazimiRow.Cells[7].Value = imageList2.Images[0];
                     huazimiRow.DefaultCellStyle.NullValue = null;
-                    if (Convert.ToDateTime(huazimetRow[5]) < DateTime.Now)
-                    {
-                        huazimiRow.Cells[8].Value = imageList2.Images[1];
-                    }
+                    if (ToDateTime(huazimetRow[5]) < DateTime.Now) huazimiRow.Cells[8].Value = imageList2.Images[1];
                 }
                 else
                 {
@@ -73,15 +62,12 @@ namespace Bibloteka.Forms
             }
         }
 
-        private void frm_Huazimet_Load(object sender, EventArgs e)
-        {
-            LoadData(_huazimetManager.GetHuazimetEMuajitAktual());
-        }
+        private void frm_Huazimet_Load(object sender, EventArgs e) => LoadData(_huazimetManager.GetHuazimetEMuajitAktual());
 
         private void btnFiltro_Click(object sender, EventArgs e)
         {
-            var nga = Convert.ToDateTime(ngaData.Value);
-            var deri = Convert.ToDateTime(deriData.Value);
+            var nga = ToDateTime(ngaData.Value);
+            var deri = ToDateTime(deriData.Value);
             LoadData(_huazimetManager.Filtro(nga,deri));
         }
 
@@ -106,7 +92,7 @@ namespace Bibloteka.Forms
 
         private void dgv_Huazimet_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var huazimiId = Convert.ToInt32(dgv_Huazimet.CurrentRow?.Cells[0].Value);
+            var huazimiId = ToInt32(dgv_Huazimet.CurrentRow?.Cells[0].Value);
             if (dgv_Huazimet.CurrentCell.ColumnIndex.Equals(8))
             {
                 var huazimi = _huazimetManager.GetHuazimiById(huazimiId);
@@ -124,13 +110,10 @@ namespace Bibloteka.Forms
                 var frmNjofto = new frm_Njofto(emaili,fullName);
                 frmNjofto.ShowDialog();
             }
-
-            if (dgv_Huazimet.CurrentCell.ColumnIndex.Equals(7))
-            {
-                var kthimi = _kthimetManager.GetKthimiData(huazimiId);
-                var frmKthe = new frm_Kthimet(this,kthimi,_stafi);
-                frmKthe.ShowDialog();
-            }
+            if (!dgv_Huazimet.CurrentCell.ColumnIndex.Equals(7)) return;
+            var kthimi = _kthimetManager.GetKthimiData(huazimiId);
+            var frmKthe = new frm_Kthimet(this,kthimi,_stafi);
+            frmKthe.ShowDialog();
         }
     }
 }

@@ -117,7 +117,146 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnLogout.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnLogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAA/pJREFUeF7t
+        3UuPDFEUB/ARjxgZI4MgHkE8gi0rH4CwtxKJWIgvIMRmdixYzU7EgoWFeARBPIIgHkGYsBMb4QtY2Lb/
+        qXs6ncn0dPepurfuafX/JWehp++5p+/J6O6aqlsjRERERERERERETdBqtSYQuxGHEKcQkxXjuKZOAvkP
+        Io4hziA268PDCy9CGiCLfxHxA5GEThcNUo4iLhXJZ5pC7NKnDQ8UPYY4jfiFqMNhnboy5BpHfCyydvcN
+        sVOf7h+KPaFF12lSp68MufaHlD19RezQIX6hyPNFufWL2ZCzIWVf04jtOswfFPeqKDOPmA15HlIO5Ati
+        mw71A0X9KcrLJ1dDxGfEVh2eH4qxvoAUcjZEfEJs0RT5oIgLRTn55W6IkE9m+b6rYPK9RRk+eGiI+IDY
+        pKnqhYmvFSX44KUh4j1io6arByY8UEztx3ItrTLkivGe+A6xQVOmh8kuF9Pm9xtxRMuKAvliNES8RazX
+        tGlhop/FlHbfEScR8m14XNO5grpiNUS8QazT1Glggj3FVHZTmsI11BmzIeI1Yq2mjw/J5bC31bQOdw+1
+        xm6IkKMYa3SKuJD4SjGFzT4d7h5qTdEQ8RKxWqeJB0mtx6yG5rdDoN5UDREvEKt0qjiQUD7ZWFzVoUMB
+        9aZsiJD8K3W66kJOk2hf2uqAelM3RDxDrNApqwn5TNiQ7p4iqn+hDblM2JC5PUFM6NTlhDwmbEhvjxHL
+        dHq7kMOEDenvEaLckYsw3qR0QzD2HEJOmPgrif5zDxFL9aUPLow1KdUQHds0DxBjugSDCeNMzA3BGDmx
+        rqnuI5boUvQXxpiUaYicYtNk9xCjuhy9heeblGlIE94z+rmLWKxLMrfwXJMyDaHgDmKRLkt34XkmbEg1
+        txELdWlmC88xYUOqu4VYoMszU/i5CRsSx03EfF2ijvAzEzYknhuIebpMQXjchA2J67ouU6APWrAh8XXW
+        VB+wYEPSCKes6j8s2JA0jpZdLDYkDTbEGf6X5UhnTfUBCzYkLn7sdYRfDB3hoRNHeHDRER5+d4R/oHLE
+        1Z9w6968xht3JznwNKBBhTEm5oYIHds0Pk+Ua8NYnkraTxhrUrohOaBenmztCerl5QieoF5esOMJ6q2r
+        IbykbRCot46GRL3ok5dFVyP5o14WzY0DykuycQC31ign2dYa3HzGLunmM9yeySbt9kwCE3ADs8Gk38BM
+        YBJu8ddfrVv8cRPM3urdBFNgQm4T213928QKTMqNlGfLt5GywOTcarwj71bjbSgi1ptgFbkb4mMz/jYU
+        w9tVeIOieEMXb1Acb3nkDYrkTcG8QbG8bZ5HKJw3lvQML4a3XiUiIiIiIiIiImqkkZF/NPwSGm/owAMA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnLogout.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnLogout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 783</value>
+  </data>
+  <data name="btnLogout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 35</value>
+  </data>
+  <data name="btnLogout.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnLogout.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Name" xml:space="preserve">
+    <value>btnLogout</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnLogout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="lblUser.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 12pt</value>
+  </data>
+  <data name="lblUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 784</value>
+  </data>
+  <data name="lblUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 28</value>
+  </data>
+  <data name="lblUser.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblUser.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;lblUser.Name" xml:space="preserve">
+    <value>lblUser</value>
+  </data>
+  <data name="&gt;&gt;lblUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUser.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblUser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAABGNJREFUeF7t
+        nb1KXUEUhS0V9QFCiCBYKAFbwVYQhVSChYVKiEIQhFRaprVQDGqKYGWjYCUptIggKSQS8AHsE9KbBzBr
+        OasQSeL5mblnZs7+YEHQu/fstU/IPT+zT7pS4u7urheahTahQ+gCuoFuJf6ZP+Pv+Bl+tlfhhg/Q0EFo
+        CTqGqsJY5hhUWqMsaN4ItAf5hjlHtIzxFGjWALQB/YZCwdxcY0DLGn8DDVqBfkGdgmutaHnjIWjM/n2L
+        mmFfZRgEDbl2fWmUa5XTbtSMaFBZ7QT+T1wbouJE5bULGF93/qNkXWW2AxhedL6jZlHl5g2M8jqjk6e2
+        VWGN+V+nwCQvyFJhQ2XnCQzydkjIK3DfsNZ8b7PAXIh7U6HZU/l5AWNDzl+SDMlGPsDUqvOWJKuykQ8w
+        deq8JcmpbOQBDPU7X0nTLzvpAzNzzlPSzMlO+sAMn2+nzqbspA/McNNB6hzKTvrADHeCpM6F7KQPzHB7
+        TurcyE76wAz3TKXOreykD804T0mT1QGxf7JiAmbsSz0mYMZOe2MCZuzCMCZghrvQU2dWdtIHZjhGkDp5
+        jTXAUJ1xgqY5lo18gCnOZ6TKkmzkA0xx8CZV8hz0gTHb5BATMGfbgGIDBm2jXEzApG0ljQ0Y5eha7LRr
+        1A2Gmxxhe4p2jrjBeAyjbI9p92ibmhANKqvdoA8xjLa1c5TtX6AhTY64tWuErShoDEfdOnlKzLXaMbpW
+        FTTIXq0RI2iWvXwmRtA8DvpwtqTOOANjmSO/wZsmQUM51sCd9EVfYMbP5jNGYBiGYRiGYcQOTj+7oUlo
+        AVqDtqEjiKepD/UOeq6wYHANrfV4fdbE2lgja2XN3QpLGxgZht5Cn6Gy8FriNfRC6WrDXMpZZfM3PdDL
+        sNKlA4rm36xvkC++Q++hV9AzLfMk/KxiGMscvqC3BS0TLyhyCjpjxYH5CX2BuD31E8QbhRT/zJ/xd/xM
+        aOh1SvbjAUWNQgessKXQ+6ja0SwoZAb6wapaDnswo7Y0AwpYvi/FeMiy2tNZsHDMbxVtms4+EsaCb9y6
+        xn94o3aFBQtNuPWMAkyobWHAAmNuHaMEY2qfX5D4JZTDCwA6DXv2Um30B5K2+TqjLgdqox+QkFfgRj38
+        XdEjWSduh+TOmdpZDyTijULDD/VvSCLJlctleOBKba0GEvCmoeGX6jchEcynZoZf1tTe8iD43OUwPHKu
+        9pYDgT0u3ghAj9pcHATx4b4Rhkm1uTgIstPdcJQ//UWQfaGHo/wXO4K4N8kIw7baXBwEccOYEYYjtbk4
+        COIuPiMM5V85yyAXawTADkhk2AGJDDsgkWEHJDLsgESGHZDIsAMSGZUOyK6LNQKwqzYXB0HzLtYIwLza
+        XBwE2fP0cFR7ro7ASxdveORS7S0PgqddDsMj02pvNZBgx+UxPLCjttYDibZcPqMGW2qnH5BwHLLvlPKw
+        Z+Nqo1+QuA/im0M/QF+hlP7riU7ClxR8hPjWiD61rwBdXX8AUFV87JOfg3kAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 777</value>
+  </data>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 41</value>
+  </data>
+  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="btnKthimetReport.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAcJJREFUOE+V
@@ -131,7 +270,6 @@
         6s5eMBPVtjBo7f+DiY3YZtZbOQs+3xcwqLQ+pE6R4AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnKthimetReport.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -169,7 +307,6 @@
   <data name="btnKthimetReport.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 50</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnKthimetReport.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -404,49 +541,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panelReportsSubMenu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnLogout.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="btnLogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAklJREFUeF7t
-        2cFqFEEUheHRjU+iElA3Qlb6CiFv5cIsAm7UqA8nhoAuXOjKjZ7q+8+tGWHSkHSfKpj64ELmONS51SSD
-        ms0wDMMwzPvbGdbyobcbrOVDbzdYy4febrCWD72J2IbaROxDbyK2oTYR+9CbiG2oTcQ+9CZiG2oTsQ+9
-        idiG2kTsQ28itqE2EfvQm4htqE3EPvQmYhtqt26IfShOxDbUFteax8Q+0V0R21D7XfOcyCv6K2IbVX7T
-        POGl33TrHcQ2qjzhyzbi2hVxM1rhheYBL9c33XoHcROqP9f80XzRPCRel4r2ENup+kxTLr/leQjRVRFb
-        qfaR5uu0wL53mnV/HKKnIrZT9VNN+bvA/z5r1vtOiI6KuAnVH3oInzTrPIQ4vyJuRisceghXmuUfQpxd
-        ETelNW57CMt+JsS5FfEs3t7CBSssg0MT8Sze3spb1rg/DkzEs3h7Kx81y/woxHkV8Sze3sIHzXKfA3Fm
-        RdyU1jjV/JwW2nep6eNDcC1awXf5Is6uiJtQvffyRZxfEdup2n/5IjoqYivVHvrH0HvNepcvoqcitlP1
-        K82vaYnwhj9aF2WJuAnVv9b81nguX5RL7yJuRisc13+JqfIZX7YR166IbVRZPvlPeek33XoHsQ21PzRH
-        +4uRrfKd8JLYJ7orYhtqt476l6MTYh96E7ENtYnYh95EbENtIvahNxHbUJuIfehNxDbUJmIfehOxDbWJ
-        2IfeRGxDbSL2obcbrOVDbzdYy4febrCWD73dYK1hGIZhuLPN5h9dBO/ij7wKwAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnLogout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 864</value>
-  </data>
-  <data name="btnLogout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 27</value>
-  </data>
-  <data name="btnLogout.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnLogout.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;btnLogout.Name" xml:space="preserve">
-    <value>btnLogout</value>
-  </data>
-  <data name="&gt;&gt;btnLogout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnLogout.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnLogout.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lblPunetori.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -479,7 +574,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblPunetori.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -530,7 +625,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btnLibrat.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -585,7 +680,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnLibrat.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btnRaportet.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -641,7 +736,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnRaportet.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btnHuazimet.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -697,7 +792,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnHuazimet.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btnStafi.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -768,7 +863,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnStafi.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="btnKlientet.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -845,7 +940,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnKlientet.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="btnKategorite.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -893,7 +988,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnKategorite.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="btnBallina.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -974,7 +1069,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnBallina.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1177,7 +1272,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>

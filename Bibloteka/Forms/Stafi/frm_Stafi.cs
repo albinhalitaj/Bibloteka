@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
+using static System.Convert;
 
 
 namespace Bibloteka.Forms
@@ -14,13 +15,10 @@ namespace Bibloteka.Forms
        
         public frm_Stafi(Stafi stafi)
         {
-          
             _stafi = stafi;
             _stafiManager = new StafiManager();
             InitializeComponent();
-            LoadStafin(_stafiManager.Load());
         }
-
 
         public void LoadStafin(DataTable dt)
         {
@@ -34,7 +32,7 @@ namespace Bibloteka.Forms
                     stafiRow.Cells[0].Value = Convert.ToString(stafi[0]);
                     stafiRow.Cells[1].Value = Convert.ToString(stafi[1]);
                     stafiRow.Cells[2].Value = Convert.ToString(stafi[2]);
-                    stafiRow.Cells[3].Value = Convert.ToDateTime(stafi[3]).ToString("dd/MM/yyyy");
+                    stafiRow.Cells[3].Value = ToDateTime(stafi[3]).ToString("dd/MM/yyyy");
                     stafiRow.Cells[4].Value = Convert.ToString(stafi[4]);
                     stafiRow.Cells[5].Value = Convert.ToString(stafi[5]);
                     stafiRow.Cells[6].Value = Convert.ToString(stafi[6]);
@@ -58,17 +56,17 @@ namespace Bibloteka.Forms
             {
                 staf.Emri = Convert.ToString(s[0]);
                 staf.Mbiemri = Convert.ToString(s[1]);
-                staf.Datelindja = Convert.ToDateTime(s[2]);
+                staf.Datelindja = ToDateTime(s[2]);
                 staf.Gjinia = Convert.ToString(s[3]);
                 staf.NrPersonal = Convert.ToString(s[4]);
                 staf.NrKontaktues = Convert.ToString(s[5]);
-                staf.KualifikimiID = Convert.ToInt32(s[6]);
+                staf.KualifikimiID = ToInt32(s[6]);
                 staf.Adresa = Convert.ToString(s[7]);
                 staf.Qyteti = Convert.ToString(s[8]);
                 staf.Shteti = Convert.ToString(s[9]);
                 staf.KodiPostal = Convert.ToString(s[10]);
                 staf.Emaili = Convert.ToString(s[11]);
-                staf.RoliId = Convert.ToInt32(s[12]);
+                staf.RoliId = ToInt32(s[12]);
                 staf.Username = Convert.ToString(s[13]);
                 staf.Password = Convert.ToString(s[14]);
             }
@@ -77,14 +75,14 @@ namespace Bibloteka.Forms
 
         private void NdryshoStafin()
         {
-            var id = Convert.ToInt32(dgv_Stafi.CurrentRow?.Cells[0].Value);
+            var id = ToInt32(dgv_Stafi.CurrentRow?.Cells[0].Value);
             var ndryshoStafin = new frm_ShtoStafi( this,id, GetSelectedStafInfo(id),_stafi.StafiId);
             ndryshoStafin.ShowDialog();
         }
 
         private void FshiStafin()
         {
-            var id = Convert.ToInt32(dgv_Stafi.CurrentRow?.Cells[0].Value);
+            var id = ToInt32(dgv_Stafi.CurrentRow?.Cells[0].Value);
             if (MessageBox.Show(@"A jeni i sigurt që doni ta fshihni këtë stafi?", @"Warning",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
             var result = _stafiManager.Remove(id);
@@ -94,10 +92,7 @@ namespace Bibloteka.Forms
             LoadStafin(_stafiManager.Load());
         }
 
-        private void frm_Stafi_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void frm_Stafi_Load(object sender, EventArgs e) => LoadStafin(_stafiManager.Load());
 
         private void btnShto_Click(object sender, EventArgs e)
         {

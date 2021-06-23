@@ -40,21 +40,19 @@ namespace Bibloteka.Forms.Librat
             comboStatusi.SelectedIndex = 1;
             LoadComboBoxes();
             LoadCategories();
-            if (!string.IsNullOrEmpty(_id))
-            {
-                var dt = _kategoriaManager.GetById(_libri.KategoriaId);
-                var kategoria = Convert.ToString(dt.Rows[0][1]);
-                txtTitulli.Text = _libri.Titulli;
-                txtAutori.Text = _libri.Autori;
-                txtBotuesi.Text = _libri.Botuesi;
-                comboGjuha.SelectedItem = _gjuhaManager.GetName(_libri.GjuhaId);
-                comboTipi.SelectedItem = _formatiManager.GetName(_libri.TipiId);
-                comboKategoria.SelectedItem = kategoria;
-                txtISBN.Text = _libri.Isbn;
-                txtEdtitioni.Text = _libri.Editioni;
-                txtSasia.Value = _libri.NumriKopjeve;
-                comboStatusi.SelectedIndex = Convert.ToInt32(_libri.NumriKopjeve) > 0 ? 0 : 1;
-            }
+            if (string.IsNullOrEmpty(_id)) return;
+            var dt = _kategoriaManager.GetById(_libri.KategoriaId);
+            var kategoria = Convert.ToString(dt.Rows[0][1]);
+            txtTitulli.Text = _libri.Titulli;
+            txtAutori.Text = _libri.Autori;
+            txtBotuesi.Text = _libri.Botuesi;
+            comboGjuha.SelectedItem = _gjuhaManager.GetName(_libri.GjuhaId);
+            comboTipi.SelectedItem = _formatiManager.GetName(_libri.TipiId);
+            comboKategoria.SelectedItem = kategoria;
+            txtISBN.Text = _libri.Isbn;
+            txtEdtitioni.Text = _libri.Editioni;
+            txtSasia.Value = _libri.NumriKopjeve;
+            comboStatusi.SelectedIndex = Convert.ToInt32(_libri.NumriKopjeve) > 0 ? 0 : 1;
         }
 
         public void LoadComboBoxes()
@@ -150,10 +148,10 @@ namespace Bibloteka.Forms.Librat
                     MessageBoxIcon.Information);
                 Close();
             }
-            catch (Exception exception)
+            catch (Exception)
             {
-                Console.WriteLine(exception);
-                throw;
+                MessageBox.Show(@"Ndodhi një gabim ju lutem provoni përsëri", @"Error", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 

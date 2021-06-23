@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Bibloteka.BusinessLogicLayer;
 using Bibloteka.BusinessObjects;
+using static System.String;
 using static Bibloteka.Properties.Settings;
 
 namespace Bibloteka
@@ -34,8 +35,8 @@ namespace Bibloteka
                 }
                 else
                 {
-                    Default.userName = string.Empty;
-                    Default.password = string.Empty;
+                    Default.userName = Empty;
+                    Default.password = Empty;
                     Default.Save();
                 }
                 var user = signInManager.LoginUser(model);
@@ -74,7 +75,7 @@ namespace Bibloteka
 
         private void Login_Load(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Default.userName)) return;
+            if (IsNullOrEmpty(Default.userName)) return;
             txtPerdoruesi.Text = Default.userName;
             txtFjalekalimi.Text = Default.password;
             chkMeMbajMend.Checked = true;

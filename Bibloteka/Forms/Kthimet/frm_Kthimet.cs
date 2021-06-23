@@ -75,7 +75,7 @@ namespace Bibloteka.Forms
                 var ditet = (DateTime.Now - _model.DataKthimit).Days;
                 if (txtShuma.Enabled && txtShuma.Text.Trim().Length == 0)
                 {
-                    // sett error
+                    epKthimet.SetError(txtShuma,"Ju lutem ofroni shumën e gjobës!");
                 }
                 else
                 {

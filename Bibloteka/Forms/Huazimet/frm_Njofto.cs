@@ -34,10 +34,7 @@ namespace Bibloteka.Forms.Huazimet
             txtEmaili.Enabled = false;
         }
 
-        private void btnAnulo_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void btnAnulo_Click(object sender, EventArgs e) => Close();
 
         private void btnNjofto_Click(object sender, EventArgs e)
         {
@@ -65,7 +62,7 @@ namespace Bibloteka.Forms.Huazimet
                 try
                 {
                     client.Send(message);
-                    MessageBox.Show(@"Mesazhi u dergua me sukses!", @"Information", MessageBoxButtons.OK,
+                    MessageBox.Show(@"Mesazhi u dërgua me sukses!", @"Information", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
                     Close();
                 }

@@ -31,12 +31,14 @@ namespace Bibloteka
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panelReportsSubMenu = new System.Windows.Forms.Panel();
             this.btnKthimetReport = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnHuazimetReport = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnLibratReport = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnKlientReport = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnLogout = new System.Windows.Forms.PictureBox();
             this.lblPunetori = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnLibrat = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -54,8 +56,9 @@ namespace Bibloteka
             this.Wrapper = new System.Windows.Forms.Panel();
             this.panelSeperator = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panelReportsSubMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panelReportsSubMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,8 +70,10 @@ namespace Bibloteka
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.panel1.Controls.Add(this.panelReportsSubMenu);
             this.panel1.Controls.Add(this.btnLogout);
+            this.panel1.Controls.Add(this.lblUser);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.panelReportsSubMenu);
             this.panel1.Controls.Add(this.lblPunetori);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnLibrat);
@@ -81,6 +86,26 @@ namespace Bibloteka
             this.panel1.Controls.Add(this.panel2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // btnLogout
+            // 
+            resources.ApplyResources(this.btnLogout, "btnLogout");
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // lblUser
+            // 
+            resources.ApplyResources(this.lblUser, "lblUser");
+            this.lblUser.ForeColor = System.Drawing.Color.White;
+            this.lblUser.Name = "lblUser";
+            // 
+            // pictureBox4
+            // 
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
             // 
             // panelReportsSubMenu
             // 
@@ -214,14 +239,6 @@ namespace Bibloteka
             this.btnKlientReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnKlientReport.TextOffsetX = 30;
             this.btnKlientReport.Click += new System.EventHandler(this.btnKlientReport_Click);
-            // 
-            // btnLogout
-            // 
-            resources.ApplyResources(this.btnLogout, "btnLogout");
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.TabStop = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // lblPunetori
             // 
@@ -545,8 +562,9 @@ namespace Bibloteka
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panelReportsSubMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panelReportsSubMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -574,7 +592,6 @@ namespace Bibloteka
         private Guna.UI.WinForms.GunaTextBox txtKerko;
         private System.Windows.Forms.Label lblPunetori;
         private System.Windows.Forms.Panel Wrapper;
-        private System.Windows.Forms.PictureBox btnLogout;
         private System.Windows.Forms.Panel panelSeperator;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelReportsSubMenu;
@@ -582,5 +599,8 @@ namespace Bibloteka
         private Guna.UI.WinForms.GunaAdvenceButton btnHuazimetReport;
         private Guna.UI.WinForms.GunaAdvenceButton btnLibratReport;
         private Guna.UI.WinForms.GunaAdvenceButton btnKlientReport;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.PictureBox btnLogout;
     }
 }
