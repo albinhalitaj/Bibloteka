@@ -97,7 +97,7 @@ namespace Bibloteka
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "Help-Manual.chm", HelpNavigator.Topic, "Login_topic.htm");
+            Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm", HelpNavigator.Topic, "Login_topic.htm");
         }
 
         private void Login_KeyDown(object sender, KeyEventArgs e)
