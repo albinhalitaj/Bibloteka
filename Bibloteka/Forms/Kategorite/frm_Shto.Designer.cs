@@ -39,9 +39,11 @@ namespace Bibloteka.Forms
             this.btnAnulo = new Guna.UI.WinForms.GunaAdvenceButton();
             this.epKategorite = new System.Windows.Forms.ErrorProvider(this.components);
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.btnHelp = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.epKategorite)).BeginInit();
             this.gunaGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPershkrimi
@@ -158,6 +160,7 @@ namespace Bibloteka.Forms
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
             this.gunaGroupBox1.BorderSize = 2;
+            this.gunaGroupBox1.Controls.Add(this.btnHelp);
             this.gunaGroupBox1.Controls.Add(this.panel2);
             this.gunaGroupBox1.Controls.Add(this.btnAnulo);
             this.gunaGroupBox1.Controls.Add(this.btnShto);
@@ -171,6 +174,13 @@ namespace Bibloteka.Forms
             this.gunaGroupBox1.Name = "gunaGroupBox1";
             this.gunaGroupBox1.Radius = 5;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(30, 15);
+            // 
+            // btnHelp
+            // 
+            resources.ApplyResources(this.btnHelp, "btnHelp");
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.TabStop = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // panel2
             // 
@@ -190,6 +200,7 @@ namespace Bibloteka.Forms
             ((System.ComponentModel.ISupportInitialize)(this.epKategorite)).EndInit();
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,5 +216,6 @@ namespace Bibloteka.Forms
         private System.Windows.Forms.ErrorProvider epKategorite;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox btnHelp;
     }
 }

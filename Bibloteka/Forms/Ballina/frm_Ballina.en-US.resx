@@ -244,10 +244,10 @@
 </value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 34</value>
+    <value>70, 34</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Issues</value>
+    <value>Loans</value>
   </data>
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

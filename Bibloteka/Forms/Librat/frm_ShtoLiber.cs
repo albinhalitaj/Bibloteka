@@ -204,5 +204,20 @@ namespace Bibloteka.Forms.Librat
             }
             return status;
         }
+
+        private void frm_ShtoLiber_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.F1)
+            {
+                Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                    HelpNavigator.Topic, "Insertimi_i_nje_libri.htm");
+            }
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                HelpNavigator.Topic, "Insertimi_i_nje_libri.htm");
+        }
     }
 }

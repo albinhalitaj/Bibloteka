@@ -94,5 +94,18 @@ namespace Bibloteka
             lang.UpdateLang("language","sq-XK");
             Application.Restart();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Help-Manual.chm", HelpNavigator.Topic, "Login_topic.htm");
+        }
+
+        private void Login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.F1)
+            {
+                btnHelp_Click(sender,e);
+            }
+        }
     }
 }

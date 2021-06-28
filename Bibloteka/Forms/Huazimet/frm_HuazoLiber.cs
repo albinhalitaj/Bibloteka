@@ -100,5 +100,11 @@ namespace Bibloteka.Forms.Huazimet
             txtSasia.Maximum = libri.NumriKopjeve;
             txtSasia.Value = libri.NumriKopjeve;
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                HelpNavigator.Topic, "Ruatja_e_nje_huazimi_te_ri.htm");
+        }
     }
 }

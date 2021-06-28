@@ -54,5 +54,14 @@ namespace Bibloteka.Forms
         }
 
         private void btnAnulo_Click(object sender, EventArgs e) => Close();
+
+        private void frm_Edito_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.F1)
+            {
+                Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                    HelpNavigator.Topic, "Modifikimi_i_Kategorise.htm");
+            }
+        }
     }
 }

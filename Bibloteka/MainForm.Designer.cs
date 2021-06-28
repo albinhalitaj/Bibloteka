@@ -556,10 +556,12 @@ namespace Bibloteka
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.KeyPreview = true;
             this.Name = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();

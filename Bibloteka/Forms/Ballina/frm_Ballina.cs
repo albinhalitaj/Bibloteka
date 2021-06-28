@@ -153,5 +153,12 @@ namespace Bibloteka.Forms
         public ChartValues<int> Huazimet { get; set; }
         public ChartValues<int> Kthimet { get; set; }
 
+        private void frm_Ballina_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.F1)
+            {
+                Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\NewProject.chm", HelpNavigator.Topic, "Second_topic.htm");
+            }
+        }
     }
 }

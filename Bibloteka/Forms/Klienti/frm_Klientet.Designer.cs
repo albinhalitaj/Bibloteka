@@ -30,11 +30,11 @@ namespace Bibloteka.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Klientet));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_Klientet = new Guna.UI.WinForms.GunaDataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEmri = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,25 +65,25 @@ namespace Bibloteka.Forms
             // 
             // dgv_Klientet
             // 
+            resources.ApplyResources(this.dgv_Klientet, "dgv_Klientet");
             this.dgv_Klientet.AllowUserToAddRows = false;
             this.dgv_Klientet.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            this.dgv_Klientet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
-            resources.ApplyResources(this.dgv_Klientet, "dgv_Klientet");
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dgv_Klientet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Klientet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Klientet.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Klientet.BackgroundColor = System.Drawing.Color.White;
             this.dgv_Klientet.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_Klientet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_Klientet.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Klientet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Klientet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_Klientet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
             this.colEmri,
@@ -100,15 +100,15 @@ namespace Bibloteka.Forms
             this.Column1,
             this.Column2});
             this.dgv_Klientet.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle20.Padding = new System.Windows.Forms.Padding(8);
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Klientet.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(8);
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Klientet.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_Klientet.EnableHeadersVisualStyles = false;
             this.dgv_Klientet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_Klientet.Name = "dgv_Klientet";
@@ -163,9 +163,9 @@ namespace Bibloteka.Forms
             // 
             // colDatalindjes
             // 
-            dataGridViewCellStyle19.Format = "D";
-            dataGridViewCellStyle19.NullValue = null;
-            this.colDatalindjes.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle7.Format = "D";
+            dataGridViewCellStyle7.NullValue = null;
+            this.colDatalindjes.DefaultCellStyle = dataGridViewCellStyle7;
             this.colDatalindjes.FillWeight = 50.71915F;
             resources.ApplyResources(this.colDatalindjes, "colDatalindjes");
             this.colDatalindjes.Name = "colDatalindjes";
@@ -283,6 +283,7 @@ namespace Bibloteka.Forms
             // 
             // btnShto
             // 
+            resources.ApplyResources(this.btnShto, "btnShto");
             this.btnShto.AnimationHoverSpeed = 0.07F;
             this.btnShto.AnimationSpeed = 0.03F;
             this.btnShto.BackColor = System.Drawing.Color.Transparent;
@@ -296,7 +297,6 @@ namespace Bibloteka.Forms
             this.btnShto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShto.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnShto.FocusedColor = System.Drawing.Color.Empty;
-            resources.ApplyResources(this.btnShto, "btnShto");
             this.btnShto.ForeColor = System.Drawing.Color.White;
             this.btnShto.Image = ((System.Drawing.Image)(resources.GetObject("btnShto.Image")));
             this.btnShto.ImageSize = new System.Drawing.Size(20, 20);
@@ -331,8 +331,8 @@ namespace Bibloteka.Forms
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(152)))), ((int)(((byte)(207)))));
             this.panel1.Name = "panel1";
             // 
             // btnShkarko

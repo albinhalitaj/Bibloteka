@@ -187,6 +187,7 @@ namespace Bibloteka.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_Edito";
             this.Load += new System.EventHandler(this.frm_Edito_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frm_Edito_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.epKategorite)).EndInit();
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();

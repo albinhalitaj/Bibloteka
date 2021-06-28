@@ -102,5 +102,47 @@ namespace Bibloteka
         private void btnStafi_Click_1(object sender, EventArgs e) => OpenForm(new frm_Stafi(_perdoruesi.Stafi));
 
         private void btnLogout_Click(object sender, EventArgs e) => Application.Restart();
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.F1)
+            {
+                if (btnBallina.Checked)
+                {
+                    Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                        HelpNavigator.Topic, "Ballina_topic.htm");
+                }
+                else if (btnKategorite.Checked)
+                {
+                    Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                        HelpNavigator.Topic, "Lista_Kategorive.htm");
+                }
+                else if (btnKlientet.Checked)
+                {
+                    Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                        HelpNavigator.Topic, "Lista_e_Klienteve.htm");
+                }
+                else if (btnLibrat.Checked)
+                {
+                    Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                        HelpNavigator.Topic, "Lista_e_Librave.htm");
+                }
+                else if (btnHuazimet.Checked)
+                {
+                    Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                        HelpNavigator.Topic, "Lista_e_Huazimeve.htm");
+                }
+                else if (btnStafi.Checked)
+                {
+                    Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                        HelpNavigator.Topic, "Lista_e_stafit.htm");
+                }
+                else if (btnRaportet.Checked)
+                {
+                    Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                        HelpNavigator.Topic, "Gjenerimi_i_raporteve_per_prin.htm");
+                }
+            }
+        }
     }
 }

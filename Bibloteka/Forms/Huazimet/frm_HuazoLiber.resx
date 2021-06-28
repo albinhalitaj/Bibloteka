@@ -118,10 +118,62 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABC1JREFUeF7t
+        mkeIFEEYRlfMoIg5ezAgRvDu1YRizicxYEIFFfPBg6BgFhHRkzcFvYng1XBQDBjAgKAoggFzzr4PduC3
+        6Fm6pqp7ZrEfPBC366+a7spVdQUFBQUFBQUFGdMRp+FuPIuP8bWj/k9/0zNTsQM2atrjEryIv/CPp0pz
+        HhejYjUaeqC+4gdM+mGVqFg7sRvWLK1wK37BpB8Rw8+oPJRXTdEfr2FSoaWq8yXUV5yFw1DV2joc9bdd
+        eBkbajZXsB/WBBPxHSYV9Amuw57oS2/cgE8xKfZbHI9VZRH+RLdw6tVXYEsMRdV9Fb5BN58fuACrgnr4
+        3+gW6gR2xth0xZPo5qcyaKTIFbVVt41+xzwKsgyVl81btXA65sIg/Ii2ABqmRmNejMWkMgzETGmBN9Fm
+        rK8xBvNGHaD6AFuW69gcM2Mj2gzlUqwW6hzd8qzBTNBQ5la74+jLUNyLt/FlvbdQs8ch6MsptGV6j+ow
+        o3MQbUYan9thWjScHcaGJjjqzA6gTzXWokkv0cbRC46KhrVPaDNZiGnRj9fCxqZvSK0K1d+kxW0Kqqla
+        gUZjNdoMHmIzTMsRtOnTeAjTohrzCG16vZRoXEUbfD2mRW3erfZq85pCd6p3Ct5H+4yaw2BMyya06bX2
+        iEIvtIE17Pl0MvvQpr+LSX2HFkT30D67B9OiZbidlmuGGGX5PBdtobTB4cMdtOknYTlUE+yzGil80Fe3
+        6WdiMPvRBt2GPrgbI22xHKoZ9lmtMn3Yjja9Tw0qi3pkG3QyZoX6A5uXhjcftJdo05/BYB6gDVrJZCUt
+        89DmdQ590EaLTa8+JZhXaINmtVs7Ap+jzUtV2ofQGpTIN7RBfSYoaRiJx9Bd2Ggy0wV90AaMjfEVg3Ff
+        QKzVVlM8ija2dS36kskLyKoJaDJl41q3YCW4TeAFBpNVJ+hOeqRmnCEbK5l0ghpKbFAdccXAbfOjsAmG
+        MANtzNMYTOhEqBw2pozBDrQxo0yE5qAN6jsVLoeNKWPgToVVI4LRUGS3v7Wy64O1Rl90yxltzuK+WZ3Y
+        1Bqb0ZZRGzDRWI42+DNsjSHYeDKENuhui0U9MdKWmE5mbQZ6KSHYWDIEd0tMq0if/cpU6NTWzaQ7VoqN
+        JStFu9XaCbaxYo1U/6Adlxjb4iVsHFkpuW2LC3V+NjNZzYORleiWJ7ODEaGV4A20GWqPUGd1eZN0NKZL
+        GpkejYkB6F6IyPtwdBy6zVH3BzQXyIUJ6L79vI7H1eTc43GVJfdaqJMhW4iSeV+QkPOxKvzXV2RKVOuS
+        lF5I1S9Jlaj0mlyJ0jW52ahj8jTX5HLr8NKi4Udf2+2dY6rRRuN85kNdCFldldVUvKavyrqoWusq3QVs
+        qDqXU2m0pG10l6WTcK/Lq3O0Cxj9216X17ON/rp8QUFBQUFBQS1TV/cX4nezsAmMP4kAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>659, 12</value>
+  </data>
+  <data name="btnHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="btnHelp.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="comboLibri.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9.75pt</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="comboLibri.ItemHeight" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
@@ -147,7 +199,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;comboLibri.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="txtSasia.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9.75pt</value>
@@ -171,7 +223,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;txtSasia.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -179,7 +231,6 @@
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 10.2pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -208,7 +259,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="dataKthimit.CustomFormat" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -241,7 +292,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;dataKthimit.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -277,7 +328,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 25</value>
@@ -298,7 +349,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="btnAnulo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 10.2pt, style=Bold</value>
@@ -328,7 +379,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;btnAnulo.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btnHuazo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 10.2pt, style=Bold</value>
@@ -358,7 +409,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;btnHuazo.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -394,7 +445,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -430,7 +481,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="comboKlienti.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9.75pt</value>
@@ -460,7 +511,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;comboKlienti.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="txtPershkrimi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9.75pt</value>
@@ -484,7 +535,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;txtPershkrimi.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="dataHuazimit.CustomFormat" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -517,7 +568,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;dataHuazimit.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -553,7 +604,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -589,7 +640,7 @@
     <value>gunaGroupBox1</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="gunaGroupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

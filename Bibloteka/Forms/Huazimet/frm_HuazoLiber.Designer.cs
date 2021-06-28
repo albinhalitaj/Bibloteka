@@ -48,8 +48,10 @@ namespace Bibloteka.Forms.Huazimet
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.epHuazimet = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnHelp = new System.Windows.Forms.PictureBox();
             this.gunaGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epHuazimet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaGroupBox1
@@ -58,6 +60,7 @@ namespace Bibloteka.Forms.Huazimet
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(245)))));
             this.gunaGroupBox1.BorderSize = 2;
+            this.gunaGroupBox1.Controls.Add(this.btnHelp);
             this.gunaGroupBox1.Controls.Add(this.comboLibri);
             this.gunaGroupBox1.Controls.Add(this.txtSasia);
             this.gunaGroupBox1.Controls.Add(this.label4);
@@ -290,6 +293,13 @@ namespace Bibloteka.Forms.Huazimet
             // 
             this.epHuazimet.ContainerControl = this;
             // 
+            // btnHelp
+            // 
+            resources.ApplyResources(this.btnHelp, "btnHelp");
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.TabStop = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // frm_HuazoLiber
             // 
             resources.ApplyResources(this, "$this");
@@ -301,6 +311,7 @@ namespace Bibloteka.Forms.Huazimet
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epHuazimet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -324,5 +335,6 @@ namespace Bibloteka.Forms.Huazimet
         private Guna.UI.WinForms.GunaNumeric txtSasia;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ErrorProvider epHuazimet;
+        private System.Windows.Forms.PictureBox btnHelp;
     }
 }

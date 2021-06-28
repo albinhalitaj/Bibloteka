@@ -117,575 +117,899 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnShto.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="gunaGroupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="label3.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="txtMbiemri.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 187</value>
-  </data>
-  <data name="&gt;&gt;gunaGroupBox1.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaGroupBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="label5.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label8.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="txtMbiemri.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 34</value>
-  </data>
-  <data name="label11.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnAnulo.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="comboQyteti.ItemHeight" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="comboShteti.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtEmri.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9.75pt</value>
   </data>
-  <data name="label9.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="gunaGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 12pt</value>
-  </data>
-  <data name="txtAdresa.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnAnulo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="label11.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radioMashkull.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="comboShteti.Items" xml:space="preserve">
-    <value>Kosovë</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataKlientit.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="&gt;&gt;dataKlientit.Name" xml:space="preserve">
-    <value>dataKlientit</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Adresa</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 158</value>
-  </data>
-  <data name="txtEmaili.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;comboQyteti.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="&gt;&gt;radioMashkull.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 60</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 25</value>
-  </data>
-  <data name="comboShteti.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;gunaGroupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txtEmri.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 89</value>
   </data>
   <data name="txtEmri.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 34</value>
   </data>
-  <data name="label11.IconPadding" type="System.Int32, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtEmri.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;txtAdresa.Name" xml:space="preserve">
-    <value>txtAdresa</value>
-  </data>
-  <data name="&gt;&gt;comboQyteti.Name" xml:space="preserve">
-    <value>comboQyteti</value>
-  </data>
-  <data name="dataKlientit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Gjinia</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="label10.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="radioMashkull.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 399</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Numri Personal</value>
-  </data>
-  <data name="btnShto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 34</value>
-  </data>
-  <data name="panel2.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Shto Klient</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;txtEmaili.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="radioFemer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;gunaGroupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;guna2DragControl1.Name" xml:space="preserve">
-    <value>guna2DragControl1</value>
-  </data>
-  <data name="btnAnulo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 588</value>
-  </data>
-  <data name="btnAnulo.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;txtAdresa.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtNrKontaktues.Name" xml:space="preserve">
-    <value>txtNrKontaktues</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtEmri.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioMashkull.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaRadioButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;txtNrKontaktues.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="txtKodiPostal.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="radioMashkull.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 22</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 25</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="dataKlientit.DropDownAlign" type="System.Windows.Forms.LeftRightAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;txtAdresa.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="label1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;epKlienti.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="radioFemer.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;radioMashkull.Name" xml:space="preserve">
-    <value>radioMashkull</value>
-  </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="radioFemer.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="radioFemer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 399</value>
-  </data>
-  <data name="gunaGroupBox1.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 458</value>
-  </data>
-  <data name="txtEmaili.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="dataKlientit.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnAnulo.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtEmri.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="gunaGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txtMbiemri.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 25</value>
-  </data>
-  <data name="txtEmri.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;radioFemer.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="btnShto.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 255</value>
-  </data>
-  <data name="&gt;&gt;txtEmaili.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="txtNrKontaktues.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;btnAnulo.Name" xml:space="preserve">
-    <value>btnAnulo</value>
-  </data>
-  <data name="&gt;&gt;txtKodiPostal.Name" xml:space="preserve">
-    <value>txtKodiPostal</value>
-  </data>
-  <data name="label7.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="txtNrKontaktues.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtNrPersonal.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="txtKodiPostal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 34</value>
-  </data>
-  <data name="&gt;&gt;txtEmri.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="gunaGroupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Numri Kontaktues</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="dataKlientit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 37</value>
-  </data>
-  <data name="btnAnulo.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnShto.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt, style=Bold</value>
-  </data>
-  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 358</value>
-  </data>
-  <data name="&gt;&gt;txtNrPersonal.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="radioMashkull.Text" xml:space="preserve">
-    <value>Mashkull</value>
-  </data>
-  <data name="comboShteti.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtEmaili.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 34</value>
-  </data>
-  <data name="&gt;&gt;txtMbiemri.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 25</value>
-  </data>
-  <data name="comboShteti.Items3" xml:space="preserve">
-    <value>Mali i Zi</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="dataKlientit.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="dataKlientit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 284</value>
-  </data>
-  <data name="comboQyteti.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 34</value>
-  </data>
-  <data name="radioFemer.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;radioFemer.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaRadioButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Emri</value>
-  </data>
-  <data name="&gt;&gt;txtKodiPostal.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="txtKodiPostal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="txtNrKontaktues.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 34</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="txtNrPersonal.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;radioMashkull.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="label3.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Mbiemri</value>
-  </data>
-  <data name="label4.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label2.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 25</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 3</value>
-  </data>
-  <data name="txtMbiemri.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnShto.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="radioMashkull.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Datalindjes</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="txtEmaili.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;txtEmri.Name" xml:space="preserve">
+    <value>txtEmri</value>
   </data>
   <data name="&gt;&gt;txtEmri.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
+  <data name="&gt;&gt;txtEmri.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtEmri.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 60</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 25</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 251</value>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Emri</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnAnulo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt, style=Bold</value>
+  </data>
+  <data name="btnAnulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>463, 588</value>
+  </data>
+  <data name="btnAnulo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnAnulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 34</value>
+  </data>
+  <data name="btnAnulo.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnAnulo.Text" xml:space="preserve">
+    <value>Anulo</value>
+  </data>
+  <data name="&gt;&gt;btnAnulo.Name" xml:space="preserve">
+    <value>btnAnulo</value>
+  </data>
+  <data name="&gt;&gt;btnAnulo.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;btnAnulo.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnAnulo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnShto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt, style=Bold</value>
+  </data>
+  <data name="btnShto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>557, 588</value>
+  </data>
+  <data name="btnShto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnShto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 34</value>
+  </data>
+  <data name="btnShto.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="btnShto.Text" xml:space="preserve">
     <value>Ruaj</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;btnShto.Name" xml:space="preserve">
+    <value>btnShto</value>
   </data>
-  <data name="label4.Error" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;btnShto.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 25</value>
+  <data name="&gt;&gt;btnShto.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnShto.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtMbiemri.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="txtMbiemri.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 187</value>
+  </data>
+  <data name="txtMbiemri.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="txtMbiemri.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtMbiemri.Name" xml:space="preserve">
+    <value>txtMbiemri</value>
+  </data>
+  <data name="&gt;&gt;txtMbiemri.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;txtMbiemri.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtMbiemri.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 158</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 25</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Mbiemri</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txtNrPersonal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="txtNrPersonal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 487</value>
+  </data>
+  <data name="txtNrPersonal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="txtNrPersonal.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtNrPersonal.Name" xml:space="preserve">
+    <value>txtNrPersonal</value>
+  </data>
+  <data name="&gt;&gt;txtNrPersonal.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;txtNrPersonal.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtNrPersonal.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 458</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 25</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Numri Personal</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="txtNrKontaktues.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 9.75pt</value>
   </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+  <data name="txtNrKontaktues.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 588</value>
+  </data>
+  <data name="txtNrKontaktues.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="txtNrKontaktues.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtNrKontaktues.Name" xml:space="preserve">
+    <value>txtNrKontaktues</value>
+  </data>
+  <data name="&gt;&gt;txtNrKontaktues.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;txtNrKontaktues.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtNrKontaktues.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 559</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 25</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Numri Kontaktues</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dataKlientit.CustomFormat" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="dataKlientit.DropDownAlign" type="System.Windows.Forms.LeftRightAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="dataKlientit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="dataKlientit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 284</value>
+  </data>
+  <data name="dataKlientit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 37</value>
+  </data>
+  <data name="dataKlientit.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="dataKlientit.Text" xml:space="preserve">
+    <value>Thursday, May 20, 2021</value>
+  </data>
+  <data name="&gt;&gt;dataKlientit.Name" xml:space="preserve">
+    <value>dataKlientit</value>
+  </data>
+  <data name="&gt;&gt;dataKlientit.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaDateTimePicker, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;dataKlientit.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;dataKlientit.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 251</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 25</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Datalindjes</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 158</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 25</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Shteti</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="txtAdresa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="txtAdresa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 89</value>
+  </data>
+  <data name="txtAdresa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="txtAdresa.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtAdresa.Name" xml:space="preserve">
+    <value>txtAdresa</value>
+  </data>
+  <data name="&gt;&gt;txtAdresa.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;txtAdresa.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtAdresa.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 60</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 25</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Adresa</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>15</value>
+  </data>
+  <data name="txtKodiPostal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="txtKodiPostal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 387</value>
+  </data>
+  <data name="txtKodiPostal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="txtKodiPostal.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtKodiPostal.Name" xml:space="preserve">
+    <value>txtKodiPostal</value>
+  </data>
+  <data name="&gt;&gt;txtKodiPostal.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;txtKodiPostal.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtKodiPostal.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 358</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 25</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Kodi Postal</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 255</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 25</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Qyteti</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="txtEmaili.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="txtEmaili.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 487</value>
+  </data>
+  <data name="txtEmaili.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="txtEmaili.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtEmaili.Name" xml:space="preserve">
+    <value>txtEmaili</value>
+  </data>
+  <data name="&gt;&gt;txtEmaili.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;txtEmaili.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtEmaili.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 458</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 25</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Emaili</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboShteti.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="comboShteti.ItemHeight" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="comboShteti.Items" xml:space="preserve">
+    <value>Kosovë</value>
+  </data>
+  <data name="comboShteti.Items1" xml:space="preserve">
+    <value>Shqipëri</value>
+  </data>
+  <data name="comboShteti.Items2" xml:space="preserve">
+    <value>Maqedoni</value>
+  </data>
+  <data name="comboShteti.Items3" xml:space="preserve">
+    <value>Mali i Zi</value>
+  </data>
+  <data name="comboShteti.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 187</value>
+  </data>
+  <data name="comboShteti.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="comboShteti.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;comboShteti.Name" xml:space="preserve">
+    <value>comboShteti</value>
+  </data>
+  <data name="&gt;&gt;comboShteti.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaComboBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;comboShteti.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;comboShteti.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="comboQyteti.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="comboQyteti.ItemHeight" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="comboQyteti.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 287</value>
+  </data>
+  <data name="comboQyteti.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="comboQyteti.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;comboQyteti.Name" xml:space="preserve">
+    <value>comboQyteti</value>
+  </data>
+  <data name="&gt;&gt;comboQyteti.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaComboBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;comboQyteti.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;comboQyteti.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="epKlienti.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>698, 669</value>
+  </data>
+  <data name="btnHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABC1JREFUeF7t
+        mkeIFEEYRlfMoIg5ezAgRvDu1YRizicxYEIFFfPBg6BgFhHRkzcFvYng1XBQDBjAgKAoggFzzr4PduC3
+        6Fm6pqp7ZrEfPBC366+a7spVdQUFBQUFBQUFGdMRp+FuPIuP8bWj/k9/0zNTsQM2atrjEryIv/CPp0pz
+        HhejYjUaeqC+4gdM+mGVqFg7sRvWLK1wK37BpB8Rw8+oPJRXTdEfr2FSoaWq8yXUV5yFw1DV2joc9bdd
+        eBkbajZXsB/WBBPxHSYV9Amuw57oS2/cgE8xKfZbHI9VZRH+RLdw6tVXYEsMRdV9Fb5BN58fuACrgnr4
+        3+gW6gR2xth0xZPo5qcyaKTIFbVVt41+xzwKsgyVl81btXA65sIg/Ii2ABqmRmNejMWkMgzETGmBN9Fm
+        rK8xBvNGHaD6AFuW69gcM2Mj2gzlUqwW6hzd8qzBTNBQ5la74+jLUNyLt/FlvbdQs8ch6MsptGV6j+ow
+        o3MQbUYan9thWjScHcaGJjjqzA6gTzXWokkv0cbRC46KhrVPaDNZiGnRj9fCxqZvSK0K1d+kxW0Kqqla
+        gUZjNdoMHmIzTMsRtOnTeAjTohrzCG16vZRoXEUbfD2mRW3erfZq85pCd6p3Ct5H+4yaw2BMyya06bX2
+        iEIvtIE17Pl0MvvQpr+LSX2HFkT30D67B9OiZbidlmuGGGX5PBdtobTB4cMdtOknYTlUE+yzGil80Fe3
+        6WdiMPvRBt2GPrgbI22xHKoZ9lmtMn3Yjja9Tw0qi3pkG3QyZoX6A5uXhjcftJdo05/BYB6gDVrJZCUt
+        89DmdQ590EaLTa8+JZhXaINmtVs7Ap+jzUtV2ofQGpTIN7RBfSYoaRiJx9Bd2Ggy0wV90AaMjfEVg3Ff
+        QKzVVlM8ija2dS36kskLyKoJaDJl41q3YCW4TeAFBpNVJ+hOeqRmnCEbK5l0ghpKbFAdccXAbfOjsAmG
+        MANtzNMYTOhEqBw2pozBDrQxo0yE5qAN6jsVLoeNKWPgToVVI4LRUGS3v7Wy64O1Rl90yxltzuK+WZ3Y
+        1Bqb0ZZRGzDRWI42+DNsjSHYeDKENuhui0U9MdKWmE5mbQZ6KSHYWDIEd0tMq0if/cpU6NTWzaQ7VoqN
+        JStFu9XaCbaxYo1U/6Adlxjb4iVsHFkpuW2LC3V+NjNZzYORleiWJ7ODEaGV4A20GWqPUGd1eZN0NKZL
+        GpkejYkB6F6IyPtwdBy6zVH3BzQXyIUJ6L79vI7H1eTc43GVJfdaqJMhW4iSeV+QkPOxKvzXV2RKVOuS
+        lF5I1S9Jlaj0mlyJ0jW52ahj8jTX5HLr8NKi4Udf2+2dY6rRRuN85kNdCFldldVUvKavyrqoWusq3QVs
+        qDqXU2m0pG10l6WTcK/Lq3O0Cxj9216X17ON/rp8QUFBQUFBQS1TV/cX4nezsAmMP4kAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btnHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 12</value>
+  </data>
+  <data name="btnHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="btnHelp.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>215, 25</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 3</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioFemer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="radioFemer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 399</value>
+  </data>
+  <data name="radioFemer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 22</value>
+  </data>
+  <data name="radioFemer.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="radioFemer.Text" xml:space="preserve">
+    <value>Femër</value>
+  </data>
+  <data name="&gt;&gt;radioFemer.Name" xml:space="preserve">
+    <value>radioFemer</value>
+  </data>
+  <data name="&gt;&gt;radioFemer.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaRadioButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;radioFemer.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioFemer.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="radioMashkull.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 9.75pt</value>
+  </data>
+  <data name="radioMashkull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 399</value>
+  </data>
+  <data name="radioMashkull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="radioMashkull.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="radioMashkull.Text" xml:space="preserve">
+    <value>Mashkull</value>
+  </data>
+  <data name="&gt;&gt;radioMashkull.Name" xml:space="preserve">
+    <value>radioMashkull</value>
+  </data>
+  <data name="&gt;&gt;radioMashkull.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaRadioButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;radioMashkull.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioMashkull.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 358</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 25</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Gjinia</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="gunaGroupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gunaGroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 12pt</value>
+  </data>
+  <data name="gunaGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gunaGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>698, 669</value>
+  </data>
+  <data name="gunaGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="gunaGroupBox1.Text" xml:space="preserve">
+    <value>Informatat e Klientit</value>
+  </data>
+  <data name="&gt;&gt;gunaGroupBox1.Name" xml:space="preserve">
+    <value>gunaGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;gunaGroupBox1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaGroupBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaGroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gunaGroupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5163,546 +5487,30 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="gunaGroupBox1.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtKodiPostal.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="&gt;&gt;gunaGroupBox1.Name" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="radioFemer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 22</value>
-  </data>
-  <data name="dataKlientit.CustomFormat" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="dataKlientit.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;txtNrPersonal.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="radioFemer.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtNrPersonal.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;comboQyteti.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaComboBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="txtEmaili.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="btnAnulo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt, style=Bold</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Kodi Postal</value>
-  </data>
-  <data name="label10.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtNrPersonal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 34</value>
-  </data>
-  <data name="&gt;&gt;radioFemer.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="btnShto.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;comboShteti.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaComboBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="dataKlientit.Text" xml:space="preserve">
-    <value>Thursday, May 20, 2021</value>
-  </data>
-  <data name="&gt;&gt;txtEmaili.Name" xml:space="preserve">
-    <value>txtEmaili</value>
-  </data>
-  <data name="comboShteti.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 34</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 25</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="txtNrPersonal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 487</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 559</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="label1.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 25</value>
-  </data>
-  <data name="radioMashkull.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;comboShteti.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="panel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="comboShteti.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="comboShteti.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 187</value>
-  </data>
-  <data name="txtAdresa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 34</value>
-  </data>
-  <data name="txtNrKontaktues.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 158</value>
-  </data>
-  <data name="&gt;&gt;txtMbiemri.Name" xml:space="preserve">
-    <value>txtMbiemri</value>
-  </data>
-  <data name="comboQyteti.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtAdresa.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="txtNrKontaktues.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 588</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnShto.Name" xml:space="preserve">
-    <value>btnShto</value>
-  </data>
-  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="label8.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label9.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label5.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;comboQyteti.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="label7.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="txtAdresa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 89</value>
-  </data>
-  <data name="&gt;&gt;btnAnulo.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="panel2.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="comboQyteti.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="label2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="txtKodiPostal.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtKodiPostal.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboShteti.Items2" xml:space="preserve">
-    <value>Maqedoni</value>
-  </data>
-  <data name="label2.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="dataKlientit.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="comboShteti.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtAdresa.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;btnShto.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;comboShteti.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboShteti.Name" xml:space="preserve">
-    <value>comboShteti</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 25</value>
-  </data>
-  <data name="txtEmri.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="txtAdresa.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="label8.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txtMbiemri.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="txtAdresa.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;txtEmri.Name" xml:space="preserve">
-    <value>txtEmri</value>
-  </data>
-  <data name="gunaGroupBox1.Text" xml:space="preserve">
-    <value>Informatat e Klientit</value>
-  </data>
-  <data name="radioFemer.Text" xml:space="preserve">
-    <value>Femër</value>
-  </data>
-  <data name="comboShteti.ItemHeight" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="gunaGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>698, 669</value>
-  </data>
-  <data name="comboShteti.Items1" xml:space="preserve">
-    <value>Shqipëri</value>
-  </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Shteti</value>
-  </data>
-  <data name="txtNrKontaktues.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frm_ShtoKlient</value>
-  </data>
-  <data name="btnAnulo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="txtMbiemri.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="txtMbiemri.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label1.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtEmri.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 89</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="comboQyteti.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnShto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 358</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtNrKontaktues.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;btnShto.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gunaGroupBox1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="txtMbiemri.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label5.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Emaili</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 25</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboQyteti.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="btnShto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 588</value>
-  </data>
-  <data name="comboQyteti.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 458</value>
-  </data>
-  <data name="label4.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;dataKlientit.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaDateTimePicker, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Qyteti</value>
-  </data>
-  <data name="&gt;&gt;dataKlientit.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>698, 669</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Shto Klient</value>
   </data>
   <data name="&gt;&gt;epKlienti.Name" xml:space="preserve">
     <value>epKlienti</value>
   </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;epKlienti.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;guna2DragControl1.Name" xml:space="preserve">
+    <value>guna2DragControl1</value>
   </data>
   <data name="&gt;&gt;guna2DragControl1.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2DragControl, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frm_ShtoKlient</value>
   </data>
-  <data name="&gt;&gt;txtNrPersonal.Name" xml:space="preserve">
-    <value>txtNrPersonal</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtNrPersonal.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="txtMbiemri.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="label10.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnAnulo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 34</value>
-  </data>
-  <data name="radioMashkull.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="txtEmri.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="comboQyteti.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 287</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="label6.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label7.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="txtKodiPostal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 387</value>
-  </data>
-  <data name="label9.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleRight</value>
-  </data>
-  <data name="txtKodiPostal.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 25</value>
-  </data>
-  <data name="&gt;&gt;txtKodiPostal.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 10.2pt</value>
-  </data>
-  <data name="btnAnulo.Text" xml:space="preserve">
-    <value>Anulo</value>
-  </data>
-  <data name="txtEmaili.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="&gt;&gt;btnShto.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaAdvenceButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 60</value>
-  </data>
-  <data name="&gt;&gt;btnAnulo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label6.Error" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;txtNrKontaktues.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="txtAdresa.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;radioFemer.Name" xml:space="preserve">
-    <value>radioFemer</value>
-  </data>
-  <data name="txtEmaili.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 487</value>
-  </data>
-  <data name="label6.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtEmaili.Parent" xml:space="preserve">
-    <value>gunaGroupBox1</value>
-  </data>
-  <data name="txtNrPersonal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 9.75pt</value>
-  </data>
-  <data name="radioMashkull.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="txtNrPersonal.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="txtEmri.IconPadding" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="epKlienti.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="guna2DragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>116, 17</value>
   </metadata>

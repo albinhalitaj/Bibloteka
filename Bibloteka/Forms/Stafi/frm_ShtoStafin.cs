@@ -189,6 +189,13 @@ namespace Bibloteka.Forms
         }
 
         private void btnAnulo_Click(object sender, EventArgs e) => Close();
+
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                HelpNavigator.Topic, "Insertimi_i_nje_stafi.htm");
+        }
     }
 }
 

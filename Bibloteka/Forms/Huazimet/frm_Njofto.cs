@@ -73,5 +73,11 @@ namespace Bibloteka.Forms.Huazimet
                 }
             }
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:\\Users\\albikk\\source\\repos\\Bibloteka\\Bibloteka\\Help-Manual.chm",
+                HelpNavigator.Topic, "Njoftimi_i_klientit.htm");
+        }
     }
 }

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favico.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
@@ -43,7 +46,7 @@
       <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\..\Downloads\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\Desktop\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
@@ -79,8 +82,9 @@
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="MstHtmlEditor">
-      <HintPath>..\..\..\..\..\Downloads\MstHtmlEditor.dll</HintPath>
+    <Reference Include="MstHtmlEditor, Version=4.20.12.28, Culture=neutral, PublicKeyToken=8ee81cea60080003, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\HtmlEditor Control for NET4\MstHtmlEditor.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -301,11 +305,17 @@
     <EmbeddedResource Include="Forms\Kthimet\frm_Kthimet.resx">
       <DependentUpon>frm_Kthimet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Librat\frm_Librat.en-US.resx">
+      <DependentUpon>frm_Librat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Librat\frm_Librat.resx">
       <DependentUpon>frm_Librat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Kategorite\frm_Shto.resx">
       <DependentUpon>frm_Shto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Librat\frm_ShtoLiber.en-US.resx">
+      <DependentUpon>frm_ShtoLiber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports\HuazimetReport\frm_HuazimetReport.resx">
       <DependentUpon>frm_HuazimetReport.cs</DependentUpon>
@@ -323,8 +333,14 @@
       <DependentUpon>frm_LibratReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Reports\LibratReport\LibratReport.rdlc" />
+    <EmbeddedResource Include="Forms\Stafi\frm_ShtoStafin.en-US.resx">
+      <DependentUpon>frm_ShtoStafin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Stafi\frm_ShtoStafin.resx">
       <DependentUpon>frm_ShtoStafin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Stafi\frm_Stafi.en-US.resx">
+      <DependentUpon>frm_Stafi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Stafi\frm_Stafi.resx">
       <DependentUpon>frm_Stafi.cs</DependentUpon>
@@ -370,6 +386,7 @@
     <None Include="Forms\Reports\ReportsData.xss">
       <DependentUpon>ReportsData.xsd</DependentUpon>
     </None>
+    <None Include="Help-Manual.chm" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -404,6 +421,10 @@
     <Content Include="DLLs\Hunspellx86.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="favico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Help\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
